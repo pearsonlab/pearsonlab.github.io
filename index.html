@@ -1,63 +1,14 @@
-<!DOCTYPE html>
+---
+title: "&lambda; Lab"
+desc: Under Construction
+ishome: yes
+---
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
-    <title>Pearson Lab at Duke University</title>
-
-    <!-- Bootstrap core CSS from MaxCDN-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  {% include head.html %}
 
   <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><b>[ &lambda; ]</b></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="https://github.com/pearsonlab">Code</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>&lambda; Lab</h1>
-        <p>Under Construction.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
+  {% include navbar.html %}
+    {% include jumbotron.html %}
 
     <div class="container">
       <!-- Example row of columns -->
@@ -71,28 +22,17 @@
           <h2>People</h2>
           <p>Meet the crew. </p>
           <p><a class="btn btn-default" href="#" role="button">View people &raquo;</a></p>
-       </div>
+        </div>
         <div class="col-md-4">
           <h2>Code</h2>
           <p>Look at our code on GitHub.</p>
           <p><a class="btn btn-default" href="https://github.com/pearsonlab" role="button">Go to Github &raquo;</a></p>
         </div>
       </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; 2015</p>
-      </footer>
+      {% include footer.html %}
     </div> <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    {% include jsload.html %}
   </body>
 </html>
