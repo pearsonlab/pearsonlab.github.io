@@ -1,0 +1,13 @@
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+  {% include navbar.html %}
+    {% include jumbotron.html %}
+    <div class="container">
+        {{ content }}
+        {% include footer.html %}
+    </div>
+    {% include jsload.html %}
+  </body>
+</html>
