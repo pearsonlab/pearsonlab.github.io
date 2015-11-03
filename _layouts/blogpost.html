@@ -1,0 +1,30 @@
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+  {% include navbar.html %}
+    {% include jumbotron.html %}
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          <div class="blog-post">
+            <a href='/blog/'> Back to main blog</a>
+            <h2 class="blog-post-title">{{ page.post_title }}</h2>
+            <p class="blog-post-meta">{{ page.date | date: "%-d %B %Y" }} by <a href="/people.html">{{ page.author }}</a></p>
+            {{ content }}
+            <span>
+              {% if page.previous %}
+                <a href={{ page.previous.url }}>Previous post: {{ page.previous.post_title }}</a>
+              {% endif %}
+              {% if page.next %}
+                <a href={{ page.next.url }} class="right">Next post: {{ page.next.post_title }}</a>
+              {% endif %}
+            </span>
+          </div>
+        </div>
+      </div>
+        {% include footer.html %}
+    </div>
+    {% include jsload.html %}
+  </body>
+</html>

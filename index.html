@@ -1,15 +1,20 @@
 ---
 layout: default
 title: "&lambda; Lab"
-desc: Under Construction
+desc: Pearson Lab at Duke University
 ishome: yes
 ---
 
 <div class="row">
   <div class="col-md-4">
     <h2>Blog</h2>
-    <p>Check out what we're up to! </p>
-    <p><a class="btn btn-default" href="blog.html" role="button">View &raquo;</a></p>
+    <p>Recent posts:</p>
+    <p>
+      {% for post in site.posts limit:3 %}
+        <a href={{ post.url }}> {{ post.post_title }} </a><br>
+      {% endfor %}
+    </p>
+    <p><a class="btn btn-default" href="/blog/" role="button">View &raquo;</a></p>
   </div>
   <div class="col-md-4">
     <h2>Publications</h2>
