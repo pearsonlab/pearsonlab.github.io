@@ -11,10 +11,16 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">People</a></li>
+        <!-- Generate navbar based on 'nav' variable in page headers -->
+        {% for other in site.pages %}
+          {% if other.nav %}
+            {% if other.title == page.title %}
+              <li class="active"><a href={{ other.url }}>{{other.nav}} <span class="sr-only">(current)</span></a></li>
+            {% else %}
+              <li><a href={{ other.url }}>{{other.nav}}</a></li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
         <li><a href="https://github.com/pearsonlab">Code</a></li>
       </ul>
     </div><!--/.navbar-collapse -->
