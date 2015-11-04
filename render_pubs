@@ -1,0 +1,14 @@
+#!/bin/bash
+bundle exec jekyll build
+
+cat >pubs.html <<EOL
+---
+layout: default
+nav: Publications
+title: Publications
+desc: Recent articles
+---
+
+EOL
+
+cat >> pubs.html <_site/pubs_gen.html
