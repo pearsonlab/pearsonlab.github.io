@@ -6,13 +6,13 @@ ishome: yes
 ---
 
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-4" color="gray">
     <h2>Blog</h2>
     <p>Recent posts:</p>
     <p>
-      {% for post in site.posts limit:3 %}
-        <a href={{ post.url }}> {{ post.post_title }} </a><br>
-      {% endfor %}
+    {% for post in site.posts limit:3 %}
+      <li><a href={{ post.url }}> {{ post.post_title }} </a></li>
+    {% endfor %}
     </p>
     <p><a class="btn btn-default" href="/blog/" role="button">View &raquo;</a></p>
   </div>

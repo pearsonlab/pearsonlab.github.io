@@ -1,7 +1,13 @@
+<div class="bg"></div>
 <div class="jumbotron">
   <div class="container">
+    <br>
+    {% if page.ishome %}
+    <img src="/images/plab_logotype_white.svg" width="400">
+    {% else %}
     <h1>{{ page.title }}</h1>
-    <p>{{ page.desc }}</p>
+    {% endif %}
+    <p><font color="#B5B5B5">{{ page.desc }}</font></p>
     {% if page.ishome %}
     <p><a class="btn btn-primary btn-lg" href="about.html" role="button">About &raquo;</a></p>
     {% endif %}
