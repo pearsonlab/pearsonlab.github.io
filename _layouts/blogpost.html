@@ -13,10 +13,10 @@
             <p class="blog-post-meta">{{ page.date | date: "%-d %B %Y" }} by <a href="/people.html">{{ page.author }}</a></p>
             {{ content }}
             <span>
-              {% if page.previous %}
+              {% if page.previous and page.previous.category == 'blog' %}
                 <a href={{ page.previous.url }}>Previous post: {{ page.previous.post_title }}</a>
               {% endif %}
-              {% if page.next %}
+              {% if page.next and page.next.category == 'blog'%}
                 <a href={{ page.next.url }} class="right">Next post: {{ page.next.post_title }}</a>
               {% endif %}
             </span>

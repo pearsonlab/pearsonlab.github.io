@@ -4,7 +4,7 @@ title: Blog
 desc: Read about our day-to-day activities
 post_title: Tools for Eye Tracking
 author: Shariq Iqbal
-category: blog
+category: # blog
 ---
 
 The past couple of weeks of messing around with our brand new [Tobii](http://www.tobii.com/) Eye-Tracking Glasses have seen some exciting developments that will allow us to do some really cool research! First though, we needed to make sure what we already had working was possible. Our previous eye-tracking studies used a monitor-based system which provides gaze coordinates relative to the monitor, but the glasses only provide coordinates relative to the camera on the front of the glasses.

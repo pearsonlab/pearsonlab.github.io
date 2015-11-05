@@ -22,7 +22,7 @@ permalink: "/blog/"
     <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
       <div class="sidebar-module sidebar-module-inset">
         <h4>Posts</h4>
-        {% for post in site.posts %}
+        {% for post in site.categories.blog %}
           <li><a href={{ post.url }}> {{ post.post_title }} </a></li>
         {% endfor %}
       </div>
