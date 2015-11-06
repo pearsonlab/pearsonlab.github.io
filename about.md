@@ -9,7 +9,7 @@ nav: About # what shows up in the navbar at the top (do not define if you don't 
 
 **What if we could record the activity of every cell in the human brain?** If we knew every synapse of every cell, what questions would we ask? Like genetics twenty years ago, neuroscience is preparing for an explosion of data, but the tools and the models we use to understand that data have yet to benefit from modern advances in computer science, engineering, and statistics.
 
-**At P[&lambda;]ab, we are building the next generation of modeling and analysis tools for brain data.** This involves not only building better pipelines for collecting and analyzing terabyte-scale data, but also designing and implementing the algorithms that will help to *interpret* that data successfully.
+**At P[&lambda;]ab, we are building the next generation of modeling and analysis tools for brain data.** This involves not only building better pipelines for collecting and analyzing terabyte-scale data, but also designing and implementing the algorithms that will help to *interpret* these data successfully.
 
 **We believe that the best hope for treating brain disorders is the discovery of fundamental principles underlying brain activity.** Theory is essential, but the best theory happens in conversation with data. That's why we work closely with experimentalists to build tools that not only make sense of existing data but suggest new hypotheses and new directions.
 
