@@ -12,9 +12,17 @@ permalink: "/blog/"
     {% for post in site.categories.blog %}
       <div class="blog-post">
         <h2 class="blog-post-title">{{ post.post_title }}</h2>
-        <p class="blog-post-meta">{{ post.date | date: "%-d %B %Y" }} by <a href="/people.html">{{ post.author }}</a></p>
+        <p class="blog-post-meta"><font color="gray">{{ post.date | date: "%-d %B %Y" }} by </font><a href="/people.html">{{ post.author }}</a></p>
         <p>{{ post.excerpt }}</p>
-        <a href={{ post.url }}>Read more...</a>
+        {% capture content_words %} 
+          {{ post.content | number_of_words }} 
+        {% endcapture %} 
+        {% capture excerpt_words %} 
+          {{ post.excerpt | number_of_words }} 
+        {% endcapture %} 
+        {% if excerpt_words != content_words %}
+          <a href={{ post.url }}>Read more...</a>
+        {% endif %}
       </div>
     {% endfor %}
     </div>

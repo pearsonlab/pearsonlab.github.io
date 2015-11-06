@@ -10,7 +10,7 @@
           <div class="blog-post">
             <a href='/blog/'> Back to main blog</a>
             <h2 class="blog-post-title">{{ page.post_title }}</h2>
-            <p class="blog-post-meta">{{ page.date | date: "%-d %B %Y" }} by <a href="/people.html">{{ page.author }}</a></p>
+            <p class="blog-post-meta"><font color="gray">{{ page.date | date: "%-d %B %Y" }} by </font><a href="/people.html">{{ page.author }}</a></p>
             {{ content }}
             <span>
               {% if page.previous and page.previous.category == 'blog' %}
@@ -20,6 +20,14 @@
                 <a href={{ page.next.url }} class="right">Next post: {{ page.next.post_title }}</a>
               {% endif %}
             </span>
+          </div>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Posts</h4>
+            {% for post in site.categories.blog %}
+              <li><a href={{ post.url }}> {{ post.post_title }} </a></li>
+            {% endfor %}
           </div>
         </div>
       </div>
