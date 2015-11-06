@@ -20,7 +20,7 @@ nav: About # what shows up in the navbar at the top (do not define if you don't 
 We [code in the open](https://github.com/pearsonlab). We share data. Communicating science requires finding and telling the stories in our data, but these stories are worthless if they don't stand up to scrutiny from the community.
 
 ## Natural Behavior
-Nothing in neuroscience makes sense except in light of behavior.[^1] Attempting to model the brain apart from behavior is like trying to model speech apart from language. We prefer behaviors like foraging and stimuli like movies because they give us the opportunity to study the brain in something closer to its normal working mode.
+Nothing in neuroscience makes sense except in light of behavior.[^1] We prefer behaviors like foraging and stimuli like movies because they give us the opportunity to study the brain in something closer to its normal working mode.
 
 ## Dynamics
 The brain functions in a rapidly changing environment and is itself an organ with complex internal dynamics. We favor models and methods that incorporate this behavior, particulary those drawn from the physics and statistics of dynamical systems.
