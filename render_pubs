@@ -1,4 +1,14 @@
 #!/bin/bash
+# This script will take a .bib file and generate a publications page,
+# sorted by year, for your github-pages site.
+# HOW TO USE:
+# 1. Update _/publications/publications.bib to most recent version
+# 2. Run this script 'source render_pubs'
+
+echo "\ngem 'jekyll-scholar'" >> Gemfile
+echo "\ngems: ['jekyll/scholar']" >> _config.yml
+echo '---\n---' | cat - pubs_gen.md > temp && mv temp pubs_gen.md 
+bundle install
 bundle exec jekyll build
 
 cat >pubs.html <<EOL
@@ -12,3 +22,4 @@ desc: Recent articles
 EOL
 
 cat >> pubs.html <_site/pubs_gen.html
+git checkout -- Gemfile Gemfile.lock _config.yml pubs_gen.md
