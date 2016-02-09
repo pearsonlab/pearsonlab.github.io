@@ -1,9 +1,11 @@
 ---
 layout: default
 title: About Us # header at the top of the page
-desc: Computation and Brains
+desc: Our mission and vison
 nav: About # what shows up in the navbar at the top (do not define if you don't want page in the navbar)
 ---
+
+<img src="/images/plab_hex_icon_gray.png" style="float:left; margin-right: 20px; margin-bottom: 10px" width="200px">
 
 # What we do
 

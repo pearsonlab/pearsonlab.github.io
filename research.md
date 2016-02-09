@@ -4,3 +4,16 @@ title: Current Projects
 desc: Check out what we're working on
 nav: Research
 ---
+
+# How do neurons see the world?
+
+Typical neuroscience experiments start by assuming we know the set of variables that drive neural activity. But what if neurons are tuned to variables we would never have guessed? What if, as with social interaction, the stimulus set is too complex to be boiled down to a few dimensions. With [Jeff Beck](https://www.neuro.duke.edu/research/faculty-labs/beck-lab), we're [developing models](http://arxiv.org/abs/1512.01408) that infer stimulus categories *directly from data*, allowing us to "tag" images and movies based on neural responses.
+
+# Opening up the skull
+
+For most neuroscientists, studying the brain means either using noninvasive brain imaging techniques like EEG or fMRI in humans or using more precise but invasive methods in animal models. However, when patients with Parkinson's Disease or epilepsy undergo brain surgery, we have a rare opportunity to study brain activity at the most detailed level in human beings. Together with collaborators in [neurosurgery, neurology, and biomedical engineering](people.html#collaborators) we're investigating the processes underlying self-control, social interaction, and language with a precision rarely available in humans.
+
+
+# Eye tracking unplugged
+
+Where we look speaks volumes about what we're thinking. For over a century, psychologists and neurobiologists have used the movements of the eyes and measurements of pupil size to study the mind, but the need for experimental control has limited our ability to study eye movements in naturalistic settings. In P[&lambda;]ab, we are pairing new advances in [eye tracking](http://www.tobiipro.com/product-listing/tobii-pro-glasses-2/) technology with methods in [computer vision](blog/2015/11/06/eye_tracking_tech.html) and machine learning to tackle the challenge of studying eye movements in real-world settings, with applications ranging from treatment of acute fear to how we view art.
