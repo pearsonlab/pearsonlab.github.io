@@ -4,7 +4,7 @@ title: Blog
 desc: Read about our day-to-day activities
 post_title: Eye Tracking and Art
 author: Shariq Iqbal and John Pearson
-category: #blog
+category: blog
 ---
 
 As a lab, we're interested in natural behaviors. This can mean a lot of things, but in particular, it means attempting to study human and animal behavior the way it occurs outside the lab. Many of the tools we build harness modern computing to enable us to do this with the precision and rigor of traditional lab experiments.
@@ -23,7 +23,7 @@ Yet we needed to make sure that we could still map gaze points from close up and
 
 So how'd we do? An example of our technique applied to a single frame:
 
-{% include blog_image.html url="http://people.duke.edu/~sni/mutu1.jpg" %}
+{% include blog_image.html url="http://people.duke.edu/~sni/mutu1.jpg" description="Wangechi Mutu, Family Tree, 2012. One of 13 mixed-media collages on paper, 14 1/8 × 10 3/16 in. (35.9 × 25.9 cm). Collection of the Nasher Museum. Museum purchase with additional funds provided by Trent Carmichael (T’88, P’17), Blake Byrne (T'57), Marjorie and Michael Levine (T’84, P’16, P’19, P’19), Stefanie and Douglas Kahn (P’11, P’13), and Christen and Derek Wilson (T'86, B'90, P'15). c Wangechi Mutu." %}
 
 We take a match image such like this one and try to find it in a video frame.
 
