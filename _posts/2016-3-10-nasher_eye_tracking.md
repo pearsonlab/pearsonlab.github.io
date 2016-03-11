@@ -17,7 +17,7 @@ When we look at a painting, for example, we are typically "doing more" than what
 
 So if works of art are objects meant to provoke rich and unique patterns of looking, why not study this process?
 
-In collaboration with [Zab Johnson](https://dibs.duke.edu/scholars/elizabeth-johnson)'s lab and with curator Marianne Wardle of Duke's Nasher Museum, we've been doing just that. Thanks to our eye tracking glasses, we're able to let people view works in the Nasher's galleries while we track where they're looking. But unlike most lab experiments that have people look at static images, we're able to let them explore the works in the way they naturally would &mdash; approaching the work from across the room, leaning in close to study details, studying from all angles.
+In collaboration with [Zab Johnson](https://dibs.duke.edu/scholars/elizabeth-johnson)'s lab and with curator Marianne Wardle of Duke's [Nasher Museum](http://emuseum.nasher.duke.edu/), we've been doing just that. Thanks to our eye tracking glasses, we're able to let people view works in the Nasher's galleries while we track where they're looking. But unlike most lab experiments that have people look at static images, we're able to let them explore the works in the way they naturally would &mdash; approaching the work from across the room, leaning in close to study details, studying from all angles.
 
 Yet we needed to make sure that we could still map gaze points from close up and extreme angles back to a static image of the piece of art. And this presents an additional challenge, since only a portion of the work is visible in the eye tracker's camera at any moment.
 
@@ -46,5 +46,5 @@ More on this to come. In the meantime, check out the results when we apply this 
 
 Links to pages on the Nasher Museum site for the works included:
 
-- [Mutu](http://emuseum.nasher.duke.edu/view/objects/asitem/search@/5/primaryMaker-asc?t:state:flow=f5abb697-7b62-47f4-bd7c-2cca0327c73b)
-- [Sonhouse](http://emuseum.nasher.duke.edu/view/objects/asitem/items$0040:14671)
+- [Wangechi Mutu, Family Tree, 2012](http://emuseum.nasher.duke.edu/view/objects/asitem/search@/5/primaryMaker-asc?t:state:flow=f5abb697-7b62-47f4-bd7c-2cca0327c73b)
+- [Jeff Sonhouse, Decompositioning, 2010](http://emuseum.nasher.duke.edu/view/objects/asitem/items$0040:14671)
