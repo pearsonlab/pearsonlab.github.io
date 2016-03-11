@@ -46,5 +46,5 @@ More on this to come. In the meantime, check out the results when we apply this 
 
 Links to pages on the Nasher Museum site for the works included:
 
-- [Wangechi Mutu, Family Tree, 2012](http://emuseum.nasher.duke.edu/view/objects/asitem/search@/5/primaryMaker-asc?t:state:flow=f5abb697-7b62-47f4-bd7c-2cca0327c73b)
+- [Wangechi Mutu, Family Tree, 2012](http://emuseum.nasher.duke.edu/view/objects/asitem/items$0040:18231)
 - [Jeff Sonhouse, Decompositioning, 2010](http://emuseum.nasher.duke.edu/view/objects/asitem/items$0040:14671)
