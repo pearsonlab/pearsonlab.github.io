@@ -43,3 +43,8 @@ More on this to come. In the meantime, check out the results when we apply this 
 <iframe width="730" height="410" src="https://www.youtube.com/embed/fSl6FiyHTes?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </div>
 <br>
+
+Links to pages on the Nasher Museum site for the works included:
+
+- [Mutu](http://emuseum.nasher.duke.edu/view/objects/asitem/search@/5/primaryMaker-asc?t:state:flow=f5abb697-7b62-47f4-bd7c-2cca0327c73b)
+- [Sonhouse](http://emuseum.nasher.duke.edu/view/objects/asitem/items$0040:14671)
