@@ -4,16 +4,20 @@ title: Blog
 desc: Read about our day-to-day activities
 post_title: Distributing OpenCV and FFMPEG
 author: Shariq Iqbal
-category: #blog
+category: blog
 ---
 
-In some of our [previous](https://pearsonlab.github.io/blog/2015/11/06/eye_tracking_tech.html) [work](https://pearsonlab.github.io/blog/2016/03/10/nasher_eye_tracking.html), we needed to be able to generate videos in an efficient manner that could be linked into an analysis pipeline. Fortunately, OpenCV, a tool we rely on for advanced frame-by-frame image analysis, also allows for writing videos in all sorts of different encodings. Unfortunately, this capability relies on OpenCV being linked to FFMPEG (a video codec library) and compiled manually, so you can't just install the necessary software with a package manager. The build process can be tricky, with various unique issues arising on different systems; however, with the help of modern containerization services like Docker, we can bundle a working version of OpenCV into a container and deploy it across platforms. Then, all it takes is two lines into a command prompt to get a working version up and running on any system.
+For some of our [previous](https://pearsonlab.github.io/blog/2015/11/06/eye_tracking_tech.html) [work](https://pearsonlab.github.io/blog/2016/03/10/nasher_eye_tracking.html) on eye tracking, we needed to be able to generate videos in way that could be linked into an automated analysis pipeline. For this, we use OpenCV, a tool for advanced frame-by-frame image analysis. Unfortunately, OpenCV's ability to write movies in common output formats relies on OpenCV being linked to FFMPEG (a video codec library) and compiled manually, so you can't just install the necessary software with a package manager. The build process can be tricky, with various unique issues arising on different systems. However, with the help of modern containerization services like Docker, we can bundle a working version of OpenCV into a container and deploy it across platforms. After that, all it takes is two lines at a command prompt to get a working version up and running on any system.
 
-Before deciding on Docker, we considered a few different options for distribution. The first idea was to simply precompile the library with links to FFMPEG enabled and distribute it as a package for Anaconda. Unfortunately, this does not work, as OpenCV has to find FFMPEG on the given system at compile time and generate links. There is no easy way to prebuild OpenCV and have it work with any FFMPEG install. Since we are building tools in-house using OpenCV and FFMPEG that we want other labs to use, it is critical that we have an easy and robust solution for distributing this toolchain. As a result, we settled on Docker containers as our method for doing so.
+Before deciding on Docker, we considered a few different options for distribution. The first idea was to simply precompile the library with links to FFMPEG enabled and distribute it as a package for Anaconda. Unfortunately, this does not work, as OpenCV has to find FFMPEG on the given system at compile time and generate links. There is no easy way to prebuild OpenCV and have it work with any FFMPEG install. Since we are building tools in-house using OpenCV and FFMPEG that we want other labs to use, it is critical that we have an easy and robust solution for distributing this toolchain. As a result, we settled on [Docker](https://www.docker.com) containers as our method for doing so.
 
-Docker images are, in a way, lighter versions of virtual machines that allow applications to be configured and deployed on various systems. Using Docker, we only need to build OpenCV once, save it as an image, and it will be ready to be used on any system. Docker is a great solution for running OpenCV with FFMPEG support on your local machine without the hassle, but what if you want to run a large job in the cloud? That requires a slightly different solution: Amazon AMI's.
+Docker images are, in a way, lighter versions of virtual machines that allow applications to be configured and deployed on various systems. Using Docker, we only need to build OpenCV once, save it as an image, and it will be ready to be used on any system.
 
-An AMI (Amazon Machine Image) is a snapshot of a system that you can boot up on a cloud server using Amazon's EC2 service. This is ideal for large batch processing jobs where you want to start something and forget about it until it's done. AMI's follow a build-and-save procedure similar to Docker.
+But while Docker is a great solution for running OpenCV with FFMPEG support on your local machine without the hassle, what if you want to run a large job in the cloud? That requires a slightly different solution: Amazon AMI's.
+
+An AMI (Amazon Machine Image) is a snapshot of a system that you can boot up on a cloud server using Amazon's EC2 service. This is ideal for large batch processing jobs where you want to start something and forget about it until it's done. AMIs follow a build-and-save procedure similar to Docker.
+
+So how do you get one of these solutions running?
 
 To launch our preconfigured Docker container with OpenCV and FFMPEG:
 
@@ -42,4 +46,3 @@ If everything worked correctly, you should be able to generate web-friendly H.26
   <source src="http://people.duke.edu/~sni/penaltykick_videos/sess1trial1.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-
