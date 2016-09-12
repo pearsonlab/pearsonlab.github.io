@@ -5,52 +5,53 @@ desc: The online home of the Pearson Lab at Duke University
 ishome: yes
 ---
 
-<body>
-<div class="container">
-  <div>
+<!-- <body> -->
+<!-- <div class="container"> -->
+<!--   <div>
     <h1 align="center">"This is the quote for lab."</h1>
   </div>
-  <br><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-primary" style="padding: 0px 20px">
-        <h3><a href="research.html">Research</a></h3>
-        <p>Learn more about our research</p>
-        <div class="panel-body" style="height: 280px; overflow-y: scroll">
-          <li><a href="https://pearsonlab.github.io/research.html"> How do neurons see the world? </a></li><br>
-          <li><a href="https://pearsonlab.github.io/research.html"> Opening up the skull </a></li><br>
-          <li><a href="https://pearsonlab.github.io/research.html"> Eye tracking unplugged </a></li><br>
-        </div>
-        <p><a class="btn btn-default" style="border:none" href="research.html" role="button">More &raquo;</a></p>
+  <br> -->
+<br>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="panel panel-primary" style="padding: 0px 20px">
+      <h3><a href="research.html">Research</a></h3>
+      <p>Learn more about our research</p>
+      <div class="panel-body" style="height: 280px; overflow-y: scroll">
+        <li><a href="https://pearsonlab.github.io/research.html"> How do neurons see the world? </a></li><br>
+        <li><a href="https://pearsonlab.github.io/research.html"> Opening up the skull </a></li><br>
+        <li><a href="https://pearsonlab.github.io/research.html"> Eye tracking unplugged </a></li><br>
       </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="panel panel-primary" style="padding: 0px 20px">
-        <h3><a href="https://pearsonlab.github.io/blog/">Blog</a></h3>
-        <p>Most recent posts</p>
-        <div class="panel-body" style="height: 280px; overflow-y: scroll">
-          <p>
-          {% for post in site.categories.blog limit: 4 %}
-            <li><a href={{ post.url }}> {{ post.post_title }} </a></li><br>
-          {% endfor %}
-          </p><br>
-        </div>
-        <p><a class="btn btn-default" style="border:none" href="https://pearsonlab.github.io/blog/" role="button">More &raquo;</a></p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="panel panel-primary" style="padding: 0px 20px">
-        <h3><a href="pubs.html">Publication</a></h3>
-        <p>Our latest works</p>
-        <div class="panel-body" style="height: 280px; overflow-y: scroll">
-          <li><a href="http://www.pnas.org/content/113/1/22.extract"> Dopamine: Context and counterfactuals. Proceedings Of the National Academy of Sciences, 113(1), 22–23. </a></li><br>
-          <li><a href="https://arxiv.org/abs/1512.01408"> Neuron’s Eye View: Inferring Features of Complex Stimuli from Neural Responses. ArXiv Preprint ArXiv:1512.01408. </a></li><br>
-          <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/26668400"> Neural mechanisms of social decision-making in the primate amygdala. Proceedings Of the National Academy of Sciences, 112(52), 16012–16017. </a></li><br>
-        </div>
-        <p><a class="btn btn-default" style="border:none" href="pubs.html" role="button">More &raquo;</a></p>
-      </div>
+      <p><a class="btn btn-default" style="border:none" href="research.html" role="button">More &raquo;</a></p>
     </div>
   </div>
+  <div class="col-sm-4">
+    <div class="panel panel-primary" style="padding: 0px 20px">
+      <h3><a href="https://pearsonlab.github.io/blog/">Blog</a></h3>
+      <p>Most recent posts</p>
+      <div class="panel-body" style="height: 280px; overflow-y: scroll">
+        <p>
+        {% for post in site.categories.blog limit: 4 %}
+          <li><a href={{ post.url }}> {{ post.post_title }} </a></li><br>
+        {% endfor %}
+        </p><br>
+      </div>
+      <p><a class="btn btn-default" style="border:none" href="https://pearsonlab.github.io/blog/" role="button">More &raquo;</a></p>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="panel panel-primary" style="padding: 0px 20px">
+      <h3><a href="pubs.html">Publication</a></h3>
+      <p>Our latest works</p>
+      <div class="panel-body" style="height: 280px; overflow-y: scroll">
+        <li><a href="http://www.pnas.org/content/113/1/22.extract"> Dopamine: Context and counterfactuals. Proceedings Of the National Academy of Sciences, 113(1), 22–23. </a></li><br>
+        <li><a href="https://arxiv.org/abs/1512.01408"> Neuron’s Eye View: Inferring Features of Complex Stimuli from Neural Responses. ArXiv Preprint ArXiv:1512.01408. </a></li><br>
+        <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/26668400"> Neural mechanisms of social decision-making in the primate amygdala. Proceedings Of the National Academy of Sciences, 112(52), 16012–16017. </a></li><br>
+      </div>
+      <p><a class="btn btn-default" style="border:none" href="pubs.html" role="button">More &raquo;</a></p>
+    </div>
+  </div>
+</div>
 
 <br>
 <div class="row">
