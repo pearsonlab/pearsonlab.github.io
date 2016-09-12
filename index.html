@@ -5,30 +5,73 @@ desc: The online home of the Pearson Lab at Duke University
 ishome: yes
 ---
 
+<body>
+<div class="container">
+  <br><br>
+  <div>
+    <h1 align="center">"This is the quote for lab."</h1>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary" style="padding: 5px 20px">
+        <h3><a href="https://pearsonlab.github.io/research.html">Research</a></h3>
+        <p>Learn more about our research</p>
+        <div class="panel-body" style="height: 300px">
+          <li><a href="https://pearsonlab.github.io/research.html"> How do neurons see the world? </a></li><br>
+          <li><a href="https://pearsonlab.github.io/research.html"> Opening up the skull </a></li><br>
+          <li><a href="https://pearsonlab.github.io/research.html"> Eye tracking unplugged </a></li><br>
+        </div>
+        <p><a class="btn btn-default" style="border:none" href="research.html" role="button">More &raquo;</a></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary" style="padding: 5px 20px">
+        <h3><a href="https://pearsonlab.github.io/blog.html">Blog</a></h3>
+        <p>Most recent posts</p>
+        <div class="panel-body" style="height: 300px">
+          <p>
+          {% for post in site.categories.blog limit: 4 %}
+            <li><a href={{ post.url }}> {{ post.post_title }} </a></li><br>
+          {% endfor %}
+          </p><br>
+        </div>
+        <p><a class="btn btn-default" style="border:none" href="https://pearsonlab.github.io/blog/" role="button">More &raquo;</a></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary" style="padding: 5px 20px">
+        <h3><a href="https://pearsonlab.github.io/publication.html">Publication</a></h3>
+        <p>Our latest works</p>
+        <div class="panel-body" style="height: 300px">
+          <li><a href="http://www.pnas.org/content/113/1/22.extract"> Dopamine: Context and counterfactuals. Proceedings Of the National Academy of Sciences, 113(1), 22–23. </a></li><br>
+          <li><a href="https://arxiv.org/abs/1512.01408"> Neuron’s Eye View: Inferring Features of Complex Stimuli from Neural Responses. ArXiv Preprint ArXiv:1512.01408. </a></li><br>
+          <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/26668400"> Neural mechanisms of social decision-making in the primate amygdala. Proceedings Of the National Academy of Sciences, 112(52), 16012–16017. </a></li><br>
+        </div>
+        <p><a class="btn btn-default" style="border:none" href="pubs.html" role="button">More &raquo;</a></p>
+      </div>
+    </div>
+  </div>
+
+<br><br>
 <div class="row">
-  <div class="col-md-4">
-    <h2>About Us</h2>
-    <p>Learn more about our research</p>
-    <p><a class="btn btn-default" href="about.html" role="button">View &raquo;</a></p>
-  </div>
-  <div class="col-md-4" color="gray">
-    <h2>Blog</h2>
-    <p>Recent posts:</p>
-    <p>
-    {% for post in site.categories.blog limit:3 %}
-      <li><a href={{ post.url }}> {{ post.post_title }} </a></li>
-    {% endfor %}
+  <div class="col-sm-4">
+    <p align="center">
+    <a href="https://github.com/pearsonlab"><img src="/images/github_logo.png" margin-bottom: 10px" width="45px">
     </p>
-    <p><a class="btn btn-default" href="/blog/" role="button">View &raquo;</a></p>
+    <h4 align="center">Code on GitHub</h4></a>
   </div>
-  <!-- <div class="col-md-4">
-    <h2>Publications</h2>
-    <p>Our latest works </p>
-    <p><a class="btn btn-default" href="pubs.html" role="button">View &raquo;</a></p>
-  </div> -->
-  <div class="col-md-4">
-    <h2>Code</h2>
-    <p>Look at our code on GitHub</p>
-    <p><a class="btn btn-default" href="https://github.com/pearsonlab" role="button">View &raquo;</a></p>
+  <div class="col-sm-4">
+    <p align="center">
+    <a href="https://pearsonlab.github.io/people.html"><img src="/images/plab_hex_icon_gray.png" margin-bottom: 10px" width="45px">
+    </p>
+    <h4 align="center">Who We Are</h4></a>
+  </div>
+  <div class="col-sm-4">
+    <p align="center">
+    <a href="https://pearsonlab.github.io/location.html"><img src="/images/dibs_logo.png" margin-bottom: 10px" width="51px">
+    </p>
+    <h4 align="center">Find Us</h4></a>
   </div>
 </div>
+<br>
