@@ -5,21 +5,23 @@
 # 1. Update _/publications/publications.bib to most recent version
 # 2. Run this script 'source render_pubs'
 
-echo "\ngem 'jekyll-scholar'" >> Gemfile
-echo "\ngems: ['jekyll/scholar']" >> _config.yml
-echo '---\n---' | cat - pubs_gen.md > temp && mv temp pubs_gen.md 
+mv Gemfile Gemfile.bak
+echo "source 'https://rubygems.org'" > Gemfile
+echo "gem 'jekyll-scholar'" >> Gemfile
+
+mkdir _plugins
+echo "require 'jekyll/scholar'" > _plugins/ext.rb
+
+HEADSTR=$'---\n---'
+echo "$HEADSTR" | cat - pubs_gen.md > temp && mv temp pubs_gen.md 
+echo "$HEADSTR" | cat - recent_pubs_gen.md > temp && mv temp recent_pubs_gen.md
 bundle install
+bundle show jekyll-scholar
 bundle exec jekyll build
 
-cat >pubs.html <<EOL
----
-layout: default
-nav: Publications
-title: Publications
-desc: Recent articles
----
-
-EOL
-
-cat >> pubs.html <_site/pubs_gen.html
-git checkout -- Gemfile Gemfile.lock _config.yml pubs_gen.md
+cat > _includes/pubs.html <_site/pubs_gen.html
+cat > _includes/recent_pubs.html <_site/recent_pubs_gen.html
+git checkout -- _config.yml pubs_gen.md recent_pubs_gen.md
+rm Gemfile Gemfile.lock
+rm -rf _plugins
+mv Gemfile.bak Gemfile
