@@ -14,7 +14,7 @@ ishome: yes
     <div class="panel panel-primary" style="padding: 0px 20px">
       <h3><a href="research.html">Research</a></h3>
       <p>Learn more about our research</p>
-      <div class="panel-body" style="height: 280px; overflow-y: scroll">
+      <div class="panel-body" style="height: 240px; overflow-y: scroll">
         <li><a href="research.html"> How do neurons see the world? </a></li><br>
         <li><a href="research.html"> Opening up the skull </a></li><br>
         <li><a href="research.html"> Eye tracking unplugged </a></li><br>
@@ -24,14 +24,13 @@ ishome: yes
   </div>
   <div class="col-sm-4">
     <div class="panel panel-primary" style="padding: 0px 20px">
-      <h3><a href="https://pearsonlab.github.io/blog.html">Blog</a></h3>
+      <h3><a href="https://pearsonlab.github.io/blog/">Blog</a></h3>
       <p>Most recent posts</p>
-      <div class="panel-body" style="height: 280px; overflow-y: scroll">
-        <p>
-        {% for post in site.categories.blog limit: 4 %}
+      <div class="panel-body" style="height: 240px; overflow-y: scroll">
+        {% for post in site.categories.blog limit: 5 %}
           <li><a href={{ post.url }}> {{ post.post_title }} </a></li><br>
         {% endfor %}
-        </p><br>
+        <br>
       </div>
       <p><a class="btn btn-default" style="border:none" href="blog/" role="button">More &raquo;</a></p>
     </div>
@@ -40,7 +39,7 @@ ishome: yes
     <div class="panel panel-primary" style="padding: 0px 20px">
       <h3><a href="pubs.html">Publications</a></h3>
       <p>Our latest works</p>
-      <div class="panel-body" style="height: 280px; overflow-y: scroll">
+      <div class="panel-body" style="height: 240px; overflow-y: scroll">
         {% include recent_pubs.html %}
       </div>
       <p><a class="btn btn-default" style="border:none" href="publications.html" role="button">More &raquo;</a></p>
