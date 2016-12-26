@@ -13,15 +13,15 @@ mkdir _plugins
 echo "require 'jekyll/scholar'" > _plugins/ext.rb
 
 HEADSTR=$'---\n---'
-echo "$HEADSTR" | cat - pubs_gen.md > temp && mv temp pubs_gen.md 
-echo "$HEADSTR" | cat - recent_pubs_gen.md > temp && mv temp recent_pubs_gen.md
+echo "$HEADSTR" | cat - pubs_gen.norender > pubs_gen.md 
+echo "$HEADSTR" | cat - recent_pubs_gen.norender > recent_pubs_gen.md
 bundle install
 bundle show jekyll-scholar
 bundle exec jekyll build
 
 cat > _includes/pubs.html <_site/pubs_gen.html
 cat > _includes/recent_pubs.html <_site/recent_pubs_gen.html
-git checkout -- _config.yml pubs_gen.md recent_pubs_gen.md
-rm Gemfile Gemfile.lock
+git checkout -- _config.yml
+rm Gemfile Gemfile.lock pubs_gen.md recent_pubs_gen.md
 rm -rf _plugins
 mv Gemfile.bak Gemfile
