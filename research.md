@@ -29,9 +29,9 @@ Where we look speaks volumes about what we're thinking. For over a century, psyc
         <iframe width="730" height="410" src="https://www.youtube.com/embed/fSl6FiyHTes?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-4" style="background-color: black; padding: 0 0 0 0">
     <a href="http://jeffmacinnes.com/research/gazeMapping/sonhouse3D/index.html">
-        <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/dynamicGaze.png" class="img-responsive">
+        <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/dynamicGaze.png" class="img-responsive" style="margin: 7 0 7 0">
     </a>
   </div>
 </div>
