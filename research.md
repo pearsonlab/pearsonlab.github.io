@@ -17,3 +17,21 @@ For most neuroscientists, studying the brain means either using noninvasive brai
 # Eye tracking unplugged
 
 Where we look speaks volumes about what we're thinking. For over a century, psychologists and neurobiologists have used the movements of the eyes and measurements of pupil size to study the mind, but the need for experimental control has limited our ability to study eye movements in naturalistic settings. In P[&lambda;]ab, we are pairing new advances in [eye tracking](http://www.tobiipro.com/product-listing/tobii-pro-glasses-2/) technology with methods in [computer vision](blog/2015/11/06/eye_tracking_tech.html) and machine learning to tackle the challenge of studying eye movements in real-world settings, with applications ranging from treatment of acute fear to how we view art.
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="video-container">
+        <iframe width="730" height="410" src="https://www.youtube.com/embed/E6c9Z0Mkc-E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="video-container">
+        <iframe width="730" height="410" src="https://www.youtube.com/embed/fSl6FiyHTes?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <a href="http://jeffmacinnes.com/research/gazeMapping/sonhouse3D/index.html">
+        <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/dynamicGaze.png" class="img-responsive">
+    </a>
+  </div>
+</div>
