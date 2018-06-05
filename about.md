@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About Us # header at the top of the page
-desc: Our mission and vison
+desc: Our mission and vision
 nav: About # what shows up in the navbar at the top (do not define if you don't want page in the navbar)
 ---
 
@@ -25,7 +25,7 @@ We [code in the open](https://github.com/pearsonlab). We share data. Communicati
 Nothing in neuroscience makes sense except in light of behavior.[^1] We prefer behaviors like foraging and stimuli like movies because they give us the opportunity to study the brain in something closer to its normal working mode.
 
 ## Dynamics
-The brain functions in a rapidly changing environment and is itself an organ with complex internal dynamics. We favor models and methods that incorporate this behavior, particulary those drawn from the physics and statistics of dynamical systems.
+The brain functions in a rapidly changing environment and is itself an organ with complex internal dynamics. We favor models and methods that incorporate this behavior, particularly those drawn from the physics and statistics of dynamical systems.
 
 ## Public Health Impact
 The goal of neuroscience is not just to understand the brain, it's to help those suffering from brain disorders. Because our greatest impact comes from making the jump from the lab to the clinic, we collaborate with physicians to perform studies in patient populations.
