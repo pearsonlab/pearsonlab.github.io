@@ -1,23 +1,2 @@
 title: "Pearson Lab at Duke University"
-
 markdown: kramdown
-
-scholar:
-  style: apa
-  locale: en
-
-  sort_by: year
-  order: descending
-
-  source: ./_publications
-  bibliography: publications
-  bibliography_template: "{{reference}}"
-
-  replace_strings: true
-  join_strings:    true
-
-  details_dir:    bibliography
-  details_layout: bibtex.html
-  details_link:   Details
-
-  query: "@*"

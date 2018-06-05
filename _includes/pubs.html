@@ -1,0 +1,20 @@
+
+{% assign sorted_pubs = site.data.publications | sort: 'Year' | reverse | group_by:'Year' %}
+
+{% for year in sorted_pubs %}
+<h3>{{ year.name }}</h3>
+    <ol>
+    {% for pub in year.items %}
+        <li>
+            <b>{{ pub.Title }}</b>
+            <br>
+            {{ pub.Authors }} ({{ year.name }}).
+            <br>
+            <em>{{ pub.Publication | capitalize }}</em>
+            {% if pub.Volume != blank %}
+                {{ pub.Volume}}{%if pub.Number != "" %}({{ pub.Number }}){% endif %}
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ol>
+{% endfor %}
