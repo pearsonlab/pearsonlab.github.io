@@ -1,0 +1,9 @@
+#! /usr/bin/bash
+
+# requires pandoc-citeproc (can use brew install)
+pandoc-citeproc -y _publications/publications.bib > _data/publications.yaml
+
+# for some reason, Liquid chokes if the second line of the pandoc-citeproc
+# output is kept
+sed -e '2d' _data/publications.yaml > _data/clean_pubs.yaml
+mv _data/clean_pubs.yaml _data/publications.yaml

@@ -1,18 +1,21 @@
 
-{% assign sorted_pubs = site.data.publications | sort: 'Year' | reverse | group_by:'Year' %}
+{% assign sorted_pubs = site.data.publications | group_by_exp:'item', 'item.issued.first.year' | sort: 'name' | reverse %}
 
 {% for year in sorted_pubs %}
 <h3>{{ year.name }}</h3>
     <ol>
     {% for pub in year.items %}
         <li>
-            <b>{{ pub.Title }}</b>
+            <b>{{ pub.title }}</b>
             <br>
-            {{ pub.Authors }} ({{ year.name }}).
+            {% for aa in pub.author %}
+            {% if forloop.last == true %}and {% endif %} {{ aa.family }}, {{ aa.given }}{% if forloop.last == false %}; {% endif %}
+            {% endfor %}
+             ({{ year.name }}).
             <br>
-            <em>{{ pub.Publication | capitalize }}</em>
-            {% if pub.Volume != blank %}
-                {{ pub.Volume}}{%if pub.Number != "" %}({{ pub.Number }}){% endif %}
+            <em>{{ pub.container-title }}</em>
+            {% if pub.volume != blank %}
+                {{ pub.volume}}{%if pub.issue and pub.issue != "" %}({{ pub.issue }}){% endif %}
             {% endif %}
         </li>
     {% endfor %}
