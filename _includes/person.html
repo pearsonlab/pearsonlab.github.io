@@ -1,0 +1,37 @@
+<div class="col-md-4">
+  <img class="img-circle" src="{{ include.image }}" height="200" width="200">
+  <!-- Social Icons -->
+  <p class="hcenter">
+    <br>
+    {% if include.site %}
+    <a class="btn btn-social-icon btn-microsoft" href="{{ include.site }}">
+      <i class="fa fa-globe"></i>
+    </a>
+    {% endif %}
+    {% if include.github %}
+    <a class="btn btn-social-icon btn-github" href="{{ include.github }}">
+      <i class="fa fa-github"></i>
+    </a>
+    {% endif %}
+    {% if include.email %}
+    <a class="btn btn-social-icon btn-google" href="mailto:{{ include.email }}">
+      <i class="fa fa-envelope"></i>
+    </a>
+    {% endif %}
+    {% if include.linkedin %}
+    <a class="btn btn-social-icon btn-linkedin" href="{{ include.linkedin }}">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    {% endif %}
+    {% if include.site == null and include.github == null and include.email == null and include.linkedin == null %}
+    <br><br>
+    {% endif %}
+  </p>
+</div>
+<div class="col-md-5">
+  <h2>{{ include.name }}</h2>
+  <p><em>{{ include.title }}</em></p>
+  <p>
+    {{ include.desc }}
+  </p>
+</div>
