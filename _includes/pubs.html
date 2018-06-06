@@ -1,4 +1,3 @@
-
 {% assign sorted_pubs = site.data.publications | group_by_exp:'item', 'item.issued.first.year' | sort: 'name' | reverse %}
 
 {% for year in sorted_pubs %}
