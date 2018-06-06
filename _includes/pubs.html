@@ -1,3 +1,4 @@
+<p>This list is not guaranteed to be up to date, but the lab's complete publications can be found <a href="https://scholar.google.com/citations?user=4whjDosAAAAJ&hl=en">here.</a> </p>
 {% assign sorted_pubs = site.data.publications | group_by_exp:'item', 'item.issued.first.year' | sort: 'name' | reverse %}
 
 {% for year in sorted_pubs %}
@@ -8,7 +9,7 @@
             <b>{{ pub.title }}</b>
             <br>
             {% for aa in pub.author %}
-            {% if forloop.last == true %}and {% endif %} {{ aa.family }}, {{ aa.given }}{% if forloop.last == false %}; {% endif %}
+            {% if forloop.last == true %}and {% endif %} {{ aa.given }} {{ aa.family }}{% if forloop.last == false %}, {% endif %}
             {% endfor %}
              ({{ year.name }}).
             <br>
