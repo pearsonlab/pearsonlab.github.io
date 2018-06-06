@@ -18,7 +18,7 @@ We're always interested in talking to qualified postdoc candidates. Particularly
   Programming proficiency with JavaScript and experience with Bayesian statistics are preferred. Experience in survey design is also helpful. Previous legal experience is not necessary, but an interest in law and legal decision making is important.
 
 # Graduate students
-Duke provides a wonderful environment for students interested in pursuing interdisciplinary research. P[&lambda;]ab is affiliated with multiple programs through which it accepts graduate students:
+Duke provides a wonderful environment for students interested in pursuing the kind of interdisciplinary research we do. As a result, P[&lambda;]ab accepts graduate students through multiple programs:
 
 - [Biostatistics and Bioinformatics](https://biostat.duke.edu/). The [PhD in biostatistics](https://biostat.duke.edu/education/phd-biostatistics/overview) is a rigorous program that focuses on statistical theory and its application to biomedical research. The program is small, and like most programs at Duke, highly competitive. Compared to neuroscience PhD programs, the number of required courses is high, and many admitted students enter having completed a master's degree. This is John's home department.
 
@@ -42,7 +42,7 @@ We sometimes advertise positions for research associates/data scientists. These 
 # Undergraduates
 
 P[&lambda;]ab offers undergraduates several opportunities to contribute to the work of the lab:
-- Through an independent study (Psychology and Neuroscience majors).
+- Through an independent study.
 - Through a senior thesis.
 - Through work-study or undergraduate research assistantships.
 - Through several [summer research opportunities](https://undergraduateresearch.duke.edu/opportunities). (N.B.: John really doesn't know much about these, so if this is a route you'd like to take, it's up to you to figure out what programs would allow you to work with us.)
