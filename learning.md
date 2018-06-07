@@ -4,10 +4,11 @@ title: Getting up to speed # header at the top of the page
 nav: Learning # what shows up in the navbar at the top (do not define if you don't want page in the navbar)
 ---
 # How do I get started?
+{:.no_toc}
 I'm frequently asked by students, especially neuroscience students, how they should go about improving their {programming, computing, statistics} skills. This page is partly an answer to that. It's mostly my opinions, with no claim to being comprehensive. The wonderful upside of learning to program in the internet age is that there is so much information and so many options that you don't have to go with my recommendations.
 
 # Contents
-{:no_toc}
+{:.no_toc}
 
 1. Contents seed
 {:toc}
