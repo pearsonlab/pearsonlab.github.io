@@ -49,5 +49,5 @@ P[&lambda;]ab offers undergraduates several opportunities to contribute to the w
 
 Some things to keep in mind:
 - There is very little busy work in the lab. Many of the traditional grunt tasks assigned to undergraduate researchers either don't exist (collecting and organizing data) or are highly technical (setting up and running cloud environments). All of our projects involve computer programming. Most involve some math. To be a successful undergraduate researcher, you must be able to contribute meaningfully, and that requires a certain level of technical skill at the outset.
-- That said, if you are interested in working with us and willing to put in the time, we have a [list of resources for self-study](../resources.html). John is also willing to meet and discuss what informal mentoring along these lines might look like.  
+- That said, if you are interested in working with us and willing to put in the time, we have a [list of resources for self-study](../learning.html). John is also willing to meet and discuss what informal mentoring along these lines might look like.  
 - For reasons of equity, **we pay all our undergraduate researchers.** We might ask you for a brief trial period, but we do not in general offer unpaid internships. This means, in practice, that the bar for accepting students into the lab is high (though cf. the previous point).
