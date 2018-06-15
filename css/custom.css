@@ -1,3 +1,16 @@
+.blog-post p {
+    font-size: 18px;
+}
+
+.container {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+/* .blog-main {
+    min-width: 700px;
+} */
+
 .right {float:right;}
 
 .video-container {
@@ -5,7 +18,7 @@
     padding-bottom: 56.25%;
     padding-top: 30px; height: 0; overflow: hidden;
 }
- 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -55,4 +68,9 @@
     background-color: #001A57;
     border-color: #001A57;
     opacity: 0.5;
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
