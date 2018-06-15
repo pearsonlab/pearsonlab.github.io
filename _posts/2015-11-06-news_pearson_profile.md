@@ -1,7 +1,6 @@
 ---
 layout: blogpost
 title: Blog
-desc: Read about our day-to-day activities
 post_title: News&#58; Dr. Pearson profiled by Duke Today
 author: John Pearson
 category: blog

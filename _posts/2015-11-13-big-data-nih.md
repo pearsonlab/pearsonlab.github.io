@@ -1,7 +1,6 @@
 ---
 layout: blogpost
 title: Blog
-desc: Read about our day-to-day activities
 post_title: NIH's Big Data Push
 author: John Pearson
 category: blog

@@ -1,7 +1,6 @@
 ---
 layout: blogpost
 title: Blog
-desc: Read about our day-to-day activities
 post_title: Introducing...
 author: John Pearson
 category: blog

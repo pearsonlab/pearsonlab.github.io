@@ -1,7 +1,6 @@
 ---
 layout: blogpost
 title: Blog
-desc: Read about our day-to-day activities
 post_title: ECT Research Featured in The Atlantic
 author: Shariq Iqbal
 category: blog

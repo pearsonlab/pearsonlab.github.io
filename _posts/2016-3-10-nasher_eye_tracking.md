@@ -1,7 +1,6 @@
 ---
 layout: blogpost
 title: Blog
-desc: Read about our day-to-day activities
 post_title: Eye Tracking and Art
 author: Shariq Iqbal and John Pearson
 category: blog

@@ -1,7 +1,6 @@
 ---
 layout: blogpost
 title: Blog
-desc: Read about our day-to-day activities
 post_title: New commentary on human dopamine paper in PNAS
 author: John Pearson
 category: blog

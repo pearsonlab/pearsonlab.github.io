@@ -1,7 +1,6 @@
 ---
 layout: blogpost
 title: Blog
-desc: Read about our day-to-day activities
 post_title: P&lambda;ab in the news
 author: John Pearson
 category: blog

@@ -1,7 +1,6 @@
 ---
 layout: blogpost
 title: Blog
-desc: Read about our day-to-day activities
 post_title: Advantages of git and GitHub for scientists
 author: John Pearson
 category: blog

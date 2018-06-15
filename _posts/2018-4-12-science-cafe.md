@@ -1,7 +1,6 @@
 ---
 layout: blogpost
 title: Blog
-desc: Read about our day-to-day activities
 post_title: Why my two-year-old is still better than Google
 author: John Pearson
 category: blog

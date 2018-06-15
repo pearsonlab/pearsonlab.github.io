@@ -1,7 +1,6 @@
 ---
 layout: blogpost
 title: Blog
-desc: Read about our day-to-day activities
 post_title: New paper on social decision-making in PNAS
 author: John Pearson
 category: blog
