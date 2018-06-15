@@ -15,9 +15,11 @@ I'm frequently asked by students, especially neuroscience students, how they sho
 
 
 # Learning to program
+
 ## General comments
 - My advice here pertains to scientific programming. If you want to learn web development or build device drivers, this may not be for you.
 - [StackOverflow](https://stackoverflow.com/). If you have ever used a search engine to look up a programming question, you have probably run across StackOverflow. The site uses a question-and-answer format, with accepted answers clearly marked and the best answers upvoted. The site can be a bit intimidating to use ([there are a lot of guidelines for posting a good question](https://stackoverflow.com/help/how-to-ask)), but it's probably the best programming resource on the internet for passive search. If you're completely new to programming, it won't teach you, but for fixing well-defined problems, there's no substitute.[^sof_os]
+
 ## Choosing your first language
 - Use whatever the people around you are using. It's frustrating enough to learn programming; take advantage of local expertise to help you. If you're struggling to learn functions and `if` statements, that can be done in pretty much any modern language, and the concepts will carry over to most others.
 - That said, here's my order of preference:

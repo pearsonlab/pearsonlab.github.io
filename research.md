@@ -29,7 +29,7 @@ Typical neuroscience experiments start by assuming we know the set of variables 
 
 # Opening up the skull
 
-For most neuroscientists, studying the brain means either using noninvasive brain imaging techniques like EEG or fMRI in humans or using more precise but invasive methods in animal models. However, when patients with Parkinson's Disease or epilepsy undergo brain surgery, we have a rare opportunity to study brain activity at the most detailed level in human beings. Together with collaborators in [neurosurgery, neurology, and biomedical engineering](people.html#collaborators) we're investigating the processes underlying self-control, social interaction, and language with a precision rarely available in humans.
+For most neuroscientists, studying the brain means either using noninvasive brain imaging techniques like EEG or fMRI in humans or using more precise but invasive methods in animal models. However, when patients with Parkinson's Disease or epilepsy undergo brain surgery, we have a rare opportunity to study brain activity at the most detailed level in human beings. Together with collaborators in neurosurgery, neurology, and biomedical engineering we're investigating the processes underlying self-control, social interaction, and language with a precision rarely available in humans.
 
 
 # Eye tracking unplugged
