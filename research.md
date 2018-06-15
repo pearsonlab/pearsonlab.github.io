@@ -9,22 +9,19 @@ nav: Research
 
 Typical neuroscience experiments start by assuming we know the set of variables that drive neural activity. But what if neurons are tuned to variables we would never have guessed? What if, as with social interaction, the stimulus set is too complex to be boiled down to a few dimensions. With [Jeff Beck](https://www.neuro.duke.edu/research/faculty-labs/beck-lab), we're [developing models](http://arxiv.org/abs/1512.01408) that infer stimulus categories *directly from data*, allowing us to "tag" images and movies based on neural responses.
 <div class="row">
-  <div class="col-md-4">
     <figure>
         <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/cbp_model.svg" class="img-responsive">
         <figcaption>
             Neural responses are sums of sensitivities to binary image "tags."
         </figcaption>
     </figure>
-  </div>
-  <div class="col-md-8">
+    <br>    
     <figure>
         <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/imgclust_web.svg" class="img-responsive">
         <figcaption>
             In an example dataset, the model correctly tagged monkey faces, whole monkeys, and monkey body parts.
         </figcaption>
     </figure>
-  </div>
 </div>
 
 # Opening up the skull
