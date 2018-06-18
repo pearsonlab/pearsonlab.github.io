@@ -24,10 +24,48 @@ Typical neuroscience experiments start by assuming we know the set of variables 
     </figure>
 </div>
 
-# Opening up the skull
+# Strategic social decision-making
 
-For most neuroscientists, studying the brain means either using noninvasive brain imaging techniques like EEG or fMRI in humans or using more precise but invasive methods in animal models. However, when patients with Parkinson's Disease or epilepsy undergo brain surgery, we have a rare opportunity to study brain activity at the most detailed level in human beings. Together with collaborators in neurosurgery, neurology, and biomedical engineering we're investigating the processes underlying self-control, social interaction, and language with a precision rarely available in humans.
-
+Most neuroscience experiments begin by stripping away as much of the complexity of the real world as they can afford to. But when the phenomena of interest are our social interactions &mdash; who we trust, who we fight with, who we love &mdash; there's only so much complexity you can remove. In P[&lambda;]ab, we're studying the ways in which humans and other primates make strategic social decisions in *real time* by recording from the brain as pairs of individuals play dynamic games.
+<div class="row">
+    <figure>
+        <div class="video-container">
+            <iframe width="600" height="410" src="https://web.duke.edu/mind/level2/faculty/pearson/assets/videos/penaltyshot/sess130_new.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <figcaption>
+            The "penalty shot" task. The goalie (red) attempts to block the puck (blue).
+        </figcaption>
+    </figure>
+</div>
+By modeling these interactions, we're able to generate realistic samples of actual play, as well as characterize players' strategies.
+<div class="row">
+  <div class="col-md-4">
+    <figure>
+        <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/penaltyshot/paper_figs/real_traces.svg" class="img-responsive">
+        <figcaption>
+            Real puck trajectories.
+        </figcaption>
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <figure>
+        <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/penaltyshot/paper_figs/gen_traces.svg" class="img-responsive">
+        <figcaption>
+            Generated puck trajectories.
+        </figcaption>
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <figure>
+        <div class="video-container">
+            <iframe width="600" height="410" src="https://web.duke.edu/mind/level2/faculty/pearson/assets/videos/penaltyshot/real_trial_value.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <figcaption>
+            A "potential energy" function explains player dynamics.
+        </figcaption>
+    </figure>
+  </div>
+</div>
 
 # Eye tracking unplugged
 
