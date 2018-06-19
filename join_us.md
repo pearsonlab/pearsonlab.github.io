@@ -13,9 +13,24 @@ We're always interested in talking to qualified postdoc candidates. Particularly
 
   The position is available immediately. Send cv and letter of interest to `john dot pearson at duke dot edu`.
 
-  **Qualifications and Skills**
-
   Programming proficiency with JavaScript and experience with Bayesian statistics are preferred. Experience in survey design is also helpful. Previous legal experience is not necessary, but an interest in law and legal decision making is important.
+
+ - **Statistical analysis of neural data**
+
+    The laboratory of Dr. John Pearson ([http://pearsonlab.github.io](http://pearsonlab.github.io)) has an opening for a postdoctoral researcher focused on the statistical analysis of neural data. This is a one-year full-time position with the possibility of renewal. Women and minority candidates are particularly encouraged to apply.
+
+    Located in the [Department of Biostatistics and Bioinformatics](https://biostat.duke.edu/) and the [Center for Cognitive Neuroscience](https://dibs.duke.edu/centers/ccn) at Duke, the Pearson Lab focuses on designing and implementing new approaches to the analysis of large-scale neuroscience data including:
+
+    - modeling complex, dynamic social interactions
+    - analysis of simultaneous neural recordings during naturalistic behavior
+    - real-time analysis of streaming data from imaging experiments
+
+    <br>
+
+    Candidates should hold a PhD in statistics, computer science, electrical engineering, or any other sufficiently quantitative field and have a strong record of peer-reviewed journal and/or conference publications. Strong programming skills required. Experience with statistical machine learning and streaming algorithms a plus. 
+
+    Interested? Send a brief cover letter, cv, and source code sample (github/bitbucket/gitlab link preferred) to `john dot pearson at duke dot edu`.
+
 
 # Graduate students
 Duke provides a wonderful environment for students interested in pursuing the kind of interdisciplinary research we do. As a result, P[&lambda;]ab accepts graduate students through multiple programs:
