@@ -35,13 +35,15 @@ Some people prefer books here, but in the cases of Python and R there are also l
 - You devote serious time to learning. Programming is a skill and cannot be crammed.
 - You actually write code. This is a bit like learning a foreign language: you have to speak to get better. No passive learning. It really helps to have a project here, even a side project, so you have something to work toward.
 
+If you're coming to Python from a different language and want a quick overview, I highly recommend Jake Vanderplas's [Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/). It's perhaps a little more than what many scientists need to know to get started, but it's free and excellent.
+
 ## In addition
 - For Python, once you've gotten a basic acquaintance with the language, and after you've worked on your [scientific programming](#python-for-data-science) skills, it's worth going back to invest in more advanced aspects of the language. This pays dividends both in understanding others' code and in writing reusable libraries of your own. For Python, I particularly recommend [Fluent Python](http://shop.oreilly.com/product/0636920032519.do).
 
 # Python for Data Science
 Most programming material online is targeted either at students learning their first programming language or professionals learning a new tool for software development. However, programming for science &mdash; writing code that runs, simulates, or analyzes experiments &mdash; carries its own set of unique challenges, and is distinct from general-purpose programming. That's why learning to program Python is distinct from learning "scientific Python," the suite of packages, tools, and practices that surround Python as used in (data) science.
 
-This is why I make every new student in my lab read (cover-to-cover) Jake Vanderplas's [Python Data Science Handbook](http://shop.oreilly.com/product/0636920034919.do). The book covers exactly the toolset we use: IPython, Jupyter, NumPy, SciPy, Pandas, Matplotlib, and Scikit-Learn. I don't know of a better, more comprehensive introduction to modern scientific Python.
+This is why I make every new student in my lab read (cover-to-cover) Jake Vanderplas's [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/). The book covers exactly the toolset we use: IPython, Jupyter, NumPy, SciPy, Pandas, Matplotlib, and Scikit-Learn. I don't know of a better, more comprehensive introduction to modern scientific Python.
 
 # Statistics
 **Professional disclaimer:** I recommend a good grounding in statistical theory. It's worth the investment.
