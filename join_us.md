@@ -7,13 +7,6 @@ nav: Join Us # what shows up in the navbar at the top (do not define if you don'
 We're always interested in talking to qualified postdoc candidates. Particularly those with backgrounds in Statistics, Computer Science, Physics, or any other field where you do applied math for a living. Neuroscience experience is not required, though neuroscience interest is.
 
 ### Current openings:
-- **Legal decision-making**
-
-  > An interdisciplinary team of lawyers and cognitive neuroscientists at Duke University seeks a postdoctoral fellow to join a recently funded project on decision making by jurors, prosecutors, and defense attorneys in criminal trials. The project combines a high-throughput behavioral task with computational modeling to examine how decision makers integrate conflicting evidence, intrinsic biases and motivations when deciding whether someone accused of a crime is guilty. The successful candidate will have opportunities to engage with experienced prosecutors and defense attorneys as well as a vibrant community of cognitive and computational neuroscientists at Duke.
-  >
-  > The position is available immediately. Send cv and letter of interest to `john dot pearson at duke dot edu`.
-  >
-  >Programming proficiency with JavaScript and experience with Bayesian statistics are preferred. Experience in survey design is also helpful. Previous legal experience is not necessary, but an interest in law and legal decision making is important.
 
 # Graduate students
 Duke provides a wonderful environment for students interested in pursuing the kind of interdisciplinary research we do. As a result, P[&lambda;]ab accepts graduate students through multiple programs:
