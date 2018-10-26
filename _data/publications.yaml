@@ -13,7 +13,7 @@
   title: Fictive reward signals in the anterior cingulate cortex
   container-title: science
   publisher: American Association for the Advancement of Science
-  page: '948-950'
+  page: 948-950
   volume: '324'
   issue: '5929'
 
@@ -35,7 +35,7 @@
   title-short: Surprise signals in anterior cingulate cortex
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: '4178-4187'
+  page: 4178-4187
   volume: '31'
   issue: '11'
 
@@ -74,7 +74,7 @@
     multioption choice task
   container-title: Current biology
   publisher: Elsevier
-  page: '1532-1537'
+  page: 1532-1537
   volume: '19'
   issue: '18'
 
@@ -97,7 +97,7 @@
   title-short: Posterior cingulate cortex
   container-title: Trends in cognitive sciences
   publisher: Elsevier Current Trends
-  page: '143-151'
+  page: 143-151
   volume: '15'
   issue: '4'
 
@@ -156,7 +156,7 @@
   title: Neuroethology of decision-making
   container-title: Current opinion in neurobiology
   publisher: Elsevier Current Trends
-  page: '982-989'
+  page: 982-989
   volume: '22'
   issue: '6'
 
@@ -179,7 +179,7 @@
   title-short: Through their eyes
   container-title: Journal of Experimental Biology
   publisher: The Company of Biologists Ltd
-  page: '3035-3046'
+  page: 3035-3046
   volume: '216'
   issue: '16'
 
@@ -196,7 +196,7 @@
   title-short: Confidence and corrections
   container-title: Neuron
   publisher: Elsevier
-  page: '724-726'
+  page: 724-726
   volume: '63'
   issue: '6'
 
@@ -214,7 +214,7 @@
   title: A role for posterior cingudate cortex in policy switching and cognitive control
   container-title: MarsR. SalletJ. RushworthS. YeungN.(Eds.), Neural basis of motivational
     and cognitive control
-  page: '127-143'
+  page: 127-143
 
 - id: chang2013neuroethology
   type: article-journal
@@ -238,14 +238,14 @@
   title: Neuroethology of primate social behavior
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Acad Sciences
-  page: '10387-10394'
+  page: 10387-10394
   volume: '110'
   issue: Supplement 2
 
 - id: san2013rapid
   type: article-journal
   author:
-  - family: San Martín
+  - family: San Martı'n
     given: René
   - family: Appelbaum
     given: Lawrence G
@@ -261,7 +261,7 @@
     during economic decision making
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: '7011-7019'
+  page: 7011-7019
   volume: '33'
   issue: '16'
 
@@ -284,7 +284,7 @@
     in exploratory behavior measured with a multiarmed bandit task.'
   title-short: Smoking and the bandit
   container-title: Experimental and clinical psychopharmacology
-  publisher: 'US: American Psychological Association'
+  publisher: American Psychological Association
   page: '66'
   volume: '21'
   issue: '1'
@@ -302,7 +302,7 @@
   title-short: Dopamine
   container-title: Neuron
   publisher: Cell Press
-  page: '831-833'
+  page: 831-833
   volume: '79'
   issue: '5'
 
@@ -341,10 +341,8 @@
   - year: 2013
   title: Postreward delays and systematic biases in measures of animal temporal discounting
   container-title: Proceedings of the National Academy of Sciences
-  publisher: National Acad Sciences
-  page: '15491-15496'
-  volume: '110'
-  issue: '38'
+  publisher: National Academy of Sciences
+  page: '201310446'
 
 - id: jones2014lemurs
   type: article-journal
@@ -366,7 +364,7 @@
   title: Lemurs and macaques show similar numerical sensitivity
   container-title: Animal cognition
   publisher: Springer Berlin Heidelberg
-  page: '503-515'
+  page: 503-515
   volume: '17'
   issue: '3'
 
@@ -399,7 +397,7 @@
     from the brain'
   title-short: Change detection, multiple controllers, and dynamic environments
   container-title: Journal of the experimental analysis of behavior
-  page: '74-84'
+  page: 74-84
   volume: '99'
   issue: '1'
 
@@ -504,7 +502,7 @@
   title-short: Decision making
   container-title: Neuron
   publisher: Cell Press
-  page: '950-965'
+  page: 950-965
   volume: '82'
   issue: '5'
 
@@ -522,7 +520,7 @@
   title: Differential reward learning for self and others predicts self-reported altruism
   container-title: PloS one
   publisher: Public Library of Science
-  page: 'e107621'
+  page: e107621
   volume: '9'
   issue: '9'
 
@@ -545,7 +543,7 @@
     behavior
   container-title: 'Psychiatry Research: Neuroimaging'
   publisher: Elsevier
-  page: '254-261'
+  page: 254-261
   volume: '224'
   issue: '3'
 
@@ -588,7 +586,7 @@
   title-short: Mind-reading without the scanner
   container-title: Visual Cognition
   publisher: Routledge
-  page: '862-866'
+  page: 862-866
   volume: '23'
   issue: '7'
 
@@ -605,7 +603,7 @@
   title-short: Dopamine
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Acad Sciences
-  page: '22-23'
+  page: 22-23
   volume: '113'
   issue: '1'
 
@@ -629,14 +627,14 @@
   title: Neural mechanisms of social decision-making in the primate amygdala
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Acad Sciences
-  page: '16012-16017'
+  page: 16012-16017
   volume: '112'
   issue: '52'
 
 - id: san2016altruistic
   type: article-journal
   author:
-  - family: San Martín
+  - family: San Martı'n
     given: René
   - family: Kwak
     given: Youngbin
@@ -652,7 +650,7 @@
     for self vs charity
   container-title: Social cognitive and affective neuroscience
   publisher: Oxford University Press
-  page: '863-876'
+  page: 863-876
   volume: '11'
   issue: '6'
 
@@ -672,7 +670,7 @@
   title: THE impact of feedback timing on value learning in aging
   container-title: GERONTOLOGIST
   publisher: OXFORD UNIV PRESS INC JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
-  page: '140-140'
+  page: 140-140
   volume: '55'
 
 - id: chang2016neuroetologia
@@ -692,9 +690,9 @@
     given: Michael L
   issued:
   - year: 2016
-  title: Neuroetología del comportamiento social de los primates
+  title: Neuroetologı'a del comportamiento social de los primates
   container-title: Ludus Vitalis
-  page: '151-176'
+  page: 151-176
   volume: '21'
   issue: '40'
 
@@ -712,7 +710,7 @@
   title: Decoding working memory content from attentional biases
   container-title: Psychonomic bulletin & review
   publisher: Springer US
-  page: '1252-1260'
+  page: 1252-1260
   volume: '24'
   issue: '4'
 
@@ -752,7 +750,7 @@
   title-short: Neuron’s eye view
   container-title: PLoS computational biology
   publisher: Public Library of Science
-  page: 'e1005645'
+  page: e1005645
   volume: '13'
   issue: '8'
 
@@ -786,21 +784,9 @@
   title: Local fields in human subthalamic nucleus track the lead-up to impulsive
     choices
   container-title: Frontiers in neuroscience
-  publisher: Frontiers Media SA
+  publisher: Frontiers
+  page: '646'
   volume: '11'
-
-- id: mcdonaldinferring
-  type: article-journal
-  author:
-  - family: McDonald
-    given: Kelsey
-  - family: Iqbal
-    given: Shariq
-  - family: Huettel
-    given: Scott
-  - family: Pearson
-    given: John
-  title: Inferring individual goals using inverse reinforcement learning
 
 - id: prakash20179
   type: article-journal
@@ -822,4 +808,79 @@
   title: '9-s: Presentation style affects decision processes: A dietary choice study'
   title-short: 9-s
   container-title: ACR North American Advances
+
+- id: macinnes2018wearable
+  type: article-journal
+  author:
+  - family: MacInnes
+    given: Jeff J
+  - family: Iqbal
+    given: Shariq
+  - family: Pearson
+    given: John
+  - family: Johnson
+    given: Elizabeth N
+  issued:
+  - year: 2018
+  title: 'Wearable eye-tracking for research: Automated dynamic gaze mapping and
+    accuracy/precision comparisons across devices'
+  title-short: Wearable eye-tracking for research
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  page: '299925'
+
+- id: mcdonald2018bayesian
+  type: article-journal
+  author:
+  - family: McDonald
+    given: Kelsey
+  - family: Broderick
+    given: William F
+  - family: Huettel
+    given: Scott
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2018
+  title: Bayesian nonparametric models characterize instantaneous strategies in a
+    competitive dynamic game
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  page: '385195'
+
+- id: lighthall2018feedback
+  type: article-journal
+  author:
+  - family: Lighthall
+    given: Nichole R
+  - family: Pearson
+    given: John M
+  - family: Huettel
+    given: Scott A
+  - family: Cabeza
+    given: Roberto
+  issued:
+  - year: 2018
+  title: 'Feedback-based learning in aging: Contributions and trajectories of change
+    in striatal and hippocampal systems'
+  title-short: Feedback-based learning in aging
+  container-title: Journal of Neuroscience
+  publisher: Society for Neuroscience
+  page: 8453-8462
+  volume: '38'
+  issue: '39'
+
+- id: pearson2018queuing
+  type: article-journal
+  author:
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2018
+  title: Queuing cues in rapid cortical processing
+  container-title: Nature Human Behaviour
+  publisher: Nature Publishing Group
+  page: '620'
+  volume: '2'
+  issue: '9'
 ...
