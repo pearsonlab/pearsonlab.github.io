@@ -103,3 +103,19 @@ Where we look speaks volumes about what we're thinking. For over a century, psyc
     </figure>
   </div>
 </div>
+
+# Real-time analysis of neural data
+
+Thanks to advances in microscopy and calcium indicators, we can now collect a huge amount of neural data in real-time. By acquiring data across the entire brain of, e.g., a young zebrafish, we can dramatically expand our knowledge of how many brain cells function together. To fully realize the potential of these measurements, however, necessitates new advances to tackle this data analysis burden. Together with [Eva Naumann's](https://www.neuro.duke.edu/research/faculty-labs/naumann-lab) lab, we're developing a closed-loop all-optical approach for characterizing, contextualizing, and stimulating brain states.
+<div class="row">
+    <figure>
+        <div class="video-container">
+            <iframe height="400" src="https://web.duke.edu/mind/level2/faculty/pearson/assets/videos/zebrafish/ZFMovie.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <figcaption>
+            Simulated real-time data analysis of neural activity in a zebrafish brain.
+        </figcaption>
+    </figure>
+</div>
+
+
