@@ -119,7 +119,7 @@ Thanks to advances in microscopy and calcium indicators, we can now collect a hu
 </div>
 <div class="row">
     <figure>
-        <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/zebrafish/pipelineNewpng2.png" class="img-responsive">
+        <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/zebrafish/pipelineNewpng3.png" class="img-responsive">
         <figcaption>
             The entire closed-loop pipeline. Neural data coming from the zebrafish under a microscope are analyzed in real-time. Based on this live data, adaptive experiments can be done where selected circuits are stimulated optically.
         </figcaption>
