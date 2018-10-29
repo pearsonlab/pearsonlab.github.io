@@ -19,6 +19,8 @@ Duke provides a wonderful environment for students interested in pursuing the ki
 
 - [Psychology and Neuroscience](https://psychandneuro.duke.edu/). The department offers a [PhD program](https://psychandneuro.duke.edu/graduate) with emphases in multiple areas, including Cognition and Cognitive Neuroscience and Systems and Integrative Neuroscience. John has a secondary appointment in the department and can accept students.
 
+- [Electrical and Computer Engineering](https://ece.duke.edu/). The department offers a [PhD program](https://ece.duke.edu/grad) and has an exceptional faculty in [Signal and Information Processing](https://ece.duke.edu/faculty/signal-information-processing). John has a secondary appointment in ECE and can accept students. The program is by direct admission, so interested students should reach out to John in advance and mention the lab in their applications.
+
 **If you plan on applying,** keep a few things in mind:
 - It's best to contact John in advance if you have a strong interest in our lab. Some programs may be a better fit for you than others.
 - Graduate students cost money. Sadly, we don't have enough funding to support all the talented students who might be interested. Again, contacting John early in the application process is the best way to find out if we have slots available.
