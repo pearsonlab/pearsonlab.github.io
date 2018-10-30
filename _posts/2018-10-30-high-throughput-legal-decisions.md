@@ -13,4 +13,4 @@ Today, our paper on legal decision-making goes online at [Nature Human Behaviour
 
 We think this is the start of a pretty interesting line of research. It's by no means the end of the story, and follow-up studies are in progress. But we're excited at the potential to bring this kind of "high-throughput" statistical approach to an important social question. We see it as a complement to traditional approaches like laboratory experiments, interviews, and mock trials.
 
-Coverage at [futurity.org](https://www.futurity.org/crime-guilt-jurors-judgement-1898862/).
+Coverage at [Duke Research](https://today.duke.edu/2018/10/severity-crime-increases-jury%E2%80%99s-belief-guilt), reposted at [futurity.org](https://www.futurity.org/crime-guilt-jurors-judgement-1898862/).
