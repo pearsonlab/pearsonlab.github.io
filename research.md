@@ -74,11 +74,9 @@ Thanks to advances in microscopy and calcium indicators, it's now possible to co
 Together with [Eva Naumann's](https://www.neuro.duke.edu/research/faculty-labs/naumann-lab) lab, we're working to develop a *fully-integrated* online analysis platform that will facilitate closed-loop, all-optical control in the larval zebrafish. This is work in progress, so stay tuned!
 <div class="row">
     <figure>
-        <div class="video-container">
-            <iframe height="400" src="https://web.duke.edu/mind/level2/faculty/pearson/assets/videos/zebrafish/ZFMovie.mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/zebrafish/colorFish.png" class="img-responsive">
         <figcaption>
-            Simulated real-time data analysis of neural activity in a zebrafish brain.
+            A whole zebrafish brain activity map, showing the distribution of motion-sensitive neurons, color-coded to show the preferred motion direction.
         </figcaption>
     </figure>
 </div>
