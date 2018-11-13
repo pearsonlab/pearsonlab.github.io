@@ -67,6 +67,28 @@ By modeling these interactions, we're able to generate realistic samples of actu
   </div>
 </div>
 
+# Work in progress: Real-time analysis of neural data
+
+Thanks to advances in microscopy and calcium indicators, it's now possible to collect terabytes of data in a single experiment. But that increase in data volume comes at the cost of increased processing time. Yet recent work on [preprocessing algorithms](https://www.biorxiv.org/content/biorxiv/early/2018/06/05/339564.full.pdf) for imaging data, along with methods for characterizing cell responses and inferring the functional relationships between them, has made it possible to envision a *real-time* pipeline for neural data analysis.
+
+Together with [Eva Naumann's](https://www.neuro.duke.edu/research/faculty-labs/naumann-lab) lab, we're working to develop a *fully-integrated* online analysis platform that will facilitate closed-loop, all-optical control in the larval zebrafish. This is work in progress, so stay tuned!
+<div class="row">
+    <figure>
+        <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/zebrafish/colorFish.png" class="img-responsive">
+        <figcaption>
+            A whole zebrafish brain activity map, showing the distribution of motion-sensitive neurons, color-coded to show the preferred motion direction.
+        </figcaption>
+    </figure>
+</div>
+<div class="row">
+    <figure>
+        <img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/zebrafish/pipelineNewpng3.png" class="img-responsive">
+        <figcaption>
+            Concept for the closed-loop pipeline. Neural data from the zebrafish are collected in the form of images, preprocessed, and analyzed in real-time. Targets for optical stimulation are then chosen based on the results of this analysis, creating adaptive experiments that test causal hypotheses.
+        </figcaption>
+    </figure>
+</div>
+
 # Eye tracking unplugged
 
 Where we look speaks volumes about what we're thinking. For over a century, psychologists and neurobiologists have used the movements of the eyes and measurements of pupil size to study the mind, but the need for experimental control has limited our ability to study eye movements in naturalistic settings. In P[&lambda;]ab, we are pairing new advances in [eye tracking](http://www.tobiipro.com/product-listing/tobii-pro-glasses-2/) technology with methods in [computer vision](blog/2015/11/06/eye_tracking_tech.html) and machine learning to tackle the challenge of studying eye movements in real-world settings, with applications ranging from treatment of acute fear to how we view art.
