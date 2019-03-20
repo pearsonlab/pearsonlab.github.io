@@ -89,6 +89,31 @@ Together with [Eva Naumann's](https://www.neuro.duke.edu/research/faculty-labs/n
     </figure>
 </div>
 
+# Work in progress: Inferring latent descriptions of animal vocalizations
+
+Vocalization is a complex behavior that underlies vocal communication and vocal learning, and is important for the study of humans' underlying linguistic competency and musicality. Despite its prominence in a wide range of disciplines, vocalizations are often quantified in an ad-hoc and species-specific manner. Fortunately, recent advances in machine learning have resulted in techniques that allow high-dimensional data to be compressed in a data-dependent manner, resulting in low-dimensional encodings that minimize information loss. We use one such method, the variational Bayesian autoencoder (VAE), to perform dimensionality reduction of the vocalizations and vocal learning behavior of several model organisms: laboratory mice, zebra finches, and marmosets. Together with [Richard Mooney's lab](https://www.neuro.duke.edu/mooney-lab) we use latent representations of these species' vocal behavior to reproduce and extend existing results in a species-agnostic manner, offering a unified view of vocal variability and learning on timescales ranging from individual syllables of millisecond duration to across days.
+
+<html> 
+  <head> 
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("bird_plots/main.html"); 
+    });
+    </script> 
+  </head> 
+
+  <body> 
+     <div id="includedContent"></div>
+  </body> 
+</html>
+
+> Two-dimensional embedding of sounds made by an adult zebra finch on a single day. 
+> Mouse over points to see spectrograms, which represent sounds with a vertical frequency axis and a horizontal time axis.
+> The amorphous shape on the left consists of innate calls, while the lines on the the right show the bird's highly stereotyped learned song.
+> Thank you to Samuel Brudner (Mooney Lab) for collecting recordings.
+
+
 # Eye tracking unplugged
 
 Where we look speaks volumes about what we're thinking. For over a century, psychologists and neurobiologists have used the movements of the eyes and measurements of pupil size to study the mind, but the need for experimental control has limited our ability to study eye movements in naturalistic settings. In P[&lambda;]ab, we are pairing new advances in [eye tracking](http://www.tobiipro.com/product-listing/tobii-pro-glasses-2/) technology with methods in [computer vision](blog/2015/11/06/eye_tracking_tech.html) and machine learning to tackle the challenge of studying eye movements in real-world settings, with applications ranging from treatment of acute fear to how we view art.
