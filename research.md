@@ -93,18 +93,21 @@ Together with [Eva Naumann's](https://www.neuro.duke.edu/research/faculty-labs/n
 
 Vocalization is a complex behavior that underlies vocal communication and vocal learning, and is important for the study of humans' underlying linguistic competency and musicality. Despite its prominence in a wide range of disciplines, vocalizations are often quantified in an ad-hoc and species-specific manner. Fortunately, recent advances in machine learning have resulted in techniques that allow high-dimensional data to be compressed in a data-dependent manner, resulting in low-dimensional encodings that minimize information loss. We use one such method, the variational Bayesian autoencoder (VAE), to perform dimensionality reduction of the vocalizations and vocal learning behavior of several model organisms: laboratory mice, zebra finches, and marmosets. Together with [Richard Mooney's lab](https://www.neuro.duke.edu/mooney-lab) we use latent representations of these species' vocal behavior to reproduce and extend existing results in a species-agnostic manner, offering a unified view of vocal variability and learning on timescales ranging from individual syllables of millisecond duration to across days.
 
-<head>
-  <script src="jquery.js"></script>
-  <script>
-  $(function(){
-    $("#includedContent").load("images/bird_plot/main.html");
-  });
-  </script>
-</head>
+<!---
+https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
+-->
 
-<body>
-  <div id="includedContent"></div>
-</body>
+<script>
+  $(function(){
+    var includes = $('[data-include]');
+    jQuery.each(includes, function(){
+      var file = $(this).data('include') + '.html';
+      $(this).load(file);
+    });
+  });
+</script>
+
+<div data-include="images/bird_plot/main"></div>
 
 > Two-dimensional embedding of sounds made by an adult zebra finch on a single day.
 > Mouse over points to see spectrograms, which represent sounds with a vertical frequency axis and a horizontal time axis.
