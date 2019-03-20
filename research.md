@@ -95,19 +95,21 @@ Vocalization is a complex behavior that underlies vocal communication and vocal 
 
 <!---
 https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
+https://stackoverflow.com/questions/30233461/jekyll-raw-html-in-post
 -->
 
-<script>
-  $(function(){
-    var includes = $('[data-include]');
-    jQuery.each(includes, function(){
-      var file = $(this).data('include') + '.html';
-      $(this).load(file);
+<div markdown = "0">
+  <script>
+    $(function(){
+      var includes = $('[data-include]');
+      jQuery.each(includes, function(){
+        var file = $(this).data('include') + '.html';
+        $(this).load(file);
+      });
     });
-  });
-</script>
-
-<div data-include="images/bird_plot/main"></div>
+  </script>
+  <div data-include="images/bird_plot/main"></div>
+</div>
 
 > Two-dimensional embedding of sounds made by an adult zebra finch on a single day.
 > Mouse over points to see spectrograms, which represent sounds with a vertical frequency axis and a horizontal time axis.
