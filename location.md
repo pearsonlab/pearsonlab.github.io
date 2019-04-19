@@ -8,26 +8,30 @@ We're located in the [Levine Science Research Center](http://maps.duke.edu/map/?
 
 If you're coming from West Campus (Bryan Center, Chapel, etc.), first find the section of LSRC by the DIBS cube, that shiny glass box just off the large lawn. 
 
-![B-wing entrance](http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/dibs_lsrc.jpg)
+<img src="http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/dibs_lsrc.jpg" width="500"/>
 
 Alternately, if you're coming from Erwin Road, Circuit, or Research Drive, this is the view of the entrance from the traffic circle:
 
-![LSRC traffic circle](http://people.duke.edu/~jmp33/assets/traffic_circle.jpg)
+<img src="http://people.duke.edu/~jmp33/assets/traffic_circle.jpg" width="500"/>
 
 and you should walk straight through until you see the DIBS glass cube in the first photo. Then, walk further down to this entrance (C-Wing):
 
-![B-wing to C-wing](http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/walkright.jpg)
-![C-wing entrance](http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/cwing.jpg)
+<img src="http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/walkright.jpg" width="500"/>
+
+<img src="http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/cwing.jpg" width="500"/>
+
 
 Once inside, immediately go to the door on the right and take the stairs down to the basement. 
 
-![Stairs](http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/stairs.jpg)
+<img src="http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/stairs.jpg" width="500"/>
 
 Turn right once more and you'll see the entrance to the Center for Cogntitive Neuroscience (CCN). This door is kept locked, so please knock to be let in.
 
-![CCN entrance](http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/ccn.jpg)
+<img src="http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/ccn.jpg" width="500"/>
 
 Our office (C03C) is the first door on the right!
-![P[&lambda;]ab](http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/laboffice.jpg)
-![P[&lambda;]ab sign](http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/plab.jpg)
+<img src="http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/laboffice.jpg" width="500"/>
+
+<img src="http://web.duke.edu/mind/level2/faculty/pearson/assets/images/website/plab.jpg" width="500"/>
+
 
