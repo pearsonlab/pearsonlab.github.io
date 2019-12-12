@@ -9,11 +9,11 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2009
+  - year: '2009'
   title: Fictive reward signals in the anterior cingulate cortex
   container-title: science
   publisher: American Association for the Advancement of Science
-  page: 948-950
+  page: '948-950'
   volume: '324'
   issue: '5929'
 
@@ -29,13 +29,13 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2011
+  - year: '2011'
   title: 'Surprise signals in anterior cingulate cortex: Neuronal encoding of unsigned
     reward prediction errors driving adjustment in behavior'
   title-short: Surprise signals in anterior cingulate cortex
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: 4178-4187
+  page: '4178-4187'
   volume: '31'
   issue: '11'
 
@@ -49,7 +49,7 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2011
+  - year: '2011'
   title: Neuronal basis of sequential foraging decisions in a patchy environment
   container-title: Nature neuroscience
   publisher: Nature Publishing Group
@@ -69,12 +69,12 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2009
+  - year: '2009'
   title: Neurons in posterior cingulate cortex signal exploratory decisions in a dynamic
     multioption choice task
   container-title: Current biology
   publisher: Elsevier
-  page: 1532-1537
+  page: '1532-1537'
   volume: '19'
   issue: '18'
 
@@ -92,12 +92,12 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2011
+  - year: '2011'
   title: 'Posterior cingulate cortex: Adapting behavior to a changing world'
   title-short: Posterior cingulate cortex
   container-title: Trends in cognitive sciences
   publisher: Elsevier Current Trends
-  page: 143-151
+  page: '143-151'
   volume: '15'
   issue: '4'
 
@@ -115,7 +115,7 @@
   - family: Raghavachari
     given: Sridhar
   issued:
-  - year: 2010
+  - year: '2010'
   title: A physiologically-inspired model of numerical classification based on graded
     stimulus coding
   container-title: Frontiers in behavioral neuroscience
@@ -133,7 +133,7 @@
   - family: Platt
     given: Michael
   issued:
-  - year: 2010
+  - year: '2010'
   title: Explicit information reduces discounting behavior in monkeys
   container-title: Frontiers in Psychology
   publisher: Frontiers
@@ -152,11 +152,11 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2012
+  - year: '2012'
   title: Neuroethology of decision-making
   container-title: Current opinion in neurobiology
   publisher: Elsevier Current Trends
-  page: 982-989
+  page: '982-989'
   volume: '22'
   issue: '6'
 
@@ -174,12 +174,12 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2013
+  - year: '2013'
   title: 'Through their eyes: Selective attention in peahens during courtship'
   title-short: Through their eyes
   container-title: Journal of Experimental Biology
   publisher: The Company of Biologists Ltd
-  page: 3035-3046
+  page: '3035-3046'
   volume: '216'
   issue: '16'
 
@@ -191,12 +191,12 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2009
+  - year: '2009'
   title: 'Confidence and corrections: How we make and un-make up our minds'
   title-short: Confidence and corrections
   container-title: Neuron
   publisher: Elsevier
-  page: 724-726
+  page: '724-726'
   volume: '63'
   issue: '6'
 
@@ -210,11 +210,11 @@
   - family: Platt
     given: M
   issued:
-  - year: 2011
+  - year: '2011'
   title: A role for posterior cingudate cortex in policy switching and cognitive control
   container-title: MarsR. SalletJ. RushworthS. YeungN.(Eds.), Neural basis of motivational
     and cognitive control
-  page: 127-143
+  page: '127-143'
 
 - id: chang2013neuroethology
   type: article-journal
@@ -234,18 +234,18 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2013
+  - year: '2013'
   title: Neuroethology of primate social behavior
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Acad Sciences
-  page: 10387-10394
+  page: '10387-10394'
   volume: '110'
   issue: Supplement 2
 
 - id: san2013rapid
   type: article-journal
   author:
-  - family: San Martı'n
+  - family: San Martín
     given: René
   - family: Appelbaum
     given: Lawrence G
@@ -256,12 +256,12 @@
   - family: Woldorff
     given: Marty G
   issued:
-  - year: 2013
+  - year: '2013'
   title: Rapid brain responses independently predict gain maximization and loss minimization
     during economic decision making
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: 7011-7019
+  page: '7011-7019'
   volume: '33'
   issue: '16'
 
@@ -279,7 +279,7 @@
   - family: McClernon
     given: F Joseph
   issued:
-  - year: 2013
+  - year: '2013'
   title: 'Smoking and the bandit: A preliminary study of smoker and nonsmoker differences
     in exploratory behavior measured with a multiarmed bandit task.'
   title-short: Smoking and the bandit
@@ -297,12 +297,12 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2013
+  - year: '2013'
   title: 'Dopamine: Burning the candle at both ends'
   title-short: Dopamine
   container-title: Neuron
   publisher: Cell Press
-  page: 831-833
+  page: '831-833'
   volume: '79'
   issue: '5'
 
@@ -320,7 +320,7 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2013
+  - year: '2013'
   title: Individual differences in social information gathering revealed through bayesian
     hierarchical models
   container-title: Frontiers in neuroscience
@@ -338,7 +338,7 @@
   - family: Hayden
     given: Benjamin Y
   issued:
-  - year: 2013
+  - year: '2013'
   title: Postreward delays and systematic biases in measures of animal temporal discounting
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Academy of Sciences
@@ -360,11 +360,11 @@
   - family: Brannon
     given: Elizabeth M
   issued:
-  - year: 2014
+  - year: '2014'
   title: Lemurs and macaques show similar numerical sensitivity
   container-title: Animal cognition
   publisher: Springer Berlin Heidelberg
-  page: 503-515
+  page: '503-515'
   volume: '17'
   issue: '3'
 
@@ -376,7 +376,7 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2012
+  - year: '2012'
   title: Dynamic decision making in the brain
   container-title: Nature neuroscience
   publisher: Nature Publishing Group
@@ -392,12 +392,12 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2013
+  - year: '2013'
   title: 'Change detection, multiple controllers, and dynamic environments: Insights
     from the brain'
   title-short: Change detection, multiple controllers, and dynamic environments
   container-title: Journal of the experimental analysis of behavior
-  page: 74-84
+  page: '74-84'
   volume: '99'
   issue: '1'
 
@@ -411,7 +411,7 @@
   - family: Verlinde
     given: Herman
   issued:
-  - year: 2002
+  - year: '2002'
   title: Brane/flux annihilation and the string dual of a non-supersymmetric field
     theory
   container-title: Journal of High Energy Physics
@@ -434,7 +434,7 @@
   - family: Volovich
     given: Anastasia
   issued:
-  - year: 2003
+  - year: '2003'
   title: 'Tracing the string: BMN correspondence at finite j2/n'
   title-short: Tracing the string
   container-title: Journal of High Energy Physics
@@ -449,7 +449,7 @@
   - family: Pearson
     given: John
   issued:
-  - year: 2004
+  - year: '2004'
   title: 'Gravitons, inflatons, twisted bits: A noncommutative bestiary'
   title-short: Gravitons, inflatons, twisted bits
 
@@ -461,7 +461,7 @@
   - family: Pearson
     given: John
   issued:
-  - year: 1999
+  - year: '1999'
   title: Semiclassical corrections to the oscillation frequencies of a trapped bose-einstein
     condensate
   container-title: Physical review letters
@@ -480,7 +480,7 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2014
+  - year: '2014'
   title: Pupil size and social vigilance in rhesus macaques
   container-title: Frontiers in neuroscience
   publisher: Frontiers
@@ -497,12 +497,12 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2014
+  - year: '2014'
   title: 'Decision making: The neuroethological turn'
   title-short: Decision making
   container-title: Neuron
   publisher: Cell Press
-  page: 950-965
+  page: '950-965'
   volume: '82'
   issue: '5'
 
@@ -516,11 +516,11 @@
   - family: Huettel
     given: Scott A
   issued:
-  - year: 2014
+  - year: '2014'
   title: Differential reward learning for self and others predicts self-reported altruism
   container-title: PloS one
   publisher: Public Library of Science
-  page: e107621
+  page: 'e107621'
   volume: '9'
   issue: '9'
 
@@ -538,12 +538,12 @@
   - family: McClernon
     given: F Joseph
   issued:
-  - year: 2014
+  - year: '2014'
   title: Smoking automaticity and tolerance moderate brain activation during explore–exploit
     behavior
   container-title: 'Psychiatry Research: Neuroimaging'
   publisher: Elsevier
-  page: 254-261
+  page: '254-261'
   volume: '224'
   issue: '3'
 
@@ -561,7 +561,7 @@
   - family: McClernon
     given: F Joseph
   issued:
-  - year: 2015
+  - year: '2015'
   title: 'Suboptimal foraging behavior: A new perspective on gambling.'
   title-short: Suboptimal foraging behavior
   container-title: Behavioral neuroscience
@@ -580,13 +580,13 @@
   - family: Egner
     given: Tobias
   issued:
-  - year: 2015
+  - year: '2015'
   title: 'Mind-reading without the scanner: Behavioural decoding of working memory
     content'
   title-short: Mind-reading without the scanner
   container-title: Visual Cognition
   publisher: Routledge
-  page: 862-866
+  page: '862-866'
   volume: '23'
   issue: '7'
 
@@ -598,12 +598,12 @@
   - family: Pearson
     given: John M
   issued:
-  - year: 2016
+  - year: '2016'
   title: 'Dopamine: Context and counterfactuals'
   title-short: Dopamine
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Acad Sciences
-  page: 22-23
+  page: '22-23'
   volume: '113'
   issue: '1'
 
@@ -623,18 +623,18 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2015
+  - year: '2015'
   title: Neural mechanisms of social decision-making in the primate amygdala
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Acad Sciences
-  page: 16012-16017
+  page: '16012-16017'
   volume: '112'
   issue: '52'
 
 - id: san2016altruistic
   type: article-journal
   author:
-  - family: San Martı'n
+  - family: San Martín
     given: René
   - family: Kwak
     given: Youngbin
@@ -645,12 +645,12 @@
   - family: Huettel
     given: Scott A
   issued:
-  - year: 2016
+  - year: '2016'
   title: Altruistic traits are predicted by neural responses to monetary outcomes
     for self vs charity
   container-title: Social cognitive and affective neuroscience
   publisher: Oxford University Press
-  page: 863-876
+  page: '863-876'
   volume: '11'
   issue: '6'
 
@@ -666,11 +666,11 @@
   - family: Cabeza
     given: R
   issued:
-  - year: 2015
+  - year: '2015'
   title: THE impact of feedback timing on value learning in aging
   container-title: GERONTOLOGIST
   publisher: OXFORD UNIV PRESS INC JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
-  page: 140-140
+  page: '140-140'
   volume: '55'
 
 - id: chang2016neuroetologia
@@ -689,10 +689,10 @@
   - family: Platt
     given: Michael L
   issued:
-  - year: 2016
-  title: Neuroetologı'a del comportamiento social de los primates
+  - year: '2016'
+  title: Neuroetología del comportamiento social de los primates
   container-title: Ludus Vitalis
-  page: 151-176
+  page: '151-176'
   volume: '21'
   issue: '40'
 
@@ -706,11 +706,11 @@
   - family: Egner
     given: Tobias
   issued:
-  - year: 2017
+  - year: '2017'
   title: Decoding working memory content from attentional biases
   container-title: Psychonomic bulletin & review
   publisher: Springer US
-  page: 1252-1260
+  page: '1252-1260'
   volume: '24'
   issue: '4'
 
@@ -728,7 +728,7 @@
   - family: Platt
     given: ML
   issued:
-  - year: 2017
+  - year: '2017'
   title: A primer on foraging and the explore/exploit trade-off for psychiatry research
   container-title: Neuropsychopharmacology
   publisher: Nature Publishing Group
@@ -745,12 +745,12 @@
   - family: Pearson
     given: John M
   issued:
-  - year: 2017
+  - year: '2017'
   title: 'Neuron’s eye view: Inferring features of complex stimuli from neural responses'
   title-short: Neuron’s eye view
   container-title: PLoS computational biology
   publisher: Public Library of Science
-  page: e1005645
+  page: 'e1005645'
   volume: '13'
   issue: '8'
 
@@ -762,7 +762,7 @@
   - family: Pearson
     given: John
   issued:
-  - year: 2017
+  - year: '2017'
   title: A goal-based movement model for continuous multi-agent tasks
   container-title: arXiv preprint arXiv:1702.07319
 
@@ -780,7 +780,7 @@
   - family: Turner
     given: Dennis A
   issued:
-  - year: 2017
+  - year: '2017'
   title: Local fields in human subthalamic nucleus track the lead-up to impulsive
     choices
   container-title: Frontiers in neuroscience
@@ -804,7 +804,7 @@
   - family: Huettel
     given: Scott
   issued:
-  - year: 2017
+  - year: '2017'
   title: '9-s: Presentation style affects decision processes: A dietary choice study'
   title-short: 9-s
   container-title: ACR North American Advances
@@ -821,32 +821,13 @@
   - family: Johnson
     given: Elizabeth N
   issued:
-  - year: 2018
+  - year: '2018'
   title: 'Wearable eye-tracking for research: Automated dynamic gaze mapping and
     accuracy/precision comparisons across devices'
   title-short: Wearable eye-tracking for research
   container-title: bioRxiv
   publisher: Cold Spring Harbor Laboratory
   page: '299925'
-
-- id: mcdonald2018bayesian
-  type: article-journal
-  author:
-  - family: McDonald
-    given: Kelsey
-  - family: Broderick
-    given: William F
-  - family: Huettel
-    given: Scott
-  - family: Pearson
-    given: John
-  issued:
-  - year: 2018
-  title: Bayesian nonparametric models characterize instantaneous strategies in a
-    competitive dynamic game
-  container-title: bioRxiv
-  publisher: Cold Spring Harbor Laboratory
-  page: '385195'
 
 - id: lighthall2018feedback
   type: article-journal
@@ -860,13 +841,13 @@
   - family: Cabeza
     given: Roberto
   issued:
-  - year: 2018
+  - year: '2018'
   title: 'Feedback-based learning in aging: Contributions and trajectories of change
     in striatal and hippocampal systems'
   title-short: Feedback-based learning in aging
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: 8453-8462
+  page: '8453-8462'
   volume: '38'
   issue: '39'
 
@@ -876,11 +857,183 @@
   - family: Pearson
     given: John
   issued:
-  - year: 2018
+  - year: '2018'
   title: Queuing cues in rapid cortical processing
   container-title: Nature Human Behaviour
   publisher: Nature Publishing Group
   page: '620'
   volume: '2'
   issue: '9'
+
+- id: macinnes2018mobile
+  type: article-journal
+  author:
+  - family: MacInnes
+    given: Jeff
+  - family: Iqbal
+    given: Shariq
+  - family: Pearson
+    given: John
+  - family: Johnson
+    given: Elizabeth N
+  issued:
+  - year: '2018'
+  title: 'Mobile gaze mapping: A python package for mapping mobile gaze data to
+    a fixed target stimulus'
+  title-short: Mobile gaze mapping
+  container-title: J. Open Source Software
+  page: '984'
+  volume: '3'
+  issue: '31'
+
+- id: pearson2018modelling
+  type: article-journal
+  author:
+  - family: Pearson
+    given: John M
+  - family: Law
+    given: Jonathan R
+  - family: Skene
+    given: Jesse AG
+  - family: Beskind
+    given: Donald H
+  - family: Vidmar
+    given: Neil
+  - family: Ball
+    given: David A
+  - family: Malekpour
+    given: Artemis
+  - family: Carter
+    given: R McKell
+  - family: Skene
+    given: JH Pate
+  issued:
+  - year: '2018'
+  title: Modelling the effects of crime type and evidence on judgments about guilt
+  container-title: Nature human behaviour
+  publisher: Nature Publishing Group
+  page: '856'
+  volume: '2'
+  issue: '11'
+
+- id: mcdonald2019cognitive
+  type: article-journal
+  author:
+  - family: McDonald
+    given: Kelsey R
+  - family: Pearson
+    given: John M
+  issued:
+  - year: '2019'
+  title: 'Cognitive bots and algorithmic humans: Toward a shared understanding of
+    social intelligence'
+  title-short: Cognitive bots and algorithmic humans
+  container-title: Current Opinion in Behavioral Sciences
+  publisher: Elsevier
+  page: '55-62'
+  volume: '29'
+
+- id: mcdonald2019bayesian
+  type: article-journal
+  author:
+  - family: McDonald
+    given: Kelsey R
+  - family: Broderick
+    given: William F
+  - family: Huettel
+    given: Scott A
+  - family: Pearson
+    given: John M
+  issued:
+  - year: '2019'
+  title: Bayesian nonparametric models characterize instantaneous strategies in a
+    competitive dynamic game
+  container-title: Nature communications
+  publisher: Nature Publishing Group
+  page: '1808'
+  volume: '10'
+  issue: '1'
+
+- id: iqbal2019latent
+  type: article-journal
+  author:
+  - family: Iqbal
+    given: Shariq N
+  - family: Yin
+    given: Lun
+  - family: Drucker
+    given: Caroline B
+  - family: Kuang
+    given: Qian
+  - family: Gariépy
+    given: Jean-François
+  - family: Platt
+    given: Michael L
+  - family: Pearson
+    given: John M
+  issued:
+  - year: '2019'
+  title: Latent goal models for dynamic strategic interaction
+  container-title: PLoS computational biology
+  publisher: Public Library of Science
+  page: 'e1006895'
+  volume: '15'
+  issue: '3'
+
+- id: besanccon2019distributions
+  type: article-journal
+  author:
+  - family: Besançon
+    given: Mathieu
+  - family: Anthoff
+    given: David
+  - family: Arslan
+    given: Alex
+  - family: Byrne
+    given: Simon
+  - family: Lin
+    given: Dahua
+  - family: Papamarkou
+    given: Theodore
+  - family: Pearson
+    given: John
+  issued:
+  - year: '2019'
+  title: 'Distributions. jl: Definition and modeling of probability distributions
+    in the juliastats ecosystem'
+  title-short: Distributions. jl
+  container-title: arXiv preprint arXiv:1907.08611
+
+- id: goffinet2019inferring
+  type: article-journal
+  author:
+  - family: Goffinet
+    given: Jack
+  - family: Mooney
+    given: Richard
+  - family: Pearson
+    given: John
+  issued:
+  - year: '2019'
+  title: Inferring low-dimensional latent descriptions of animal vocalizations
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  page: '811661'
+
+- id: mohl2019monkeys
+  type: article-journal
+  author:
+  - family: Mohl
+    given: Jeff T
+  - family: Pearson
+    given: John M
+  - family: Groh
+    given: Jennifer M
+  issued:
+  - year: '2019'
+  title: Monkeys and humans implement causal inference to simultaneously localize
+    auditory and visual stimuli
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  page: '823385'
 ...
