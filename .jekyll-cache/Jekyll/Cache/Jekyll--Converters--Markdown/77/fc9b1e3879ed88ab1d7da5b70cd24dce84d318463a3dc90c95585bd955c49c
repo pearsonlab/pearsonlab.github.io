@@ -1,0 +1,46 @@
+I"<p>For some of our <a href="https://pearsonlab.github.io/blog/2015/11/06/eye_tracking_tech.html">previous</a> <a href="https://pearsonlab.github.io/blog/2016/03/10/nasher_eye_tracking.html">work</a> on eye tracking, we needed to be able to generate videos in way that could be linked into an automated analysis pipeline. For this, we use OpenCV, a tool for advanced frame-by-frame image analysis. Unfortunately, OpenCV’s ability to write movies in common output formats relies on OpenCV being linked to FFMPEG (a video codec library) and compiled manually, so you can’t just install the necessary software with a package manager. The build process can be tricky, with various unique issues arising on different systems. However, with the help of modern containerization services like Docker, we can bundle a working version of OpenCV into a container and deploy it across platforms. After that, all it takes is two lines at a command prompt to get a working version up and running on any system.</p>
+
+<p>Before deciding on Docker, we considered a few different options for distribution. The first idea was to simply precompile the library with links to FFMPEG enabled and distribute it as a package for Anaconda. Unfortunately, this does not work, as OpenCV has to find FFMPEG on the given system at compile time and generate links. There is no easy way to prebuild OpenCV and have it work with any FFMPEG install. Since we are building tools in-house using OpenCV and FFMPEG that we want other labs to use, it is critical that we have an easy and robust solution for distributing this toolchain. As a result, we settled on <a href="https://www.docker.com">Docker</a> containers as our method for doing so.</p>
+
+<p>Docker images are, in a way, lighter versions of virtual machines that allow applications to be configured and deployed on various systems. Using Docker, we only need to build OpenCV once, save it as an image, and it will be ready to be used on any system.</p>
+
+<p>But while Docker is a great solution for running OpenCV with FFMPEG support on your local machine without the hassle, what if you want to run a large job in the cloud? That requires a slightly different solution: Amazon AMI’s.</p>
+
+<p>An AMI (Amazon Machine Image) is a snapshot of a system that you can boot up on a cloud server using Amazon’s EC2 service. This is ideal for large batch processing jobs where you want to start something and forget about it until it’s done. AMIs follow a build-and-save procedure similar to Docker.</p>
+
+<p>So how do you get one of these solutions running?</p>
+
+<p>To launch our preconfigured Docker container with OpenCV and FFMPEG:</p>
+
+<ol>
+  <li><a href="https://docs.docker.com/engine/installation/">Install Docker</a></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">docker pull shariqiqbal2810/opencv-conda</code> in a command line to pull the image to your local machine. Make sure you have around 5 GB of free hard drive space.</li>
+  <li>To run the image in a container, use <code class="language-plaintext highlighter-rouge">docker run -i -t shariqiqbal2810/opencv-conda /bin/bash</code></li>
+</ol>
+
+<p>In order to start up a server with our lab’s OpenCV and FFMPEG AMI:</p>
+
+<ol>
+  <li>Make an Amazon Web Services account</li>
+  <li>Follow the instructions <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html">here</a>, making sure to use “ami-0b616161” as the AMI-ID.</li>
+</ol>
+
+<p>And finallly, to compile OpenCV on your own with conda-build (Note: This is simply what I had to do to get it running, and I can not guarantee the same steps will work for everyone. Expect to do some troubleshooting):</p>
+
+<ol>
+  <li>Clone the necessary conda recipes: <code class="language-plaintext highlighter-rouge">git clone https://github.com/conda/conda-recipes.git</code> and <code class="language-plaintext highlighter-rouge">git clone https://github.com/menpo/conda-opencv3.git</code></li>
+  <li>Go into the conda-recipes repository and run: <code class="language-plaintext highlighter-rouge">conda build x264</code> and <code class="language-plaintext highlighter-rouge">conda build ffmpeg</code>.</li>
+  <li>Switch to the conda-opencv3 directory.</li>
+  <li>Add the flag <code class="language-plaintext highlighter-rouge">-DPKG_CONFIG_PATH=${PREFIX}/lib/pkgconfig</code> to the <code class="language-plaintext highlighter-rouge">cmake</code> command and switch on the <code class="language-plaintext highlighter-rouge">-DWITH-FFMPEG</code> flag in conda/build.sh</li>
+  <li>Append your conda library directory (likely ~/anaconda/lib) to the file /etc/ld.so.conf and run the command <code class="language-plaintext highlighter-rouge">ldconfig</code>. This makes ffmpeg accessible as a shared library.</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">conda build conda</code></li>
+  <li>To install everything run <code class="language-plaintext highlighter-rouge">conda install --use-local ffmpeg</code>, <code class="language-plaintext highlighter-rouge">conda install --use-local x264</code>, and <code class="language-plaintext highlighter-rouge">conda install --use-local opencv3</code></li>
+</ol>
+
+<p>If everything worked correctly, you should be able to generate web-friendly H.264 encoded mp4 videos with OpenCV, like below. (Generated from Penaltykick task data, which we will have more to discuss about in the near future!)</p>
+
+<video width="320" height="240" controls="">
+  <source src="http://people.duke.edu/~sni/penaltykick_videos/sess1trial1.mp4" type="video/mp4" />
+Your browser does not support the video tag.
+</video>
+:ET

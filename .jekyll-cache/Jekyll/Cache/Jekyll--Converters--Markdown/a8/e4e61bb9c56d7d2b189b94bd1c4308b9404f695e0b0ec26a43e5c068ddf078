@@ -1,0 +1,13 @@
+I"]<p><img style="float: left; padding-right: 30px" src="https://media.springernature.com/w300/springer-static/cover-hires/journal/41562/2/11" />
+Today, our paper on legal decision-making goes online at <a href="https://www.nature.com/articles/s41562-018-0451-z.epdf?author_access_token=gW_gZL0F4bNCBdSfJdfHqtRgN0jAjWel9jnR3ZoTv0OPcExbUXFEBLmRIJVwmtiNjh9IEH2pkC2Nh_cBrWPkHuJj4keS7hpDBQvmnU20N9jF3OGevYkvLVEkxopzUvo61hticf34wy0yLHXrWmQ-AA%3D%3D">Nature Human Behaviour</a>. You can read more about the genesis of the project <a href="https://socialsciences.nature.com/channels/1745-behind-the-paper/posts/40535-searching-for-justice-how-marketing-research-can-shed-light-on-decisions-in-the-criminal-justice-system">here</a>. Briefly, we used a large-scale survey approach based on randomly generated legal cases to show three things:</p>
+
+<ol>
+  <li>It’s possible to estimate (using Bayesian hierarchical models) how groups of individuals weight different types of legal evidence, even when not all individuals see not all of the evidence combinations.</li>
+  <li>Prospective jurors (mTurk participants) assigned some weight to the accusation itself. That is, they rated these cases as a little convincing even when no evidence for guilt was presented. The more seriousness the crime, the higher that rating.</li>
+  <li>Participants with legal training focused entirely on the evidence, but their overall ratings of case strength <em>were still</em> correlated with how serious the crime was.</li>
+</ol>
+
+<p>We think this is the start of a pretty interesting line of research. It’s by no means the end of the story, and follow-up studies are in progress. But we’re excited at the potential to bring this kind of “high-throughput” statistical approach to an important social question. We see it as a complement to traditional approaches like laboratory experiments, interviews, and mock trials.</p>
+
+<p>Coverage at <a href="https://today.duke.edu/2018/10/severity-crime-increases-jury%E2%80%99s-belief-guilt">Duke Research</a>, reposted at <a href="https://www.futurity.org/crime-guilt-jurors-judgement-1898862/">futurity.org</a>.</p>
+:ET

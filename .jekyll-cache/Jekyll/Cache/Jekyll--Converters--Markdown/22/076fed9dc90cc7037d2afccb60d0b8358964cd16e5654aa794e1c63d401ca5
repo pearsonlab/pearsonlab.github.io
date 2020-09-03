@@ -1,0 +1,140 @@
+I"�<h3 id="the-setup">The Setup</h3>
+<p>A couple of weeks ago, as I was preparing to teach our incoming graduate students about data analysis, I ran across the following assertion in my notes: neuroscientists spend more time on data analysis than any other research activity.</p>
+
+<p>I had zero proof for this, but it felt truthy.</p>
+
+<p>So I did a little experiment. I asked my colleagues in the <a href="http://www.mind.duke.edu">Center for Cognitive Neuroscience</a> and the <a href="https://www.neuro.duke.edu/">Department of Neurobiology</a> to fill out a short, one-question survey:</p>
+
+<p><img src="http://www.duke.edu/~jmp33/assets/qualtrics.png" width="500" /></p>
+
+<p>By the way, that link is still up. If you haven’t taken the survey but work in neuroscience, <a href="https://duke.qualtrics.com/SE/?SID=SV_4SLoFFC7fLr7j9z">go take it now</a>.</p>
+
+<h3 id="the-results">The results:</h3>
+
+<p><strong>Indeed, data analysis is the single most time-consuming activity in the research process</strong></p>
+
+<p>This based on about 95 responses.</p>
+
+<p>As we see in the plot, the median time spent on data analysis, at 26%, just edges out data collection at 24%. It could also be noted that these are the two most variable allocations.</p>
+
+<p>But there’s also a lot of variability overall. My intuition is that subfields like neuroimaging require less time to gather data (but more to analyze it) than, say, molecular neuroscience.</p>
+
+<div id="boxplot"></div>
+
+<h3 id="some-correlations">Some correlations:</h3>
+<p>Even though I didn’t ask respondents to report their subfields, I was curious whether the data were perhaps multimodal, suggesting clusters of responses, but the <a href="https://en.wikipedia.org/wiki/Violin_plot">violin plot</a> didn’t bear that out. However it’s still interesting to ask how correlated the allocations were with each other:</p>
+
+<hr />
+<style>
+th, td {
+    padding: 5px;
+}
+tr:hover {background-color: #f5f5f5}
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: right">Experimental Design</th>
+      <th style="text-align: right">Piloting</th>
+      <th style="text-align: right">Data Collection</th>
+      <th style="text-align: right">Data Analysis</th>
+      <th style="text-align: right">Writing Results</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>Piloting</strong></td>
+      <td style="text-align: right">0.07</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Data Collection</strong></td>
+      <td style="text-align: right">-0.38</td>
+      <td style="text-align: right">-0.15</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Data Analysis</strong></td>
+      <td style="text-align: right">-0.38</td>
+      <td style="text-align: right">-0.10</td>
+      <td style="text-align: right">-0.23</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Writing Results</strong></td>
+      <td style="text-align: right">-0.05</td>
+      <td style="text-align: right">-0.36</td>
+      <td style="text-align: right">-0.44</td>
+      <td style="text-align: right">-0.19</td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Review Process</strong></td>
+      <td style="text-align: right">0.12</td>
+      <td style="text-align: right">-0.24</td>
+      <td style="text-align: right">-0.38</td>
+      <td style="text-align: right">-0.38</td>
+      <td style="text-align: right">0.36</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p>So, even though all these numbers are required to add to 1, and so we expect a negative correlation between them (roughly -14% based on a uniform Dirichlet prior with K=6), we still notice a couple of interesting features:</p>
+
+<ul>
+  <li>There’s a strong positive correlation between how long it takes you to write the results and the time spent on the review process. Are these capturing a single underlying feature — the intrinsic ambiguity of the result?</li>
+  <li>There’s a stronger than expected negative correlation between the time spent collecting and analyzing the data and the time spent designing the experiment. This may be spurious, but it suggests a “measure twice, cut once” principle may be in play: better-designed experiments theoretically should save time in the collection and analysis phases.</li>
+</ul>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script type="text/javascript">
+ "use strict"
+
+var data = Array();
+var raw = {"Experimental Design": [5, 12, 11, 20, 40, 15, 3, 25, 6, 6, 9, 45, 14, 9, 20, 10, 10, 6, 4, 10, 12, 11, 12, 16, 21, 20, 26, 10, 10, 10, 20, 9, 13, 5, 21, 21, 32, 5, 10, 16, 12, 20, 8, 16, 11, 5, 20, 11, 10, 26, 7, 5, 31, 10, 15, 10, 5, 7, 12, 10, 25, 5, 10, 10, 15, 6, 33, 13, 10, 6, 11, 11, 4, 15, 20, 15, 10, 5, 11, 10, 12, 13, 7, 10, 10, 5, 15, 9, 10, 50, 12, 30, 8, 13, 12], "Piloting": [5, 4, 10, 10, 25, 5, 10, 10, 2, 6, 28, 0, 6, 20, 36, 10, 10, 19, 8, 21, 15, 8, 13, 16, 21, 29, 7, 20, 5, 5, 5, 2, 5, 15, 0, 5, 5, 5, 9, 10, 15, 10, 2, 16, 24, 10, 30, 1, 18, 22, 6, 10, 11, 30, 15, 0, 10, 9, 9, 20, 10, 5, 10, 10, 25, 7, 5, 11, 15, 11, 11, 7, 6, 23, 5, 5, 0, 20, 4, 10, 3, 7, 5, 5, 10, 15, 8, 11, 10, 9, 4, 11, 6, 8, 5], "Data Collection": [40, 24, 7, 20, 10, 48, 30, 35, 50, 22, 40, 0, 20, 30, 13, 20, 24, 14, 24, 31, 10, 15, 11, 17, 6, 31, 22, 10, 33, 25, 25, 8, 17, 10, 0, 0, 25, 60, 16, 16, 23, 40, 28, 29, 30, 52, 10, 22, 30, 42, 30, 18, 16, 10, 15, 65, 25, 11, 56, 35, 20, 40, 30, 30, 10, 43, 12, 44, 22, 34, 16, 53, 32, 18, 20, 20, 30, 35, 32, 25, 36, 28, 15, 15, 25, 60, 22, 24, 50, 11, 25, 11, 35, 27, 27], "Data Analysis": [30, 38, 59, 20, 10, 17, 17, 15, 36, 49, 19, 0, 26, 29, 31, 10, 24, 42, 30, 31, 28, 30, 47, 17, 20, 20, 22, 40, 20, 25, 25, 40, 38, 20, 6, 9, 21, 15, 44, 50, 34, 15, 40, 16, 29, 18, 20, 18, 17, 10, 38, 41, 13, 30, 15, 15, 35, 43, 9, 20, 30, 30, 10, 20, 10, 28, 20, 15, 24, 34, 44, 20, 29, 31, 25, 40, 30, 25, 32, 30, 24, 16, 30, 50, 40, 10, 27, 26, 20, 10, 44, 48, 32, 31, 28], "Writing Results": [10, 16, 10, 20, 10, 12, 24, 10, 3, 11, 2, 10, 17, 10, 0, 20, 24, 14, 28, 5, 24, 26, 12, 17, 15, 0, 19, 10, 14, 25, 15, 21, 20, 20, 51, 48, 14, 10, 12, 8, 11, 10, 20, 16, 3, 4, 10, 36, 11, 0, 5, 10, 14, 10, 15, 6, 10, 27, 9, 10, 7, 15, 25, 20, 30, 10, 15, 5, 20, 10, 10, 6, 7, 9, 20, 15, 20, 10, 16, 15, 15, 23, 27, 15, 10, 5, 16, 22, 5, 10, 10, 0, 12, 18, 16], "Review Process": [10, 6, 3, 10, 5, 3, 16, 5, 3, 6, 2, 45, 17, 2, 0, 30, 8, 5, 6, 2, 11, 10, 5, 17, 17, 0, 4, 10, 18, 10, 10, 20, 7, 30, 22, 17, 3, 5, 9, 0, 5, 5, 2, 7, 3, 11, 10, 12, 14, 0, 14, 16, 15, 10, 25, 4, 15, 3, 5, 5, 8, 5, 15, 10, 10, 6, 15, 12, 9, 5, 8, 3, 22, 4, 10, 5, 10, 5, 5, 10, 10, 13, 16, 5, 5, 5, 12, 8, 5, 10, 5, 0, 7, 3, 12]};
+for (var x in raw){
+    // var trace = {};
+    // trace['type'] = 'box';
+    // trace['name'] = x;
+    // trace['y'] = raw[x];
+    data.push({
+        name: x,
+        y: raw[x],
+        type: 'box'
+    });
+}
+var layout = {
+    // autosize: false,
+    // width: 600,
+    // height: 400,
+    margin: {
+        l: 50,
+        r: 50,
+        b: 100,
+        t: 50,
+        pad: 4
+    },
+    showlegend: false,
+    yaxis: {
+        title: 'Percent time',
+        range: [0, 100]
+    }
+};
+Plotly.newPlot('boxplot', data, layout, {displayModeBar: false});
+
+ </script>
+
+:ET

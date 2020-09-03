@@ -1,0 +1,35 @@
+I"C<p><img src="/images/plab_hex_icon_gray.png" style="float:left; margin-right: 20px; margin-bottom: 10px" width="200px" /></p>
+
+<h1 id="what-we-do">What we do</h1>
+
+<p><strong>What if we could record the activity of every cell in the human brain?</strong> If we knew every synapse of every cell, what questions would we ask? Like genetics twenty years ago, neuroscience is preparing for an explosion of data, but the tools and the models we use to understand that data have yet to benefit from modern advances in computer science, engineering, and statistics.</p>
+
+<p><strong>At P[λ]ab, we are building the next generation of modeling and analysis tools for brain data.</strong> This involves not only building better pipelines for collecting and analyzing terabyte-scale data, but also designing and implementing the algorithms that will help to <em>interpret</em> these data successfully.</p>
+
+<p><strong>We believe that the best hope for treating brain disorders is the discovery of fundamental principles underlying brain activity.</strong> Theory is essential, but the best theory happens in conversation with data. That’s why we work closely with experimentalists to build tools that not only make sense of existing data but suggest new hypotheses and new directions.</p>
+
+<h1 id="what-we-value">What we value</h1>
+
+<h2 id="open-science">Open Science</h2>
+<p>We <a href="https://github.com/pearsonlab">code in the open</a>. We share data. Communicating science requires finding and telling the stories in our data, but these stories are worthless if they don’t stand up to scrutiny from the community.</p>
+
+<h2 id="natural-behavior">Natural Behavior</h2>
+<p>Nothing in neuroscience makes sense except in light of behavior.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> We prefer behaviors like foraging and stimuli like movies because they give us the opportunity to study the brain in something closer to its normal working mode.</p>
+
+<h2 id="dynamics">Dynamics</h2>
+<p>The brain functions in a rapidly changing environment and is itself an organ with complex internal dynamics. We favor models and methods that incorporate this behavior, particularly those drawn from the physics and statistics of dynamical systems.</p>
+
+<h2 id="public-health-impact">Public Health Impact</h2>
+<p>The goal of neuroscience is not just to understand the brain, it’s to help those suffering from brain disorders. Because our greatest impact comes from making the jump from the lab to the clinic, we collaborate with physicians to perform studies in patient populations.</p>
+
+<p><br /><br />
+<br /><br /></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>With apologies to Theodosius Dobzhansky. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
