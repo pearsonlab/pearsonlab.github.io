@@ -1,8 +1,0 @@
-I"K<p>We have two new papers out on dynamic and strategic decision making.</p>
-
-<p>The first, published in PLoS Computational Biology as <a href="https://doi.org/10.1371/journal.pcbi.1006895">“Latent goal models for dynamic strategic interaction”</a>, proposed a new model that is capable of reproducing the rich behavior of monkeys playing against each other in a dynamic decision task.</p>
-
-<p>Our second paper was published in Nature Communications, <a href="https://www.nature.com/articles/s41467-019-09789-4">“Bayesian nonparametric models characterize instantaneous strategies in a competitive dynamic game”</a>. Here, we used Gaussian Processes to model the policy and value functions of participants as a function of both game state and opponent identity.</p>
-
-<p>Congrats to Sam and Kelsey in particular for their hard work!</p>
-:ET
