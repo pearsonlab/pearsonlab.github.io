@@ -25,7 +25,7 @@ Once inside, immediately go to the door on the right and take the stairs down to
 
 <img src="http://dibs-web01.vm.duke.edu/pearson/assets/images/website/stairs.jpg" width="500"/>
 
-Turn right once more and you'll see the entrance to the Center for Cogntitive Neuroscience (CCN). This door is kept locked, so please knock to be let in.
+Turn right once more and you'll see the entrance to the Center for Cognitive Neuroscience (CCN). This door is kept locked, so please knock to be let in.
 
 <img src="http://dibs-web01.vm.duke.edu/pearson/assets/images/website/ccn.jpg" width="500"/>
 
