@@ -32,6 +32,6 @@ Turn right once more and you'll see the entrance to the Center for Cognitive Neu
 Our office (C03C) is the first door on the right!
 <img src="http://dibs-web01.vm.duke.edu/pearson/assets/images/website/laboffice.jpg" width="500"/>
 
-<img src="http://dibs-web01.vm.duke.edu/pearson/assets/images/website/plab.jpg" width="500"/>
+<!-- <img src="http://dibs-web01.vm.duke.edu/pearson/assets/images/website/plab.jpg" width="500"/> -->
 
 
