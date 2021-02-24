@@ -8,6 +8,20 @@ We're always interested in talking to qualified postdoc candidates. Particularly
 
 ### Current openings:
 
+The laboratories of [Dr. John Pearson](http://pearsonlab.github.io) and [Dr. Richard Mooney](https://www.neuro.duke.edu/mooney-lab) at Duke University are seeking a postdoctoral scholar in conjunction with an NIH BRAIN Initiative-funded project investigating the contributions of basal ganglia to vocal motor exploration and reinforcement learning. Candidates will combine computational methods with state of the art viral, electrophysiological, and imaging techniques and work as part of a multi-institution team that also includes Dr. Carlos Lois, in the Division of Biology and Biological Engineering at CalTech, and Dr. Tim Gardner, in the Phil and Penny Knight Campus for Accelerating Scientific Impact at the University of Oregon.
+
+The postdoc, appointed in the Department of Biostatistics & Bioinformatics, will perform computational modeling of reinforcement learning in the birdsong system, including development of new statistical machine learning methods for the analysis of song, electrophysiology, and calcium imaging data. The postdoc will work closely with experimentalists to design studies, analyze data, and refine hypotheses. Candidates should hold a PhD in a quantitative discipline such as computational neuroscience, physics, statistics, or computer science. Previous experience in neurobiology is a plus but not required. This postdoc will work closely with a related postdoc hire in the Department of Neurobiology, as well as team members across the other institutions.
+
+Candidates should send a cv and brief statement of interest to Dr. Pearson to discuss further.
+
+Legal details:
+
+Min Degree Requirements: Relevant Ph.D. or equivalent doctorate (e.g. Sc.D., M.D., D.V.M.). If the candidate has completed all of the requirements for a degree, but the degree has not been formally conferred; the candidate may present evidence of completion of the degree requirements, together with a statement documenting the date on which the degree is to be conferred. Other Credential/Experiential Requirements: This position is limited to those with no more than 5 years combined of Duke and external postdoctoral experience, or no more than 4 years of Duke experience if that is the only postdoctoral experience.
+
+Duke University is an Affirmative Action/Equal Opportunity Employer committed to providing employment opportunity without regard to an individual's age, color, disability, gender, gender expression, gender identity, genetic information, national origin, race, religion, sex, sexual orientation, or veteran status.
+
+Duke aspires to create a community built on collaboration, innovation, creativity, and belonging. Our collective success depends on the robust exchange of ideas-an exchange that is best when the rich diversity of our perspectives, backgrounds, and experiences flourishes. To achieve this exchange, it is essential that all members of the community feel secure and welcome, that the contributions of all individuals are respected, and that all voices are heard. All members of our community have a responsibility to uphold these values.
+
 # Graduate students
 Duke provides a wonderful environment for students interested in pursuing the kind of interdisciplinary research we do. As a result, P[&lambda;]ab accepts graduate students through multiple programs:
 
