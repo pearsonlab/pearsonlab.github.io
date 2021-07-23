@@ -1095,34 +1095,6 @@
   volume: '46'
   issue: '3'
 
-- id: draelossupplement
-  type: article-journal
-  author:
-  - family: Draelos
-    given: Anne
-  - family: Pearson
-    given: John M
-  title: 'Supplement to: Online connectivity estimation with noisy group testing'
-  title-short: Supplement to
-
-- id: bejjanitowards
-  type: article-journal
-  author:
-  - family: Bejjani
-    given: Christina
-  - family: Egner
-    given: Tobias
-  - family: Pearson
-    given: John
-  - family: Moffitt
-    given: Terrie E
-  - family: Caspi
-    given: Avshalom
-  - family: Adcock
-    given: Alison
-  title: TOWARDS a computational psychiatry of transdiagnostic deficits in cognitive
-    control
-
 - id: adams2021neurons
   type: article-journal
   author:
@@ -1358,20 +1330,6 @@
   title: Deep generative analysis for task-based functional mri experiments
   container-title: bioRxiv
   publisher: Cold Spring Harbor Laboratory
-
-- id: mcdonaldgaussian
-  type: article-journal
-  author:
-  - family: McDonald
-    given: Kelsey
-  - family: Broderick
-    given: William F
-  - family: Huettel
-    given: Scott
-  - family: Pearson
-    given: John
-  title: Gaussian process models characterize other-regarding strategies over multiple
-    timescales in a dynamic social game
 
 - id: draelos2020arxiv
   type: article-journal
