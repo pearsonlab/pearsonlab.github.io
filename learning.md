@@ -24,7 +24,7 @@ I'm frequently asked by students, especially neuroscience students, how they sho
 - Use whatever the people around you are using. It's frustrating enough to learn programming; take advantage of local expertise to help you. If you're struggling to learn functions and `if` statements, that can be done in pretty much any modern language, and the concepts will carry over to most others.
 - That said, here's my order of preference:
     1. **Python**: Because everything. Python is used for scripting, building and scraping websites, and pretty much anything else where performance isn't critical. It is also the *de facto* standard in data science and machine learning. It's also comparatively easy to learn. Python is the new BASIC. What's more, Python skills actually help on a resume. I'll talk more about recommended packages/setup [below](#python-for-data-science)
-    1. **Julia**: This is mostly idiosyncratic to me. As I've written [elsewhere](../blog/2016/07/13/investing-in-julia.html), I think Julia has a very bright future in scientific computing, though at the time of this writing (June 2018), it's still in development. Why Julia? Because it has the ease of use of interpreted languages like Python with a performance closer to C or FORTRAN. The downside is that the ecosystem of packages and other niceties surrounding the language is newer and thus comparatively weaker than you might find with Python or R.
+    1. **Julia**: This is mostly idiosyncratic to me. As I've written [elsewhere](../blog/2016/07/13/investing-in-julia.html), I think Julia has a very bright future in scientific computing, though at the time of this writing (September 2021), the language has stabilized but mindshare is only growing slowly. Why Julia? Because it has the ease of use of interpreted languages like Python with a performance closer to C or FORTRAN. The downside is that the ecosystem of packages and other niceties surrounding the language is newer and thus comparatively weaker than you might find with Python or R.
     1. **R**: I use R a lot for data analysis. I use R the language only in passing. The R ecosystem is fantastic, and statisticians code, think, and publish in R. If you're using anything else, the statistical methods available to you take a big hit. Plotting and data wrangling are also top-notch. I recommend [RStudio](https://www.rstudio.com/) plus [everything](https://www.tidyverse.org/) [by](http://r4ds.had.co.nz/) [Hadley Wickham](http://adv-r.had.co.nz/).
     1. **Matlab**: If you must. Matlab is pervasive in neuroscience and engineering, and it provides a decent ecosystem (professionally supported toolboxes, a decent IDE and debugger) out of the box. Provided, that is, your institution pays the substantial price tag. My complaints about Matlab mostly center on: (a) its painful ergonomics as a programming language[^matlab_woes] (I just don't find it fun to use); and (b) its absence in the software and data science industries (Matlab skills don't mean much when applying to those jobs).
 
@@ -52,25 +52,22 @@ But we're all busy people. What I usually end up recommending to students:
 - [Data Analysis Using Regression and Multilevel/Hierarchical Models](http://www.stat.columbia.edu/~gelman/arm/). This was my first introduction to applied Bayesian analysis. Surprisingly readable for students without much statistical background and teaches an approach to modeling data that I like and advocate. As a bonus, covers Markov Chain Monte Carlo sampling tools like [Stan](http://mc-stan.org/) that are necessary in practice.
 - [A First Course in Bayesian Statistical Methods](https://www.stat.washington.edu/people/pdhoff/book.php). This is the book they use for the intro Bayesian class at Duke. This is really for students who are investing in serious stats education. Finishing this one may not leave you quite ready to tackle your real data, but you will have a solid foundation to build on.
 - [All of Statistics](https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721/ref=sr_1_1?ie=UTF8&qid=1249141007&sr=8-1). A really nice single-volume introduction to statistics. A bit of a steep learning curve for the less mathematically inclined, but worth a mention.
-- For Duke students interested in the problem of actually implementing statistical models and methods in code, I highly recommend Cliburn Chan's [STA 663](https://github.com/cliburn/sta-663-2018), typically offered each spring. Teaches all the same software tools my lab uses.
+- For Duke students interested in the problem of actually implementing statistical models and methods in code, I highly recommend Cliburn Chan's [STA 663](https://github.com/cliburn/sta-663-2021), typically offered each spring. Teaches all the same software tools my lab uses.
 
 # Machine Learning: Classic
 There are lots of great references. The current deep learning phase notwithstanding, machine learning is actually a very broad field, and what is old now will eventually be new again. Some references worth checking out:
+- [An Introduction to Statistical Learning](https://www.statlearning.com)
 - [Elements of Statistical Learning](http://web.stanford.edu/~hastie/ElemStatLearn/) (free pdf)
 - [Pattern Recognition and Machine Learning](https://www.springer.com/us/book/9780387310732) ([pdf](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf))
-- [Machine Learning: A Probabilistic Perspective](https://www.cs.ubc.ca/~murphyk/MLbook/) (Duke uses this for its intro ML class)
+- [Machine Learning: A Probabilistic Perspective](https://probml.github.io/pml-book/) (Duke uses this for its intro ML class)
+
+
 
 # Machine Learning: Deep Learning
 So Deep Learning (aka neural networks) is eating the world. Briefly:
 - Read the [Deep Learning Book](http://www.deeplearningbook.org/). It's even free online from the website. The field is moving incredibly rapidly, but this is now the standard introduction.
 - For online classes, we've had students take the [Stanford convnets class](http://cs231n.stanford.edu/) and Coursera's [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning). These are pretty basic but nice for people getting started.[^online_dl_classes]
-- We use [TensorFlow](https://www.tensorflow.org/) in house for a few reasons:
-    - [TensorBoard](https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard)
-    - Support for compiling and deploying models to production. (This is a minor but important consideration for us, as we are not doing pure machine learning research. We have models we might want to deploy to others who aren't going to install TF.)
-    - Educational support. TF is used as the tool of choice by Coursera's [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning), among others.
-    - We had legacy [Theano](http://www.deeplearning.net/software/theano/) code to port, and Theano and TF have the same design philosophy and vocabulary.
-    - <a name="tf-eager"></a>In the future, TF will better support imperative programming with [eager mode](https://www.tensorflow.org/programmers_guide/eager). [Swift for TensorFlow](https://www.tensorflow.org/api_docs/swift/) is also interesting but early-stage.
-- If I were a young graduate student doing ML research, I would probably opt for [PyTorch](https://pytorch.org/), which allows imperative programming and is thus much easier to use and debug than TensorFlow. However, [TF is rapidly catching up](#tf-eager) in this area (see last point above).
+- Over the last few years, we've gradually moved from [TensorFlow](https://www.tensorflow.org/) to [PyTorch](https://pytorch.org/) and [JAX](https://github.com/google/jax). This mirrors broader trends among machine learning researchers, since the latter often allow for faster prototyping.
 
 # Notes
 
