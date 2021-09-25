@@ -49,7 +49,7 @@ In recent work, we've explored the idea of using variational autoencoder (VAE) m
 
 <div class="row">
     <figure>
-        <img src="https://dibs-web01.vm.duke.edu/pearson/assets/images/fmri/website_VAEGAM_fig.pdf" class="img-responsive">
+        <img src="https://dibs-web01.vm.duke.edu/pearson/assets/images/fmri/website_VAEGAM_fig.png" class="img-responsive">
         <figcaption>
             a. VAE-GAM model schematic: Brain volumes with signal of interest are compressed to a lower dimensional representation using encoder network. Sampled latents are then fed through decoder network to yield a base map and separate spatial effect maps. Each effect map is scaled by a potentially non-linear gain modelled using a Gaussian Process. Variance is modeled separately on a per voxel basis. b. Sample Effect Maps for VAE-GAM and GLM: effect maps for a visual stimulation task dataset analysed using the proposed VAE-GAM approach (top) and the tranditional (GLM) software. 
         </figcaption>
