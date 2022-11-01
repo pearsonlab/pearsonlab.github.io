@@ -4,6 +4,10 @@ title: How to find us # header at the top of the page
 nav: Find Us # what shows up in the navbar at the top (do not define if you don't want page in the navbar)
 ---
 
+## Update: As of November 2022, we are moving to the Bryan Research Building. Directions to be updated soon!
+
+---------
+
 We're located in the [Levine Science Research Center](http://maps.duke.edu/map/?id=21#!s/key=lsrc?m/6561). LSRC is big, making it easy to find, but perhaps not easy to find us specifically. Our lab's office number is C03C, which is in the basement level of the C-Wing. 
 
 If you're coming from West Campus (Bryan Center, Chapel, etc.), first find the section of LSRC by the DIBS cube, that shiny glass box just off the large lawn. 
