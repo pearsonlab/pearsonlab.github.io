@@ -17,6 +17,10 @@
             {% if pub.volume != blank %}
                 {{ pub.volume}}{%if pub.issue and pub.issue != "" %}({{ pub.issue }}){% endif %}
             {% endif %}
+            <br>
+            {% if pub.note != blank %}
+                <b>{{ pub.note}}</b>
+            {% endif %}
         </li>
     {% endfor %}
     </ol>

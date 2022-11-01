@@ -13,7 +13,7 @@
   title: Fictive reward signals in the anterior cingulate cortex
   container-title: science
   publisher: American Association for the Advancement of Science
-  page: 948-950
+  page: '948-950'
   volume: '324'
   issue: '5929'
 
@@ -35,7 +35,7 @@
   title-short: Surprise signals in anterior cingulate cortex
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: 4178-4187
+  page: '4178-4187'
   volume: '31'
   issue: '11'
 
@@ -53,7 +53,7 @@
   title: Neuronal basis of sequential foraging decisions in a patchy environment
   container-title: Nature neuroscience
   publisher: Nature Publishing Group
-  page: 933-939
+  page: '933-939'
   volume: '14'
   issue: '7'
 
@@ -74,7 +74,7 @@
     multioption choice task
   container-title: Current biology
   publisher: Elsevier
-  page: 1532-1537
+  page: '1532-1537'
   volume: '19'
   issue: '18'
 
@@ -97,7 +97,7 @@
   title-short: Posterior cingulate cortex
   container-title: Trends in cognitive sciences
   publisher: Elsevier Current Trends
-  page: 143-151
+  page: '143-151'
   volume: '15'
   issue: '4'
 
@@ -156,7 +156,7 @@
   title: Neuroethology of decision-making
   container-title: Current opinion in neurobiology
   publisher: Elsevier Current Trends
-  page: 982-989
+  page: '982-989'
   volume: '22'
   issue: '6'
 
@@ -179,7 +179,7 @@
   title-short: Through their eyes
   container-title: Journal of Experimental Biology
   publisher: The Company of Biologists Ltd
-  page: 3035-3046
+  page: '3035-3046'
   volume: '216'
   issue: '16'
 
@@ -196,7 +196,7 @@
   title-short: Confidence and corrections
   container-title: Neuron
   publisher: Elsevier
-  page: 724-726
+  page: '724-726'
   volume: '63'
   issue: '6'
 
@@ -214,7 +214,7 @@
   title: A role for posterior cingulate cortex in policy switching and cognitive control
   container-title: 'Mars R, Sallet J, Rushworth S, Yeung N (eds), Neural Basis of
     Motivational and Cognitive Control. Cambridge, MA: MIT Press'
-  page: 127-43
+  page: '127-43'
 
 - id: chang2013neuroethology
   type: article-journal
@@ -238,14 +238,14 @@
   title: Neuroethology of primate social behavior
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Academy of Sciences
-  page: 10387-10394
+  page: '10387-10394'
   volume: '110'
   issue: Supplement 2
 
 - id: san2013rapid
   type: article-journal
   author:
-  - family: San Martı́n
+  - family: San Martín
     given: René
   - family: Appelbaum
     given: Lawrence G
@@ -261,7 +261,7 @@
     during economic decision making
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: 7011-7019
+  page: '7011-7019'
   volume: '33'
   issue: '16'
 
@@ -302,7 +302,7 @@
   title-short: Dopamine
   container-title: Neuron
   publisher: Cell Press
-  page: 831-833
+  page: '831-833'
   volume: '79'
   issue: '5'
 
@@ -342,7 +342,7 @@
   title: Postreward delays and systematic biases in measures of animal temporal discounting
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Academy of Sciences
-  page: 15491-15496
+  page: '15491-15496'
   volume: '110'
   issue: '38'
 
@@ -366,7 +366,7 @@
   title: Lemurs and macaques show similar numerical sensitivity
   container-title: Animal cognition
   publisher: Springer Berlin Heidelberg
-  page: 503-515
+  page: '503-515'
   volume: '17'
   issue: '3'
 
@@ -382,7 +382,7 @@
   title: Dynamic decision making in the brain
   container-title: Nature neuroscience
   publisher: Nature Publishing Group
-  page: 341-342
+  page: '341-342'
   volume: '15'
   issue: '3'
 
@@ -399,7 +399,7 @@
     from the brain'
   title-short: Change detection, multiple controllers, and dynamic environments
   container-title: Journal of the experimental analysis of behavior
-  page: 74-84
+  page: '74-84'
   volume: '99'
   issue: '1'
 
@@ -506,7 +506,7 @@
   title-short: Decision making
   container-title: Neuron
   publisher: Cell Press
-  page: 950-965
+  page: '950-965'
   volume: '82'
   issue: '5'
 
@@ -524,7 +524,7 @@
   title: Differential reward learning for self and others predicts self-reported altruism
   container-title: PLoS One
   publisher: Public Library of Science
-  page: e107621
+  page: 'e107621'
   volume: '9'
   issue: '9'
 
@@ -547,7 +547,7 @@
     behavior
   container-title: 'Psychiatry Research: Neuroimaging'
   publisher: Elsevier
-  page: 254-261
+  page: '254-261'
   volume: '224'
   issue: '3'
 
@@ -590,7 +590,7 @@
   title-short: Mind-reading without the scanner
   container-title: Visual Cognition
   publisher: Routledge
-  page: 862-866
+  page: '862-866'
   volume: '23'
   issue: '7'
 
@@ -607,7 +607,7 @@
   title-short: Dopamine
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Academy of Sciences
-  page: 22-23
+  page: '22-23'
   volume: '113'
   issue: '1'
 
@@ -631,14 +631,14 @@
   title: Neural mechanisms of social decision-making in the primate amygdala
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Academy of Sciences
-  page: 16012-16017
+  page: '16012-16017'
   volume: '112'
   issue: '52'
 
 - id: san2016altruistic
   type: article-journal
   author:
-  - family: San Martı́n
+  - family: San Martín
     given: René
   - family: Kwak
     given: Youngbin
@@ -654,7 +654,7 @@
     for self vs charity
   container-title: Social cognitive and affective neuroscience
   publisher: Oxford University Press
-  page: 863-876
+  page: '863-876'
   volume: '11'
   issue: '6'
 
@@ -674,7 +674,7 @@
   title: THE impact of feedback timing on value learning in aging
   container-title: GERONTOLOGIST
   publisher: OXFORD UNIV PRESS INC JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
-  page: 140-140
+  page: '140-140'
   volume: '55'
 
 - id: chang2016neuroetologia
@@ -694,9 +694,9 @@
     given: Michael L
   issued:
   - year: 2016
-  title: Neuroetologı́a del comportamiento social de los primates
+  title: Neuroetología del comportamiento social de los primates
   container-title: Ludus Vitalis
-  page: 151-176
+  page: '151-176'
   volume: '21'
   issue: '40'
 
@@ -714,7 +714,7 @@
   title: Decoding working memory content from attentional biases
   container-title: Psychonomic bulletin & review
   publisher: Springer US
-  page: 1252-1260
+  page: '1252-1260'
   volume: '24'
   issue: '4'
 
@@ -736,7 +736,7 @@
   title: A primer on foraging and the explore/exploit trade-off for psychiatry research
   container-title: Neuropsychopharmacology
   publisher: Nature Publishing Group
-  page: 1931-1939
+  page: '1931-1939'
   volume: '42'
   issue: '10'
 
@@ -755,7 +755,7 @@
   title-short: Neuron’s eye view
   container-title: PLoS computational biology
   publisher: Public Library of Science
-  page: e1005645
+  page: 'e1005645'
   volume: '13'
   issue: '8'
 
@@ -827,8 +827,8 @@
     given: Elizabeth N
   issued:
   - year: 2018
-  title: 'Wearable eye-tracking for research: Automated dynamic gaze mapping and accuracy/precision
-    comparisons across devices'
+  title: 'Wearable eye-tracking for research: Automated dynamic gaze mapping and
+    accuracy/precision comparisons across devices'
   title-short: Wearable eye-tracking for research
   container-title: bioRxiv
   publisher: Cold Spring Harbor Laboratory
@@ -851,7 +851,7 @@
     competitive dynamic game
   container-title: Nature communications
   publisher: Nature Publishing Group
-  page: 1-12
+  page: '1-12'
   volume: '10'
   issue: '1'
 
@@ -873,7 +873,7 @@
   title-short: Feedback-based learning in aging
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: 8453-8462
+  page: '8453-8462'
   volume: '38'
   issue: '39'
 
@@ -887,7 +887,7 @@
   title: Queuing cues in rapid cortical processing
   container-title: Nature human behaviour
   publisher: Nature Publishing Group
-  page: 620-621
+  page: '620-621'
   volume: '2'
   issue: '9'
 
@@ -917,7 +917,7 @@
   title: Modelling the effects of crime type and evidence on judgments about guilt
   container-title: Nature human behaviour
   publisher: Nature Publishing Group
-  page: 856-866
+  page: '856-866'
   volume: '2'
   issue: '11'
 
@@ -934,8 +934,8 @@
     given: Elizabeth N
   issued:
   - year: 2018
-  title: 'Mobile gaze mapping: A python package for mapping mobile gaze data to a
-    fixed target stimulus'
+  title: 'Mobile gaze mapping: A python package for mapping mobile gaze data to
+    a fixed target stimulus'
   title-short: Mobile gaze mapping
   container-title: Journal of Open Source Software
   page: '984'
@@ -964,7 +964,7 @@
   title: Latent goal models for dynamic strategic interaction
   container-title: PLoS computational biology
   publisher: Public Library of Science
-  page: e1006895
+  page: 'e1006895'
   volume: '15'
   issue: '3'
 
@@ -982,7 +982,7 @@
   title-short: Cognitive bots and algorithmic humans
   container-title: Current Opinion in Behavioral Sciences
   publisher: Elsevier
-  page: 55-62
+  page: '55-62'
   volume: '29'
 
 - id: besanccon2019distributions
@@ -1024,7 +1024,7 @@
     auditory and visual stimuli
   container-title: Journal of Neurophysiology
   publisher: American Physiological Society Bethesda, MD
-  page: 715-727
+  page: '715-727'
   volume: '124'
   issue: '3'
 
@@ -1049,7 +1049,7 @@
     promote and suppress vocalization
   container-title: eLife
   publisher: eLife Sciences Publications Limited
-  page: e63493
+  page: 'e63493'
   volume: '9'
 
 - id: mcdonald2020dorsolateral
@@ -1067,7 +1067,7 @@
     of dynamic social behavior
   container-title: Social cognitive and affective neuroscience
   publisher: Oxford University Press
-  page: 383-393
+  page: '383-393'
   volume: '15'
   issue: '4'
 
@@ -1091,7 +1091,7 @@
   title: Attention-deficit/hyperactivity disorder and the explore/exploit trade-off
   container-title: Neuropsychopharmacology
   publisher: Nature Publishing Group
-  page: 614-621
+  page: '614-621'
   volume: '46'
   issue: '3'
 
@@ -1161,27 +1161,175 @@
     hiv using clinical and multimodal magnetic resonance imaging data
   container-title: Journal of NeuroVirology
   publisher: Springer International Publishing
-  page: 1-11
+  page: '1-11'
   volume: '27'
   issue: '1'
 
-- id: o2021degrading
+- id: castrellon2022jneuro
   type: article-journal
   author:
-  - family: O’Neill
-    given: Kevin
-  - family: Henne
-    given: Paul
-  - family: Bello
-    given: Paul
+  - family: Castrellon
+    given: Jaime J.
+  - family: Hakimi
+    given: Shabnam
+  - family: Parelman
+    given: Jacob M.
+  - family: Yin
+    given: Lun
+  - family: Law
+    given: Jonathan R.
+  - family: Skene
+    given: Jesse A. G.
+  - family: Ball
+    given: David A.
+  - family: Malekpour
+    given: Artemis
+  - family: Beskind
+    given: Donald H.
+  - family: Vidmar
+    given: Neil
+  - family: Pearson
+    given: John M.
+  - family: Carter
+    given: R. McKell
+  - family: Skene
+    given: J. H. Pate
+  issued:
+  - year: 2022
+  title: Neural support for contributions of utility and narrative processing of evidence
+    in juror decision making
+  container-title: Journal of Neuroscience
+  publisher: Society for Neuroscience
+  page: '7624-7633'
+  volume: '42'
+  issue: '40'
+  abstract: Efforts to explain complex human decisions have focused on competing theories
+    emphasizing utility and narrative mechanisms. These are difficult to distinguish
+    using behavior alone. Both narrative and utility theories have been proposed to
+    explain juror decisions, which are among the most consequential complex decisions
+    made in a modern society. Here, we asked jury-eligible male and female subjects
+    to rate the strength of a series of criminal cases while recording the resulting
+    patterns of brain activation. We compared patterns of brain activation associated
+    with evidence accumulation to patterns of brain activation derived from a large
+    neuroimaging database to look for signatures of the cognitive processes associated
+    with different models of juror decision-making. Evidence accumulation correlated
+    with multiple narrative processes, including reading and recall. Of the cognitive
+    processes traditionally viewed as components of utility, activation patterns associated
+    with uncertainty, but not value, were more active with stronger evidence. Independent
+    of utility and narrative, activations linked to reasoning and relational logic
+    also correlated with increasing evidence. Hierarchical modeling of cognitive processes
+    associated with evidence accumulation supported a more prominent role for narrative
+    in weighing evidence in complex decisions. However, utility processes were also
+    associated with evidence accumulation. These complementary findings support an
+    emerging view that integrates utility and narrative processes in complex decisions.SIGNIFICANCE
+    STATEMENT The last decade has seen a sharply increased interest in narrative as
+    a central cognitive process in human decision-making and as an important factor
+    in the evolution of human societies. However, the roles of narrative versus utility
+    models of decision-making remain hotly debated. While available models frequently
+    produce similar behavioral predictions, they rely on different cognitive processes
+    and so their roles can be separated using the right neural tests. Here, we use
+    brain imaging during mock juror decisions to show that cognitive processes associated
+    with narrative, and to a lesser extent utility, were engaged while subjects evaluated
+    evidence. These results are consistent with interactions between narrative and
+    utility processes during complex decision-making.
+  URL: https://www.jneurosci.org/content/42/40/7624
+  DOI: 10.1523/JNEUROSCI.2434-21.2022
+  ISSN: '0270-6474'
+
+- id: castrellon2022scan
+  type: article-journal
+  author:
+  - family: Castrellon
+    given: Jaime J
+  - family: Hakimi
+    given: Shabnam
+  - family: Parelman
+    given: Jacob M
+  - family: Yin
+    given: Lun
+  - family: Law
+    given: Jonathan R
+  - family: Skene
+    given: Jesse A G
+  - family: Ball
+    given: David A
+  - family: Malekpour
+    given: Artemis
+  - family: Beskind
+    given: Donald H
+  - family: Vidmar
+    given: Neil
+  - family: Pearson
+    given: John M
+  - family: Skene
+    given: J H Pate
+  - family: Carter
+    given: R McKell
+  issued:
+  - year: 2022
+    month: 10
+  title: <span class="nocase">Social cognitive processes explain bias in juror decisions</span>
+  container-title: Social Cognitive and Affective Neuroscience
+  abstract: Jury decisions are among the most consequential social decisions in which
+    bias plays a notable role. While courts take measures to reduce the influence
+    of non-evidentiary factors, jurors may still incorporate biases into their decisions.
+    One common bias, crime-type bias, is the extent to which the perceived strength
+    of a prosecutor’s case depends on the severity of the crime. Moral judgment, affect,
+    and social cognition have been proposed as core processes underlying this and
+    other biases. Behavioral evidence alone has been insufficient to distinguish these
+    explanations. To identify the mechanism underlying crime-type bias, we collected
+    fMRI patterns of brain activation from mock jurors reading criminal scenarios.
+    Brain patterns from crime-type bias were most similar to those associated with
+    social cognition (mentalizing and racial bias) but not affect or moral judgment.
+    Our results support a central role for social cognition in juror decisions and
+    suggest crime-type bias and cultural bias may arise from similar mechanisms.
+  URL: https://doi.org/10.1093/scan/nsac057
+  DOI: 10.1093/scan/nsac057
+  ISSN: '1749-5016'
+
+- id: jun2021onoff
+  type: article-journal
+  author:
+  - family: Jun
+    given: Na Young
+  - family: Field
+    given: Greg D.
   - family: Pearson
     given: John
-  - family: De Brigard
-    given: Felipe
   issued:
   - year: 2021
-  title: Degrading causation
-  publisher: OSF Preprints
+  title: Scene statistics and noise determine the relative arrangement of receptive
+    field mosaics
+  container-title: Proceedings of the National Academy of Sciences
+  publisher: National Academy of Sciences
+  volume: '118'
+  issue: '39'
+  abstract: 'Across a wide variety of species, cells in the retina specialized for
+    signaling either increases (ON) or decreases (OFF) in light represent one of the
+    most basic building blocks of visual computation. These cells coordinate to form
+    mosaics, with each cell responsible for a small, minimally overlapping portion
+    of visual space, but the ways in which these mosaics could be spatially coordinated
+    with each other are relatively unknown. Here, we show how efficient coding theory,
+    which hypothesizes that the nervous system minimizes the amount of redundant information
+    it encodes, can predict the relative spatial arrangement of ON and OFF mosaics.
+    The most information-efficient arrangements are determined both by levels of noise
+    in the system and the statistics of natural images.Many sensory systems utilize
+    parallel ON and OFF pathways that signal stimulus increments and decrements, respectively.
+    These pathways consist of ensembles or grids of ON and OFF detectors spanning
+    sensory space. Yet, encoding by opponent pathways raises a question: How should
+    grids of ON and OFF detectors be arranged to optimally encode natural stimuli?
+    We investigated this question using a model of the retina guided by efficient
+    coding theory. Specifically, we optimized spatial receptive fields and contrast
+    response functions to encode natural images given noise and constrained firing
+    rates. We find that the optimal arrangement of ON and OFF receptive fields exhibits
+    a transition between aligned and antialigned grids. The preferred phase depends
+    on detector noise and the statistical structure of the natural stimuli. These
+    results reveal that noise and stimulus statistics produce qualitative shifts in
+    neural coding strategies and provide theoretical predictions for the configuration
+    of opponent pathways in the nervous system.There are no data underlying this work.'
+  URL: https://www.pnas.org/content/118/39/e2105115118
+  DOI: 10.1073/pnas.2105115118
+  ISSN: '0027-8424'
 
 - id: draelos2021improv
   type: article-journal
@@ -1195,21 +1343,337 @@
   - family: Sprague
     given: Daniel
   - family: Loring
-    given: Matthew D
+    given: Matthew D.
   - family: Pnevmatikakis
     given: Eftychios
   - family: Giovannucci
     given: Andrea
   - family: Naumann
-    given: Eva A
+    given: Eva A.
   - family: Pearson
-    given: John M
+    given: John M.
   issued:
   - year: 2021
-  title: 'Improv: A flexible software platform for adaptive neuroscience experiments'
-  title-short: Improv
+  title: '*Improv*: A flexible software platform for adaptive neuroscience experiments'
+  title-short: '*Improv*'
   container-title: bioRxiv
   publisher: Cold Spring Harbor Laboratory
+  abstract: Neuroscientists now routinely record the activity of large numbers of
+    neurons at high temporal and spatial resolution. With these capabilities comes
+    the promise of causally intervening during these recordings by perturbing neurons
+    or changing experimental conditions, requiring tight integration between data
+    acquisition, analysis, and manipulation. Unfortunately, solutions for real-time
+    interventions are rare, difficult to design and implement, and remain largely
+    unused. Here, we introduce improv, a software platform that allows users to flexibly
+    specify and manage adaptive experiments to integrate data collection, preprocessing,
+    visualization, and user-defined analytics. Using improv for streaming data analysis
+    for two photon calcium imaging and behavior we demonstrate how access to online
+    information can be used for automated, integrated experimentation.Competing Interest
+    StatementThe authors have declared no competing interest.
+  URL: https://www.biorxiv.org/content/early/2021/02/23/2021.02.22.432006
+  DOI: 10.1101/2021.02.22.432006
+
+- id: draelos2021bubblewrap
+  type: article-journal
+  author:
+  - family: Draelos
+    given: Anne
+  - family: Gupta
+    given: Pranjal
+  - family: Jun
+    given: Na Young
+  - family: Sriworarat
+    given: Chaichontat
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2021
+  title: 'Bubblewrap: Online tiling and real-time flow prediction on neural manifolds'
+  title-short: Bubblewrap
+  container-title: Advances in Neural Information Processing Systems
+  volume: '34'
+
+- id: ONeill2021Causation
+  type: article-journal
+  author:
+  - family: O’Neill
+    given: Kevin
+  - family: Henne
+    given: Paul
+  - family: Bello
+    given: Paul
+  - family: Pearson
+    given: John
+  - family: De Brigard
+    given: Felipe
+  issued:
+  - year: 2022
+  title: Confidence and gradation in causal judgment
+  container-title: Cognition
+  publisher: Elsevier
+  page: '105036'
+  volume: '223'
+
+- id: oneill2021measuring
+  type: article-journal
+  author:
+  - family: O’Neill
+    given: Kevin
+  - family: Henne
+    given: Paul
+  - family: Pearson
+    given: John
+  - family: De Brigard
+    given: Felipe
+  issued:
+  - year: 2021
+  title: Measuring and modeling confidence in human causal judgment
+  container-title: 10.31234/osf.io/cgvwf
+
+- id: alvarado2021dynamics
+  type: article-journal
+  author:
+  - family: Singh Alvarado
+    given: Jonnathan
+  - family: Goffinet
+    given: Jack
+  - family: Michael
+    given: Valerie
+  - family: Liberti
+    given: William
+  - family: Hatfield
+    given: Jordan
+  - family: Gardner
+    given: Timothy
+  - family: Pearson
+    given: John
+  - family: Mooney
+    given: Richard
+  issued:
+  - year: 2021
+  title: Neural dynamics underlying birdsong practice and performance
+  container-title: Nature
+  publisher: Nature Publishing Group
+  page: '635-639'
+  volume: '599'
+  issue: '7886'
+
+- id: dealbuquerque2021fmri
+  type: paper-conference
+  author:
+  - family: Albuquerque
+    given: Daniela
+    dropping-particle: de
+  - family: Goffinet
+    given: Jack
+  - family: Wright
+    given: Rachael
+  - family: Pearson
+    given: John
+  editor:
+  - family: Jung
+    given: Ken
+  - family: Yeung
+    given: Serena
+  - family: Sendak
+    given: Mark
+  - family: Sjoding
+    given: Michael
+  - family: Ranganath
+    given: Rajesh
+  issued:
+  - year: 2021
+  title: Deep generative analysis for task-based functional mri experiments
+  container-title: Proceedings of the 6th machine learning for healthcare conference
+  collection-title: Proceedings of machine learning research
+  publisher: PMLR
+  page: '146-175'
+  volume: '149'
+  abstract: 'While functional magnetic resonance imaging (fMRI) remains one of the
+    most widespread and important methods in basic and clinical neuroscience, the
+    data it produces—time series of brain volumes—continue to pose daunting analysis
+    challenges. The current standard (“mass univariate”) approach involves constructing
+    a matrix of task regressors, fitting a separate general linear model at each volume
+    pixel (“voxel”), computing test statistics for each model, and correcting for
+    false positives post hoc using bootstrap or other resampling methods. Despite
+    its simplicity, this approach has enjoyed great success over the last two decades
+    due to: 1) its ability to produce effect maps highlighting brain regions whose
+    activity significantly correlates with a given variable of interest; and 2) its
+    modeling of experimental effects as separable and thus easily interpretable. However,
+    this approach suffers from several well-known drawbacks, namely: inaccurate assumptions
+    of linearity and noise Gaussianity; a limited ability to capture individual effects
+    and variability; and difficulties in performing proper statistical testing secondary
+    to independently fitting voxels. In this work, we adopt a different approach,
+    modeling entire volumes directly in a manner that increases model flexibility
+    while preserving interpretability. Specifically, we use a generalized additive
+    model (GAM) in which the effects of each regressor remain separable, the product
+    of a spatial map produced by a variational autoencoder and a (potentially nonlinear)
+    gain modeled by a covariate-specific Gaussian Process. The result is a model that
+    yields group-level effect maps comparable or superior to the ones obtained with
+    standard fMRI analysis software while also producing single-subject effect maps
+    capturing individual differences. This suggests that generative models with a
+    decomposable structure might offer a more flexible alternative for the analysis
+    of task-based fMRI data.'
+  URL: https://proceedings.mlr.press/v149/albuquerque21a.html
+
+- id: martinez2021rosetta
+  type: article-journal
+  author:
+  - family: Martinez
+    given: Miles
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2022
+  title: Reproducible, incremental representation learning with rosetta VAE
+  container-title: CoRR
+  volume: abs/2201.05206
+  URL: https://arxiv.org/abs/2201.05206
+
+- id: hsiung2022
+  type: article-journal
+  author:
+  - family: Hsiung
+    given: Abigail
+  - family: Pearson
+    given: John M.
+  - family: Poh
+    given: Jia-Hou
+  - family: Hakimi
+    given: Shabnam
+  - family: Adcock
+    given: R. Alison
+  - family: Huettel
+    given: Scott A.
+  issued:
+  - year: 2022
+  title: 'Between heuristics and optimality: Flexible integration of cost and evidence
+    during information sampling'
+  title-short: Between heuristics and optimality
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  abstract: Effective decision making in an uncertain world requires balancing the
+    benefits of acquiring relevant information with the costs of delaying choice.
+    Optimal strategies for information sampling can be accurate but computationally
+    expensive, whereas heuristic strategies are often computationally simple but rigid.
+    To characterize the computations that underlie information sampling, we examined
+    choice processes in human participants who sampled sequences of images (e.g. indoor
+    and outdoor scenes) and attempted to infer the majority category (e.g. indoor
+    or outdoor) under two reward conditions. We examined how behavior maps onto potential
+    information sampling strategies. We found that choices were best described by
+    a flexible function that lay between optimality and heuristics; integrating the
+    magnitude of evidence favoring each category and the number of samples collected
+    thus far. Integration of these criteria resulted in a trade-off between evidence
+    and samples collected, in which the strength of evidence needed to stop sampling
+    decreased linearly as the number of samples accumulated over the course of a trial.
+    This non-optimal trade-off best accounted for choice behavior even under high
+    reward contexts. Our results demonstrate that unlike the optimal strategy, humans
+    are performing simple accumulations instead of computing expected values, and
+    that unlike a simple heuristic strategy, humans are dynamically integrating multiple
+    sources of information in lieu of using only one source. This evidence-by-costs
+    tradeoff illustrates a computationally efficient strategy that balances competing
+    motivations for accuracy and cost minimization.Competing Interest StatementThe
+    authors have declared no competing interest.
+  URL: https://www.biorxiv.org/content/early/2022/05/20/2022.05.17.492355
+  DOI: 10.1101/2022.05.17.492355
+
+- id: vihani2021
+  type: article-journal
+  author:
+  - family: Vihani
+    given: Aashutosh
+  - family: Nagai
+    given: Maira H.
+  - family: Juan
+    given: Conan
+  - family: March
+    given: Claire A.
+    dropping-particle: de
+  - family: Hu
+    given: Xiaoyang S.
+  - family: Pearson
+    given: John
+  - family: Matsunami
+    given: Hiroaki
+  issued:
+  - year: 2021
+  title: Encoding of odors by mammalian olfactory receptors
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  abstract: Identified ligands for &gt; 500 mouse ORsORs are specifically tuned towards
+    individual odorants and their molecular propertiesOdor molecular properties are
+    informative of odor responsesPredictive modeling and convergent evolution analyses
+    suggest specific residues within a canonical location for odorant bindingOlfactory
+    receptors (ORs) constitute the largest multi-gene family in the mammalian genome,
+    with hundreds to thousands of loci in humans and mice respectively1. The rapid
+    expansion of this massive family of genes has been generated by numerous duplication
+    and diversification events throughout evolutionary history. This size, similarity,
+    and diversity has made it challenging to define the principles by which ORs encode
+    olfactory stimuli. Here, we performed a broad surveying of OR responses, using
+    an in vivo strategy, against a diverse panel of odorants. We then used the resulting
+    interaction profiles to uncover relationships between OR responses, odorants,
+    odor molecular properties, and OR sequences. Our data and analyses revealed that
+    ORs generally exhibited sparse tuning towards odorants and their molecular properties.
+    Odor molecular property similarity between pairs of odorants was informative of
+    odor response similarity. Finally, ORs sharing response to an odorant possessed
+    amino acids at poorly conserved sites that exhibited both, predictive power towards
+    odorant selectivity and convergent evolution. The localization of these residues
+    occurred primarily at the interface of the upper halves of the transmembrane domains,
+    implying that canonical positions govern odor selectivity across ORs. Altogether,
+    our results provide a basis for translating odorants into receptor neuron responses
+    for the unraveling of mammalian odor coding.Competing Interest StatementHM has
+    received royalties from ChemCom, has received research grants from Givaudan, and
+    has received consultant fees from Kao.
+  URL: https://www.biorxiv.org/content/early/2021/12/28/2021.12.27.474279
+  DOI: 10.1101/2021.12.27.474279
+
+- id: subramanian2022.06.22.497244
+  type: article-journal
+  author:
+  - family: Subramanian
+    given: Divya
+  - family: Pearson
+    given: John
+  - family: Sommer
+    given: Marc A.
+  issued:
+  - year: 2022
+  title: Contributions of bayesian and discriminative models to active visual perception
+    across saccades
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  abstract: The brain interprets sensory inputs to guide behavior, but behavior disrupts
+    sensory inputs. In primates, saccadic eye movements displace visual images on
+    the retina and yet the brain perceives visual stability, a process called active
+    vision. We studied whether active vision is Bayesian. Humans and monkeys reported
+    whether an image moved during saccades. We tested whether they used prior expectations
+    to account for sensory uncertainty in a Bayesian manner. For continuous judgments,
+    subjects were Bayesian. For categorical judgments, they were anti-Bayesian for
+    uncertainty due to external, image noise but Bayesian for uncertainty due to internal,
+    motor-driven noise. A discriminative learning model explained the anti-Bayesian
+    effect. Therefore, active vision uses both Bayesian and discriminative models
+    depending on task requirements (continuous vs. categorical) and the source of
+    uncertainty (image noise vs. motor-driven noise), suggesting that active perceptual
+    mechanisms are governed by the interaction of both models.Competing Interest StatementThe
+    authors have declared no competing interest.
+  URL: https://www.biorxiv.org/content/early/2022/06/26/2022.06.22.497244
+  DOI: 10.1101/2022.06.22.497244
+
+- id: jun2022channel
+  type: article-journal
+  author:
+  - family: Jun
+    given: Na Young
+  - family: Field
+    given: Greg D.
+  - family: Pearson
+    given: John M.
+  issued:
+  - year: 2022
+  title: Efficient coding, channel capacity and the emergence of retinal mosaics
+  container-title: Advances in Neural Information Processing Systems
+  volume: (*accepted*)
+  note: Selected for Oral Presentation
 
 - id: roy2021inter
   type: article-journal
@@ -1229,24 +1693,9 @@
   title: Inter-mosaic coordination of retinal receptive fields
   container-title: Nature
   publisher: Nature Publishing Group
-  page: 409-413
+  page: '409-413'
   volume: '592'
   issue: '7854'
-
-- id: jun2021optimal
-  type: article-journal
-  author:
-  - family: Jun
-    given: Na Young
-  - family: Field
-    given: Greg D
-  - family: Pearson
-    given: John M
-  issued:
-  - year: 2021
-  title: The optimal spatial arrangement of on and off receptive fields
-  container-title: bioRxiv
-  publisher: Cold Spring Harbor Laboratory
 
 - id: goffinet2021low
   type: article-journal
@@ -1265,40 +1714,8 @@
     in vocal repertoires
   container-title: eLife
   publisher: eLife Sciences Publications
-  page: e67855
+  page: 'e67855'
   volume: '10'
-
-- id: castrellon2021neural
-  type: article-journal
-  author:
-  - family: Castrellon
-    given: Jaime J
-  - family: Hakimi
-    given: Shabnam
-  - family: Parelman
-    given: Jacob M
-  - family: Yin
-    given: Lun
-  - family: Law
-    given: Jonathan R
-  - family: Skene
-    given: Jesse AG
-  - family: Ball
-    given: David A
-  - family: Malekpour
-    given: Artemis
-  - family: Beskind
-    given: Donald H
-  - family: Vidmar
-    given: Neil
-  - literal: others
-  issued:
-  - year: 2021
-  title: Neural evidence for narrative-based processing of evidence and bias in juror
-    decision making
-  container-title: bioRxiv
-  publisher: Cold Spring Harbor Laboratory
-  page: 2020-11
 
 - id: draelos2020online
   type: paper-conference
@@ -1312,24 +1729,6 @@
   title: Online neural connectivity estimation with noisy group testing
   container-title: Advances in neural information processing systems
   volume: '33'
-
-- id: de2021deep
-  type: article-journal
-  author:
-  - family: Albuquerque
-    given: Daniela F
-    dropping-particle: de
-  - family: Goffinet
-    given: Jack
-  - family: Wright
-    given: Rachael
-  - family: Pearson
-    given: John M
-  issued:
-  - year: 2021
-  title: Deep generative analysis for task-based functional mri experiments
-  container-title: bioRxiv
-  publisher: Cold Spring Harbor Laboratory
 
 - id: draelos2020arxiv
   type: article-journal
