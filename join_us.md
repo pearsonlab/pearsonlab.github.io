@@ -28,7 +28,7 @@ Duke provides a wonderful environment for students interested in pursuing the ki
     - Experience analyzing data (statistical modeling, simulation, machine learning).
 
 # Full-Time Research Associates
-We sometimes advertise positions for research associates/data scientists. These roles are best-suited to post-baccalaureate students who plan to go on to graduate school or careers in data science. Applicants should send a cv, cover letter, and code sample (GitHub/BitBucket/Gitlab profile preferred) to John for consideration. Again, we prioritize applicants with strong coding and quantitative skills. **We are currently interested in recruiting a full-time research associate for projects focused on analyzing vocal behavior in conjunction with brain data.**
+We sometimes advertise positions for research associates/data scientists. These roles are best-suited to post-baccalaureate students who plan to go on to graduate school or careers in data science. Applicants should send a cv, cover letter, and code sample (GitHub/BitBucket/Gitlab profile preferred) to John for consideration. Again, we prioritize applicants with strong coding and quantitative skills. 
 
 # Undergraduates
 
