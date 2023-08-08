@@ -7,6 +7,9 @@ nav: Join Us # what shows up in the navbar at the top (do not define if you don'
 We're always interested in talking to qualified postdoc candidates. Particularly those with backgrounds in Statistics, Computer Science, Physics, or any other field where you do applied math for a living. Neuroscience experience is not required, though neuroscience interest is.
 
 # Graduate students
+
+**We are not recruiting graduate students for Fall 2024. However, the lab will be open to rotating students.**
+
 Duke provides a wonderful environment for students interested in pursuing the kind of interdisciplinary research we do. As a result, P[&lambda;]ab accepts graduate students through multiple programs:
 
 - [Neurobiology](https://www.neuro.duke.edu/). The Department of Neurobiology offers a PhD through its [graduate training program](https://www.neuro.duke.edu/education/graduate-training-program). Research in the department focuses on biological and mechanistic approaches, typically at the cellular and molecular or systems and circuits level. This is John's home department, and the lab regularly hosts students for rotations or PhD mentorship.
