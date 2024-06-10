@@ -13,7 +13,7 @@
   title: Fictive reward signals in the anterior cingulate cortex
   container-title: science
   publisher: American Association for the Advancement of Science
-  page: '948-950'
+  page: 948-950
   volume: '324'
   issue: '5929'
 
@@ -35,7 +35,7 @@
   title-short: Surprise signals in anterior cingulate cortex
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: '4178-4187'
+  page: 4178-4187
   volume: '31'
   issue: '11'
 
@@ -53,7 +53,7 @@
   title: Neuronal basis of sequential foraging decisions in a patchy environment
   container-title: Nature neuroscience
   publisher: Nature Publishing Group
-  page: '933-939'
+  page: 933-939
   volume: '14'
   issue: '7'
 
@@ -74,7 +74,7 @@
     multioption choice task
   container-title: Current biology
   publisher: Elsevier
-  page: '1532-1537'
+  page: 1532-1537
   volume: '19'
   issue: '18'
 
@@ -97,7 +97,7 @@
   title-short: Posterior cingulate cortex
   container-title: Trends in cognitive sciences
   publisher: Elsevier Current Trends
-  page: '143-151'
+  page: 143-151
   volume: '15'
   issue: '4'
 
@@ -156,7 +156,7 @@
   title: Neuroethology of decision-making
   container-title: Current opinion in neurobiology
   publisher: Elsevier Current Trends
-  page: '982-989'
+  page: 982-989
   volume: '22'
   issue: '6'
 
@@ -179,7 +179,7 @@
   title-short: Through their eyes
   container-title: Journal of Experimental Biology
   publisher: The Company of Biologists Ltd
-  page: '3035-3046'
+  page: 3035-3046
   volume: '216'
   issue: '16'
 
@@ -196,7 +196,7 @@
   title-short: Confidence and corrections
   container-title: Neuron
   publisher: Elsevier
-  page: '724-726'
+  page: 724-726
   volume: '63'
   issue: '6'
 
@@ -214,7 +214,7 @@
   title: A role for posterior cingulate cortex in policy switching and cognitive control
   container-title: 'Mars R, Sallet J, Rushworth S, Yeung N (eds), Neural Basis of
     Motivational and Cognitive Control. Cambridge, MA: MIT Press'
-  page: '127-43'
+  page: 127-43
 
 - id: chang2013neuroethology
   type: article-journal
@@ -238,14 +238,14 @@
   title: Neuroethology of primate social behavior
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Academy of Sciences
-  page: '10387-10394'
+  page: 10387-10394
   volume: '110'
   issue: Supplement 2
 
 - id: san2013rapid
   type: article-journal
   author:
-  - family: San Martín
+  - family: San Martı'n
     given: René
   - family: Appelbaum
     given: Lawrence G
@@ -261,7 +261,7 @@
     during economic decision making
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: '7011-7019'
+  page: 7011-7019
   volume: '33'
   issue: '16'
 
@@ -302,7 +302,7 @@
   title-short: Dopamine
   container-title: Neuron
   publisher: Cell Press
-  page: '831-833'
+  page: 831-833
   volume: '79'
   issue: '5'
 
@@ -342,7 +342,7 @@
   title: Postreward delays and systematic biases in measures of animal temporal discounting
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Academy of Sciences
-  page: '15491-15496'
+  page: 15491-15496
   volume: '110'
   issue: '38'
 
@@ -366,7 +366,7 @@
   title: Lemurs and macaques show similar numerical sensitivity
   container-title: Animal cognition
   publisher: Springer Berlin Heidelberg
-  page: '503-515'
+  page: 503-515
   volume: '17'
   issue: '3'
 
@@ -382,7 +382,7 @@
   title: Dynamic decision making in the brain
   container-title: Nature neuroscience
   publisher: Nature Publishing Group
-  page: '341-342'
+  page: 341-342
   volume: '15'
   issue: '3'
 
@@ -399,7 +399,7 @@
     from the brain'
   title-short: Change detection, multiple controllers, and dynamic environments
   container-title: Journal of the experimental analysis of behavior
-  page: '74-84'
+  page: 74-84
   volume: '99'
   issue: '1'
 
@@ -506,7 +506,7 @@
   title-short: Decision making
   container-title: Neuron
   publisher: Cell Press
-  page: '950-965'
+  page: 950-965
   volume: '82'
   issue: '5'
 
@@ -524,7 +524,7 @@
   title: Differential reward learning for self and others predicts self-reported altruism
   container-title: PLoS One
   publisher: Public Library of Science
-  page: 'e107621'
+  page: e107621
   volume: '9'
   issue: '9'
 
@@ -547,7 +547,7 @@
     behavior
   container-title: 'Psychiatry Research: Neuroimaging'
   publisher: Elsevier
-  page: '254-261'
+  page: 254-261
   volume: '224'
   issue: '3'
 
@@ -590,7 +590,7 @@
   title-short: Mind-reading without the scanner
   container-title: Visual Cognition
   publisher: Routledge
-  page: '862-866'
+  page: 862-866
   volume: '23'
   issue: '7'
 
@@ -607,7 +607,7 @@
   title-short: Dopamine
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Academy of Sciences
-  page: '22-23'
+  page: 22-23
   volume: '113'
   issue: '1'
 
@@ -631,14 +631,14 @@
   title: Neural mechanisms of social decision-making in the primate amygdala
   container-title: Proceedings of the National Academy of Sciences
   publisher: National Academy of Sciences
-  page: '16012-16017'
+  page: 16012-16017
   volume: '112'
   issue: '52'
 
 - id: san2016altruistic
   type: article-journal
   author:
-  - family: San Martín
+  - family: San Martı'n
     given: René
   - family: Kwak
     given: Youngbin
@@ -654,7 +654,7 @@
     for self vs charity
   container-title: Social cognitive and affective neuroscience
   publisher: Oxford University Press
-  page: '863-876'
+  page: 863-876
   volume: '11'
   issue: '6'
 
@@ -674,7 +674,7 @@
   title: THE impact of feedback timing on value learning in aging
   container-title: GERONTOLOGIST
   publisher: OXFORD UNIV PRESS INC JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA
-  page: '140-140'
+  page: 140-140
   volume: '55'
 
 - id: chang2016neuroetologia
@@ -694,9 +694,9 @@
     given: Michael L
   issued:
   - year: 2016
-  title: Neuroetología del comportamiento social de los primates
+  title: Neuroetologı'a del comportamiento social de los primates
   container-title: Ludus Vitalis
-  page: '151-176'
+  page: 151-176
   volume: '21'
   issue: '40'
 
@@ -714,7 +714,7 @@
   title: Decoding working memory content from attentional biases
   container-title: Psychonomic bulletin & review
   publisher: Springer US
-  page: '1252-1260'
+  page: 1252-1260
   volume: '24'
   issue: '4'
 
@@ -736,7 +736,7 @@
   title: A primer on foraging and the explore/exploit trade-off for psychiatry research
   container-title: Neuropsychopharmacology
   publisher: Nature Publishing Group
-  page: '1931-1939'
+  page: 1931-1939
   volume: '42'
   issue: '10'
 
@@ -755,7 +755,7 @@
   title-short: Neuron’s eye view
   container-title: PLoS computational biology
   publisher: Public Library of Science
-  page: 'e1005645'
+  page: e1005645
   volume: '13'
   issue: '8'
 
@@ -851,7 +851,7 @@
     competitive dynamic game
   container-title: Nature communications
   publisher: Nature Publishing Group
-  page: '1-12'
+  page: 1-12
   volume: '10'
   issue: '1'
 
@@ -873,7 +873,7 @@
   title-short: Feedback-based learning in aging
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: '8453-8462'
+  page: 8453-8462
   volume: '38'
   issue: '39'
 
@@ -887,7 +887,7 @@
   title: Queuing cues in rapid cortical processing
   container-title: Nature human behaviour
   publisher: Nature Publishing Group
-  page: '620-621'
+  page: 620-621
   volume: '2'
   issue: '9'
 
@@ -917,7 +917,7 @@
   title: Modelling the effects of crime type and evidence on judgments about guilt
   container-title: Nature human behaviour
   publisher: Nature Publishing Group
-  page: '856-866'
+  page: 856-866
   volume: '2'
   issue: '11'
 
@@ -964,7 +964,7 @@
   title: Latent goal models for dynamic strategic interaction
   container-title: PLoS computational biology
   publisher: Public Library of Science
-  page: 'e1006895'
+  page: e1006895
   volume: '15'
   issue: '3'
 
@@ -982,7 +982,7 @@
   title-short: Cognitive bots and algorithmic humans
   container-title: Current Opinion in Behavioral Sciences
   publisher: Elsevier
-  page: '55-62'
+  page: 55-62
   volume: '29'
 
 - id: besanccon2019distributions
@@ -1024,7 +1024,7 @@
     auditory and visual stimuli
   container-title: Journal of Neurophysiology
   publisher: American Physiological Society Bethesda, MD
-  page: '715-727'
+  page: 715-727
   volume: '124'
   issue: '3'
 
@@ -1049,7 +1049,7 @@
     promote and suppress vocalization
   container-title: eLife
   publisher: eLife Sciences Publications Limited
-  page: 'e63493'
+  page: e63493
   volume: '9'
 
 - id: mcdonald2020dorsolateral
@@ -1067,7 +1067,7 @@
     of dynamic social behavior
   container-title: Social cognitive and affective neuroscience
   publisher: Oxford University Press
-  page: '383-393'
+  page: 383-393
   volume: '15'
   issue: '4'
 
@@ -1091,7 +1091,7 @@
   title: Attention-deficit/hyperactivity disorder and the explore/exploit trade-off
   container-title: Neuropsychopharmacology
   publisher: Nature Publishing Group
-  page: '614-621'
+  page: 614-621
   volume: '46'
   issue: '3'
 
@@ -1161,7 +1161,7 @@
     hiv using clinical and multimodal magnetic resonance imaging data
   container-title: Journal of NeuroVirology
   publisher: Springer International Publishing
-  page: '1-11'
+  page: 1-11
   volume: '27'
   issue: '1'
 
@@ -1200,7 +1200,7 @@
     in juror decision making
   container-title: Journal of Neuroscience
   publisher: Society for Neuroscience
-  page: '7624-7633'
+  page: 7624-7633
   volume: '42'
   issue: '40'
   abstract: Efforts to explain complex human decisions have focused on competing theories
@@ -1234,58 +1234,7 @@
     utility processes during complex decision-making.
   URL: https://www.jneurosci.org/content/42/40/7624
   DOI: 10.1523/JNEUROSCI.2434-21.2022
-  ISSN: '0270-6474'
-
-- id: castrellon2022scan
-  type: article-journal
-  author:
-  - family: Castrellon
-    given: Jaime J
-  - family: Hakimi
-    given: Shabnam
-  - family: Parelman
-    given: Jacob M
-  - family: Yin
-    given: Lun
-  - family: Law
-    given: Jonathan R
-  - family: Skene
-    given: Jesse A G
-  - family: Ball
-    given: David A
-  - family: Malekpour
-    given: Artemis
-  - family: Beskind
-    given: Donald H
-  - family: Vidmar
-    given: Neil
-  - family: Pearson
-    given: John M
-  - family: Skene
-    given: J H Pate
-  - family: Carter
-    given: R McKell
-  issued:
-  - year: 2022
-    month: 10
-  title: <span class="nocase">Social cognitive processes explain bias in juror decisions</span>
-  container-title: Social Cognitive and Affective Neuroscience
-  abstract: Jury decisions are among the most consequential social decisions in which
-    bias plays a notable role. While courts take measures to reduce the influence
-    of non-evidentiary factors, jurors may still incorporate biases into their decisions.
-    One common bias, crime-type bias, is the extent to which the perceived strength
-    of a prosecutor’s case depends on the severity of the crime. Moral judgment, affect,
-    and social cognition have been proposed as core processes underlying this and
-    other biases. Behavioral evidence alone has been insufficient to distinguish these
-    explanations. To identify the mechanism underlying crime-type bias, we collected
-    fMRI patterns of brain activation from mock jurors reading criminal scenarios.
-    Brain patterns from crime-type bias were most similar to those associated with
-    social cognition (mentalizing and racial bias) but not affect or moral judgment.
-    Our results support a central role for social cognition in juror decisions and
-    suggest crime-type bias and cultural bias may arise from similar mechanisms.
-  URL: https://doi.org/10.1093/scan/nsac057
-  DOI: 10.1093/scan/nsac057
-  ISSN: '1749-5016'
+  ISSN: 0270-6474
 
 - id: jun2021onoff
   type: article-journal
@@ -1329,7 +1278,7 @@
     of opponent pathways in the nervous system.There are no data underlying this work.'
   URL: https://www.pnas.org/content/118/39/e2105115118
   DOI: 10.1073/pnas.2105115118
-  ISSN: '0027-8424'
+  ISSN: 0027-8424
 
 - id: draelos2021improv
   type: article-journal
@@ -1414,22 +1363,6 @@
   page: '105036'
   volume: '223'
 
-- id: oneill2021measuring
-  type: article-journal
-  author:
-  - family: O’Neill
-    given: Kevin
-  - family: Henne
-    given: Paul
-  - family: Pearson
-    given: John
-  - family: De Brigard
-    given: Felipe
-  issued:
-  - year: 2021
-  title: Measuring and modeling confidence in human causal judgment
-  container-title: 10.31234/osf.io/cgvwf
-
 - id: alvarado2021dynamics
   type: article-journal
   author:
@@ -1454,7 +1387,7 @@
   title: Neural dynamics underlying birdsong practice and performance
   container-title: Nature
   publisher: Nature Publishing Group
-  page: '635-639'
+  page: 635-639
   volume: '599'
   issue: '7886'
 
@@ -1487,7 +1420,7 @@
   container-title: Proceedings of the 6th machine learning for healthcare conference
   collection-title: Proceedings of machine learning research
   publisher: PMLR
-  page: '146-175'
+  page: 146-175
   volume: '149'
   abstract: 'While functional magnetic resonance imaging (fMRI) remains one of the
     most widespread and important methods in basic and clinical neuroscience, the
@@ -1627,38 +1560,6 @@
   URL: https://www.biorxiv.org/content/early/2021/12/28/2021.12.27.474279
   DOI: 10.1101/2021.12.27.474279
 
-- id: subramanian2022.06.22.497244
-  type: article-journal
-  author:
-  - family: Subramanian
-    given: Divya
-  - family: Pearson
-    given: John
-  - family: Sommer
-    given: Marc A.
-  issued:
-  - year: 2022
-  title: Contributions of bayesian and discriminative models to active visual perception
-    across saccades
-  container-title: bioRxiv
-  publisher: Cold Spring Harbor Laboratory
-  abstract: The brain interprets sensory inputs to guide behavior, but behavior disrupts
-    sensory inputs. In primates, saccadic eye movements displace visual images on
-    the retina and yet the brain perceives visual stability, a process called active
-    vision. We studied whether active vision is Bayesian. Humans and monkeys reported
-    whether an image moved during saccades. We tested whether they used prior expectations
-    to account for sensory uncertainty in a Bayesian manner. For continuous judgments,
-    subjects were Bayesian. For categorical judgments, they were anti-Bayesian for
-    uncertainty due to external, image noise but Bayesian for uncertainty due to internal,
-    motor-driven noise. A discriminative learning model explained the anti-Bayesian
-    effect. Therefore, active vision uses both Bayesian and discriminative models
-    depending on task requirements (continuous vs. categorical) and the source of
-    uncertainty (image noise vs. motor-driven noise), suggesting that active perceptual
-    mechanisms are governed by the interaction of both models.Competing Interest StatementThe
-    authors have declared no competing interest.
-  URL: https://www.biorxiv.org/content/early/2022/06/26/2022.06.22.497244
-  DOI: 10.1101/2022.06.22.497244
-
 - id: jun2022channel
   type: article-journal
   author:
@@ -1693,7 +1594,7 @@
   title: Inter-mosaic coordination of retinal receptive fields
   container-title: Nature
   publisher: Nature Publishing Group
-  page: '409-413'
+  page: 409-413
   volume: '592'
   issue: '7854'
 
@@ -1714,7 +1615,7 @@
     in vocal repertoires
   container-title: eLife
   publisher: eLife Sciences Publications
-  page: 'e67855'
+  page: e67855
   volume: '10'
 
 - id: draelos2020online
@@ -1743,4 +1644,122 @@
   - year: 2020
   title: Online neural connectivity estimation with ensemble stimulation
   container-title: arXiv preprint arXiv:2007.13911
+
+- id: castrellon2023social
+  type: article-journal
+  author:
+  - family: Castrellon
+    given: Jaime J
+  - family: Hakimi
+    given: Shabnam
+  - family: Parelman
+    given: Jacob M
+  - family: Yin
+    given: Lun
+  - family: Law
+    given: Jonathan R
+  - family: Skene
+    given: Jesse AG
+  - family: Ball
+    given: David A
+  - family: Malekpour
+    given: Artemis
+  - family: Beskind
+    given: Donald H
+  - family: Vidmar
+    given: Neil
+  - literal: others
+  issued:
+  - year: 2023
+  title: Social cognitive processes explain bias in juror decisions
+  container-title: Social Cognitive and Affective Neuroscience
+  publisher: Oxford University Press UK
+  page: nsac057
+  volume: '18'
+  issue: '1'
+
+- id: o2022measuring
+  type: paper-conference
+  author:
+  - family: O’Neill
+    given: Kevin
+  - family: Henne
+    given: Paul
+  - family: Pearson
+    given: John
+  - family: DeBrigard
+    given: Felipe
+  issued:
+  - year: 2022
+  title: Measuring and modeling confidence in human causal judgment
+  container-title: Proceedings of the annual meeting of the cognitive science society
+
+- id: jiang2023neuronal
+  type: article-journal
+  author:
+  - family: Jiang
+    given: Yaoguang
+  - family: McDonald
+    given: Kelsey R
+  - family: Pearson
+    given: John M
+  - family: Platt
+    given: Michael L
+  issued:
+  - year: 2023
+  title: Neuronal mechanisms of dynamic strategic competition
+  container-title: Research Square
+  publisher: American Journal Experts
+
+- id: brudner2023generative
+  type: article-journal
+  author:
+  - family: Brudner
+    given: Samuel
+  - family: Pearson
+    given: John
+  - family: Mooney
+    given: Richard
+  issued:
+  - year: 2023
+  title: Generative models of birdsong learning link circadian fluctuations in song
+    variability to changes in performance
+  container-title: PLOS Computational Biology
+  publisher: Public Library of Science San Francisco, CA USA
+  page: e1011051
+  volume: '19'
+  issue: '5'
+
+- id: subramanian2023bayesian
+  type: article-journal
+  author:
+  - family: Subramanian
+    given: Divya
+  - family: Pearson
+    given: John M
+  - family: Sommer
+    given: Marc A
+  issued:
+  - year: 2023
+  title: Bayesian and discriminative models for active visual perception across saccades
+  container-title: eNeuro
+  publisher: Society for Neuroscience
+
+- id: pearson2023sophisticated
+  type: article-journal
+  author:
+  - family: Pearson
+    given: John
+  - family: Kumar
+    given: Achint
+  issued:
+  - year: 2023
+  title: 'Sophisticated models, minimum descriptions, and the goldilocks zone of
+    behavior: Comment on" beyond simple laboratory studies: Developing sophisticated
+    models to study rich behavior" by maselli et al'
+  title-short: Sophisticated models, minimum descriptions, and the goldilocks zone
+    of behavior
+  container-title: Physics of life reviews
+  page: 137-138
+  volume: '47'
 ...
