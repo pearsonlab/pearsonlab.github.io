@@ -1,5 +1,5 @@
 {
-  "timestamp": "2024-10-04 15:00:01",
+  "timestamp": "2024-10-04 16:00:01",
   "data": [
     {
       "gpu_index": 0,
@@ -7,9 +7,9 @@
       "gpu_utilization": 0,
       "memory_utilization": 0,
       "memory_total_MB": 11264,
-      "memory_free_MB": 9657,
-      "memory_used_MB": 1353,
-      "in_use": true
+      "memory_free_MB": 11000,
+      "memory_used_MB": 10,
+      "in_use": false
     },
     {
       "gpu_index": 1,
@@ -17,8 +17,8 @@
       "gpu_utilization": 0,
       "memory_utilization": 0,
       "memory_total_MB": 11264,
-      "memory_free_MB": 3292,
-      "memory_used_MB": 7696,
+      "memory_free_MB": 10549,
+      "memory_used_MB": 439,
       "in_use": true
     }
   ]
