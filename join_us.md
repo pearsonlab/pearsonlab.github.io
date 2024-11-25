@@ -8,7 +8,7 @@ We're always interested in talking to qualified postdoc candidates. Particularly
 
 # Graduate students
 
-**We are not recruiting graduate students for Fall 2024. However, the lab will be open to rotating students.**
+**We are not recruiting graduate students for the current admission cycle (matriculating Fall 2025). However, the lab will be open to rotating students.**
 
 Duke provides a wonderful environment for students interested in pursuing the kind of interdisciplinary research we do. As a result, P[&lambda;]ab accepts graduate students through multiple programs:
 
