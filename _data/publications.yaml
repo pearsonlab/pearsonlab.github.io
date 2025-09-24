@@ -1762,4 +1762,120 @@
   container-title: Physics of life reviews
   page: 137-138
   volume: '47'
+
+- id: o2024modeling
+  type: article-journal
+  author:
+  - family: O’Neill
+    given: Kevin
+  - family: Henne
+    given: Paul
+  - family: Pearson
+    given: John
+  - family: De Brigard
+    given: Felipe
+  issued:
+  - year: 2024
+  title: Modeling confidence in causal judgments.
+  container-title: 'Journal of Experimental Psychology: General'
+  publisher: American Psychological Association
+  page: '2142'
+  volume: '153'
+  issue: '8'
+
+- id: madlon2024optimal
+  type: paper-conference
+  author:
+  - family: Madlon-Kay
+    given: Seth
+  - family: Pearson
+    given: John
+  - family: Egner
+    given: Tobias
+  issued:
+  - year: 2024
+  title: 'Optimal decision-making under task uncertainty: A computational basis
+    for cognitive stability versus flexibility'
+  title-short: Optimal decision-making under task uncertainty
+  container-title: Proceedings of the annual meeting of the cognitive science society
+  volume: '46'
+
+- id: de2025inflationary
+  type: article-journal
+  author:
+  - family: Albuquerque
+    given: Daniela
+    dropping-particle: de
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2025
+  title: 'Inflationary flows: Calibrated bayesian inference with diffusion-based
+    models'
+  title-short: Inflationary flows
+  container-title: Advances in Neural Information Processing Systems
+  page: 96847-96891
+  volume: '37'
+
+- id: harmon2024vocalization
+  type: article-journal
+  author:
+  - family: Harmon
+    given: Thomas C
+  - family: Madlon-Kay
+    given: Seth
+  - family: Pearson
+    given: John
+  - family: Mooney
+    given: Richard
+  issued:
+  - year: 2024
+  title: Vocalization modulates the mouse auditory cortex even in the absence of hearing
+  container-title: Cell Reports
+  publisher: Elsevier
+  volume: '43'
+  issue: '8'
+
+- id: qi2025dual
+  type: article-journal
+  author:
+  - family: Qi
+    given: Jiaxuan
+  - family: Schreiner
+    given: Drew C
+  - family: Martinez
+    given: Miles
+  - family: Pearson
+    given: John
+  - family: Mooney
+    given: Richard
+  issued:
+  - year: 2025
+  title: Dual neuromodulatory dynamics underlie birdsong learning
+  container-title: Nature
+  publisher: Nature Publishing Group
+  page: 690-698
+  volume: '641'
+  issue: '8063'
+
+- id: geddert2025modeling
+  type: article-journal
+  author:
+  - family: Geddert
+    given: Raphael
+  - family: Madlon-Kay
+    given: Seth
+  - family: O’Neill
+    given: Kevin
+  - family: Pearson
+    given: John
+  - family: Egner
+    given: Tobias
+  issued:
+  - year: 2025
+  title: Modeling of control over task switching and cross-task interference supports
+    a two-dimensional model of cognitive stability and flexibility
+  container-title: Psychonomic Bulletin & Review
+  publisher: Springer
+  page: 1-21
 ...
