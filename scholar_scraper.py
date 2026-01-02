@@ -6,7 +6,10 @@ Scrape Google Scholar publications and update publications.yaml
 import yaml
 import sys
 import re
-from scholarly import scholarly
+from scholarly import scholarly, ProxyGenerator
+
+# Force unbuffered output for GitHub Actions
+sys.stdout.reconfigure(line_buffering=True)
 
 def create_id_from_publication(first_author_last, year, title):
     """
@@ -88,17 +91,33 @@ def get_author_publications(scholar_id):
     """
     Fetch publications from Google Scholar for a given author ID
     """
-    print(f"Fetching publications for scholar ID: {scholar_id}")
+    print(f"Fetching publications for scholar ID: {scholar_id}", flush=True)
+    
+    # Set up a proxy generator to avoid rate limiting
+    try:
+        print("Setting up proxy to avoid rate limiting...", flush=True)
+        pg = ProxyGenerator()
+        pg.FreeProxies()
+        scholarly.use_proxy(pg)
+        print("Proxy configured successfully", flush=True)
+    except Exception as e:
+        print(f"Warning: Could not set up proxy: {e}", flush=True)
+        print("Continuing without proxy (may be slower)...", flush=True)
     
     try:
         # Search for author by ID
+        print("Searching for author...", flush=True)
         author = scholarly.search_author_id(scholar_id)
+        print("Filling author publications...", flush=True)
         author = scholarly.fill(author, sections=['publications'])
         
         publications = []
+        total_pubs = len(author['publications'])
+        print(f"Found {total_pubs} publications to process", flush=True)
         
-        for pub in author['publications']:
+        for idx, pub in enumerate(author['publications'], 1):
             try:
+                print(f"Processing publication {idx}/{total_pubs}...", flush=True)
                 # Fill in publication details
                 filled_pub = scholarly.fill(pub)
                 bib = filled_pub['bib']
@@ -159,16 +178,16 @@ def get_author_publications(scholar_id):
                     pub_data['URL'] = filled_pub['pub_url']
                 
                 publications.append(pub_data)
-                print(f"  - Added: {pub_id}")
+                print(f"  - Added: {pub_id}", flush=True)
                 
             except Exception as e:
-                print(f"  - Error processing publication: {e}")
+                print(f"  - Error processing publication: {e}", flush=True)
                 continue
         
         return publications
         
     except Exception as e:
-        print(f"Error fetching author publications: {e}")
+        print(f"Error fetching author publications: {e}", flush=True)
         sys.exit(1)
 
 def save_to_yaml(publications, output_file):
@@ -185,14 +204,14 @@ def save_to_yaml(publications, output_file):
         yaml.dump(publications, f, default_flow_style=False, allow_unicode=True, 
                   sort_keys=False, width=1000, indent=2)
     
-    print(f"\nSuccessfully wrote {len(publications)} publications to {output_file}")
+    print(f"\nSuccessfully wrote {len(publications)} publications to {output_file}", flush=True)
 
 if __name__ == "__main__":
     # Configuration
     SCHOLAR_ID = "4whjDosAAAAJ"
     OUTPUT_FILE = "_data/publications.yaml"
     
-    print("Starting publication update...")
+    print("Starting publication update...", flush=True)
     publications = get_author_publications(SCHOLAR_ID)
     save_to_yaml(publications, OUTPUT_FILE)
-    print("Done!")
+    print("Done!", flush=True)
