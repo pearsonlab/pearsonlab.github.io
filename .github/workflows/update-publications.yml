@@ -28,7 +28,7 @@ jobs:
     
     - name: Run publication updater
       run: |
-        python update_publications.py
+        python scholar_scraper.py
     
     - name: Check for changes
       id: git-check
