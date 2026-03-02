@@ -18,6 +18,26 @@
   publisher: Cold Spring Harbor Laboratory
   page: 2026.01. 20.699515
   URL: https://www.biorxiv.org/content/10.64898/2026.01.20.699515.abstract
+- id: wei2026dynamic
+  type: article-journal
+  author:
+  - family: Wei
+    given: Ganchao
+  - family: Albuquerque
+    given: Daniela de
+  - family: Martinez
+    given: Miles
+  - family: Pan
+    given: Shiyang
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2026
+  title: Dynamic Compression Flows for Neuroscience Data
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  page: 2026.02. 12.705535
+  URL: https://www.biorxiv.org/content/10.64898/2026.02.12.705535.abstract
 - id: albuquerque2025inflationary
   type: article-journal
   author:
@@ -116,36 +136,28 @@
   volume: '32'
   issue: '6'
   URL: https://link.springer.com/article/10.3758/s13423-025-02712-7
-- id: li2025motor
+- id: qi2025dual
   type: article-journal
   author:
-  - family: Li
-    given: Yi
-  - family: Xu
-    given: X Hermione
-  - family: Pan
-    given: Shiyang
-  - family: An
-    given: Xu
-  - family: Mulcahey
-    given: Patrick J
-  - family: Qiu
-    given: Zixuan
-  - family: Zhao
-    given: Shengli
-  - family: Li
-    given: Nuo
+  - family: Qi
+    given: Jiaxuan
+  - family: Schreiner
+    given: Drew C
+  - family: Martinez
+    given: Miles
   - family: Pearson
     given: John
-  - family: Huang
-    given: Z Josh
+  - family: Mooney
+    given: Richard
   issued:
   - year: 2025
-  title: Motor Cortical Output Integrates Distorted Proprioceptive Feedback
-  container-title: bioRxiv
-  publisher: Cold Spring Harbor Laboratory
-  page: 2025.11. 11.687832
-  URL: https://www.biorxiv.org/content/10.1101/2025.11.11.687832.abstract
+  title: Dual neuromodulatory dynamics underlie birdsong learning
+  container-title: Nature
+  publisher: Nature Publishing Group
+  page: 690-698
+  volume: '641'
+  issue: '8063'
+  URL: https://www.nature.com/articles/s41586-025-08694-9
 - id: subramanian2025frontal
   type: article-journal
   author:
@@ -289,6 +301,20 @@
   container-title: Research Square
   page: rs. 3. rs-2524549
   URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10055525/
+- id: pearson2023sophisticated
+  type: article-journal
+  author:
+  - family: Pearson
+    given: John
+  - family: Kumar
+    given: Achint
+  issued:
+  - year: 2023
+  title: 'Sophisticated models, minimum descriptions, and the Goldilocks zone of behavior: Comment on" Beyond simple laboratory studies: Developing sophisticated models to study rich behavior" by Maselli et al'
+  container-title: Physics of life reviews
+  page: 137-138
+  volume: '47'
+  URL: https://pubmed.ncbi.nlm.nih.gov/37898103/
 - id: subramanian2023bayesian
   type: article-journal
   author:
@@ -604,30 +630,6 @@
   volume: '592'
   issue: '7854'
   URL: https://www.nature.com/articles/s41586-021-03317-5
-- id: vihani2021encoding
-  type: article-journal
-  author:
-  - family: Vihani
-    given: Aashutosh
-  - family: Nagai
-    given: Maira H
-  - family: Juan
-    given: Conan
-  - family: March
-    given: Claire A de
-  - family: Hu
-    given: Xiaoyang S
-  - family: Pearson
-    given: John
-  - family: Matsunami
-    given: Hiroaki
-  issued:
-  - year: 2021
-  title: Encoding of odors by mammalian olfactory receptors
-  container-title: bioRxiv
-  publisher: Cold Spring Harbor Laboratory
-  page: 2021.12. 27.474279
-  URL: https://www.biorxiv.org/content/10.1101/2021.12.27.474279.abstract
 - id: xu2021machine
   type: article-journal
   author:
@@ -1134,25 +1136,6 @@
   volume: '23'
   issue: '7'
   URL: https://www.tandfonline.com/doi/abs/10.1080/13506285.2015.1093244
-- id: lighthall2015impact
-  type: article-journal
-  author:
-  - family: Lighthall
-    given: N
-  - family: Pearson
-    given: JM
-  - family: Huettel
-    given: S
-  - family: Cabeza
-    given: R
-  issued:
-  - year: 2015
-  title: THE IMPACT OF FEEDBACK TIMING ON VALUE LEARNING IN AGING
-  container-title: GERONTOLOGIST
-  publisher: OXFORD UNIV PRESS INC
-  page: 140-140
-  volume: '55'
-  URL: https://academic.oup.com/gerontologist/article-abstract/55/Suppl_2/140/2491012
 - id: addicott2014smoking
   type: article-journal
   author:
@@ -1318,29 +1301,6 @@
   volume: '110'
   issue: Supplement 2
   URL: https://www.pnas.org/doi/abs/10.1073/pnas.1301213110
-- id: chang2013neuroetologa
-  type: article-journal
-  author:
-  - family: Chang
-    given: Steve WC
-  - family: Brent
-    given: Lauren
-  - family: Adams
-    given: Geoffrey K
-  - family: Klein
-    given: Jeffrey T
-  - family: Pearson
-    given: John M
-  - family: Platt
-    given: Michael L
-  issued:
-  - year: 2013
-  title: Neuroetología del comportamiento social de los primates
-  container-title: Ludus Vitalis
-  page: 151-176
-  volume: '21'
-  issue: '40'
-  URL: http://www.ludus-vitalis.org/ojs/index.php/ludus/article/view/48
 - id: martn2013rapid
   type: article-journal
   author:
@@ -1415,6 +1375,28 @@
   page: '165'
   volume: '7'
   URL: https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2013.00165/full
+- id: yorzinski2013through
+  type: article-journal
+  author:
+  - family: Yorzinski
+    given: Jessica L
+  - family: Patricelli
+    given: Gail L
+  - family: Babcock
+    given: Jason S
+  - family: Pearson
+    given: John M
+  - family: Platt
+    given: Michael L
+  issued:
+  - year: 2013
+  title: 'Through their eyes: selective attention in peahens during courtship'
+  container-title: Journal of Experimental Biology
+  publisher: The Company of Biologists Ltd
+  page: 3035-3046
+  volume: '216'
+  issue: '16'
+  URL: https://journals.biologists.com/jeb/article-abstract/216/16/3035/11559
 - id: adams2012neuroethology
   type: article-journal
   author:
@@ -1525,7 +1507,7 @@
   title: A role for posterior cingulate cortex in policy switching and cognitive control
   container-title: 'Mars R, Sallet J, Rushworth S, Yeung N (eds), Neural Basis of Motivational and Cognitive Control. Cambridge, MA: MIT Press'
   page: 127-43
-  URL: https://books.google.com/books?hl=en&lr=&id=A_eoYgtLmFMC&oi=fnd&pg=PA127&dq=info:kaG7aPcLBRkJ:scholar.google.com&ots=YgqKIP2oH-&sig=J0odhmkQVV6PdSCM6mly0VJHbNI
+  URL: https://books.google.com/books?hl=en&lr=&id=A_eoYgtLmFMC&oi=fnd&pg=PA127&dq=info:kaG7aPcLBRkJ:scholar.google.com&ots=YgqLEP5nOS&sig=Cf-AQVYMN6UBnYSfTNjiVBrVDbA
 - id: pearson2010explicit
   type: article-journal
   author:
@@ -1618,6 +1600,16 @@
   volume: '19'
   issue: '18'
   URL: https://www.cell.com/current-biology/fulltext/S0960-9822(09)01474-2
+- id: pearson2004gravitons
+  type: article-journal
+  author:
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2004
+  title: 'Gravitons, inflatons, twisted bits: A noncommutative bestiary'
+  container-title: Princeton University
+  URL: https://search.proquest.com/openview/cf243cb8c9eb2529097f59942f9ca55f/1?pq-origsite=gscholar&cbl=18750&diss=y
 - id: pearson2003tracing
   type: article-journal
   author:
@@ -1672,3 +1664,21 @@
   volume: '82'
   issue: '2'
   URL: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.255
+- id: bejjani0towards
+  type: article-journal
+  author:
+  - family: Bejjani
+    given: Christina
+  - family: Egner
+    given: Tobias
+  - family: Pearson
+    given: John
+  - family: Moffitt
+    given: Terrie E
+  - family: Caspi
+    given: Avshalom
+  - family: Adcock
+    given: Alison
+  issued: []
+  title: TOWARDS A COMPUTATIONAL PSYCHIATRY OF TRANSDIAGNOSTIC DEFICITS IN COGNITIVE CONTROL
+  URL: https://scholar.google.com/scholar?cluster=478861155140086647&hl=en&oi=scholarr
