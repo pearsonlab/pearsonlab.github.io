@@ -136,6 +136,52 @@
   volume: '32'
   issue: '6'
   URL: https://link.springer.com/article/10.3758/s13423-025-02712-7
+- id: gong2025correctness
+  type: article-journal
+  author:
+  - family: Gong
+    given: Ziyi
+  - family: Duarte
+    given: Fabiola
+  - family: Mooney
+    given: Richard
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2025
+  title: 'Correctness is its own reward: bootstrapping error signals in self-guided reinforcement learning'
+  container-title: bioRxiv
+  URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC12393258/
+- id: li2025motor
+  type: article-journal
+  author:
+  - family: Li
+    given: Yi
+  - family: Xu
+    given: X Hermione
+  - family: Pan
+    given: Shiyang
+  - family: An
+    given: Xu
+  - family: Mulcahey
+    given: Patrick J
+  - family: Qiu
+    given: Zixuan
+  - family: Zhao
+    given: Shengli
+  - family: Li
+    given: Nuo
+  - family: Pearson
+    given: John
+  - family: Huang
+    given: Z Josh
+  issued:
+  - year: 2025
+  title: Motor Cortical Output Integrates Distorted Proprioceptive Feedback
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  page: 2025.11. 11.687832
+  URL: https://www.biorxiv.org/content/10.1101/2025.11.11.687832.abstract
 - id: qi2025dual
   type: article-journal
   author:
@@ -488,6 +534,24 @@
   volume: '46'
   issue: '3'
   URL: https://www.nature.com/articles/s41386-020-00881-8
+- id: albuquerque2021deep
+  type: article-journal
+  author:
+  - family: Albuquerque
+    given: Daniela de
+  - family: Goffinet
+    given: Jack
+  - family: Wright
+    given: Rachael
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2021
+  title: Deep Generative Analysis for Task-Based Functional MRI Experiments
+  container-title: Machine Learning for Healthcare Conference
+  publisher: PMLR
+  page: 146-175
+  URL: https://proceedings.mlr.press/v149/albuquerque21a.html
 - id: alvarado2021neural
   type: article-journal
   author:
@@ -630,6 +694,30 @@
   volume: '592'
   issue: '7854'
   URL: https://www.nature.com/articles/s41586-021-03317-5
+- id: vihani2021encoding
+  type: article-journal
+  author:
+  - family: Vihani
+    given: Aashutosh
+  - family: Nagai
+    given: Maira H
+  - family: Juan
+    given: Conan
+  - family: March
+    given: Claire A de
+  - family: Hu
+    given: Xiaoyang S
+  - family: Pearson
+    given: John
+  - family: Matsunami
+    given: Hiroaki
+  issued:
+  - year: 2021
+  title: Encoding of odors by mammalian olfactory receptors
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  page: 2021.12. 27.474279
+  URL: https://www.biorxiv.org/content/10.1101/2021.12.27.474279.abstract
 - id: xu2021machine
   type: article-journal
   author:
@@ -1136,6 +1224,25 @@
   volume: '23'
   issue: '7'
   URL: https://www.tandfonline.com/doi/abs/10.1080/13506285.2015.1093244
+- id: lighthall2015impact
+  type: article-journal
+  author:
+  - family: Lighthall
+    given: N
+  - family: Pearson
+    given: JM
+  - family: Huettel
+    given: S
+  - family: Cabeza
+    given: R
+  issued:
+  - year: 2015
+  title: THE IMPACT OF FEEDBACK TIMING ON VALUE LEARNING IN AGING
+  container-title: GERONTOLOGIST
+  publisher: OXFORD UNIV PRESS INC
+  page: 140-140
+  volume: '55'
+  URL: https://academic.oup.com/gerontologist/article-abstract/55/Suppl_2/140/2491012
 - id: addicott2014smoking
   type: article-journal
   author:
@@ -1301,6 +1408,29 @@
   volume: '110'
   issue: Supplement 2
   URL: https://www.pnas.org/doi/abs/10.1073/pnas.1301213110
+- id: chang2013neuroetologa
+  type: article-journal
+  author:
+  - family: Chang
+    given: Steve WC
+  - family: Brent
+    given: Lauren
+  - family: Adams
+    given: Geoffrey K
+  - family: Klein
+    given: Jeffrey T
+  - family: Pearson
+    given: John M
+  - family: Platt
+    given: Michael L
+  issued:
+  - year: 2013
+  title: Neuroetología del comportamiento social de los primates
+  container-title: Ludus Vitalis
+  page: 151-176
+  volume: '21'
+  issue: '40'
+  URL: http://www.ludus-vitalis.org/ojs/index.php/ludus/article/view/48
 - id: martn2013rapid
   type: article-journal
   author:
@@ -1507,7 +1637,7 @@
   title: A role for posterior cingulate cortex in policy switching and cognitive control
   container-title: 'Mars R, Sallet J, Rushworth S, Yeung N (eds), Neural Basis of Motivational and Cognitive Control. Cambridge, MA: MIT Press'
   page: 127-43
-  URL: https://books.google.com/books?hl=en&lr=&id=A_eoYgtLmFMC&oi=fnd&pg=PA127&dq=info:kaG7aPcLBRkJ:scholar.google.com&ots=YgqLEP5nOS&sig=Cf-AQVYMN6UBnYSfTNjiVBrVDbA
+  URL: https://books.google.com/books?hl=en&lr=&id=A_eoYgtLmFMC&oi=fnd&pg=PA127&dq=info:kaG7aPcLBRkJ:scholar.google.com&ots=YgqMGQ5mK_&sig=VRCGM2XC6wmQI4EVy_TXevKCB9U
 - id: pearson2010explicit
   type: article-journal
   author:
@@ -1682,3 +1812,28 @@
   issued: []
   title: TOWARDS A COMPUTATIONAL PSYCHIATRY OF TRANSDIAGNOSTIC DEFICITS IN COGNITIVE CONTROL
   URL: https://scholar.google.com/scholar?cluster=478861155140086647&hl=en&oi=scholarr
+- id: mcdonald0bayesian
+  type: article-journal
+  author:
+  - family: McDonald
+    given: Kelsey
+  - family: Huettel
+    given: Scott
+  - family: Pearson
+    given: John
+  issued: []
+  title: Bayesian nonparametric models characterize social sensitivity in a competitive dynamic game
+  URL: https://2019.ccneuro.org/proceedings/0000705.pdf
+- id: mcdonald0gaussian
+  type: article-journal
+  author:
+  - family: McDonald
+    given: Kelsey
+  - family: Broderick
+    given: William F
+  - family: Huettel
+    given: Scott
+  - family: Pearson
+    given: John
+  issued: []
+  title: Gaussian Process Models Characterize Other-Regarding Strategies Over Multiple Timescales in a Dynamic Social Game
