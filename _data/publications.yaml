@@ -1,3 +1,193 @@
+- id: geddert2025modeling
+  type: article-journal
+  author:
+  - family: Geddert
+    given: Raphael
+  - family: Madlon-Kay
+    given: Seth
+  - family: O’Neill
+    given: Kevin
+  - family: Pearson
+    given: John
+  - family: Egner
+    given: Tobias
+  issued:
+  - year: 2025
+  title: Modeling of control over task switching and cross-task interference supports a two-dimensional model of cognitive stability and flexibility
+  container-title: Psychonomic Bulletin & Review 32 (6)
+  publisher: Springer US
+  page: 2433-2453
+  volume: '32'
+  issue: '6'
+  URL: https://link.springer.com/article/10.3758/s13423-025-02712-7
+- id: madlonkay2024optimal
+  type: article-journal
+  author:
+  - family: Madlon-Kay
+    given: Seth
+  - family: Pearson
+    given: John
+  - family: Egner
+    given: Tobias
+  issued:
+  - year: 2024
+  title: 'Optimal decision-making under task uncertainty: a computational basis for cognitive stability versus flexibility'
+  container-title: Proceedings of the Annual Meeting of the Cognitive Science Society
+  volume: '46'
+  URL: https://escholarship.org/uc/item/2d40418r
+- id: oneill2024modeling
+  type: article-journal
+  author:
+  - family: O'Neill
+    given: Kevin
+  - family: Henne
+    given: Paul
+  - family: Pearson
+    given: John
+  - family: Brigard
+    given: Felipe De
+  issued:
+  - year: 2024
+  title: Modeling confidence in causal judgments.
+  container-title: 'Journal of Experimental Psychology: General'
+  publisher: American Psychological Association
+  page: '2142'
+  volume: '153'
+  issue: '8'
+  URL: https://psycnet.apa.org/record/2025-10514-007
+- id: brudner2023generative
+  type: article-journal
+  author:
+  - family: Brudner
+    given: Samuel
+  - family: Pearson
+    given: John
+  - family: Mooney
+    given: Richard
+  issued:
+  - year: 2023
+  title: Generative models of birdsong learning link circadian fluctuations in song variability to changes in performance
+  container-title: PLOS Computational Biology
+  publisher: Public Library of Science
+  page: e1011051
+  volume: '19'
+  issue: '5'
+  URL: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011051
+- id: castrellon2023social
+  type: article-journal
+  author:
+  - family: Castrellon
+    given: Jaime J
+  - family: Hakimi
+    given: Shabnam
+  - family: Parelman
+    given: Jacob M
+  - family: Yin
+    given: Lun
+  - family: Law
+    given: Jonathan R
+  - family: Skene
+    given: Jesse AG
+  - family: Ball
+    given: David A
+  - family: Malekpour
+    given: Artemis
+  - family: Beskind
+    given: Donald H
+  - family: Vidmar
+    given: Neil
+  - family: Pearson
+    given: John M
+  - family: Skene
+    given: JH Pate
+  - family: Carter
+    given: R McKell
+  issued:
+  - year: 2023
+  title: Social cognitive processes explain bias in juror decisions
+  container-title: Social Cognitive and Affective Neuroscience
+  publisher: Oxford University Press
+  page: nsac057
+  volume: '18'
+  issue: '1'
+  URL: https://academic.oup.com/scan/article-abstract/18/1/nsac057/6764664
+- id: jiang2023neuronal
+  type: article-journal
+  author:
+  - family: Jiang
+    given: Yaoguang
+  - family: McDonald
+    given: Kelsey R
+  - family: Pearson
+    given: John M
+  - family: Platt
+    given: Michael L
+  issued:
+  - year: 2023
+  title: Neuronal mechanisms of dynamic strategic competition
+  container-title: Research Square
+  page: rs. 3. rs-2524549
+  URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10055525/
+- id: castrellon2022neural
+  type: article-journal
+  author:
+  - family: Castrellon
+    given: Jaime J
+  - family: Hakimi
+    given: Shabnam
+  - family: Parelman
+    given: Jacob M
+  - family: Yin
+    given: Lun
+  - family: Law
+    given: Jonathan R
+  - family: Skene
+    given: Jesse AG
+  - family: Ball
+    given: David A
+  - family: Malekpour
+    given: Artemis
+  - family: Beskind
+    given: Donald H
+  - family: Vidmar
+    given: Neil
+  - family: Pearson
+    given: John M
+  - family: Carter
+    given: R McKell
+  - family: Skene
+    given: JH Pate
+  issued:
+  - year: 2022
+  title: Neural support for contributions of utility and narrative processing of evidence in juror decision making
+  container-title: Journal of Neuroscience
+  publisher: Society for Neuroscience
+  page: 7624-7633
+  volume: '42'
+  issue: '40'
+  URL: https://www.jneurosci.org/content/42/40/7624.abstract
+- id: hsiung2022between
+  type: article-journal
+  author:
+  - family: Hsiung
+    given: Abigail
+  - family: Pearson
+    given: John M
+  - family: Poh
+    given: Jia-Hou
+  - family: Hakimi
+    given: Shabnam
+  - family: Adcock
+    given: R Alison
+  - family: Huettel
+    given: Scott A
+  issued:
+  - year: 2022
+  title: 'Between heuristics and optimality: Flexible integration of cost and evidence during information sampling'
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  page: 2022.05. 17.492355
+  URL: https://www.biorxiv.org/content/10.1101/2022.05.17.492355.abstract
 - id: jun2022efficient
   type: article-journal
   author:
@@ -14,27 +204,22 @@
   page: 32311-32324
   volume: '35'
   URL: https://proceedings.neurips.cc/paper_files/paper/2022/hash/d0866def6f52ebe8b8e32130a4d2c963-Abstract-Conference.html
-- id: oneill2022confidence
+- id: oneill2022measuring
   type: article-journal
   author:
-  - family: O'Neill
+  - family: O’Neill
     given: Kevin
   - family: Henne
     given: Paul
-  - family: Bello
-    given: Paul
   - family: Pearson
     given: John
-  - family: Brigard
-    given: Felipe De
+  - family: DeBrigard
+    given: Felipe
   issued:
   - year: 2022
-  title: Confidence and gradation in causal judgment
-  container-title: Cognition
-  publisher: Elsevier
-  page: '105036'
-  volume: '223'
-  URL: https://www.sciencedirect.com/science/article/pii/S0010027722000245
+  title: Measuring and modeling confidence in human causal judgment
+  container-title: Proceedings of the Annual Meeting of the Cognitive Science Society
+  URL: https://escholarship.org/uc/item/8f43m0jd
 - id: adams2021neurons
   type: article-journal
   author:
@@ -80,6 +265,34 @@
   volume: '46'
   issue: '3'
   URL: https://www.nature.com/articles/s41386-020-00881-8
+- id: alvarado2021neural
+  type: article-journal
+  author:
+  - family: Alvarado
+    given: Jonnathan Singh
+  - family: Goffinet
+    given: Jack
+  - family: Michael
+    given: Valerie
+  - family: III
+    given: William Liberti
+  - family: Hatfield
+    given: Jordan
+  - family: Gardner
+    given: Timothy
+  - family: Pearson
+    given: John
+  - family: Mooney
+    given: Richard
+  issued:
+  - year: 2021
+  title: Neural dynamics underlying birdsong practice and performance
+  container-title: Nature
+  publisher: Nature Publishing Group UK
+  page: 635-639
+  volume: '599'
+  issue: '7886'
+  URL: https://www.nature.com/articles/s41586-021-04004-1
 - id: besanon2021distributions
   type: article-journal
   author:
@@ -104,6 +317,26 @@
   page: 1-30
   volume: '98'
   URL: https://www.jstatsoft.org/article/view/v098i16
+- id: draelos2021bubblewrap
+  type: article-journal
+  author:
+  - family: Draelos
+    given: Anne
+  - family: Gupta
+    given: Pranjal
+  - family: Jun
+    given: Na Young
+  - family: Sriworarat
+    given: Chaichontat
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2021
+  title: 'Bubblewrap: Online tiling and real-time flow prediction on neural manifolds'
+  container-title: Advances in Neural Information Processing Systems
+  page: 6062-6074
+  volume: '34'
+  URL: https://proceedings.neurips.cc/paper/2021/hash/307eb8ee16198da891c521eca21464c1-Abstract.html
 - id: goffinet2021low
   type: article-journal
   author:
@@ -123,6 +356,24 @@
   page: e67855
   volume: '10'
   URL: https://elifesciences.org/articles/67855
+- id: jun2021scene
+  type: article-journal
+  author:
+  - family: Jun
+    given: Na Young
+  - family: Field
+    given: Greg D
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2021
+  title: Scene statistics and noise determine the relative arrangement of receptive field mosaics
+  container-title: Proceedings of the National Academy of Sciences
+  publisher: National Academy of Sciences
+  page: e2105115118
+  volume: '118'
+  issue: '39'
+  URL: https://www.pnas.org/doi/abs/10.1073/pnas.2105115118
 - id: roy2021inter
   type: article-journal
   author:
@@ -190,6 +441,106 @@
   volume: '376'
   issue: '1819'
   URL: https://royalsocietypublishing.org/rstb/article/376/1819/20190664/31507
+- id: draelos2020online
+  type: article-journal
+  author:
+  - family: Draelos
+    given: Anne
+  - family: Pearson
+    given: John M
+  issued:
+  - year: 2020
+  title: Online Neural Connectivity Estimation with Noisy Group Testing
+  container-title: Advances in Neural Information Processing Systems
+  volume: '33'
+  URL: https://proceedings.neurips.cc/paper/2020/hash/531d29a813ef9471aad0a5558d449a73-Abstract.html
+- id: michael2020circuit
+  type: article-journal
+  author:
+  - family: Michael
+    given: Valerie
+  - family: Goffinet
+    given: Jack
+  - family: Pearson
+    given: John
+  - family: Wang
+    given: Fan
+  - family: Tschida
+    given: Katherine
+  - family: Mooney
+    given: Richard
+  issued:
+  - year: 2020
+  title: Circuit and synaptic organization of forebrain-to-midbrain pathways that promote and suppress vocalization
+  container-title: eLife
+  publisher: eLife Sciences Publications Limited
+  page: e63493
+  volume: '9'
+  URL: https://elifesciences.org/articles/63493
+- id: mohl2020monkeys
+  type: article-journal
+  author:
+  - family: Mohl
+    given: Jeff T
+  - family: Pearson
+    given: John M
+  - family: Groh
+    given: Jennifer M
+  issued:
+  - year: 2020
+  title: Monkeys and humans implement causal inference to simultaneously localize auditory and visual stimuli
+  container-title: Journal of Neurophysiology
+  publisher: American Physiological Society
+  page: 715-727
+  volume: '124'
+  issue: '3'
+  URL: https://journals.physiology.org/doi/abs/10.1152/jn.00046.2020
+- id: iqbal2019latent
+  type: article-journal
+  author:
+  - family: Iqbal
+    given: Shariq N
+  - family: Yin
+    given: Lun
+  - family: Drucker
+    given: Caroline B
+  - family: Kuang
+    given: Qian
+  - family: Gariépy
+    given: Jean-François
+  - family: Platt
+    given: Michael L
+  - family: Pearson
+    given: John M
+  issued:
+  - year: 2019
+  title: Latent goal models for dynamic strategic interaction
+  container-title: PLoS computational biology
+  publisher: Public Library of Science
+  page: e1006895
+  volume: '15'
+  issue: '3'
+  URL: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006895
+- id: mcdonald2019bayesian
+  type: article-journal
+  author:
+  - family: McDonald
+    given: Kelsey R
+  - family: Broderick
+    given: William F
+  - family: Huettel
+    given: Scott A
+  - family: Pearson
+    given: John M
+  issued:
+  - year: 2019
+  title: Bayesian nonparametric models characterize instantaneous strategies in a competitive dynamic game
+  container-title: Nature communications
+  publisher: Nature Publishing Group UK
+  page: '1808'
+  volume: '10'
+  issue: '1'
+  URL: https://www.nature.com/articles/s41467-019-09789-4
 - id: mcdonald2019cognitive
   type: article-journal
   author:
@@ -205,30 +556,10 @@
   page: 55-62
   volume: '29'
   URL: https://www.sciencedirect.com/science/article/pii/S2352154618301979
-- id: lighthall2018feedback
+- id: macinnes2018mobile
   type: article-journal
   author:
-  - family: Lighthall
-    given: Nichole R
-  - family: Pearson
-    given: John M
-  - family: Huettel
-    given: Scott A
-  - family: Cabeza
-    given: Roberto
-  issued:
-  - year: 2018
-  title: 'Feedback-based learning in aging: Contributions and trajectories of change in striatal and hippocampal systems'
-  container-title: Journal of Neuroscience
-  publisher: Society for Neuroscience
-  page: 8453-8462
-  volume: '38'
-  issue: '39'
-  URL: https://www.jneurosci.org/content/38/39/8453?etoc=
-- id: macinnes2018wearable
-  type: article-journal
-  author:
-  - family: Macinnes
+  - family: MacInnes
     given: Jeff J
   - family: Iqbal
     given: Shariq
@@ -238,11 +569,12 @@
     given: Elizabeth N
   issued:
   - year: 2018
-  title: 'Wearable Eye-tracking for Research: Automated dynamic gaze mapping and accuracy/precision comparisons across devices'
-  container-title: bioRxiv
-  publisher: Cold Spring Harbor Laboratory
-  page: '299925'
-  URL: https://www.biorxiv.org/content/10.1101/299925.abstract
+  title: 'Mobile Gaze Mapping: A Python package for mapping mobile gaze data to a fixed target stimulus'
+  container-title: Journal of Open Source Software
+  page: '984'
+  volume: '3'
+  issue: '31'
+  URL: https://joss.theoj.org/papers/10.21105/joss.00984.pdf
 - id: pearson2018modelling
   type: article-journal
   author:
@@ -295,6 +627,24 @@
   volume: '42'
   issue: '10'
   URL: https://www.nature.com/articles/npp2017108
+- id: chen2017neuron
+  type: article-journal
+  author:
+  - family: Chen
+    given: Xin
+  - family: Beck
+    given: Jeffrey M
+  - family: Pearson
+    given: John M
+  issued:
+  - year: 2017
+  title: 'Neuron’s eye view: Inferring features of complex stimuli from neural responses'
+  container-title: PLoS computational biology
+  publisher: Public Library of Science
+  page: e1005645
+  volume: '13'
+  issue: '8'
+  URL: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005645
 - id: dowd2017decoding
   type: article-journal
   author:
@@ -313,6 +663,18 @@
   volume: '24'
   issue: '4'
   URL: https://link.springer.com/article/10.3758/s13423-016-1204-5
+- id: iqbal2017goal
+  type: article-journal
+  author:
+  - family: Iqbal
+    given: Shariq
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2017
+  title: A goal-based movement model for continuous multi-agent tasks
+  container-title: arXiv preprint arXiv:1702.07319
+  URL: https://arxiv.org/abs/1702.07319
 - id: pearson2017local
   type: article-journal
   author:
@@ -334,6 +696,28 @@
   page: '646'
   volume: '11'
   URL: https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2017.00646/full
+- id: martn2016altruistic
+  type: article-journal
+  author:
+  - family: Martín
+    given: René San
+  - family: Kwak
+    given: Youngbin
+  - family: Pearson
+    given: John M
+  - family: Woldorff
+    given: Marty G
+  - family: Huettel
+    given: Scott A
+  issued:
+  - year: 2016
+  title: Altruistic traits are predicted by neural responses to monetary outcomes for self vs charity
+  container-title: Social cognitive and affective neuroscience
+  publisher: Oxford University Press
+  page: 863-876
+  volume: '11'
+  issue: '6'
+  URL: https://academic.oup.com/scan/article-abstract/11/6/863/2224190
 - id: addicott2015suboptimal
   type: article-journal
   author:
@@ -380,28 +764,24 @@
   volume: '112'
   issue: '52'
   URL: https://www.pnas.org/doi/abs/10.1073/pnas.1514761112
-- id: addicott2014smoking
+- id: dowd2015mind
   type: article-journal
   author:
-  - family: Addicott
-    given: Merideth A
+  - family: Dowd
+    given: Emma Wu
   - family: Pearson
     given: John M
-  - family: Froeliger
-    given: Brett
-  - family: Platt
-    given: Michael L
-  - family: McClernon
-    given: F Joseph
+  - family: Egner
+    given: Tobias
   issued:
-  - year: 2014
-  title: Smoking automaticity and tolerance moderate brain activation during explore–exploit behavior
-  container-title: 'Psychiatry Research: Neuroimaging'
-  publisher: Elsevier
-  page: 254-261
-  volume: '224'
-  issue: '3'
-  URL: https://www.sciencedirect.com/science/article/pii/S0925492714002662
+  - year: 2015
+  title: 'Mind-reading without the scanner: Behavioural decoding of working memory content'
+  container-title: Visual Cognition
+  publisher: Routledge
+  page: 862-866
+  volume: '23'
+  issue: '7'
+  URL: https://www.tandfonline.com/doi/abs/10.1080/13506285.2015.1093244
 - id: ebitz2014pupil
   type: article-journal
   author:
@@ -461,6 +841,24 @@
   volume: '9'
   issue: '9'
   URL: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0107621
+- id: pearson2014decision
+  type: article-journal
+  author:
+  - family: Pearson
+    given: John M
+  - family: Watson
+    given: Karli K
+  - family: Platt
+    given: Michael L
+  issued:
+  - year: 2014
+  title: 'Decision making: the neuroethological turn'
+  container-title: Neuron 82 (5)
+  publisher: Cell Press
+  page: 950-965
+  volume: '82'
+  issue: '5'
+  URL: https://www.cell.com/neuron/fulltext/S0896-6273(14)00352-3
 - id: addicott2013smoking
   type: article-journal
   author:
@@ -527,6 +925,29 @@
   volume: '110'
   issue: Supplement 2
   URL: https://www.pnas.org/doi/abs/10.1073/pnas.1301213110
+- id: chang2013neuroetologa
+  type: article-journal
+  author:
+  - family: Chang
+    given: Steve WC
+  - family: Brent
+    given: Lauren
+  - family: Adams
+    given: Geoffrey K
+  - family: Klein
+    given: Jeffrey T
+  - family: Pearson
+    given: John M
+  - family: Platt
+    given: Michael L
+  issued:
+  - year: 2013
+  title: Neuroetología del comportamiento social de los primates
+  container-title: Ludus Vitalis
+  page: 151-176
+  volume: '21'
+  issue: '40'
+  URL: http://www.ludus-vitalis.org/ojs/index.php/ludus/article/view/48
 - id: martn2013rapid
   type: article-journal
   author:
@@ -564,28 +985,22 @@
   volume: '99'
   issue: '1'
   URL: https://onlinelibrary.wiley.com/doi/abs/10.1002/jeab.5
-- id: yorzinski2013through
+- id: pearson2013dopamine
   type: article-journal
   author:
-  - family: Yorzinski
-    given: Jessica L
-  - family: Patricelli
-    given: Gail L
-  - family: Babcock
-    given: Jason S
   - family: Pearson
     given: John M
   - family: Platt
     given: Michael L
   issued:
   - year: 2013
-  title: 'Through their eyes: selective attention in peahens during courtship'
-  container-title: Journal of Experimental Biology
-  publisher: The Company of Biologists Ltd
-  page: 3035-3046
-  volume: '216'
-  issue: '16'
-  URL: https://journals.biologists.com/jeb/article-abstract/216/16/3035/11559
+  title: 'Dopamine: burning the candle at both ends'
+  container-title: Neuron
+  publisher: Cell Press
+  page: 831-833
+  volume: '79'
+  issue: '5'
+  URL: https://www.cell.com/neuron/fulltext/S0896-6273(13)00745-9
 - id: adams2012neuroethology
   type: article-journal
   author:
@@ -738,6 +1153,22 @@
   volume: '324'
   issue: '5929'
   URL: https://www.science.org/doi/abs/10.1126/science.1168488
+- id: pearson2009confidence
+  type: article-journal
+  author:
+  - family: Pearson
+    given: John
+  - family: Platt
+    given: Michael L
+  issued:
+  - year: 2009
+  title: 'Confidence and corrections: how we make and un-make up our minds'
+  container-title: Neuron
+  publisher: Cell Press
+  page: 724-726
+  volume: '63'
+  issue: '6'
+  URL: https://www.cell.com/neuron/fulltext/S0896-6273(09)00693-X
 - id: pearson2009neurons
   type: article-journal
   author:
