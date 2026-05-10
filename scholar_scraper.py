@@ -3,6 +3,7 @@
 Scrape Google Scholar publications and update publications.yaml
 """
 
+import os
 import yaml
 import sys
 import re
@@ -190,6 +191,53 @@ def get_author_publications(scholar_id):
         print(f"Error fetching author publications: {e}", flush=True)
         sys.exit(1)
 
+def load_existing_yaml(path):
+    """
+    Load existing publications YAML so we can preserve entries when fetches fail.
+    Returns [] if the file is missing or empty.
+    """
+    if not os.path.exists(path):
+        print(f"No existing YAML at {path}; starting fresh", flush=True)
+        return []
+    with open(path, 'r', encoding='utf-8') as f:
+        data = yaml.safe_load(f) or []
+    print(f"Loaded {len(data)} existing publications from {path}", flush=True)
+    return data
+
+def merge_publications(existing, fetched):
+    """
+    Merge freshly-fetched pubs into the existing list, keyed by 'id'.
+    Successful fetches overwrite the existing entry (Scholar wins).
+    Existing entries with no matching fetch are preserved verbatim,
+    so transient fetch failures don't drop pubs from the site.
+    """
+    merged = {}
+    for pub in existing:
+        pub_id = pub.get('id')
+        if pub_id:
+            merged[pub_id] = pub
+
+    kept = len(merged)
+    updated = 0
+    added = 0
+    for pub in fetched:
+        pub_id = pub.get('id')
+        if not pub_id:
+            continue
+        if pub_id in merged:
+            updated += 1
+        else:
+            added += 1
+        merged[pub_id] = pub
+
+    kept -= updated
+    print(
+        f"Merge summary: kept {kept}, updated {updated}, added {added} "
+        f"(fetched {len(fetched)} successful, existing {len(existing)})",
+        flush=True,
+    )
+    return list(merged.values())
+
 def save_to_yaml(publications, output_file):
     """
     Save publications to YAML file in CSL format
@@ -212,6 +260,8 @@ if __name__ == "__main__":
     OUTPUT_FILE = "_data/publications.yaml"
     
     print("Starting publication update...", flush=True)
-    publications = get_author_publications(SCHOLAR_ID)
-    save_to_yaml(publications, OUTPUT_FILE)
+    existing = load_existing_yaml(OUTPUT_FILE)
+    fetched = get_author_publications(SCHOLAR_ID)
+    merged = merge_publications(existing, fetched)
+    save_to_yaml(merged, OUTPUT_FILE)
     print("Done!", flush=True)
