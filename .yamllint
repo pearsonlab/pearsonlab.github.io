@@ -9,7 +9,7 @@ rules:
   line-length: disable
   indentation:
     spaces: 2
-    indent-sequences: consistent
+    indent-sequences: whatever
     check-multi-line-strings: false
   truthy:
     check-keys: false

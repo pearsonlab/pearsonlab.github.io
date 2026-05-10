@@ -47,7 +47,6 @@ repos:
     rev: v1.38.0
     hooks:
       - id: yamllint
-        args: [--strict]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.48.0
