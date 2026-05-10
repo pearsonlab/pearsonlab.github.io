@@ -65,6 +65,24 @@ pre-commit run --all-files
 The same hooks run in CI on every PR — if you skip the local install,
 CI will tell you what would have changed.
 
+### Per-page SEO and social previews
+
+The site uses [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) to
+emit OpenGraph and Twitter card meta tags. Defaults come from `_config.yml`
+(site title, description, lab logo as fallback image). Pages can override
+any of these via front matter:
+
+```yaml
+---
+title: "Pearson Lab Research"
+description: "We study ..."
+image: /images/research/cover.png
+---
+```
+
+A `sitemap.xml` is generated automatically at build time by
+[jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap).
+
 ### Site health
 
 A separate CI workflow (`.github/workflows/site-health.yml`) builds the
