@@ -40,17 +40,27 @@ jobs:
         run: bundle exec jekyll build
 
       - name: Check links with lychee
+        id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          # --root-dir resolves root-relative links (href="/about.html")
-          # against _site/. Must be absolute, which is why it lives here
-          # rather than in lychee.toml.
           args: >-
             --config ./lychee.toml
             --no-progress
+            --verbose
             --root-dir ${{ github.workspace }}/_site
             _site
+          output: lychee-report.md
           fail: true
+
+      # On failure, post the lychee report as a PR comment. Makes the
+      # specific failing URLs visible without needing log-download
+      # access.
+      - name: Comment lychee report on PR
+        if: failure() && github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: lychee
+          path: lychee-report.md
 
       - name: Validate HTML
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
