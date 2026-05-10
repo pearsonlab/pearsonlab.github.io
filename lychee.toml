@@ -6,17 +6,33 @@ max_cache_age = "30d"
 timeout = 20
 max_retries = 2
 
+# root_dir is passed via the lychee-action args (it requires an absolute
+# path which differs between local dev and CI). See site-health.yml.
+
 # Status codes to treat as success.
 # 999 = LinkedIn's bot-detection response; treat as OK rather than failing.
-accept = [200, 204, 206, 999]
+# 403 = anti-scraping responses from publishers (arxiv, nature, biorxiv,
+#   elifesciences, etc.). Those URLs work in a real browser but lychee
+#   gets blocked by their bot protection. Treating 403 as OK avoids
+#   false positives without hiding real link rot (404 still fails).
+accept = [200, 204, 206, 403, 999]
 
 # Hosts to skip:
+# - pearsonlab.github.io: this is the site we're building. The sitemap
+#   and robots.txt contain absolute self-referential URLs by spec, but
+#   HTTP-checking them only tells us about the *currently deployed*
+#   site, not our build. Internal page-to-page links should be relative
+#   anyway (lychee resolves them against the local _site/ directory).
 # - dibs-web01.vm.duke.edu: known dead/flaky external image host. The
 #   migration into the repo is tracked as Phase 5; remove this exclude
 #   once that migration lands so any new dead URLs are caught.
 # - maxcdn.bootstrapcdn.com: stable enough that transient 5xx responses
 #   shouldn't fail the build.
 exclude = [
+    "pearsonlab\\.github\\.io",
     "dibs-web01\\.vm\\.duke\\.edu",
     "maxcdn\\.bootstrapcdn\\.com",
+    # localhost references in README.md (jekyll-readme-index copies
+    # README into _site/ so lychee scans it).
+    "localhost",
 ]

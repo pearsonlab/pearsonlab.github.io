@@ -42,7 +42,14 @@ jobs:
       - name: Check links with lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --config ./lychee.toml --no-progress _site
+          # --root-dir resolves root-relative links (href="/about.html")
+          # against _site/. Must be absolute, which is why it lives here
+          # rather than in lychee.toml.
+          args: >-
+            --config ./lychee.toml
+            --no-progress
+            --root-dir ${{ github.workspace }}/_site
+            _site
           fail: true
 
       - name: Validate HTML
