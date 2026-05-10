@@ -1,0 +1,10 @@
+# html5validator config. See https://github.com/svenkreiss/html5validator.
+# Used by .github/workflows/site-health.yml.
+
+root: _site
+match: '*.html'
+
+# Patterns to ignore. Add Bootstrap-3-era / Jekyll-specific noise here
+# as it surfaces; keep the list short so real errors aren't masked.
+ignore_re:
+  []
