@@ -5,12 +5,17 @@ description: >-
 url: "https://pearsonlab.github.io"
 author: "Pearson Lab"
 
-# Default OpenGraph image used by jekyll-seo-tag for social previews.
-# Pages can override via `image:` in front matter.
-image: /images/plab_hex_icon_gray.png
-
 markdown: kramdown
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Default OpenGraph image for social previews. Applied site-wide via
+# Jekyll defaults so jekyll-seo-tag picks it up. Pages can override
+# via `image:` in front matter.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/plab_hex_icon_gray.png
