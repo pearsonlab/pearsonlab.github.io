@@ -56,11 +56,6 @@ exclude = [
     "socialsciences\\.nature\\.com",
 ]
 
-# Path excludes: legacy blog posts have ~30 dead links accumulated over
-# 2015-2018. A separate content-cleanup phase will tackle these; in
-# the meantime, skip them so the link checker can catch new rot rather
-# than getting stuck on old rot.
-exclude_path = [
-    "_site/blog/",
-    "_site/2015/",
-]
+# Path excludes for legacy blog posts are passed via the workflow's
+# args (--exclude-path) rather than configured here, to keep the
+# arg-passing pattern uniform with --root-dir. See site-health.yml.
