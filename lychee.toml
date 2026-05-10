@@ -54,6 +54,12 @@ exclude = [
     "thomasli\\.me",
     "stat\\.washington\\.edu/people/pdhoff",
     "socialsciences\\.nature\\.com",
+    # LinkedIn's bot-detection responds inconsistently to GitHub Actions
+    # runners: same URL can return 200, 301-to-stripped-URL, 404, or 999
+    # depending on time, IP, and load. Treat the whole domain as
+    # unreliable for automated checking — link-rot detection on LinkedIn
+    # was never going to work in practice.
+    "linkedin\\.com",
 ]
 
 # Path excludes for legacy blog posts are passed via the workflow's
