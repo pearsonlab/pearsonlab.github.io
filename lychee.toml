@@ -45,4 +45,22 @@ exclude = [
     # localhost references in README.md (jekyll-readme-index copies
     # README into _site/ so lychee scans it).
     "localhost",
+    # Academic publishers and aggregators with aggressive bot
+    # protection. These commonly return non-403 codes (varying 4xx
+    # and connection drops) that can't be uniformly caught by accept
+    # codes. We're trading some link-rot detection on these specific
+    # domains for a stable CI signal — broken links here are far
+    # more likely to be false positives than real rot.
+    "arxiv\\.org",
+    "biorxiv\\.org",
+    "elifesciences\\.org",
+    "nature\\.com",
+    "ncbi\\.nlm\\.nih\\.gov",
+    "doi\\.org",
+    "linkedin\\.com",
+    "twitter\\.com",
+    "x\\.com",
+    "proceedings\\.(nips|neurips|mlr)\\.cc",
+    "journals\\.(aps|plos)\\.org",
+    "static1\\.squarespace\\.com",
 ]
