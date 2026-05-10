@@ -1,0 +1,52 @@
+name: site-health
+
+on:
+  pull_request:
+    paths:
+      - '*.html'
+      - '*.md'
+      - '_layouts/**'
+      - '_includes/**'
+      - '_config.yml'
+      - '_data/**'
+      - '_posts/**'
+      - 'images/**'
+      - 'css/**'
+      - 'js/**'
+      - 'Gemfile'
+      - 'Gemfile.lock'
+      - 'lychee.toml'
+      - '.html5validator.yaml'
+  schedule:
+    # Weekly Monday 9am UTC, matching update-publications cadence.
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+jobs:
+  site-health:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Check links with lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config ./lychee.toml --no-progress _site
+          fail: true
+
+      - name: Validate HTML
+        uses: Cyb3r-Jak3/html5validator-action@v7
+        with:
+          root: _site/
+          config: .html5validator.yaml
