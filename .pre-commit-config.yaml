@@ -21,3 +21,10 @@ repos:
         entry: svgo --multipass
         language: system
         types: [svg]
+
+      # Runs after the compression hooks so it sees post-compression sizes.
+      - id: image-size-cap
+        name: image-size-cap (warn >500 KB, block >1 MB)
+        entry: python3 scripts/check_image_size.py
+        language: system
+        types_or: [image, svg]
