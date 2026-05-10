@@ -69,7 +69,7 @@ There are lots of great references. The current deep learning phase notwithstand
 
 - [An Introduction to Statistical Learning](https://www.statlearning.com)
 - [Elements of Statistical Learning](http://web.stanford.edu/~hastie/ElemStatLearn/) (free pdf)
-- [Pattern Recognition and Machine Learning](https://www.springer.com/us/book/9780387310732) ([pdf](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf))
+- [Pattern Recognition and Machine Learning](https://www.springer.com/us/book/9780387310732)
 - [Machine Learning: A Probabilistic Perspective](https://probml.github.io/pml-book/) (Duke uses this for its intro ML class)
 
 # Machine Learning: Deep Learning

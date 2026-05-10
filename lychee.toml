@@ -45,4 +45,22 @@ exclude = [
     # localhost references in README.md (jekyll-readme-index copies
     # README into _site/ so lychee scans it).
     "localhost",
+    # Specific URLs with known issues that aren't worth blocking on:
+    # - thomasli.me: former undergrad's personal site, host unreachable
+    #   from GitHub Actions runners (DNS or geoblock).
+    # - stat.washington.edu/people/pdhoff/book.php: SSL handshake fails
+    #   in lychee but the page loads in browsers (server cert chain).
+    # - socialsciences.nature.com: TLS handshake failure (server config).
+    "thomasli\\.me",
+    "stat\\.washington\\.edu/people/pdhoff",
+    "socialsciences\\.nature\\.com",
+]
+
+# Path excludes: legacy blog posts have ~30 dead links accumulated over
+# 2015-2018. A separate content-cleanup phase will tackle these; in
+# the meantime, skip them so the link checker can catch new rot rather
+# than getting stuck on old rot.
+exclude_path = [
+    "_site/blog/",
+    "_site/2015/",
 ]

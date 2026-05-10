@@ -13,7 +13,7 @@ We're always interested in talking to qualified postdoc candidates. Particularly
 
 Duke provides a wonderful environment for students interested in pursuing the kind of interdisciplinary research we do. As a result, P[&lambda;]ab accepts graduate students through multiple programs:
 
-- [Neurobiology](https://www.neuro.duke.edu/). The Department of Neurobiology offers a PhD through its [graduate training program](https://www.neuro.duke.edu/education/graduate-training-program). Research in the department focuses on biological and mechanistic approaches, typically at the cellular and molecular or systems and circuits level. This is John's home department, and the lab regularly hosts students for rotations or PhD mentorship.
+- [Neurobiology](https://www.neuro.duke.edu/). The Department of Neurobiology offers a PhD through its graduate training program. Research in the department focuses on biological and mechanistic approaches, typically at the cellular and molecular or systems and circuits level. This is John's home department, and the lab regularly hosts students for rotations or PhD mentorship.
 
 - [Cognitive Neuroscience Admitting Program](https://dibs.duke.edu/centers/ccn/graduate-cnap). Unlike most PhD programs, CNAP is not tied to a single department. Rather, it gives students the opportunity to explore interdisciplinary research in cognitive neuroscience before ultimately affiliating with a department like Psychology & Neuroscience, Neurobiology, or Electrical and Computer Engineering. CNAP is administered by the [Center for Cognitive Neuroscience](https://dibs.duke.edu/centers/ccn), which includes faculty whose interests range from speech and development to neurons and computation. Students do three semester-long rotations and are often jointly mentored. The typical CNAP student has a strong interest in cognition and is looking to pursue research that crosses traditional departmental boundaries. John is a core faculty member of CCN.
 
@@ -43,7 +43,7 @@ P[&lambda;]ab offers undergraduates several opportunities to contribute to the w
 - Through an independent study.
 - Through a senior thesis.
 - Through work-study or undergraduate research assistantships.
-- Through several [summer research opportunities](https://undergraduateresearch.duke.edu/opportunities). (N.B.: John really doesn't know much about these, so if this is a route you'd like to take, it's up to you to figure out what programs would allow you to work with us.)
+- Through several [summer research opportunities](https://undergraduateresearch.duke.edu/). (N.B.: John really doesn't know much about these, so if this is a route you'd like to take, it's up to you to figure out what programs would allow you to work with us.)
 
 A few points to note:
 

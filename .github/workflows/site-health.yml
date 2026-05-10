@@ -46,15 +46,14 @@ jobs:
           args: >-
             --config ./lychee.toml
             --no-progress
-            --verbose
             --root-dir ${{ github.workspace }}/_site
             _site
           output: lychee-report.md
           fail: true
 
-      # On failure, post the lychee report as a PR comment. Makes the
-      # specific failing URLs visible without needing log-download
-      # access.
+      # On failure, post the lychee report as a sticky PR comment so
+      # the specific failing URLs are easy to see without digging
+      # through job logs. Sticky = updates in place rather than piling up.
       - name: Comment lychee report on PR
         if: failure() && github.event_name == 'pull_request'
         uses: marocchino/sticky-pull-request-comment@v2
