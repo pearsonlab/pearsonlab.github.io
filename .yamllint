@@ -1,0 +1,15 @@
+# yamllint configuration. See https://yamllint.readthedocs.io/.
+# Start from the bundled "relaxed" profile and loosen further for data
+# files (where long lines are normal and indent style varies).
+
+extends: relaxed
+
+rules:
+  document-start: disable
+  line-length: disable
+  indentation:
+    spaces: 2
+    indent-sequences: consistent
+    check-multi-line-strings: false
+  truthy:
+    check-keys: false
