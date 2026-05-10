@@ -1,7 +1,9 @@
 # pearsonlab.github.io
+
 Lab webpage
 
 ### Notes
+
 In order to render publications into page:
 
 1. Download citations from Google Scholar in .bib format.

@@ -33,7 +33,10 @@ repos:
     rev: v6.0.0
     hooks:
       - id: trailing-whitespace
+        exclude: '\.svg$'
       - id: end-of-file-fixer
+        # svgo strips the trailing newline; let it win on .svg files.
+        exclude: '\.svg$'
       - id: check-yaml
       - id: check-json
       - id: check-merge-conflict

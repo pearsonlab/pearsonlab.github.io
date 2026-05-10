@@ -6,7 +6,7 @@ author: Shariq Iqbal
 category: blog
 ---
 
-The Atlantic recently did a cool [feature](http://www.theatlantic.com/magazine/archive/2015/12/the-return-of-electroshock-therapy/413179/) on Dr. Sarah (Holly) Lisanby that highlights some of the work she has done over the course of her career regarding ECT (Electro-Convulsive Therapy).  The article is really well done, and I would recommend checking it out.  As with anything on the internet though, avoid the comments. 
+The Atlantic recently did a cool [feature](http://www.theatlantic.com/magazine/archive/2015/12/the-return-of-electroshock-therapy/413179/) on Dr. Sarah (Holly) Lisanby that highlights some of the work she has done over the course of her career regarding ECT (Electro-Convulsive Therapy).  The article is really well done, and I would recommend checking it out.  As with anything on the internet though, avoid the comments.
 
 Dr. Lisanby is the P.I. on a study concerning the effectiveness of ECT in depressed elders that we have been doing some analysis for over the past couple of months.  The goal of our analysis is to be able to predict outcomes (most importantly, remission status), from the rest of the data. The data set has been collected across seven hospitals and consists of hundreds of separate treatments of over one hundred patients. For a clinical data set, this is pretty large-scale, but, as with any clinical data, there are certain limitations.
 
