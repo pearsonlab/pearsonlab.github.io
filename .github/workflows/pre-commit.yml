@@ -28,9 +28,16 @@ jobs:
           cargo install oxipng --locked
           npm install -g svgo
 
-      - name: Run pre-commit
-        # Pre-commit's default behavior: any hook that modifies files exits
-        # nonzero. That fails this job and prints the offending files, so
-        # contributors who skipped local install see a clear "run pre-commit
-        # run --all-files locally and commit the result" message.
-        run: pre-commit run --show-diff-on-failure --all-files
+      - name: Run pre-commit on the PR's changed files
+        if: github.event_name == 'pull_request'
+        run: |
+          pre-commit run --show-diff-on-failure \
+            --from-ref ${{ github.event.pull_request.base.sha }} \
+            --to-ref ${{ github.event.pull_request.head.sha }}
+
+      - name: Run pre-commit on the push's changed files
+        if: github.event_name == 'push'
+        run: |
+          pre-commit run --show-diff-on-failure \
+            --from-ref ${{ github.event.before }} \
+            --to-ref ${{ github.sha }}

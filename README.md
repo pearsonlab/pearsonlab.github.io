@@ -56,14 +56,20 @@ After that, every `git commit` will automatically:
 - Style-check YAML files with `yamllint` (config: `.yamllint`)
 
 If a hook modifies a file, the commit is aborted; re-stage the modified
-file and commit again. To run the hooks manually across the whole repo:
+file and commit again. To run the hooks manually across just your
+changes vs. `master`:
 
 ```sh
-pre-commit run --all-files
+pre-commit run --from-ref origin/master --to-ref HEAD
 ```
 
-The same hooks run in CI on every PR — if you skip the local install,
-CI will tell you what would have changed.
+(Avoid `--all-files` — it will pick up the legacy ~26 MB of
+unoptimized images and fail. A separate one-shot backfill phase
+will normalize those.)
+
+The same hooks run in CI on every PR — scoped to the PR's changed
+files. If you skip the local install, CI will tell you what would
+have changed.
 
 ### Per-page SEO and social previews
 
