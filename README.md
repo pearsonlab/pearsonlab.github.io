@@ -65,6 +65,18 @@ pre-commit run --all-files
 The same hooks run in CI on every PR — if you skip the local install,
 CI will tell you what would have changed.
 
+### Site health
+
+A separate CI workflow (`.github/workflows/site-health.yml`) builds the
+site and runs:
+
+- **lychee** to check for broken links (config: `lychee.toml`)
+- **html5validator** to check rendered HTML (config: `.html5validator.yaml`)
+
+This runs on PRs that touch site content, on push to `master`, and once
+a week on Mondays. The weekly schedule catches link rot from external
+hosts before someone notices on the live site.
+
 ### Image size policy
 
 To keep the repo lean, images are subject to:
