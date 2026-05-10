@@ -3,19 +3,29 @@
 
 cache = true
 max_cache_age = "30d"
-timeout = 20
-max_retries = 2
+timeout = 30
+max_retries = 3
+retry_wait_time = 5
 
 # root_dir is passed via the lychee-action args (it requires an absolute
 # path which differs between local dev and CI). See site-health.yml.
 
-# Status codes to treat as success.
-# 999 = LinkedIn's bot-detection response; treat as OK rather than failing.
-# 403 = anti-scraping responses from publishers (arxiv, nature, biorxiv,
-#   elifesciences, etc.). Those URLs work in a real browser but lychee
-#   gets blocked by their bot protection. Treating 403 as OK avoids
-#   false positives without hiding real link rot (404 still fails).
-accept = [200, 204, 206, 403, 999]
+# Use GET instead of HEAD. Many academic publishers (arxiv, nature, etc.)
+# don't handle HEAD reliably and return 405 or other oddities; GET is
+# what real browsers use and gets through more often.
+method = "GET"
+
+# Browser-like UA — lychee's default ("lychee/...") triggers bot
+# protection on many sites.
+user_agent = "Mozilla/5.0 (compatible; lychee-link-checker; +https://lychee.cli.rs/)"
+
+# Status codes to treat as success. We're trying to catch dead links
+# (404) and broken servers, not paywalls or anti-bot measures.
+# - 200/204/206: success
+# - 401: paywalled but exists
+# - 403/405/429: bot-protection / rate-limit / method-not-allowed
+# - 999: LinkedIn's bot-detection response
+accept = [200, 204, 206, 401, 403, 405, 429, 999]
 
 # Hosts to skip:
 # - pearsonlab.github.io: this is the site we're building. The sitemap
