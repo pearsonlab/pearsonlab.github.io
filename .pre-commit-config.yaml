@@ -1,0 +1,23 @@
+# Pre-commit hook configuration. See https://pre-commit.com/ for docs.
+# Contributor setup: README.md > Contributing.
+
+repos:
+  - repo: local
+    hooks:
+      - id: jpegoptim
+        name: jpegoptim (compress JPEGs to q=85, strip metadata)
+        entry: jpegoptim --max=85 --strip-all --preserve --all-progressive
+        language: system
+        types: [jpeg]
+
+      - id: oxipng
+        name: oxipng (lossless PNG optimization)
+        entry: oxipng --opt 4 --strip safe
+        language: system
+        types: [png]
+
+      - id: svgo
+        name: svgo (SVG minification)
+        entry: svgo --multipass
+        language: system
+        types: [svg]
