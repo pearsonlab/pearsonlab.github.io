@@ -47,6 +47,13 @@ After that, every `git commit` will automatically:
 - Minify staged SVGs with `svgo`
 - Block any image still over 1 MB after compression, and warn on images
   between 500 KB and 1 MB (see "Image size policy" below)
+- Strip trailing whitespace, fix mixed line endings, ensure files end
+  with a final newline
+- Validate YAML and JSON files (`_data/`, `_config.yml`, etc.)
+- Block accidental merge-conflict markers and committed private keys
+- Lint Markdown posts with `markdownlint --fix` (auto-fixes most
+  formatting issues; see `.markdownlint.json` for the disabled rules)
+- Style-check YAML files with `yamllint` (config: `.yamllint`)
 
 If a hook modifies a file, the commit is aborted; re-stage the modified
 file and commit again. To run the hooks manually across the whole repo:
