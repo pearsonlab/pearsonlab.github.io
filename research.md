@@ -10,7 +10,7 @@ nav: Research
 Together with [Eva Naumann's](https://www.neuro.duke.edu/research/faculty-labs/naumann-lab) lab, we've developed *[improv](https://github.com/project-improv/improv)* ([paper](https://www.biorxiv.org/content/10.1101/2021.02.22.432006v1)), a software platform for designing and orchestrating adaptive experiments. By analyzing data in real time, we can measure, model, and manipulate neural activity in response to new data. We've shown how these tools, in conjunction with holographic photostimulation, could in principle map functional connectivity of large circuits in a few hours ([paper](https://proceedings.nips.cc/paper/2020/file/531d29a813ef9471aad0a5558d449a73-Paper.pdf), [expanded version](https://arxiv.org/abs/2007.13911)). More recently, we've worked on methods for fast dimensionality reduction and modeling of neural populations in real time ([paper](https://arxiv.org/abs/2108.13941)).
 <div class="row">
     <figure>
-        <img src="https://dibs-web01.vm.duke.edu/pearson/assets/images/zebrafish/colorFish.png" class="img-responsive">
+        <img src="/images/colorFish.png" class="img-responsive">
         <figcaption>
             A whole zebrafish brain activity map, showing the distribution of motion-sensitive neurons, color-coded to show the preferred motion direction.
         </figcaption>
@@ -18,7 +18,7 @@ Together with [Eva Naumann's](https://www.neuro.duke.edu/research/faculty-labs/n
 </div>
 <div class="row">
     <figure>
-        <img src="https://dibs-web01.vm.duke.edu/pearson/assets/images/zebrafish/pipelineNewpng3.png" class="img-responsive">
+        <img src="/images/pipelineNewpng3.png" class="img-responsive">
         <figcaption>
             Concept for the closed-loop pipeline. Neural data from the zebrafish are collected in the form of images, preprocessed, and analyzed in real-time. Targets for optical stimulation are then chosen based on the results of this analysis, creating adaptive experiments that test causal hypotheses.
         </figcaption>
@@ -31,7 +31,7 @@ Vocalization is a complex behavior that underlies vocal communication and vocal 
 
 <div class="row">
     <figure>
-        <img src="https://dibs-web01.vm.duke.edu/pearson/assets/images/vocal/vae_finch.png" class="img-responsive">
+        <img src="/images/vae_finch.png" class="img-responsive">
         <figcaption>
             a. Syllable VAE: Segmented syllables from adult Zebra Finch song are projected to a low-dimensional space, then reconstructed from that space using a VAE. b. Shotgun VAE: The VAE is trained on 20ms segments of adult Zebra Finch song to model variability on a millisecond duration. Visualized are songs projected into the latent space using these shorter segments.
         </figcaption>
@@ -53,7 +53,7 @@ In recent work, we've explored the idea of using variational autoencoder (VAE) m
 
 <div class="row">
     <figure>
-        <img src="https://dibs-web01.vm.duke.edu/pearson/assets/images/fmri/website_VAEGAM_fig.png" class="img-responsive">
+        <img src="/images/website_VAEGAM_fig.png" class="img-responsive">
         <figcaption>
             A) VAE-GAM Model Schematic: brain volumes with signal of interest are compressed to a lower dimensional representation using encoder network. Sampled latents are then fed through decoder network to yield a base map and separate spatial effect maps. Each effect map is scaled by a potentially non-linear gain modelled using a Gaussian Process. Variance is modeled separately on a per voxel basis. B) Sample Effect Maps for VAE-GAM and GLM: effect maps for a visual stimulation task dataset analysed using the proposed VAE-GAM approach (top) vs. the tranditional (GLM) approach.
         </figcaption>
