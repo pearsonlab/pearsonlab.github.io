@@ -4,3 +4,12 @@
 #   images/research/big-zebrafish-figure.png
 #
 # Files listed here will not block commits but will still print a warning.
+
+# Recovered from dibs-web01 in issue #33. Both genuinely warrant the
+# size; could be downscaled in a separate cleanup pass:
+#   - raymond_poster.jpg is a 4032x3024 conference-poster photo (~2 MB
+#     after jpegoptim --max=85). Detail matters for legibility.
+#   - website_VAEGAM_fig.png is a multi-panel research figure where
+#     the detail in the panels is the point.
+images/raymond_poster.jpg
+images/website_VAEGAM_fig.png
