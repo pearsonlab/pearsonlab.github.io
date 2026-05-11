@@ -37,6 +37,8 @@ URLS: dict[str, str] = {
     "http://dibs-web01.vm.duke.edu/pearson/assets/images/website/ctn_ent.jpg":
         "images/location/ctn_ent.jpg",
     # People photos (people.html)
+    "https://dibs-web01.vm.duke.edu/pearson/assets/images/website/john.png":
+        "images/john.png",
     "https://dibs-web01.vm.duke.edu/pearson/assets/images/website/Trevor.jpg":
         "images/Trevor.jpg",
     "https://dibs-web01.vm.duke.edu/pearson/assets/images/website/shiyang.jpg":
@@ -97,9 +99,6 @@ def wayback_lookup(url: str) -> str | None:
 def recover(url: str, dest: str) -> bool:
     print(f"\n[*] {url}")
     print(f"    -> {dest}")
-    if os.path.exists(dest):
-        print(f"    already exists, skipping")
-        return True
     os.makedirs(os.path.dirname(dest), exist_ok=True)
 
     # Try live host first.
