@@ -29,6 +29,12 @@ repos:
         language: system
         types_or: [image, svg]
 
+      - id: image-refs
+        name: image-refs (verify internal image paths resolve)
+        entry: python3 scripts/check_image_refs.py
+        language: system
+        types_or: [html, markdown]
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
