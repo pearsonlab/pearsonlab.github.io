@@ -47,6 +47,9 @@ After that, every `git commit` will automatically:
 - Minify staged SVGs with `svgo`
 - Block any image still over 1 MB after compression, and warn on images
   between 500 KB and 1 MB (see "Image size policy" below)
+- Verify internal image references in HTML/Markdown actually resolve
+  to a file in the repo (catches typos and orphaned references; external
+  URLs are covered by lychee in the site-health CI workflow)
 - Strip trailing whitespace, fix mixed line endings, ensure files end
   with a final newline
 - Validate YAML and JSON files (`_data/`, `_config.yml`, etc.)
