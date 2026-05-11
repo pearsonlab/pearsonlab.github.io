@@ -1,0 +1,6 @@
+# Allow-list for images that legitimately exceed the 1 MB size cap.
+# One repo-relative path per line. Lines starting with # are comments.
+# Example:
+#   images/research/big-zebrafish-figure.png
+#
+# Files listed here will not block commits but will still print a warning.

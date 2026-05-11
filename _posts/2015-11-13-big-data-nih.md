@@ -6,7 +6,7 @@ author: John Pearson
 category: blog
 ---
 
-<img class="img-responsive" src="http://people.duke.edu/~jmp33/assets/bd2k.png" width="90%"> 
+<img class="img-responsive" src="http://people.duke.edu/~jmp33/assets/bd2k.png" width="90%">
 
 > Big data is like teenage sex: everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it...
 >

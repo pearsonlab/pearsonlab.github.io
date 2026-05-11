@@ -1,2 +1,21 @@
 title: "Pearson Lab at Duke University"
+description: >-
+  Computational neuroscience at Duke University. We build statistical and
+  machine-learning tools to understand how brains generate behavior.
+url: "https://pearsonlab.github.io"
+author: "Pearson Lab"
+
 markdown: kramdown
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Default OpenGraph image for social previews. Applied site-wide via
+# Jekyll defaults so jekyll-seo-tag picks it up. Pages can override
+# via `image:` in front matter.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/plab_hex_icon_gray.png

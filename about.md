@@ -15,25 +15,25 @@ nav: About # what shows up in the navbar at the top (do not define if you don't 
 
 **We believe that the best hope for treating brain disorders is the discovery of fundamental principles underlying brain activity.** Theory is essential, but the best theory happens in conversation with data. That's why we work closely with experimentalists to build tools that not only make sense of existing data but suggest new hypotheses and new directions.
 
-
 # What we value
 
 ## Open Science
+
 We [code in the open](https://github.com/pearsonlab). We share data. Communicating science requires finding and telling the stories in our data, but these stories are worthless if they don't stand up to scrutiny from the community.
 
 ## Natural Behavior
+
 Nothing in neuroscience makes sense except in light of behavior.[^1] We prefer behaviors like foraging and stimuli like movies because they give us the opportunity to study the brain in something closer to its normal working mode.
 
 ## Dynamics
+
 The brain functions in a rapidly changing environment and is itself an organ with complex internal dynamics. We favor models and methods that incorporate this behavior, particularly those drawn from the physics and statistics of dynamical systems.
 
-## Collaboration 
+## Collaboration
+
 Almost all our projects are done in close collaboration with the experimentalists who generate the data we model. Our code and algorithms are designed to solve real scientific problems faced by real users.
 
-
 <br><br>
 <br><br>
-
-
 
 [^1]: With apologies to Theodosius Dobzhansky.

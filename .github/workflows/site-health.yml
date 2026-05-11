@@ -1,0 +1,76 @@
+name: site-health
+
+on:
+  pull_request:
+    paths:
+      - '*.html'
+      - '*.md'
+      - '_layouts/**'
+      - '_includes/**'
+      - '_config.yml'
+      - '_data/**'
+      - '_posts/**'
+      - 'images/**'
+      - 'css/**'
+      - 'js/**'
+      - 'Gemfile'
+      - 'Gemfile.lock'
+      - 'lychee.toml'
+      - '.html5validator.yaml'
+  schedule:
+    # Weekly Monday 9am UTC, matching update-publications cadence.
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+jobs:
+  site-health:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Check links with lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # --exclude-path takes a regex matched against file paths.
+          # Skip legacy blog posts (deferred to a content-cleanup phase).
+          args: >-
+            --config ./lychee.toml
+            --no-progress
+            --root-dir ${{ github.workspace }}/_site
+            --exclude-path _site/blog
+            _site
+          output: lychee-report.md
+          fail: true
+
+      # On failure, post the lychee report as a sticky PR comment so
+      # the specific failing URLs are easy to see without digging
+      # through job logs. Sticky = updates in place rather than piling up.
+      - name: Comment lychee report on PR
+        if: failure() && github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: lychee
+          path: lychee-report.md
+
+      - name: Validate HTML
+        id: html5validator
+        # Soft-fail for now: surface errors via the workflow log but
+        # don't gate the PR on them. The Jekyll site has Bootstrap-3-era
+        # HTML that needs a separate cleanup pass to be HTML5-spec clean.
+        continue-on-error: true
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        with:
+          root: _site/
+          config: .html5validator.yaml

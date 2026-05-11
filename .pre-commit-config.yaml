@@ -1,0 +1,58 @@
+# Pre-commit hook configuration. See https://pre-commit.com/ for docs.
+# Contributor setup: README.md > Contributing.
+
+repos:
+  - repo: local
+    hooks:
+      - id: jpegoptim
+        name: jpegoptim (compress JPEGs to q=85, strip metadata)
+        entry: jpegoptim --max=85 --strip-all --preserve --all-progressive
+        language: system
+        types: [jpeg]
+
+      - id: oxipng
+        name: oxipng (lossless PNG optimization)
+        entry: oxipng --opt 4 --strip safe
+        language: system
+        types: [png]
+
+      - id: svgo
+        name: svgo (SVG minification)
+        entry: svgo --multipass
+        language: system
+        types: [svg]
+
+      # Runs after the compression hooks so it sees post-compression sizes.
+      - id: image-size-cap
+        name: image-size-cap (warn >500 KB, block >1 MB)
+        entry: python3 scripts/check_image_size.py
+        language: system
+        types_or: [image, svg]
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: '\.svg$'
+      - id: end-of-file-fixer
+        # svgo strips the trailing newline; let it win on .svg files.
+        exclude: '\.svg$'
+      - id: check-yaml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: detect-private-key
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.38.0
+    hooks:
+      - id: yamllint
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.48.0
+    hooks:
+      - id: markdownlint
+        args: [--fix]

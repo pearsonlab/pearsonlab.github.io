@@ -1,0 +1,47 @@
+name: pre-commit
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Need full history so the diff range below can resolve the
+          # base/before SHA against actual commits, not just HEAD.
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install pre-commit
+        run: pip install pre-commit
+
+      - name: Install image tooling (jpegoptim, oxipng, svgo)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jpegoptim
+          cargo install oxipng --locked
+          npm install -g svgo
+
+      - name: Run pre-commit on the PR's changed files
+        if: github.event_name == 'pull_request'
+        run: |
+          pre-commit run --show-diff-on-failure \
+            --from-ref ${{ github.event.pull_request.base.sha }} \
+            --to-ref ${{ github.event.pull_request.head.sha }}
+
+      - name: Run pre-commit on the push's changed files
+        if: github.event_name == 'push'
+        run: |
+          pre-commit run --show-diff-on-failure \
+            --from-ref ${{ github.event.before }} \
+            --to-ref ${{ github.sha }}

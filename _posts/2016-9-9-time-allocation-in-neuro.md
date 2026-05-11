@@ -11,6 +11,7 @@ jsexternals:
 - https://cdn.plot.ly/plotly-latest.min.js
 ---
 ### The Setup
+
 A couple of weeks ago, as I was preparing to teach our incoming graduate students about data analysis, I ran across the following assertion in my notes: neuroscientists spend more time on data analysis than any other research activity.
 
 I had zero proof for this, but it felt truthy.
@@ -21,7 +22,7 @@ So I did a little experiment. I asked my colleagues in the [Center for Cognitive
 
 By the way, that link is still up. If you haven't taken the survey but work in neuroscience, [go take it now](https://duke.qualtrics.com/SE/?SID=SV_4SLoFFC7fLr7j9z).
 
-### The results:
+### The results
 
 **Indeed, data analysis is the single most time-consuming activity in the research process**
 
@@ -33,8 +34,8 @@ But there's also a lot of variability overall. My intuition is that subfields li
 
 <div id="boxplot"></div>
 
+### Some correlations
 
-### Some correlations:
 Even though I didn't ask respondents to report their subfields, I was curious whether the data were perhaps multimodal, suggesting clusters of responses, but the [violin plot](https://en.wikipedia.org/wiki/Violin_plot) didn't bear that out. However it's still interesting to ask how correlated the allocations were with each other:
 
 ------
@@ -53,7 +54,7 @@ tr:hover {background-color: #f5f5f5}
 **Writing Results** |-0.05|-0.36|-0.44|-0.19|
 **Review Process** |0.12|-0.24|-0.38|-0.38|0.36
 
------
+------
 
 So, even though all these numbers are required to add to 1, and so we expect a negative correlation between them (roughly -14% based on a uniform Dirichlet prior with K=6), we still notice a couple of interesting features:
 
