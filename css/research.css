@@ -69,12 +69,20 @@
 }
 
 .research-details > summary::before {
-  content: "▸ Read more";
+  content: "\25B8";    /* ▸ closed indicator */
+  margin-right: 0.4em;
 }
 
 .research-details[open] > summary::before {
-  content: "▾ Read less";
+  content: "\25BE";    /* ▾ open indicator */
 }
+
+/* Two-label pattern: keep both literal labels in the DOM so the
+   browser/screen reader has consistent button text, and use the
+   details[open] attribute to swap which one is visible. */
+.research-details .show-open { display: none; }
+.research-details[open] .show-closed { display: none; }
+.research-details[open] .show-open { display: inline; }
 
 .research-details > summary:hover,
 .research-details > summary:focus {

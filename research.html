@@ -18,7 +18,7 @@ extra_head: '<link rel="stylesheet" href="/css/research.css">'
     <h2>{{ project.title }}</h2>
     <p class="research-summary">{{ project.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     <details class="research-details">
-      <summary>Read more</summary>
+      <summary><span class="show-closed">Read more</span><span class="show-open">Read less</span></summary>
       <div class="research-body">
         {{ project.body | markdownify }}
       </div>
