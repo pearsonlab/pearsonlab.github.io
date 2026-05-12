@@ -16,9 +16,13 @@ extra_head: '<link rel="stylesheet" href="/css/research.css">'
     </figure>
     {% endif %}
     <h2>{{ project.title }}</h2>
-    <div class="research-body">
-      {{ project.body | markdownify }}
-    </div>
+    <p class="research-summary">{{ project.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    <details class="research-details">
+      <summary>Read more</summary>
+      <div class="research-body">
+        {{ project.body | markdownify }}
+      </div>
+    </details>
   </article>
   {% endfor %}
 </div>

@@ -47,8 +47,44 @@
   margin-top: 0;
 }
 
+.research-summary {
+  margin-bottom: 0.75em;
+}
+
+.research-details {
+  margin-top: 0;
+}
+
+.research-details > summary {
+  display: inline-block;
+  cursor: pointer;
+  color: #337ab7;
+  font-size: 0.9em;
+  list-style: none;
+  user-select: none;
+}
+
+.research-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.research-details > summary::before {
+  content: "▸ Read more";
+}
+
+.research-details[open] > summary::before {
+  content: "▾ Read less";
+}
+
+.research-details > summary:hover,
+.research-details > summary:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
 .research-body {
   font-size: 0.95em;
+  margin-top: 0.75em;
 }
 
 .research-body p:last-child {
