@@ -31,6 +31,7 @@
 
 pi:
   name: John Pearson
+  title: Principal Investigator
   image: /images/john.png
   site: http://jmxpearson.com
   github: https://github.com/jmxpearson
