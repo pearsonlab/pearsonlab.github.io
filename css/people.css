@@ -1,39 +1,60 @@
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hcenter {
-  text-align: center;
-}
-
-div.img-div {
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.img-div img {
-  -webkit-transform: translate(-50%);
-  margin-left: 100px;
-  display: block;
-  margin-right: auto;
-}
-
 .container {
   max-width: 900px;
 }
 
+/* Use flexbox on the cards row so cards don't stair-step when they have
+   different description heights (Bootstrap 3 grid uses floats, which
+   wrap unpredictably with uneven heights). Scoped via .full-width which
+   the people page uses for its card rows. */
+.row.full-width {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Person card layout — photo on top (circular), name + title centered,
+   description body, social icons row. Two cards per row on desktop
+   (col-md-6); single column on narrower viewports. */
+.person-card {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.person-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto 1em;
+  display: block;
+}
+
+.person-card h2 {
+  margin-bottom: 0.25em;
+}
+
+.person-title {
+  color: #777;
+  margin-bottom: 1em;
+}
+
+.person-title:empty {
+  display: none;
+}
+
+.person-desc {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.person-social {
+  text-align: center;
+  line-height: 1;
+}
+
 /* Brand-colored buttons for SVG-based social icons (Google Scholar,
-   Bluesky, ORCID). Uses its own class to avoid inheriting
-   btn-social-icon's > :first-child rules, which were designed for the
-   FontAwesome <i> child and force width:100%!important + a border on
-   the SVG. Sized to match the 34x34 visual of btn-social-icon so the
-   row of icons reads as one set. */
+   Bluesky, ORCID). Sized to match the 34x34 btn-social-icon visual so
+   the row of icons reads as one set, but without inheriting the
+   btn-social-icon > :first-child rules that fight with SVG children. */
 .person-svg-icon {
   display: inline-block;
   width: 34px;
