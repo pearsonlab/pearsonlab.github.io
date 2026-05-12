@@ -11,7 +11,7 @@ extra_head: '<link rel="stylesheet" href="/css/research.css">'
   <article class="col-md-6 research-card">
     {% if project.image %}
     <figure class="research-thumb">
-      <img src="{{ project.image }}" alt="{{ project.title }}" class="img-responsive">
+      <img src="{{ project.image }}" alt="{{ project.title }}" class="img-fluid">
       {% if project.caption %}<figcaption>{{ project.caption }}</figcaption>{% endif %}
     </figure>
     {% endif %}
