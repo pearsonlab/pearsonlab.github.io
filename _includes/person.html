@@ -2,7 +2,7 @@
 <div class="col-md-6 person-card">
   <img class="img-circle person-photo" src="{{ person.image }}" alt="{{ person.name }}">
   <h2>{{ person.name }}</h2>
-  <p class="person-title"><em>{{ person.title }}</em></p>
+  {% if person.title %}<p class="person-title"><em>{{ person.title }}</em></p>{% endif %}
   <p class="person-desc">
     {{ person.desc }}
   </p>

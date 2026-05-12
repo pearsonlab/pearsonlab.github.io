@@ -9,7 +9,7 @@
 .row.full-width {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 /* Person card layout — photo on top (circular), name + title centered,
@@ -35,10 +35,6 @@
 .person-title {
   color: #777;
   margin-bottom: 1em;
-}
-
-.person-title:empty {
-  display: none;
 }
 
 .person-desc {
