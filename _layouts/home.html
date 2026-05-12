@@ -3,9 +3,11 @@
   {% include head.html %}
 
   <body>
-  <!-- Viewport-locked background so the [λ] logo always centers in
-       the visible area, regardless of how tall/wide body grows. -->
-  <div style="position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; background: url('/images/plab_logo_dark.svg') no-repeat center center; background-size: contain;"></div>
+  <!-- Viewport-locked background so the [λ] logo always centers in the
+       visible area, regardless of how tall/wide body grows. Inset from
+       the viewport edges so the SVG doesn't push flush against the
+       window frame. -->
+  <div style="position: fixed; top: 80px; right: 80px; bottom: 80px; left: 80px; z-index: -1; background: url('/images/plab_logo_dark.svg') no-repeat center center; background-size: contain;"></div>
   {% include navbar.html %}
   <img src="/images/DUSOM_Dept_Neurobio_stack.jpg" alt="Duke School of Medicine, Department of Neurobiology" style="width: 25%; float: right; padding-top: 50px"/>
   <footer>
