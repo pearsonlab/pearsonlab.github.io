@@ -2,7 +2,10 @@
 <html lang="en">
   {% include head.html %}
 
-  <body style="background: url('/images/plab_logo_dark.svg') no-repeat center center; background-size: contain; min-height: 100vh">
+  <body>
+  <!-- Viewport-locked background so the [λ] logo always centers in
+       the visible area, regardless of how tall/wide body grows. -->
+  <div style="position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; background: url('/images/plab_logo_dark.svg') no-repeat center center; background-size: contain;"></div>
   {% include navbar.html %}
   <img src="/images/DUSOM_Dept_Neurobio_stack.jpg" alt="Duke School of Medicine, Department of Neurobiology" style="width: 25%; float: right; padding-top: 50px"/>
   <footer>
