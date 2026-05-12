@@ -22,10 +22,16 @@ user_agent = "Mozilla/5.0 (compatible; lychee-link-checker; +https://lychee.cli.
 # Status codes to treat as success. We're trying to catch dead links
 # (404) and broken servers, not paywalls or anti-bot measures.
 # - 200/204/206: success
+# - 202: escholarship.org and some other deferred-fetch repos return
+#   this on a request that will succeed if you retry or wait
 # - 401: paywalled but exists
 # - 403/405/429: bot-protection / rate-limit / method-not-allowed
 # - 999: LinkedIn's bot-detection response
-accept = [200, 204, 206, 401, 403, 405, 429, 999]
+accept = [200, 202, 204, 206, 401, 403, 405, 429, 999]
+
+# Don't fail on transient timeouts — some academic hosts
+# (web.stanford.edu/~ pages in particular) intermittently hang.
+accept_timeouts = true
 
 # Hosts to skip:
 # - pearsonlab.github.io: this is the site we're building. The sitemap
