@@ -1,29 +1,23 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href='/'><b>[ &lambda; ]</b></a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+    <a class="navbar-brand" href="/"><b>[ &lambda; ]</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav">
         <!-- Generate navbar based on 'nav' variable in page headers -->
         {% for other in site.pages %}
           {% if other.nav %}
             {% if other.title == page.title %}
-              <li class="active"><a href={{ other.url }}>{{other.nav}} <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ other.url }}">{{ other.nav }}</a></li>
             {% else %}
-              <li><a href={{ other.url }}>{{other.nav}}</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ other.url }}">{{ other.nav }}</a></li>
             {% endif %}
           {% endif %}
         {% endfor %}
-        <!-- <li><a href="https://github.com/pearsonlab">Code</a></li> -->
-        <li><a href="https://github.com/pearsonlab/pearsonlab.github.io/wiki">Wiki</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/pearsonlab/pearsonlab.github.io/wiki">Wiki</a></li>
       </ul>
-    </div><!--/.navbar-collapse -->
+    </div>
   </div>
 </nav>
