@@ -29,9 +29,10 @@ user_agent = "Mozilla/5.0 (compatible; lychee-link-checker; +https://lychee.cli.
 # - 999: LinkedIn's bot-detection response
 accept = [200, 202, 204, 206, 401, 403, 405, 429, 999]
 
-# Don't fail on transient timeouts — some academic hosts
-# (web.stanford.edu/~ pages in particular) intermittently hang.
-accept_timeouts = true
+# accept_timeouts is passed as a CLI flag via the workflow's args,
+# not as a TOML field, because lychee-action@v2 pins lychee 0.23 by
+# default and that version doesn't recognise the accept_timeouts TOML
+# field (the CLI flag has worked for much longer). See site-health.yml.
 
 # Hosts to skip:
 # - pearsonlab.github.io: this is the site we're building. The sitemap

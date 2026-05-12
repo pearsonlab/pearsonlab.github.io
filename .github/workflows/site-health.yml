@@ -52,6 +52,7 @@ jobs:
             --config ./lychee.toml
             --no-progress
             --root-dir ${{ github.workspace }}/_site
+            --accept-timeouts
             --exclude-path '_site/blog/201[5-8]'
             --exclude-path '_site/blog/index\.html'
             _site
