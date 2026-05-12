@@ -44,12 +44,16 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # --exclude-path takes a regex matched against file paths.
-          # Skip legacy blog posts (deferred to a content-cleanup phase).
+          # Skip legacy 2015-2018 blog posts (accumulated link rot in
+          # decade-old archival content isn't worth triaging) and the
+          # blog index that aggregates their links. Posts from 2019+
+          # get checked normally.
           args: >-
             --config ./lychee.toml
             --no-progress
             --root-dir ${{ github.workspace }}/_site
-            --exclude-path _site/blog
+            --exclude-path '_site/blog/201[5-8]'
+            --exclude-path '_site/blog/index\.html'
             _site
           output: lychee-report.md
           fail: true
