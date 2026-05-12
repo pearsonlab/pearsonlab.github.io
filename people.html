@@ -7,28 +7,27 @@ extra_head: '<link rel="stylesheet" href="/css/people.css">'
 ---
 {% assign people = site.data.people %}
 {% assign roles = "postdocs|graduate_students|research_associates|undergraduates" | split: "|" %}
-{% assign labels = "Postdocs|Graduate Students|Research Associates|Undergraduate Students" | split: "|" %}
 
-<h2>Principal Investigator:</h2>
-<br />
-<div class="row full-width">
-  {% include person.html person=people.pi %}
-</div>
-
+{%- comment -%}
+  Build one flat list of all current members (PI first, then each role
+  in the order defined above). Cards just flow in this order — no
+  per-role section headers. Each card's `title` field still shows the
+  individual role under the name.
+{%- endcomment -%}
+{% assign current_members = "" | split: "" %}
+{% if people.pi %}{% assign current_members = current_members | push: people.pi %}{% endif %}
 {% for role in roles %}
-  {% assign label = labels[forloop.index0] %}
-  {% assign all = people[role] %}
-  {% assign current = all | where_exp: "p", "p.current != false" %}
-  {% if current.size > 0 %}
-    <h2>{{ label }}:</h2>
-    <br />
-    <div class="row full-width">
-      {% for person in current %}
-        {% include person.html person=person %}
-      {% endfor %}
-    </div>
-  {% endif %}
+  {% assign role_current = people[role] | where_exp: "p", "p.current != false" %}
+  {% for person in role_current %}
+    {% assign current_members = current_members | push: person %}
+  {% endfor %}
 {% endfor %}
+
+<div class="row full-width">
+  {% for person in current_members %}
+    {% include person.html person=person %}
+  {% endfor %}
+</div>
 
 <br />
 <h2>Former members</h2>
