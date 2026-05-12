@@ -2,6 +2,53 @@
   max-width: 900px;
 }
 
+/* Year filter chips */
+.year-filter {
+  margin: 0 0 1.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.year-filter .year-chip {
+  padding: 0.25em 0.7em;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 12px;
+  font-size: 0.9em;
+  cursor: pointer;
+  color: #444;
+  line-height: 1.4;
+}
+
+.year-filter .year-chip:hover {
+  background: #f5f5f5;
+}
+
+.year-filter .year-chip.active {
+  background: #337ab7;
+  color: #fff;
+  border-color: #337ab7;
+}
+
+/* Per-paper venue-type badge (auto-derived from container-title) */
+.pub-badge {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  margin-right: 0.5em;
+  border-radius: 3px;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  vertical-align: middle;
+  letter-spacing: 0.04em;
+}
+
+.pub-badge-journal    { background: #e8f0fe; color: #1a73e8; }
+.pub-badge-preprint   { background: #fef3c7; color: #92400e; }
+.pub-badge-conference { background: #f0e6ff; color: #6b21a8; }
+
+/* Preserve the existing tighter list spacing inside year sections. */
 h3 li:not(:last-child) {
   margin-bottom: 0.75em;
 }

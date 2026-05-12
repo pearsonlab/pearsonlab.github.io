@@ -1,27 +1,101 @@
-<p>This list is not guaranteed to be up to date, but the lab's complete publications can be found <a href="https://scholar.google.com/citations?user=4whjDosAAAAJ&hl=en">here.</a> </p>
+{%- comment -%}
+  Publications list rendered from _data/publications.yaml (auto-populated
+  weekly by scholar_scraper.py from Google Scholar).
+
+  Features:
+  - Each title links to the paper's URL when one is present in the data.
+  - Lab member authors are bold. The set of "lab last names" is built
+    from _data/people.yml (PI + all roles, current and former), so
+    adding/removing a member there propagates here automatically.
+  - Auto-derived type badge (journal / preprint / conference) based
+    on the venue string — no extra data entry required.
+  - Year-filter chips at the top let visitors narrow to a single year.
+{%- endcomment -%}
+
+{%- assign all_lab_people = "" | split: "" -%}
+{%- if site.data.people.pi -%}{%- assign all_lab_people = all_lab_people | push: site.data.people.pi.name -%}{%- endif -%}
+{%- for p in site.data.people.postdocs -%}{%- assign all_lab_people = all_lab_people | push: p.name -%}{%- endfor -%}
+{%- for p in site.data.people.graduate_students -%}{%- assign all_lab_people = all_lab_people | push: p.name -%}{%- endfor -%}
+{%- for p in site.data.people.research_associates -%}{%- assign all_lab_people = all_lab_people | push: p.name -%}{%- endfor -%}
+{%- for p in site.data.people.undergraduates -%}{%- assign all_lab_people = all_lab_people | push: p.name -%}{%- endfor -%}
+
+{%- comment -%}
+  Build "first-initial|last-name" keys (e.g. "J|Pearson") so matching is
+  tighter than last-name-only — keeps Amanda Li from being bolded just
+  because Thomas Li is a former undergrad.
+{%- endcomment -%}
+{%- assign lab_keys = "" | split: "" -%}
+{%- for full_name in all_lab_people -%}
+  {%- assign parts = full_name | split: " " -%}
+  {%- assign first = parts | first -%}
+  {%- assign last = parts | last -%}
+  {%- assign initial = first | slice: 0, 1 -%}
+  {%- assign key = initial | append: "|" | append: last -%}
+  {%- assign lab_keys = lab_keys | push: key -%}
+{%- endfor -%}
+
+<p>This list is not guaranteed to be up to date, but the lab's complete publications can be found <a href="https://scholar.google.com/citations?user=4whjDosAAAAJ&hl=en">here</a>.</p>
+
 {% assign sorted_pubs = site.data.publications | group_by_exp:'item', 'item.issued.first.year' | sort: 'name' | reverse %}
 
+<div class="year-filter" role="toolbar" aria-label="Filter publications by year">
+  <button type="button" class="year-chip active" data-year="all">All</button>
+  {% for year in sorted_pubs %}
+  <button type="button" class="year-chip" data-year="{{ year.name }}">{{ year.name }}</button>
+  {% endfor %}
+</div>
+
+<div class="pubs-list">
 {% for year in sorted_pubs %}
-<h3>{{ year.name }}</h3>
-    <ol>
-    {% for pub in year.items %}
-        <li>
-            <b>{{ pub.title }}</b>
-            <br>
-            {% for aa in pub.author %}
-            {% if forloop.last == true %}and {% endif %} {{ aa.given }} {{ aa.family }}{% if forloop.last == false %}, {% endif %}
-            {% endfor %}
-             ({{ year.name }}).
-            <br>
-            <em>{{ pub.container-title }}</em>
-            {% if pub.volume != blank %}
-                {{ pub.volume}}{%if pub.issue and pub.issue != "" %}({{ pub.issue }}){% endif %}
-            {% endif %}
-            <br>
-            {% if pub.note != blank %}
-                <b>{{ pub.note}}</b>
-            {% endif %}
-        </li>
-    {% endfor %}
-    </ol>
+<section class="pubs-year" data-year="{{ year.name }}">
+  <h3>{{ year.name }}</h3>
+  <ol>
+  {% for pub in year.items %}
+    {%- assign venue_lc = pub.container-title | downcase -%}
+    {%- if venue_lc contains "biorxiv" or venue_lc contains "arxiv" or venue_lc contains "medrxiv" or venue_lc contains "chemrxiv" or venue_lc contains "psyarxiv" or venue_lc contains "osf preprints" -%}
+      {%- assign pub_type = "preprint" -%}
+    {%- elsif venue_lc contains "proceedings" or venue_lc contains "advances in neural" or venue_lc contains "neurips" or venue_lc contains "cosyne" or venue_lc contains "conference" -%}
+      {%- assign pub_type = "conference" -%}
+    {%- else -%}
+      {%- assign pub_type = "journal" -%}
+    {%- endif -%}
+    <li>
+      <span class="pub-badge pub-badge-{{ pub_type }}">{{ pub_type }}</span>
+      {% if pub.URL and pub.URL != "" %}<a href="{{ pub.URL }}"><b>{{ pub.title }}</b></a>{% else %}<b>{{ pub.title }}</b>{% endif %}
+      <br>
+      {% for aa in pub.author -%}
+        {%- if forloop.last and forloop.first == false %}and {% endif -%}
+        {%- assign author_initial = aa.given | slice: 0, 1 -%}
+        {%- assign author_key = author_initial | append: "|" | append: aa.family -%}
+        {%- if lab_keys contains author_key -%}<b>{{ aa.given }} {{ aa.family }}</b>{%- else -%}{{ aa.given }} {{ aa.family }}{%- endif -%}
+        {%- if forloop.last == false %}, {% endif -%}
+      {%- endfor %}
+       ({{ year.name }}).
+      <br>
+      <em>{{ pub.container-title }}</em>
+      {%- if pub.volume != blank %} {{ pub.volume }}{% if pub.issue and pub.issue != "" %}({{ pub.issue }}){% endif %}{% endif %}
+      {%- if pub.note != blank %}
+      <br><b>{{ pub.note }}</b>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ol>
+</section>
 {% endfor %}
+</div>
+
+<script>
+  (function () {
+    var chips = document.querySelectorAll('.year-filter .year-chip');
+    var sections = document.querySelectorAll('.pubs-year');
+    chips.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var target = btn.dataset.year;
+        chips.forEach(function (b) { b.classList.toggle('active', b === btn); });
+        sections.forEach(function (s) {
+          s.style.display = (target === 'all' || s.dataset.year === target) ? '' : 'none';
+        });
+      });
+    });
+  })();
+</script>
