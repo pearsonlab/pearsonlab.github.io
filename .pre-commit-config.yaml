@@ -21,6 +21,11 @@ repos:
         entry: svgo --multipass
         language: system
         types: [svg]
+        # plab_logo_dark.svg has paths drawn outside its viewBox; svgo's
+        # optimization stripped attributes (clipPath / overflow handling)
+        # that kept that content visible when scaled. Skip it so the home
+        # page background renders correctly.
+        exclude: '^images/plab_logo_dark\.svg$'
 
       # Runs after the compression hooks so it sees post-compression sizes.
       - id: image-size-cap

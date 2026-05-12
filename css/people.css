@@ -1,33 +1,85 @@
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hcenter {
-  text-align: center;
-}
-
-div.img-div {
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.img-div img {
-  -webkit-transform: translate(-50%);
-  margin-left: 100px;
-  display: block;
-  margin-right: auto;
-}
-
 .container {
   max-width: 900px;
 }
 
-.col-md-5 {
-  font-size: 0.8em;
+/* Use flexbox on the cards row so cards don't stair-step when they have
+   different description heights (Bootstrap 3 grid uses floats, which
+   wrap unpredictably with uneven heights). Scoped via .full-width which
+   the people page uses for its card rows. */
+.row.full-width {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
+
+/* Person card layout — photo on top (circular), name + title centered,
+   description body, social icons row. Two cards per row on desktop
+   (col-md-6); single column on narrower viewports. */
+.person-card {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.person-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto 1em;
+  display: block;
+}
+
+.person-card h2 {
+  margin-bottom: 0.25em;
+}
+
+.person-title {
+  color: #777;
+  margin-bottom: 1em;
+}
+
+.person-desc {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.person-social {
+  text-align: center;
+  line-height: 1;
+}
+
+/* Brand-colored buttons for SVG-based social icons (Google Scholar,
+   Bluesky, ORCID). Sized to match the 34x34 btn-social-icon visual so
+   the row of icons reads as one set, but without inheriting the
+   btn-social-icon > :first-child rules that fight with SVG children. */
+.person-svg-icon {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  padding: 7px;
+  margin: 0 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 0;
+}
+.person-svg-icon:hover,
+.person-svg-icon:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.person-svg-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.person-icon-scholar { background-color: #4285F4; }
+.person-icon-bluesky { background-color: #0085FF; }
+.person-icon-orcid   { background-color: #A6CE39; }
+.person-icon-scholar:hover,
+.person-icon-scholar:focus { background-color: #1A73E8; }
+.person-icon-bluesky:hover,
+.person-icon-bluesky:focus { background-color: #0066CC; }
+.person-icon-orcid:hover,
+.person-icon-orcid:focus   { background-color: #8BB52E; }
