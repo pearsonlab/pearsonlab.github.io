@@ -32,31 +32,41 @@ div.img-div {
   font-size: 0.8em;
 }
 
-/* Brand-colored social buttons for icons not in bootstrap-social.css.
-   The inline SVG fills the parent button using the same sizing as the
-   font-awesome <i> in btn-social-icon. */
-.person-icon-scholar,
-.person-icon-bluesky,
-.person-icon-orcid {
+/* Brand-colored buttons for SVG-based social icons (Google Scholar,
+   Bluesky, ORCID). Uses its own class to avoid inheriting
+   btn-social-icon's > :first-child rules, which were designed for the
+   FontAwesome <i> child and force width:100%!important + a border on
+   the SVG. Sized to match the 34x34 visual of btn-social-icon so the
+   row of icons reads as one set. */
+.person-svg-icon {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  padding: 7px;
+  margin: 0 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   color: #fff;
-  border-color: rgba(0, 0, 0, 0.2);
+  vertical-align: middle;
+  text-align: center;
+  line-height: 0;
+}
+.person-svg-icon:hover,
+.person-svg-icon:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.person-svg-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 .person-icon-scholar { background-color: #4285F4; }
 .person-icon-bluesky { background-color: #0085FF; }
 .person-icon-orcid   { background-color: #A6CE39; }
-
 .person-icon-scholar:hover,
-.person-icon-scholar:focus { color: #fff; background-color: #1A73E8; }
+.person-icon-scholar:focus { background-color: #1A73E8; }
 .person-icon-bluesky:hover,
-.person-icon-bluesky:focus { color: #fff; background-color: #0066CC; }
+.person-icon-bluesky:focus { background-color: #0066CC; }
 .person-icon-orcid:hover,
-.person-icon-orcid:focus   { color: #fff; background-color: #8BB52E; }
-
-.btn-social-icon svg {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+.person-icon-orcid:focus   { background-color: #8BB52E; }
