@@ -82,6 +82,8 @@ postdocs:
 
 graduate_students:
   - name: Trevor Alston
+    title: Neurobiology PhD Student
+    current: true
     image: /images/Trevor.jpg
     github: https://github.com/Trevorules
     email: trevor.alston@duke.edu
@@ -93,37 +95,6 @@ graduate_students:
       Northwestern University. His research interest is in Neuroengineering
       and brain-related technologies. Outside of the lab he likes hanging
       out with friends, playing games, and watching TV.
-
-  - name: Miles Martinez
-    title: Electrical and Computer Engineering PhD Candidate
-    image: /images/miles.jpg
-    github: https://github.com/mdmarti
-    email: miles.martinez@duke.edu
-    linkedin: https://www.linkedin.com/in/miles-martinez-00a496123/
-    desc: >-
-      Miles is a fifth-year graduate student in Electrical and Computer
-      Engineering. He entered Duke through the CNAP program. He currently
-      develops and applies computational methods to understand the neural
-      bases of natural learning. When not doing research, he loves getting
-      outside and hiking or rock climbing — unless it's too cold, in which
-      case you can find him indoors cooking or playing games.
-
-  - name: Ziyi Gong
-    title: Neurobiology Graduate Student
-    image: /images/gong.png
-    scholar: https://scholar.google.com/citations?user=zOKHGPgAAAAJ
-    github: https://github.com/gongziyida
-    email: ziyi.gong@duke.edu
-    desc: >-
-      Ziyi is a fourth-year PhD candidate in Neurobiology. He received his
-      B.S. in Computer Science with minors in Mathematics and Neuroscience
-      from the University of Pittsburgh. He is interested in building
-      mathematical models to summarize, explain, and predict phenomena
-      observed in brains. Currently, he is developing models to explain how
-      songbirds learn to sing. He previously worked with Dr. Nicolas Brunel
-      on the roles of inhibition and inhibitory plasticity in the learning
-      and memory of sequences. Outside of the lab he loves cooking and
-      exercising, and occasionally plays the xiao (Chinese flute).
 
   - name: David St-Amand
     title: Neurobiology Graduate Student
@@ -211,11 +182,49 @@ graduate_students:
     current: false
     url: https://dannyfa.github.io/
     years: 2020-2025
-    outcome: MS4, Duke University
+    outcome: Diagnostic Radiology Residency, University of Washington
 
   - name: Liz O'Gorman
     current: false
     years: 2022-2025
+
+  - name: Miles Martinez
+    current: false
+    years: 2020-2026
+    title: Electrical and Computer Engineering PhD Candidate
+    image: /images/miles.jpg
+    github: https://github.com/mdmarti
+    email: miles.martinez@duke.edu
+    linkedin: https://www.linkedin.com/in/miles-martinez-00a496123/
+    desc: >-
+      Miles is a fifth-year graduate student in Electrical and Computer
+      Engineering. He entered Duke through the CNAP program. He currently
+      develops and applies computational methods to understand the neural
+      bases of natural learning. When not doing research, he loves getting
+      outside and hiking or rock climbing — unless it's too cold, in which
+      case you can find him indoors cooking or playing games.
+    outcome: NYU postdoc with Cristina Savin
+
+  - name: Ziyi Gong
+    current: false
+    years: 2024-2026
+    title: Neurobiology Graduate Student
+    image: /images/gong.png
+    scholar: https://scholar.google.com/citations?user=zOKHGPgAAAAJ
+    github: https://github.com/gongziyida
+    email: ziyi.gong@duke.edu
+    desc: >-
+      Ziyi is a fourth-year PhD candidate in Neurobiology. He received his
+      B.S. in Computer Science with minors in Mathematics and Neuroscience
+      from the University of Pittsburgh. He is interested in building
+      mathematical models to summarize, explain, and predict phenomena
+      observed in brains. Currently, he is developing models to explain how
+      songbirds learn to sing. He previously worked with Dr. Nicolas Brunel
+      on the roles of inhibition and inhibitory plasticity in the learning
+      and memory of sequences. Outside of the lab he loves cooking and
+      exercising, and occasionally plays the xiao (Chinese flute).
+    outcome: Tencent Labs
+
 
 research_associates:
   - name: Lun (Sam) Yin
