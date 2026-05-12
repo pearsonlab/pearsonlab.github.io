@@ -15,18 +15,24 @@
 }
 
 .research-card {
+  /* Bootstrap's .col-md-6 has padding: 0 15px (the grid gutter).
+     Bump to 30px so the visible inter-card whitespace is ~60px
+     instead of the default ~30px. */
+  padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 2.5em;
 }
 
-/* Inner padding + subtle separator between cards. Keeps the prose
-   inside the card from butting against the column gutters. */
+/* Inner padding offset so content doesn't visually butt against the
+   wider gutter. The thumbnail extends to the col edge via negative
+   margin so the image stays the full card width. */
 .research-card > * {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .research-thumb {
-  margin: 0 -0.5em 1em;
+  margin: 0 0 1em;
   padding: 0;
 }
 
