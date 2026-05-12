@@ -2,3 +2,4 @@ _site/
 .sass-cache/
 .lycheecache
 **/.DS_Store
+docs/screenshots/

@@ -1,0 +1,125 @@
+/* Research page card grid. Each project is a col-md-6 card; pairs of
+   cards sit side-by-side at desktop and collapse to one-per-row at
+   smaller widths via Bootstrap 3's responsive grid. Uses flexbox on the
+   row so paired cards match height even when bodies are different
+   lengths (Bootstrap 3's float-based grid stair-steps otherwise). */
+
+.container {
+  max-width: 1100px;
+}
+
+.research-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.research-card {
+  /* Bootstrap's .col-md-6 has padding: 0 15px (the grid gutter).
+     Bump to 30px so the visible inter-card whitespace is ~60px
+     instead of the default ~30px. */
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 2.5em;
+}
+
+/* Inner padding offset so content doesn't visually butt against the
+   wider gutter. The thumbnail extends to the col edge via negative
+   margin so the image stays the full card width. */
+.research-card > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.research-thumb {
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+.research-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.research-thumb figcaption {
+  font-size: 0.85em;
+  color: #666;
+  padding: 0.5em 0.5em 0;
+  font-style: italic;
+}
+
+.research-card h2 {
+  margin-top: 0;
+}
+
+.research-summary {
+  margin-bottom: 0.75em;
+}
+
+.research-details {
+  margin-top: 0;
+}
+
+.research-details > summary {
+  display: inline-block;
+  cursor: pointer;
+  color: #337ab7;
+  font-size: 0.9em;
+  list-style: none;
+  user-select: none;
+}
+
+.research-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.research-details > summary::before {
+  content: "\25B8";    /* ▸ closed indicator */
+  margin-right: 0.4em;
+}
+
+.research-details[open] > summary::before {
+  content: "\25BE";    /* ▾ open indicator */
+}
+
+/* Two-label pattern: keep both literal labels in the DOM so the
+   browser/screen reader has consistent button text, and use the
+   details[open] attribute to swap which one is visible. */
+.research-details .show-open { display: none; }
+.research-details[open] .show-closed { display: none; }
+.research-details[open] .show-open { display: inline; }
+
+.research-details > summary:hover,
+.research-details > summary:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+.research-body {
+  font-size: 0.95em;
+  margin-top: 0.75em;
+}
+
+.research-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Body figures (the secondary images embedded inline in some projects)
+   should stay constrained to card width. */
+.research-body figure {
+  margin: 1em 0;
+}
+
+.research-body figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.research-body figcaption {
+  font-size: 0.85em;
+  color: #666;
+  padding-top: 0.5em;
+  font-style: italic;
+}
