@@ -6,6 +6,8 @@ nav: People
 extra_head: '<link rel="stylesheet" href="/css/people.css">'
 ---
 {% assign people = site.data.people %}
+{% assign roles = "postdocs|graduate_students|research_associates|undergraduates" | split: "|" %}
+{% assign labels = "Postdocs|Graduate Students|Research Associates|Undergraduate Students" | split: "|" %}
 
 <h2>Principal Investigator:</h2>
 <br />
@@ -13,89 +15,36 @@ extra_head: '<link rel="stylesheet" href="/css/people.css">'
   {% include person.html person=people.pi %}
 </div>
 
-{% if people.current.postdocs.size > 0 %}
-<h2>Postdocs:</h2>
-<br />
-<div class="row full-width">
-  {% for person in people.current.postdocs %}
-    {% include person.html person=person %}
-  {% endfor %}
-</div>
-{% endif %}
-
-{% if people.current.graduate_students.size > 0 %}
-<h2>Graduate Students:</h2>
-<br />
-<div class="row full-width">
-  {% for person in people.current.graduate_students %}
-    {% include person.html person=person %}
-  {% endfor %}
-</div>
-{% endif %}
-
-{% if people.current.research_associates.size > 0 %}
-<h2>Research Associates:</h2>
-<br />
-<div class="row full-width">
-  {% for person in people.current.research_associates %}
-    {% include person.html person=person %}
-  {% endfor %}
-</div>
-{% endif %}
-
-{% if people.current.undergraduates.size > 0 %}
-<h2>Undergraduate Students:</h2>
-<br />
-<div class="row full-width">
-  {% for person in people.current.undergraduates %}
-    {% include person.html person=person %}
-  {% endfor %}
-</div>
-{% endif %}
+{% for role in roles %}
+  {% assign label = labels[forloop.index0] %}
+  {% assign all = people[role] %}
+  {% assign current = all | where_exp: "p", "p.current != false" %}
+  {% if current.size > 0 %}
+    <h2>{{ label }}:</h2>
+    <br />
+    <div class="row full-width">
+      {% for person in current %}
+        {% include person.html person=person %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
 
 <br />
 <h2>Former members</h2>
 
-{% if people.former.postdocs.size > 0 %}
-<h3>Postdocs:</h3>
-<ul>
-{% for person in people.former.postdocs %}
-  <li>
-    {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if person.years %} ({{ person.years }}{% if person.notes %}; {{ person.notes }}{% endif %}){% endif %}{% if person.outcome %} &#8594; {{ person.outcome }}{% endif %}
-  </li>
+{% assign former_labels = "Postdocs|Graduate Students|Research Associates|Undergraduates" | split: "|" %}
+{% for role in roles %}
+  {% assign label = former_labels[forloop.index0] %}
+  {% assign former = people[role] | where: "current", false %}
+  {% if former.size > 0 %}
+    <h3>{{ label }}:</h3>
+    <ul>
+    {% for person in former %}
+      <li>
+        {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if person.years %} ({{ person.years }}{% if person.notes %}; {{ person.notes }}{% endif %}){% endif %}{% if person.outcome %} &#8594; {{ person.outcome }}{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
 {% endfor %}
-</ul>
-{% endif %}
-
-{% if people.former.graduate_students.size > 0 %}
-<h3>Graduate Students:</h3>
-<ul>
-{% for person in people.former.graduate_students %}
-  <li>
-    {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if person.years %} ({{ person.years }}{% if person.notes %}; {{ person.notes }}{% endif %}){% endif %}{% if person.outcome %} &#8594; {{ person.outcome }}{% endif %}
-  </li>
-{% endfor %}
-</ul>
-{% endif %}
-
-{% if people.former.research_associates.size > 0 %}
-<h3>Research Associates:</h3>
-<ul>
-{% for person in people.former.research_associates %}
-  <li>
-    {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if person.years %} ({{ person.years }}{% if person.notes %}; {{ person.notes }}{% endif %}){% endif %}{% if person.outcome %} &#8594; {{ person.outcome }}{% endif %}
-  </li>
-{% endfor %}
-</ul>
-{% endif %}
-
-{% if people.former.undergraduates.size > 0 %}
-<h3>Undergraduates:</h3>
-<ul>
-{% for person in people.former.undergraduates %}
-  <li>
-    {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if person.years %} ({{ person.years }}{% if person.notes %}; {{ person.notes }}{% endif %}){% endif %}{% if person.outcome %} &#8594; {{ person.outcome }}{% endif %}
-  </li>
-{% endfor %}
-</ul>
-{% endif %}

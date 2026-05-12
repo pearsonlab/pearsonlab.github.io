@@ -28,10 +28,6 @@ div.img-div {
   max-width: 900px;
 }
 
-.col-md-5 {
-  font-size: 0.8em;
-}
-
 /* Brand-colored buttons for SVG-based social icons (Google Scholar,
    Bluesky, ORCID). Uses its own class to avoid inheriting
    btn-social-icon's > :first-child rules, which were designed for the

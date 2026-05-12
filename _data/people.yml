@@ -1,16 +1,17 @@
 # Lab people data, rendered by people.html.
 #
-# CURRENT MEMBERS go under `current.<role>` and use the rich card schema
-# (image, description, optional social links). FORMER MEMBERS go under
-# `former.<role>` and use the simpler alumni-list schema (name, years,
-# optional link, optional outcome).
+# One list per role. Each entry has an optional `current` flag:
+#   current: true   (default — present member, renders as rich card)
+#   current: false  (alumni — renders as a list item under "Former members")
 #
-# All link fields are optional — leave a key out and its icon won't render.
-# `notes` and `outcome` on former members accept inline HTML.
+# Moving someone to alumni is a one-line edit: set `current: false`,
+# then optionally add `years` and `outcome`. You can keep their image,
+# desc, and social links — the template only renders those for current
+# members, but preserving them keeps history available for later.
 #
-# Current-member schema:
+# Card schema (used when current is true or absent):
 #   name: string                     (required)
-#   title: string                    (optional, defaults per role)
+#   title: string                    (optional)
 #   image: string                    (required, path under /images/)
 #   desc: string                     (required, supports inline HTML)
 #   site: string                     (optional, personal homepage)
@@ -21,7 +22,7 @@
 #   bluesky: string                  (optional)
 #   orcid: string                    (optional)
 #
-# Former-member schema:
+# Alumni-list schema (used when current is false):
 #   name: string                     (required)
 #   url: string                      (optional, what to wrap the name in)
 #   years: string                    (optional, e.g. "2017" or "2015-2016")
@@ -50,235 +51,258 @@ pi:
     Neuroscience, and Electrical and Computer Engineering.
     (<a href="https://www.dropbox.com/scl/fi/o05n1v0skl5el9w938oca/john_pearson_cv.pdf?rlkey=wickra8h33u8hfsr40l0jdhxf&amp;st=8buq1yz2&amp;dl=0">cv</a>)
 
-current:
-  postdocs: []
+postdocs:
+  - name: Jeff MacInnes
+    current: false
+    url: http://www.jeffmacinnes.com/
+    years: 2017
+    notes: joint with Elizabeth Johnson
+    outcome: University of Washington (postdoc)
 
-  graduate_students:
-    - name: Trevor Alston
-      image: /images/Trevor.jpg
-      github: https://github.com/Trevorules
-      email: trevor.alston@duke.edu
-      linkedin: https://www.linkedin.com/in/trevor-alston
-      desc: >-
-        Trevor is a sixth-year Neurobiology graduate student at Duke
-        University. He holds two Biomedical Engineering Degrees; he received
-        his BS degree from Rutgers University and his MS degree from
-        Northwestern University. His research interest is in Neuroengineering
-        and brain-related technologies. Outside of the lab he likes hanging
-        out with friends, playing games, and watching TV.
+  - name: Chintan Oza
+    current: false
+    years: 2015-2016
+    notes: 'joint with <a href="https://bme.duke.edu/faculty/warren-grill">Warren Grill</a>'
+    outcome: Consulting (L.E.K.)
 
-    - name: Miles Martinez
-      title: Electrical and Computer Engineering PhD Candidate
-      image: /images/miles.jpg
-      github: https://github.com/mdmarti
-      email: miles.martinez@duke.edu
-      linkedin: https://www.linkedin.com/in/miles-martinez-00a496123/
-      desc: >-
-        Miles is a fifth-year graduate student in Electrical and Computer
-        Engineering. He entered Duke through the CNAP program. He currently
-        develops and applies computational methods to understand the neural
-        bases of natural learning. When not doing research, he loves getting
-        outside and hiking or rock climbing — unless it's too cold, in which
-        case you can find him indoors cooking or playing games.
+  - name: Anne Draelos
+    current: false
+    url: https://draelos.github.io
+    years: 2018-2022
+    outcome: Assistant Professor, University of Michigan
 
-    - name: Ziyi Gong
-      title: Neurobiology Graduate Student
-      image: /images/gong.png
-      scholar: https://scholar.google.com/citations?user=zOKHGPgAAAAJ
-      github: https://github.com/gongziyida
-      email: ziyi.gong@duke.edu
-      desc: >-
-        Ziyi is a fourth-year PhD candidate in Neurobiology. He received his
-        B.S. in Computer Science with minors in Mathematics and Neuroscience
-        from the University of Pittsburgh. He is interested in building
-        mathematical models to summarize, explain, and predict phenomena
-        observed in brains. Currently, he is developing models to explain how
-        songbirds learn to sing. He previously worked with Dr. Nicolas Brunel
-        on the roles of inhibition and inhibitory plasticity in the learning
-        and memory of sequences. Outside of the lab he loves cooking and
-        exercising, and occasionally plays the xiao (Chinese flute).
+  - name: Scott Smyre
+    current: false
+    years: 2023-2024
+    outcome: Research Scientist, Wake Forest University
 
-    - name: David St-Amand
-      title: Neurobiology Graduate Student
-      image: https://scholars.duke.edu/file/i6468953/image_6468953.JPG
-      scholar: https://scholar.google.com/citations?user=Bc4NeD0AAAAJ
-      github: https://github.com/DavidStA95
-      email: david.st-amand@duke.edu
-      desc: >-
-        David is a third-year graduate student in Neurobiology. He graduated
-        from McGill University, where he received his BS in Psychology and
-        his MS in Neuroscience. His research investigates how efficient
-        coding models can help us understand how information is computed in
-        the retina. Outside the lab, he likes to work out and play games.
+  - name: Seth Madlon-Kay
+    current: false
+    years: 2019-2025
 
-    - name: Shiyang Pan
-      title: Electrical and Computer Engineering PhD Student
-      image: /images/shiyang.jpg
-      site: https://waaaaaterfall.github.io
-      github: https://github.com/WaAaaAterfall
-      email: shiyang.pan@duke.edu
-      linkedin: https://www.linkedin.com/in/shiyangpan
-      desc: >-
-        Shiyang is a graduate student in Electrical &amp; Computer Engineering
-        at Duke. She received her Bsc in Applied Mathematics from University
-        of Liverpool and Xi'an Jiaotong-Liverpool University. Her research
-        focuses on developing computational models and real-time methods to
-        understand the activity of large-scale neural populations. When not
-        doing research she enjoys music, reading, and creative writing.
+graduate_students:
+  - name: Trevor Alston
+    image: /images/Trevor.jpg
+    github: https://github.com/Trevorules
+    email: trevor.alston@duke.edu
+    linkedin: https://www.linkedin.com/in/trevor-alston
+    desc: >-
+      Trevor is a sixth-year Neurobiology graduate student at Duke
+      University. He holds two Biomedical Engineering Degrees; he received
+      his BS degree from Rutgers University and his MS degree from
+      Northwestern University. His research interest is in Neuroengineering
+      and brain-related technologies. Outside of the lab he likes hanging
+      out with friends, playing games, and watching TV.
 
-    - name: Caitlin Lewis
-      title: Electrical &amp; Computer Engineering PhD Student
-      image: /images/caitlin.jpg
-      github: https://github.com/clewis7
-      email: caitlin.lewis@duke.edu
-      linkedin: https://www.linkedin.com/in/caitlinllewis/
-      desc: >-
-        Caitlin is a second-year graduate student in Electrical &amp; Computer
-        Engineering at Duke. She received her B.S. in Computer Science and
-        Statistics from the University of North Carolina at Chapel Hill. Her
-        research focuses on developing computational models and open-source
-        software tools for real-time analysis and visualization of large-scale
-        neural data. Outside of the lab, she enjoys reading and playing
-        pickleball with friends.
+  - name: Miles Martinez
+    title: Electrical and Computer Engineering PhD Candidate
+    image: /images/miles.jpg
+    github: https://github.com/mdmarti
+    email: miles.martinez@duke.edu
+    linkedin: https://www.linkedin.com/in/miles-martinez-00a496123/
+    desc: >-
+      Miles is a fifth-year graduate student in Electrical and Computer
+      Engineering. He entered Duke through the CNAP program. He currently
+      develops and applies computational methods to understand the neural
+      bases of natural learning. When not doing research, he loves getting
+      outside and hiking or rock climbing — unless it's too cold, in which
+      case you can find him indoors cooking or playing games.
 
-  research_associates: []
-  undergraduates: []
+  - name: Ziyi Gong
+    title: Neurobiology Graduate Student
+    image: /images/gong.png
+    scholar: https://scholar.google.com/citations?user=zOKHGPgAAAAJ
+    github: https://github.com/gongziyida
+    email: ziyi.gong@duke.edu
+    desc: >-
+      Ziyi is a fourth-year PhD candidate in Neurobiology. He received his
+      B.S. in Computer Science with minors in Mathematics and Neuroscience
+      from the University of Pittsburgh. He is interested in building
+      mathematical models to summarize, explain, and predict phenomena
+      observed in brains. Currently, he is developing models to explain how
+      songbirds learn to sing. He previously worked with Dr. Nicolas Brunel
+      on the roles of inhibition and inhibitory plasticity in the learning
+      and memory of sequences. Outside of the lab he loves cooking and
+      exercising, and occasionally plays the xiao (Chinese flute).
 
-former:
-  postdocs:
-    - name: Jeff MacInnes
-      url: http://www.jeffmacinnes.com/
-      years: 2017
-      notes: joint with Elizabeth Johnson
-      outcome: University of Washington (postdoc)
+  - name: David St-Amand
+    title: Neurobiology Graduate Student
+    image: https://scholars.duke.edu/file/i6468953/image_6468953.JPG
+    scholar: https://scholar.google.com/citations?user=Bc4NeD0AAAAJ
+    github: https://github.com/DavidStA95
+    email: david.st-amand@duke.edu
+    desc: >-
+      David is a third-year graduate student in Neurobiology. He graduated
+      from McGill University, where he received his BS in Psychology and
+      his MS in Neuroscience. His research investigates how efficient
+      coding models can help us understand how information is computed in
+      the retina. Outside the lab, he likes to work out and play games.
 
-    - name: Chintan Oza
-      years: 2015-2016
-      notes: 'joint with <a href="https://bme.duke.edu/faculty/warren-grill">Warren Grill</a>'
-      outcome: Consulting (L.E.K.)
+  - name: Shiyang Pan
+    title: Electrical and Computer Engineering PhD Student
+    image: /images/shiyang.jpg
+    site: https://waaaaaterfall.github.io
+    github: https://github.com/WaAaaAterfall
+    email: shiyang.pan@duke.edu
+    linkedin: https://www.linkedin.com/in/shiyangpan
+    desc: >-
+      Shiyang is a graduate student in Electrical &amp; Computer Engineering
+      at Duke. She received her Bsc in Applied Mathematics from University
+      of Liverpool and Xi'an Jiaotong-Liverpool University. Her research
+      focuses on developing computational models and real-time methods to
+      understand the activity of large-scale neural populations. When not
+      doing research she enjoys music, reading, and creative writing.
 
-    - name: Anne Draelos
-      url: https://draelos.github.io
-      years: 2018-2022
-      outcome: Assistant Professor, University of Michigan
+  - name: Caitlin Lewis
+    title: Electrical &amp; Computer Engineering PhD Student
+    image: /images/caitlin.jpg
+    github: https://github.com/clewis7
+    email: caitlin.lewis@duke.edu
+    linkedin: https://www.linkedin.com/in/caitlinllewis/
+    desc: >-
+      Caitlin is a second-year graduate student in Electrical &amp; Computer
+      Engineering at Duke. She received her B.S. in Computer Science and
+      Statistics from the University of North Carolina at Chapel Hill. Her
+      research focuses on developing computational models and open-source
+      software tools for real-time analysis and visualization of large-scale
+      neural data. Outside of the lab, she enjoys reading and playing
+      pickleball with friends.
 
-    - name: Scott Smyre
-      years: 2023-2024
-      outcome: Research Scientist, Wake Forest University
+  # Former graduate students
+  - name: Kelsey McDonald
+    current: false
+    years: 2016-2021
+    outcome: Data Scientist, Labcorp Drug Development
 
-    - name: Seth Madlon-Kay
-      years: 2019-2025
+  - name: Robert Gramer
+    current: false
+    url: https://www.massgeneral.org/neurosurgery/doctors/current-residents
+    years: 2016-2017
+    notes: 3rd year medical student
+    outcome: Neurosurgical Resident, Massachusetts General Hospital
 
-  graduate_students:
-    - name: Kelsey McDonald
-      years: 2016-2021
-      outcome: Data Scientist, Labcorp Drug Development
+  - name: Achint Kumar
+    current: false
+    url: https://achintzeus1994.github.io
+    years: 2021-2022
 
-    - name: Robert Gramer
-      url: https://www.massgeneral.org/neurosurgery/doctors/current-residents
-      years: 2016-2017
-      notes: 3rd year medical student
-      outcome: Neurosurgical Resident, Massachusetts General Hospital
+  - name: Na Young Jun
+    current: false
+    years: 2017-2022
+    outcome: Meta Reality Labs
 
-    - name: Achint Kumar
-      url: https://achintzeus1994.github.io
-      years: 2021-2022
+  - name: Pranjal Gupta
+    current: false
+    years: 2018-2024
+    outcome: data scientist
 
-    - name: Na Young Jun
-      years: 2017-2022
-      outcome: Meta Reality Labs
+  - name: Kevin O'Neill
+    current: false
+    url: https://kevingoneill.github.io
+    years: 2018-2024
+    outcome: postdoc, University College London
 
-    - name: Pranjal Gupta
-      years: 2018-2024
-      outcome: data scientist
+  - name: Raphael Geddert
+    current: false
+    years: 2019-2024
+    outcome: data scientist, Gilead Sciences
 
-    - name: Kevin O'Neill
-      url: https://kevingoneill.github.io
-      years: 2018-2024
-      outcome: postdoc, University College London
+  - name: Daniela de Albuquerque
+    current: false
+    url: https://dannyfa.github.io/
+    years: 2020-2025
+    outcome: MS4, Duke University
 
-    - name: Raphael Geddert
-      years: 2019-2024
-      outcome: data scientist, Gilead Sciences
+  - name: Liz O'Gorman
+    current: false
+    years: 2022-2025
 
-    - name: Daniela de Albuquerque
-      url: https://dannyfa.github.io/
-      years: 2020-2025
-      outcome: MS4, Duke University
+research_associates:
+  - name: Lun (Sam) Yin
+    current: false
+    years: 2017-2020
+    outcome: Emory Biostatistics (PhD program)
 
-    - name: Liz O'Gorman
-      years: 2022-2025
+  - name: Jack Goffinet
+    current: false
+    url: https://scholar.google.com/citations?user=-oXW2RYAAAAJ&hl=en
+    years: 2018-2020
+    outcome: Duke Computer Science (PhD program)
 
-  research_associates:
-    - name: Lun (Sam) Yin
-      years: 2017-2020
-      outcome: Emory Biostatistics (PhD program)
+  - name: Qian Kuang
+    current: false
+    years: 2017-2018
 
-    - name: Jack Goffinet
-      url: https://scholar.google.com/citations?user=-oXW2RYAAAAJ&hl=en
-      years: 2018-2020
-      outcome: Duke Computer Science (PhD program)
+  - name: Shariq Iqbal
+    current: false
+    url: https://shariqiqbal2810.github.io
+    years: 2015-2017
+    outcome: USC Computer Science (PhD) &#8594; Deepmind
 
-    - name: Qian Kuang
-      years: 2017-2018
+  - name: Xin (Cindy) Chen
+    current: false
+    years: 2016-2017
+    outcome: Data Engineer (Citadel)
 
-    - name: Shariq Iqbal
-      url: https://shariqiqbal2810.github.io
-      years: 2015-2017
-      outcome: USC Computer Science (PhD) &#8594; Deepmind
+  - name: Abhishek Upadhyaya Ghimire
+    current: false
+    url: https://abhishekupadhyaya.github.io/
+    years: 2016-2017
+    outcome: Cloud Security Engineer (Cisco)
 
-    - name: Xin (Cindy) Chen
-      years: 2016-2017
-      outcome: Data Engineer (Citadel)
+  - name: Athelia Rosa Paulli
+    current: false
+    years: 2016-2017
+    outcome: UCLA &#8594; Children's National Hospital
 
-    - name: Abhishek Upadhyaya Ghimire
-      url: https://abhishekupadhyaya.github.io/
-      years: 2016-2017
-      outcome: Cloud Security Engineer (Cisco)
+undergraduates:
+  - name: Christopher Zhou
+    current: false
+    years: 2022-2025
 
-    - name: Athelia Rosa Paulli
-      years: 2016-2017
-      outcome: UCLA &#8594; Children's National Hospital
+  - name: Sara Liszeski
+    current: false
+    years: 2021-2023
+    outcome: Columbia Medical School
 
-  undergraduates:
-    - name: Christopher Zhou
-      years: 2022-2025
+  - name: Dominic Tanzillo
+    current: false
+    url: https://dominictanzillo.github.io/
+    years: 2020-2021
+    outcome: Duke Medical School
 
-    - name: Sara Liszeski
-      years: 2021-2023
-      outcome: Columbia Medical School
+  - name: Daniel Sprague
+    current: false
+    url: https://linkedin.com/in/daniel-sprague-yutaka
+    years: 2020-2021
+    outcome: Harvard Neurobiology
 
-    - name: Dominic Tanzillo
-      url: https://dominictanzillo.github.io/
-      years: 2020-2021
-      outcome: Duke Medical School
+  - name: Chaichontat Sriworarat (Richard)
+    current: false
+    url: https://github.com/chaichontat/
+    years: 2019-2021
+    outcome: Janelia Joint Graduate Program
 
-    - name: Daniel Sprague
-      url: https://linkedin.com/in/daniel-sprague-yutaka
-      years: 2020-2021
-      outcome: Harvard Neurobiology
+  - name: Sujal Manojar
+    current: false
+    url: https://www.sujalmanohar.com/
+    years: 2020
+    outcome: '<a href="https://hart.sanford.duke.edu/programs/hfp/">Hart Leadership Fellow</a> &#8594; Baylor College of Medicine'
 
-    - name: Chaichontat Sriworarat (Richard)
-      url: https://github.com/chaichontat/
-      years: 2019-2021
-      outcome: Janelia Joint Graduate Program
+  - name: Raymond Chen
+    current: false
+    years: 2019
+    notes: Huang Fellow
 
-    - name: Sujal Manojar
-      url: https://www.sujalmanohar.com/
-      years: 2020
-      outcome: '<a href="https://hart.sanford.duke.edu/programs/hfp/">Hart Leadership Fellow</a> &#8594; Baylor College of Medicine'
+  - name: Thomas Li
+    current: false
+    url: http://thomasli.me/
+    years: 2018
+    outcome: Vanderbilt Medical School
 
-    - name: Raymond Chen
-      years: 2019
-      notes: Huang Fellow
-
-    - name: Thomas Li
-      url: http://thomasli.me/
-      years: 2018
-      outcome: Vanderbilt Medical School
-
-    - name: Andrew Bartuska
-      url: https://www.linkedin.com/in/andrew-bartuska-649917121
-      years: 2015-2016
-      notes: Senior Thesis
-      outcome: Harvard Medical School
+  - name: Andrew Bartuska
+    current: false
+    url: https://www.linkedin.com/in/andrew-bartuska-649917121
+    years: 2015-2016
+    notes: Senior Thesis
+    outcome: Harvard Medical School
