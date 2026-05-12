@@ -1,37 +1,53 @@
+{% assign person = include.person %}
 <div class="col-md-4">
-  <img class="img-circle" src="{{ include.image }}" alt="{{ include.name }}" height="200" width="200">
+  <img class="img-circle" src="{{ person.image }}" alt="{{ person.name }}" height="200" width="200">
   <!-- Social Icons -->
   <p class="hcenter">
     <br>
-    {% if include.site %}
-    <a class="btn btn-social-icon btn-microsoft" href="{{ include.site }}">
+    {% if person.site %}
+    <a class="btn btn-social-icon btn-microsoft" href="{{ person.site }}" aria-label="Personal site">
       <i class="fa fa-globe"></i>
     </a>
     {% endif %}
-    {% if include.github %}
-    <a class="btn btn-social-icon btn-github" href="{{ include.github }}">
+    {% if person.github %}
+    <a class="btn btn-social-icon btn-github" href="{{ person.github }}" aria-label="GitHub">
       <i class="fa fa-github"></i>
     </a>
     {% endif %}
-    {% if include.email %}
-    <a class="btn btn-social-icon btn-google" href="mailto:{{ include.email }}">
+    {% if person.email %}
+    <a class="btn btn-social-icon btn-google" href="mailto:{{ person.email }}" aria-label="Email">
       <i class="fa fa-envelope"></i>
     </a>
     {% endif %}
-    {% if include.linkedin %}
-    <a class="btn btn-social-icon btn-linkedin" href="{{ include.linkedin }}">
+    {% if person.linkedin %}
+    <a class="btn btn-social-icon btn-linkedin" href="{{ person.linkedin }}" aria-label="LinkedIn">
       <i class="fa fa-linkedin"></i>
     </a>
     {% endif %}
-    {% if include.site == null and include.github == null and include.email == null and include.linkedin == null %}
+    {% if person.scholar %}
+    <a class="btn btn-social-icon person-icon-scholar" href="{{ person.scholar }}" aria-label="Google Scholar">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+    </a>
+    {% endif %}
+    {% if person.bluesky %}
+    <a class="btn btn-social-icon person-icon-bluesky" href="{{ person.bluesky }}" aria-label="Bluesky">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"/></svg>
+    </a>
+    {% endif %}
+    {% if person.orcid %}
+    <a class="btn btn-social-icon person-icon-orcid" href="{{ person.orcid }}" aria-label="ORCID">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg>
+    </a>
+    {% endif %}
+    {% if person.site == nil and person.github == nil and person.email == nil and person.linkedin == nil and person.scholar == nil and person.bluesky == nil and person.orcid == nil %}
     <br><br>
     {% endif %}
   </p>
 </div>
 <div class="col-md-5">
-  <h2>{{ include.name }}</h2>
-  <p><em>{{ include.title }}</em></p>
+  <h2>{{ person.name }}</h2>
+  {% if person.title %}<p><em>{{ person.title }}</em></p>{% endif %}
   <p>
-    {{ include.desc }}
+    {{ person.desc }}
   </p>
 </div>
