@@ -2,35 +2,6 @@
   max-width: 900px;
 }
 
-/* Year filter chips */
-.year-filter {
-  margin: 0 0 1.5em 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4em;
-}
-
-.year-filter .year-chip {
-  padding: 0.25em 0.7em;
-  border: 1px solid #ccc;
-  background: #fff;
-  border-radius: 12px;
-  font-size: 0.9em;
-  cursor: pointer;
-  color: #444;
-  line-height: 1.4;
-}
-
-.year-filter .year-chip:hover {
-  background: #f5f5f5;
-}
-
-.year-filter .year-chip.active {
-  background: #337ab7;
-  color: #fff;
-  border-color: #337ab7;
-}
-
 /* Per-paper venue-type badge (auto-derived from container-title) */
 .pub-badge {
   display: inline-block;

@@ -9,7 +9,6 @@
     adding/removing a member there propagates here automatically.
   - Auto-derived type badge (journal / preprint / conference) based
     on the venue string — no extra data entry required.
-  - Year-filter chips at the top let visitors narrow to a single year.
 {%- endcomment -%}
 
 {%- assign all_lab_people = "" | split: "" -%}
@@ -37,13 +36,6 @@
 <p>This list is not guaranteed to be up to date, but the lab's complete publications can be found <a href="https://scholar.google.com/citations?user=4whjDosAAAAJ&hl=en">here</a>.</p>
 
 {% assign sorted_pubs = site.data.publications | group_by_exp:'item', 'item.issued.first.year' | sort: 'name' | reverse %}
-
-<div class="year-filter" role="toolbar" aria-label="Filter publications by year">
-  <button type="button" class="year-chip active" data-year="all">All</button>
-  {% for year in sorted_pubs %}
-  <button type="button" class="year-chip" data-year="{{ year.name }}">{{ year.name }}</button>
-  {% endfor %}
-</div>
 
 <div class="pubs-list">
 {% for year in sorted_pubs %}
@@ -83,19 +75,3 @@
 </section>
 {% endfor %}
 </div>
-
-<script>
-  (function () {
-    var chips = document.querySelectorAll('.year-filter .year-chip');
-    var sections = document.querySelectorAll('.pubs-year');
-    chips.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var target = btn.dataset.year;
-        chips.forEach(function (b) { b.classList.toggle('active', b === btn); });
-        sections.forEach(function (s) {
-          s.style.display = (target === 'all' || s.dataset.year === target) ? '' : 'none';
-        });
-      });
-    });
-  })();
-</script>
