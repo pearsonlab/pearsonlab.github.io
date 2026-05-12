@@ -21,8 +21,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>{{ site.title }}</title>
-
     <!-- Bootstrap core CSS from MaxCDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
@@ -32,4 +30,5 @@
     <link href="/css/custom.css" rel="stylesheet">
     <link href="/css/bootstrap-social.css" rel="stylesheet">
 
+    {% if page.extra_head %}{{ page.extra_head }}{% endif %}
 </head>
