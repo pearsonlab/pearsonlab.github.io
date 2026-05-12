@@ -37,6 +37,7 @@ figcaption {
    with the header rather than staying fixed behind page content. */
 .jumbotron {
   height: 250px;
+  margin-bottom: 2rem;
   color: white;
   text-shadow: #444 0 1px 1px;
   background: url('/images/chapel_gradient.jpg') no-repeat center center;
