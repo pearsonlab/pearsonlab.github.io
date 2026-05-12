@@ -13,7 +13,7 @@ permalink: "/blog/"
       <div class="blog-post">
         <h2 class="blog-post-title">{{ post.post_title }}</h2>
         <p class="blog-post-meta" style="color: grey; font-size: 0.8em">{{ post.date | date: "%-d %B %Y" }} by <a href="/people.html">{{ post.author }}</a></p>
-        <p>{{ post.excerpt }}</p>
+        {{ post.excerpt }}
         {% capture content_words %}
           {{ post.content | number_of_words }}
         {% endcapture %}

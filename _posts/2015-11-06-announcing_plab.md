@@ -6,7 +6,7 @@ author: John Pearson
 category: blog
 ---
 
-<img class="img-responsive" src="/images/plab_logotype.svg" width="40%">
+<img class="img-responsive" src="/images/plab_logotype.svg" alt="Pearson Lab logotype" style="width: 40%">
 
 Today, we're launching the website for P[&lambda;]ab, the Pearson Lab at Duke University. The plan is to use this blog for lab news, ongoing projects, and things we just think are cool.
 

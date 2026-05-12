@@ -4,7 +4,24 @@
 root: _site
 match: '*.html'
 
-# Patterns to ignore. Add Bootstrap-3-era / Jekyll-specific noise here
-# as it surfaces; keep the list short so real errors aren't masked.
+# Skip legacy 2015-2018 blog post output directories. Both
+# _site/blog/2015/.../ and _site/2015/... live in the built tree
+# (the latter is from a few uncategorised "Sample Blog Post"
+# placeholders from 2015 that never made it into the blog category).
+# Active content (2019+) and the blog index get validated normally.
+#
+# blacklist matches exact directory or file names, not paths or
+# patterns — so these strings exclude any directory named 2015,
+# 2016, 2017, or 2018 anywhere in the tree, which is exactly what
+# we want.
+blacklist:
+  - '2015'
+  - '2016'
+  - '2017'
+  - '2018'
+
+# Patterns to ignore in error output (regex). Keep short so real
+# errors aren't masked. Add Bootstrap-3-era / Jekyll-specific noise
+# here as it surfaces.
 ignore_re:
   []
