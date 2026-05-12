@@ -1,0 +1,75 @@
+/* Research page card grid. Each project is a col-md-6 card; pairs of
+   cards sit side-by-side at desktop and collapse to one-per-row at
+   smaller widths via Bootstrap 3's responsive grid. Uses flexbox on the
+   row so paired cards match height even when bodies are different
+   lengths (Bootstrap 3's float-based grid stair-steps otherwise). */
+
+.container {
+  max-width: 1100px;
+}
+
+.research-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.research-card {
+  margin-bottom: 2.5em;
+}
+
+/* Inner padding + subtle separator between cards. Keeps the prose
+   inside the card from butting against the column gutters. */
+.research-card > * {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.research-thumb {
+  margin: 0 -0.5em 1em;
+  padding: 0;
+}
+
+.research-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.research-thumb figcaption {
+  font-size: 0.85em;
+  color: #666;
+  padding: 0.5em 0.5em 0;
+  font-style: italic;
+}
+
+.research-card h2 {
+  margin-top: 0;
+}
+
+.research-body {
+  font-size: 0.95em;
+}
+
+.research-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Body figures (the secondary images embedded inline in some projects)
+   should stay constrained to card width. */
+.research-body figure {
+  margin: 1em 0;
+}
+
+.research-body figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.research-body figcaption {
+  font-size: 0.85em;
+  color: #666;
+  padding-top: 0.5em;
+  font-style: italic;
+}

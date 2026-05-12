@@ -1,0 +1,24 @@
+---
+layout: default
+title: Current Projects
+desc: Check out what we're working on
+nav: Research
+extra_head: '<link rel="stylesheet" href="/css/research.css">'
+---
+
+<div class="row research-grid">
+  {% for project in site.data.research %}
+  <article class="col-md-6 research-card">
+    {% if project.image %}
+    <figure class="research-thumb">
+      <img src="{{ project.image }}" alt="{{ project.title }}" class="img-responsive">
+      {% if project.caption %}<figcaption>{{ project.caption }}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
+    <h2>{{ project.title }}</h2>
+    <div class="research-body">
+      {{ project.body | markdownify }}
+    </div>
+  </article>
+  {% endfor %}
+</div>
