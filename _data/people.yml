@@ -53,7 +53,6 @@ pi:
     (<a href="https://www.dropbox.com/scl/fi/o05n1v0skl5el9w938oca/john_pearson_cv.pdf?rlkey=wickra8h33u8hfsr40l0jdhxf&amp;st=8buq1yz2&amp;dl=0">cv</a>)
 
 postdocs:
-
   - name: Ganchao Wei
       current: true
       image: /images/ganchao_john_sq.JPG
@@ -63,7 +62,6 @@ postdocs:
         Ganchao plays around with stats / ML / AI, mainly motivated by and applied to neuroscience. 
         He is currently into deep generative models (diffusion-/flow-based) and
         causal representation learning.
-
 
   - name: Jeff MacInnes
     current: false
