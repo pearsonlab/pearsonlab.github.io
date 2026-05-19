@@ -55,6 +55,7 @@ pi:
 postdocs:
 
   - name: Ganchao Wei
+      current: true
       image: /images/ganchao_john_sq.JPG
       site: https://weigcdsb.github.io/
       email: ganchao.wei@duke.edu
