@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           # Need full history so the diff range below can resolve the
           # base/before SHA against actual commits, not just HEAD.
