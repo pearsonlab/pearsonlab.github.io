@@ -28,7 +28,7 @@
     Together with [Eva Naumann's](https://www.neuro.duke.edu/research/faculty-labs/naumann-lab) lab, we've developed *[improv](https://github.com/project-improv/improv)* ([paper](https://www.biorxiv.org/content/10.1101/2021.02.22.432006v1)), a software platform for designing and orchestrating adaptive experiments. By analyzing data in real time, we can measure, model, and manipulate neural activity in response to new data. We've shown how these tools, in conjunction with holographic photostimulation, could in principle map functional connectivity of large circuits in a few hours ([paper](https://proceedings.nips.cc/paper/2020/file/531d29a813ef9471aad0a5558d449a73-Paper.pdf), [expanded version](https://arxiv.org/abs/2007.13911)). More recently, we've worked on methods for fast dimensionality reduction and modeling of neural populations in real time ([paper](https://arxiv.org/abs/2108.13941)).
 
     <figure>
-      <img src="/images/pipelineNewpng3.png" class="img-responsive" alt="Closed-loop pipeline concept">
+      <img src="/images/pipelineNewpng3.png" class="img-fluid" alt="Closed-loop pipeline concept">
       <figcaption>
         Concept for the closed-loop pipeline. Neural data from the zebrafish are collected in the form of images, preprocessed, and analyzed in real-time. Targets for optical stimulation are then chosen based on the results of this analysis, creating adaptive experiments that test causal hypotheses.
       </figcaption>
