@@ -54,14 +54,14 @@ pi:
 
 postdocs:
   - name: Ganchao Wei
-      current: true
-      image: /images/ganchao_john_sq.JPG
-      site: https://weigcdsb.github.io/
-      email: ganchao.wei@duke.edu
-      desc: >-
-        Ganchao plays around with stats / ML / AI, mainly motivated by and applied to neuroscience. 
-        He is currently into deep generative models (diffusion-/flow-based) and
-        causal representation learning.
+    current: true
+    image: /images/ganchao_john_sq.JPG
+    site: https://weigcdsb.github.io/
+    email: ganchao.wei@duke.edu
+    desc: >-
+      Ganchao plays around with stats / ML / AI, mainly motivated by and applied to neuroscience.
+      He is currently into deep generative models (diffusion-/flow-based) and
+      causal representation learning.
 
   - name: Jeff MacInnes
     current: false
