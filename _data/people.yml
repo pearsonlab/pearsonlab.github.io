@@ -277,6 +277,16 @@ research_associates:
     outcome: UCLA &#8594; Children's National Hospital
 
 undergraduates:
+  - name: Hannah Hortman
+    current: false
+    years: 2024-2026
+    outcome: NYU Neuroscience PhD program
+
+  - name: Huiwen Wang
+    current: false
+    years: 2024-2026
+    outcome: Medical University of South Carolina (MD program)
+
   - name: Christopher Zhou
     current: false
     years: 2022-2025
@@ -296,7 +306,7 @@ undergraduates:
     current: false
     url: https://linkedin.com/in/daniel-sprague-yutaka
     years: 2020-2021
-    outcome: Harvard Neurobiology
+    outcome: Harvard Neurobiology PhD program
 
   - name: Chaichontat Sriworarat (Richard)
     current: false
