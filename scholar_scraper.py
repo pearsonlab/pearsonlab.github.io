@@ -7,6 +7,7 @@ import os
 import yaml
 import sys
 import re
+import time
 from scholarly import scholarly, ProxyGenerator
 
 # Force unbuffered output for GitHub Actions
@@ -189,7 +190,33 @@ def get_author_publications(scholar_id):
 
     except Exception as e:
         print(f"Error fetching author publications: {e}", flush=True)
-        sys.exit(1)
+        # Signal failure to the caller (which decides whether to retry)
+        # rather than exiting, so a fresh proxy can be tried.
+        return None
+
+def fetch_with_retries(scholar_id, max_attempts=4, wait_between=15):
+    """
+    Try to fetch publications several times, each with a fresh proxy.
+
+    Google Scholar frequently blocks GitHub Actions runners ("Cannot Fetch
+    from Google Scholar"), and the free proxies we rotate through are
+    individually unreliable, so a single attempt is a coin flip. Each
+    attempt re-runs proxy setup (get_author_publications builds a new
+    ProxyGenerator), giving us a different proxy to try.
+
+    Returns the publications list on success, or None if every attempt
+    failed (including an empty result, which for this author means the
+    fetch was blocked rather than genuinely empty).
+    """
+    for attempt in range(1, max_attempts + 1):
+        print(f"\n=== Fetch attempt {attempt}/{max_attempts} ===", flush=True)
+        publications = get_author_publications(scholar_id)
+        if publications:
+            return publications
+        if attempt < max_attempts:
+            print(f"Attempt {attempt} failed; retrying in {wait_between}s with a fresh proxy...", flush=True)
+            time.sleep(wait_between)
+    return None
 
 def load_existing_yaml(path):
     """
@@ -261,7 +288,20 @@ if __name__ == "__main__":
 
     print("Starting publication update...", flush=True)
     existing = load_existing_yaml(OUTPUT_FILE)
-    fetched = get_author_publications(SCHOLAR_ID)
+    fetched = fetch_with_retries(SCHOLAR_ID)
+
+    if not fetched:
+        # Every attempt was blocked by Google Scholar. Leave the existing
+        # publications.yaml untouched (don't rewrite it) so there's no diff
+        # and nothing gets committed, and exit cleanly so a transient block
+        # doesn't fail the workflow. The next scheduled run will retry.
+        print(
+            "All fetch attempts failed; leaving existing publications "
+            "unchanged and exiting without error.",
+            flush=True,
+        )
+        sys.exit(0)
+
     merged = merge_publications(existing, fetched)
     save_to_yaml(merged, OUTPUT_FILE)
     print("Done!", flush=True)
