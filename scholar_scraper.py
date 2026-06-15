@@ -207,7 +207,7 @@ def build_pub_data(pub):
         print(f"  - Error processing publication: {e}", flush=True)
         return None
 
-def fetch_new_publications(scholar_id, existing_titles, max_attempts=3, wait_between=15):
+def fetch_new_publications(scholar_id, existing_titles, max_attempts=5, wait_between=15):
     """
     Phase 1: fetch full details for publications NOT already in the YAML.
 
@@ -222,7 +222,15 @@ def fetch_new_publications(scholar_id, existing_titles, max_attempts=3, wait_bet
     """
     for attempt in range(1, max_attempts + 1):
         print(f"\n=== New-publication fetch, attempt {attempt}/{max_attempts} ===", flush=True)
-        setup_proxy()
+
+        # If we can't get a proxy, don't bother hitting Scholar unproxied:
+        # it just gets blocked after a long timeout. Retry for a fresh proxy.
+        if not setup_proxy():
+            if attempt < max_attempts:
+                print(f"Proxy setup failed; retrying in {wait_between}s with a fresh proxy...", flush=True)
+                time.sleep(wait_between)
+            continue
+
         stubs = get_publication_stubs(scholar_id)
 
         if stubs is None:
