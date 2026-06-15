@@ -3,3 +3,4 @@ _site/
 .lycheecache
 **/.DS_Store
 docs/screenshots/
+__pycache__/

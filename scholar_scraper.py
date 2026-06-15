@@ -7,6 +7,7 @@ import os
 import yaml
 import sys
 import re
+import time
 from scholarly import scholarly, ProxyGenerator
 
 # Force unbuffered output for GitHub Actions
@@ -88,108 +89,201 @@ def extract_journal_from_citation(citation):
 
     return None
 
-def get_author_publications(scholar_id):
+def setup_proxy():
     """
-    Fetch publications from Google Scholar for a given author ID
-    """
-    print(f"Fetching publications for scholar ID: {scholar_id}", flush=True)
+    Configure scholarly to route through a rotating free proxy.
 
-    # Set up a proxy generator to avoid rate limiting
+    Google Scholar blocks based on client IP, so each call builds a fresh
+    ProxyGenerator (and thus a different proxy). Returns True on success;
+    on failure we continue without a proxy (which usually gets blocked,
+    prompting the caller to retry with a new proxy).
+    """
     try:
         print("Setting up proxy to avoid rate limiting...", flush=True)
         pg = ProxyGenerator()
         pg.FreeProxies()
         scholarly.use_proxy(pg)
         print("Proxy configured successfully", flush=True)
+        return True
     except Exception as e:
         print(f"Warning: Could not set up proxy: {e}", flush=True)
         print("Continuing without proxy (may be slower)...", flush=True)
+        return False
 
+def normalize_title(title):
+    """
+    Normalize a title for matching against existing entries: lowercase,
+    drop punctuation, collapse whitespace. Used to decide whether a
+    publication is already in publications.yaml without relying on the
+    generated id (which depends on author data missing from the Scholar
+    publication preview).
+    """
+    return re.sub(r'\s+', ' ', re.sub(r'[^\w\s]', ' ', (title or '').lower())).strip()
+
+def get_publication_stubs(scholar_id):
+    """
+    Fetch the author's publication list (lightweight previews, not full
+    details). Returns the list of publication stubs, or None on failure.
+    Assumes a proxy has already been configured.
+    """
     try:
-        # Search for author by ID
         print("Searching for author...", flush=True)
         author = scholarly.search_author_id(scholar_id)
         print("Filling author publications...", flush=True)
         author = scholarly.fill(author, sections=['publications'])
+        return author['publications']
+    except Exception as e:
+        print(f"Error fetching publication list: {e}", flush=True)
+        return None
 
-        publications = []
-        total_pubs = len(author['publications'])
-        print(f"Found {total_pubs} publications to process", flush=True)
+def build_pub_data(pub):
+    """
+    Fill a single publication's details from Google Scholar and convert it
+    to a CSL-style dict. Returns None if the fetch fails (e.g. blocked).
+    """
+    try:
+        filled_pub = scholarly.fill(pub)
+        bib = filled_pub['bib']
 
-        for idx, pub in enumerate(author['publications'], 1):
+        # Parse authors
+        authors = parse_authors(bib.get('author', ''))
+
+        # Get year
+        year = None
+        if bib.get('pub_year'):
             try:
-                print(f"Processing publication {idx}/{total_pubs}...", flush=True)
-                # Fill in publication details
-                filled_pub = scholarly.fill(pub)
-                bib = filled_pub['bib']
+                year = int(bib['pub_year'])
+            except (ValueError, TypeError):
+                pass
 
-                # Parse authors
-                authors = parse_authors(bib.get('author', ''))
+        # Create ID
+        first_author_last = authors[0]['family'] if authors else 'unknown'
+        title = bib.get('title', 'untitled')
+        pub_id = create_id_from_publication(first_author_last, year or 0, title)
 
-                # Get year
-                year = None
-                if bib.get('pub_year'):
-                    try:
-                        year = int(bib['pub_year'])
-                    except (ValueError, TypeError):
-                        pass
+        # Build publication entry in CSL format
+        pub_data = {
+            'id': pub_id,
+            'type': 'article-journal',
+            'author': authors,
+            'issued': [{'year': year}] if year else [],
+            'title': bib.get('title', ''),
+        }
 
-                # Create ID
-                first_author_last = authors[0]['family'] if authors else 'unknown'
-                title = bib.get('title', 'untitled')
-                pub_id = create_id_from_publication(first_author_last, year or 0, title)
+        # Add optional fields if they exist
+        # Try multiple possible fields for journal/venue
+        container_title = (bib.get('journal') or
+                         bib.get('venue') or
+                         bib.get('conference') or
+                         bib.get('booktitle'))
 
-                # Build publication entry in CSL format
-                pub_data = {
-                    'id': pub_id,
-                    'type': 'article-journal',
-                    'author': authors,
-                    'issued': [{'year': year}] if year else [],
-                    'title': bib.get('title', ''),
-                }
+        # If still no journal, try parsing from citation string
+        if not container_title and bib.get('citation'):
+            container_title = extract_journal_from_citation(bib['citation'])
 
-                # Add optional fields if they exist
-                # Try multiple possible fields for journal/venue
-                container_title = (bib.get('journal') or
-                                 bib.get('venue') or
-                                 bib.get('conference') or
-                                 bib.get('booktitle'))
+        if container_title:
+            pub_data['container-title'] = container_title
 
-                # If still no journal, try parsing from citation string
-                if not container_title and bib.get('citation'):
-                    container_title = extract_journal_from_citation(bib['citation'])
+        if bib.get('publisher'):
+            pub_data['publisher'] = bib['publisher']
 
-                if container_title:
-                    pub_data['container-title'] = container_title
+        if bib.get('pages'):
+            pub_data['page'] = bib['pages']
 
-                if bib.get('publisher'):
-                    pub_data['publisher'] = bib['publisher']
+        if bib.get('volume'):
+            pub_data['volume'] = str(bib['volume'])
 
-                if bib.get('pages'):
-                    pub_data['page'] = bib['pages']
+        if bib.get('number') or bib.get('issue'):
+            pub_data['issue'] = str(bib.get('number') or bib.get('issue'))
 
-                if bib.get('volume'):
-                    pub_data['volume'] = str(bib['volume'])
+        # Add URL if available
+        if filled_pub.get('pub_url'):
+            pub_data['URL'] = filled_pub['pub_url']
 
-                if bib.get('number') or bib.get('issue'):
-                    pub_data['issue'] = str(bib.get('number') or bib.get('issue'))
-
-                # Add URL if available
-                if filled_pub.get('pub_url'):
-                    pub_data['URL'] = filled_pub['pub_url']
-
-                publications.append(pub_data)
-                print(f"  - Added: {pub_id}", flush=True)
-
-            except Exception as e:
-                print(f"  - Error processing publication: {e}", flush=True)
-                continue
-
-        return publications
+        print(f"  - Added: {pub_id}", flush=True)
+        return pub_data
 
     except Exception as e:
-        print(f"Error fetching author publications: {e}", flush=True)
-        sys.exit(1)
+        print(f"  - Error processing publication: {e}", flush=True)
+        return None
+
+def fetch_new_publications(scholar_id, existing_titles, max_attempts=5, wait_between=15):
+    """
+    Phase 1: fetch full details for publications NOT already in the YAML.
+
+    This is the important fetch (it's how genuinely new papers get added),
+    so it retries up to max_attempts times, each with a fresh proxy.
+
+    Returns (stubs, new_pubs):
+      - stubs: the full publication-stub list (reused by phase 2)
+      - new_pubs: CSL dicts for new publications (empty if none are new)
+    On total failure (couldn't get the publication list, or there were new
+    entries but every detail fetch was blocked), returns (None, None).
+    """
+    for attempt in range(1, max_attempts + 1):
+        print(f"\n=== New-publication fetch, attempt {attempt}/{max_attempts} ===", flush=True)
+
+        # If we can't get a proxy, don't bother hitting Scholar unproxied:
+        # it just gets blocked after a long timeout. Retry for a fresh proxy.
+        if not setup_proxy():
+            if attempt < max_attempts:
+                print(f"Proxy setup failed; retrying in {wait_between}s with a fresh proxy...", flush=True)
+                time.sleep(wait_between)
+            continue
+
+        stubs = get_publication_stubs(scholar_id)
+
+        if stubs is None:
+            if attempt < max_attempts:
+                print(f"Could not fetch publication list; retrying in {wait_between}s with a fresh proxy...", flush=True)
+                time.sleep(wait_between)
+            continue
+
+        new_stubs = [p for p in stubs
+                     if normalize_title(p.get('bib', {}).get('title', '')) not in existing_titles]
+        print(f"{len(new_stubs)} of {len(stubs)} publications are not yet in the YAML", flush=True)
+
+        if not new_stubs:
+            # Got the list; nothing new to add. Success.
+            return stubs, []
+
+        new_pubs = []
+        for idx, pub in enumerate(new_stubs, 1):
+            print(f"Fetching new publication {idx}/{len(new_stubs)}...", flush=True)
+            data = build_pub_data(pub)
+            if data:
+                new_pubs.append(data)
+
+        if new_pubs:
+            return stubs, new_pubs
+
+        # Had new publications but couldn't fetch any details (blocked).
+        if attempt < max_attempts:
+            print(f"Could not fetch any new publication details; retrying in {wait_between}s with a fresh proxy...", flush=True)
+            time.sleep(wait_between)
+
+    return None, None
+
+def update_existing_publications(stubs, existing_titles):
+    """
+    Phase 2: best-effort refresh of publications already in the YAML.
+
+    Updates are nice-to-have (correcting metadata on known papers), so this
+    is a single pass with no retry, reusing the proxy from phase 1. Any
+    publication that fails to fetch is left as-is (merge_publications keeps
+    the existing entry). Returns the list of refreshed CSL dicts.
+    """
+    old_stubs = [p for p in stubs
+                 if normalize_title(p.get('bib', {}).get('title', '')) in existing_titles]
+    print(f"\n=== Updating {len(old_stubs)} existing publications (no retry) ===", flush=True)
+
+    updated = []
+    for idx, pub in enumerate(old_stubs, 1):
+        print(f"Refreshing existing publication {idx}/{len(old_stubs)}...", flush=True)
+        data = build_pub_data(pub)
+        if data:
+            updated.append(data)
+    return updated
 
 def load_existing_yaml(path):
     """
@@ -261,7 +355,27 @@ if __name__ == "__main__":
 
     print("Starting publication update...", flush=True)
     existing = load_existing_yaml(OUTPUT_FILE)
-    fetched = get_author_publications(SCHOLAR_ID)
+    existing_titles = {normalize_title(p.get('title', '')) for p in existing}
+
+    # Phase 1: fetch genuinely new publications (retried with fresh proxies).
+    stubs, new_pubs = fetch_new_publications(SCHOLAR_ID, existing_titles)
+
+    if stubs is None:
+        # Couldn't reach Google Scholar at all. Leave publications.yaml
+        # untouched (no diff, nothing committed) and exit cleanly so a
+        # transient block doesn't fail the workflow; the next run retries.
+        print(
+            "Could not fetch from Google Scholar after retries; leaving "
+            "existing publications unchanged and exiting without error.",
+            flush=True,
+        )
+        sys.exit(0)
+
+    # Phase 2: best-effort refresh of existing entries (not retried).
+    updated_pubs = update_existing_publications(stubs, existing_titles)
+
+    fetched = new_pubs + updated_pubs
+    print(f"\nFetched {len(new_pubs)} new and {len(updated_pubs)} updated publications.", flush=True)
     merged = merge_publications(existing, fetched)
     save_to_yaml(merged, OUTPUT_FILE)
     print("Done!", flush=True)
