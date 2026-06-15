@@ -26,8 +26,11 @@ user_agent = "Mozilla/5.0 (compatible; lychee-link-checker; +https://lychee.cli.
 #   this on a request that will succeed if you retry or wait
 # - 401: paywalled but exists
 # - 403/405/429: bot-protection / rate-limit / method-not-allowed
+# - 415: some servers (e.g. OJS journal platforms, ccneuro.org PDFs)
+#   reject lychee's request based on the Accept header even though the
+#   resource exists and loads in a browser.
 # - 999: LinkedIn's bot-detection response
-accept = [200, 202, 204, 206, 401, 403, 405, 429, 999]
+accept = [200, 202, 204, 206, 401, 403, 405, 415, 429, 999]
 
 # Hosts to skip:
 # - pearsonlab.github.io: this is the site we're building. The sitemap
