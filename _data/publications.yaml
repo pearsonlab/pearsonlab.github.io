@@ -261,10 +261,9 @@
     given: Tobias
   issued:
   - year: 2024
-  title: 'Optimal decision-making under task uncertainty: a computational basis for cognitive stability versus flexibility'
-  container-title: Proceedings of the Annual Meeting of the Cognitive Science Society
-  volume: '46'
-  URL: https://escholarship.org/uc/item/2d40418r
+  title: 'Optimal decision-making under task uncertainty: a computational basis for cognitive'
+  container-title: Proceedings of the Annual Meeting of the Cognitive Science Society, 46 (0)
+  URL: https://escholarship.org/content/qt2d40418r/qt2d40418r.pdf?v=lg
 - id: oneill2024modeling
   type: article-journal
   author:
@@ -517,7 +516,7 @@
   - year: 2021
   title: Neurons in primate prefrontal cortex signal valuable social information during natural viewing
   container-title: 'Philosophical Transactions of the Royal Society B: Biological Sciences'
-  publisher: The Royal Society
+  page: '20190666'
   volume: '376'
   issue: '1819'
   URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC7815429/
@@ -770,7 +769,7 @@
   - year: 2021
   title: Continuous decisions
   container-title: 'Philosophical Transactions of the Royal Society B: Biological Sciences'
-  publisher: The Royal Society
+  page: '20190664'
   volume: '376'
   issue: '1819'
   URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC7815426/
@@ -779,14 +778,15 @@
   author:
   - family: Draelos
     given: Anne
+  - family: Naumann
+    given: Eva A
   - family: Pearson
     given: John M
   issued:
   - year: 2020
-  title: Online Neural Connectivity Estimation with Noisy Group Testing
-  container-title: Advances in Neural Information Processing Systems
-  volume: '33'
-  URL: https://proceedings.neurips.cc/paper/2020/hash/531d29a813ef9471aad0a5558d449a73-Abstract.html
+  title: Online neural connectivity estimation with ensemble stimulation
+  container-title: arXiv preprint arXiv:2007.13911
+  URL: https://arxiv.org/abs/2007.13911
 - id: mcdonald2020dorsolateral
   type: article-journal
   author:
