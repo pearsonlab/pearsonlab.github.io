@@ -14,10 +14,10 @@
   issued:
   - year: 2026
   title: A synaptic locus of song learning
-  container-title: bioRxiv
-  publisher: Cold Spring Harbor Laboratory
-  page: 2026.01. 20.699515
-  URL: https://www.biorxiv.org/content/10.64898/2026.01.20.699515.abstract
+  container-title: Nature
+  publisher: Nature Publishing Group UK
+  page: 1-9
+  URL: https://www.nature.com/articles/s41586-026-10510-x
 - id: subramanian2026selective
   type: article-journal
   author:
@@ -30,9 +30,12 @@
   issued:
   - year: 2026
   title: Selective encoding of priors for flexible categorization but not Bayesian inference in the frontal eye field
-  container-title: bioRxiv
-  page: 2024.12. 31.630950
-  URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC13131809/
+  container-title: The Journal of Neuroscience
+  publisher: Society for Neuroscience
+  page: e2271252026
+  volume: '46'
+  issue: '25'
+  URL: https://www.jneurosci.org/content/46/25/e2271252026.abstract
 - id: wei2026dynamic
   type: article-journal
   author:
@@ -52,7 +55,7 @@
   container-title: bioRxiv
   publisher: Cold Spring Harbor Laboratory
   page: 2026.02. 12.705535
-  URL: https://www.biorxiv.org/content/10.64898/2026.02.12.705535.abstract
+  URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC12919234/
 - id: wei2026flow
   type: article-journal
   author:
@@ -1634,7 +1637,7 @@
   title: A role for posterior cingulate cortex in policy switching and cognitive control
   container-title: 'Mars R, Sallet J, Rushworth S, Yeung N (eds), Neural Basis of Motivational and Cognitive Control. Cambridge, MA: MIT Press'
   page: 127-43
-  URL: https://books.google.com/books?hl=en&lr=&id=A_eoYgtLmFMC&oi=fnd&pg=PA127&dq=info:kaG7aPcLBRkJ:scholar.google.com&ots=YgrLBO_mPV&sig=X5N21-ua8m_SOb2FqFpnl2ZSeVo
+  URL: https://books.google.com/books?hl=en&lr=&id=A_eoYgtLmFMC&oi=fnd&pg=PA127&dq=info:kaG7aPcLBRkJ:scholar.google.com&ots=YgrNFP4nIZ&sig=Pf1PiDqg4X3twZ76hyN7jsqy6_c
 - id: pearson2010explicit
   type: article-journal
   author:
@@ -1834,3 +1837,4 @@
     given: John
   issued: []
   title: Gaussian Process Models Characterize Other-Regarding Strategies Over Multiple Timescales in a Dynamic Social Game
+  URL: https://2018.ccneuro.org/proceedings/1126.pdf
