@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" role="img" aria-labelledby="cnsTitle">
+  <title id="cnsTitle">NYU Center for Neural Science</title>
+  <!-- PLACEHOLDER typographic lockup. The official NYU wordmark/seal is
+       trademarked and must be obtained from brand@nyu.edu or CNS/Arts &
+       Science communications. Replace this file with the approved asset. -->
+  <rect width="300" height="150" fill="none"/>
+  <text x="150" y="60" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="58" font-weight="700" letter-spacing="2" fill="#57068C">NYU</text>
+  <line x1="40" y1="82" x2="260" y2="82" stroke="#57068C" stroke-width="2"/>
+  <text x="150" y="106" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="17" font-weight="600" letter-spacing="1" fill="#330662">Center for</text>
+  <text x="150" y="128" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="17" font-weight="600" letter-spacing="1" fill="#330662">Neural Science</text>
+</svg>

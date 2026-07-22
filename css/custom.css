@@ -33,36 +33,47 @@ figcaption {
 
 /* Page header banner. .jumbotron isn't a Bootstrap 5 class (removed in
    the 4.x → 5.x cycle), but we keep the name as a custom selector.
-   The chapel image lives on the jumbotron itself so it scrolls away
-   with the header rather than staying fixed behind page content. */
+   NYU rebrand: a violet gradient in NYU Violet (#57068C) → Deep Violet
+   (#330662) replaces the old Duke chapel photo. Swap in an approved
+   NYU/Washington Square image here if/when one is available. */
 .jumbotron {
   height: 250px;
   margin-bottom: 2rem;
   color: white;
-  text-shadow: #444 0 1px 1px;
-  background: url('/images/chapel_gradient.jpg') no-repeat center center;
+  text-shadow: #222 0 1px 2px;
+  background: linear-gradient(135deg, #57068C 0%, #330662 100%);
   background-size: cover;
 }
 
+/* NYU brand palette (from NYU brand guidelines):
+     NYU Violet   #57068C  (primary)
+     Deep Violet  #330662  (dark accent / hover)
+     Ultra Violet #8900E1  (electrified accent, use sparingly) */
 .navbar {
-    border-color: #001A57;
+    border-color: #330662;
+}
+
+/* Paint the top nav NYU Violet. White nav text sits at ~11.6:1 contrast
+   on this violet, so it's well within accessibility limits. */
+.navbar.bg-dark {
+    background-color: #57068C !important;
 }
 
 .btn-primary {
-    background-color: #001A57;
-    border-color: #001A57;
+    background-color: #57068C;
+    border-color: #57068C;
     opacity: 0.5;
 }
 
 .btn-primary:hover {
-    background-color: #001A57;
-    border-color: #001A57;
+    background-color: #57068C;
+    border-color: #57068C;
     opacity: 1.0;
 }
 
 .btn-primary:active:focus {
-    background-color: #001A57;
-    border-color: #001A57;
+    background-color: #330662;
+    border-color: #330662;
     opacity: 1.0;
     -webkit-box-shadow: 0 0 5px black;
             box-shadow: 0 0 5px black;
@@ -71,6 +82,57 @@ figcaption {
 footer {
     padding-top: 10px;
     padding-bottom: 5px;
+}
+
+/* ---------------------------------------------------------------------
+   Moving announcement banner (landing page). Bold, large-font notice
+   that the lab is relocating to NYU. Styled in the NYU violet palette.
+   Safe to delete this block (and the matching markup in _layouts/home.html)
+   once the move is complete.
+   --------------------------------------------------------------------- */
+.move-banner {
+    max-width: 760px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.move-banner-inner {
+    border: 3px solid #57068C;
+    border-radius: 14px;
+    padding: 28px 32px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 8px 28px rgba(51, 6, 98, 0.18);
+}
+
+.move-banner-kicker {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    background: #57068C;
+    padding: 5px 16px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+
+.move-banner-headline {
+    font-size: clamp(28px, 5vw, 46px);
+    font-weight: 800;
+    line-height: 1.15;
+    color: #330662;
+    margin: 0 0 12px;
+}
+
+.move-banner-headline b { color: #57068C; }
+
+.move-banner-date {
+    font-size: clamp(18px, 2.5vw, 24px);
+    font-weight: 600;
+    color: #6D6D6D;
+    margin: 0;
 }
 
 /* Social icon buttons used on the people page. Each link wraps either
