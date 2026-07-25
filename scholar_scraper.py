@@ -8,6 +8,7 @@ import yaml
 import sys
 import re
 import time
+from datetime import date
 from scholarly import scholarly, ProxyGenerator
 
 # Force unbuffered output for GitHub Actions
@@ -264,25 +265,76 @@ def fetch_new_publications(scholar_id, existing_titles, max_attempts=5, wait_bet
 
     return None, None
 
-def update_existing_publications(stubs, existing_titles):
+def needs_refresh(entry, today_year=None):
+    """
+    True if a stored publication could still plausibly change on Scholar.
+
+    Phase 2 used to refetch every entry, which meant one scholarly.fill()
+    per publication per run through free proxies. Scholar rate-limits well
+    before that many requests, and since phase 2 has no retry, whatever
+    falls after the cutoff is silently never refreshed — the failure looks
+    identical to "nothing changed". Narrowing the pass to entries that can
+    actually change keeps it short enough to finish, and targets exactly
+    the preprint-to-journal transition.
+
+    A paper that has sat in the same journal for years has nothing left to
+    learn from another fetch.
+    """
+    if today_year is None:
+        today_year = date.today().year
+
+    venue = (entry.get('container-title') or '').strip()
+    if not venue:
+        return True                       # no venue recorded yet
+    if is_preprint_venue(venue):
+        return True                       # may since have been published
+
+    issued = entry.get('issued') or []
+    year = issued[0].get('year') if issued and isinstance(issued[0], dict) else None
+    if not year:
+        return True                       # unknown year; keep checking it
+    return year >= today_year - 1         # recent enough to still be in flux
+
+def update_existing_publications(stubs, existing_by_title):
     """
     Phase 2: best-effort refresh of publications already in the YAML.
 
     Updates are nice-to-have (correcting metadata on known papers), so this
     is a single pass with no retry, reusing the proxy from phase 1. Any
     publication that fails to fetch is left as-is (merge_publications keeps
-    the existing entry). Returns the list of refreshed CSL dicts.
+    the existing entry). Only entries selected by needs_refresh are
+    refetched. Returns the list of refreshed CSL dicts.
     """
-    old_stubs = [p for p in stubs
-                 if normalize_title(p.get('bib', {}).get('title', '')) in existing_titles]
-    print(f"\n=== Updating {len(old_stubs)} existing publications (no retry) ===", flush=True)
+    candidates = []
+    skipped = 0
+    for pub in stubs:
+        entry = existing_by_title.get(normalize_title(pub.get('bib', {}).get('title', '')))
+        if entry is None:
+            continue                      # not an existing entry; phase 1 owns it
+        if needs_refresh(entry):
+            candidates.append(pub)
+        else:
+            skipped += 1
+
+    print(f"\n=== Updating {len(candidates)} existing publications, "
+          f"skipping {skipped} settled ones (no retry) ===", flush=True)
 
     updated = []
-    for idx, pub in enumerate(old_stubs, 1):
-        print(f"Refreshing existing publication {idx}/{len(old_stubs)}...", flush=True)
+    failed = 0
+    for idx, pub in enumerate(candidates, 1):
+        print(f"Refreshing existing publication {idx}/{len(candidates)}...", flush=True)
         data = build_pub_data(pub)
         if data:
             updated.append(data)
+        else:
+            failed += 1
+
+    # Make a truncated pass visible. Without this a rate-limited run and a
+    # run where genuinely nothing changed produce identical output.
+    if failed:
+        print(f"WARNING: {failed}/{len(candidates)} refresh fetches failed "
+              f"(likely rate-limited); those entries keep their stored data",
+              flush=True)
     return updated
 
 def load_existing_yaml(path):
@@ -475,7 +527,8 @@ if __name__ == "__main__":
 
     print("Starting publication update...", flush=True)
     existing = load_existing_yaml(OUTPUT_FILE)
-    existing_titles = {normalize_title(p.get('title', '')) for p in existing}
+    existing_by_title = {normalize_title(p.get('title', '')): p for p in existing}
+    existing_titles = set(existing_by_title)
 
     # Phase 1: fetch genuinely new publications (retried with fresh proxies).
     stubs, new_pubs = fetch_new_publications(SCHOLAR_ID, existing_titles)
@@ -492,7 +545,7 @@ if __name__ == "__main__":
         sys.exit(0)
 
     # Phase 2: best-effort refresh of existing entries (not retried).
-    updated_pubs = update_existing_publications(stubs, existing_titles)
+    updated_pubs = update_existing_publications(stubs, existing_by_title)
 
     fetched = new_pubs + updated_pubs
     print(f"\nFetched {len(new_pubs)} new and {len(updated_pubs)} updated publications.", flush=True)
