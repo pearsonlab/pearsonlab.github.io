@@ -676,6 +676,7 @@
   issue: '39'
   URL: https://www.pnas.org/doi/abs/10.1073/pnas.2105115118
 - id: martinez2021reproducible
+  badge: workshop
   type: article-journal
   author:
   - family: Martinez
@@ -1072,6 +1073,7 @@
   issue: '4'
   URL: https://link.springer.com/article/10.3758/s13423-016-1204-5
 - id: iqbal2017goal
+  badge: workshop
   type: article-journal
   author:
   - family: Iqbal

@@ -18,6 +18,9 @@
 .pub-badge-journal    { background: #e8f0fe; color: #1a73e8; }
 .pub-badge-preprint   { background: #fef3c7; color: #92400e; }
 .pub-badge-conference { background: #f0e6ff; color: #6b21a8; }
+/* Workshop papers are set by hand via `badge: workshop` in
+   publications.yaml — they're rarely identifiable from Scholar metadata. */
+.pub-badge-workshop   { background: #dcfce7; color: #166534; }
 
 /* Preserve the existing tighter list spacing inside year sections. */
 h3 li:not(:last-child) {

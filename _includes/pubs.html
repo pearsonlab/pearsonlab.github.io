@@ -44,13 +44,26 @@
   <ol>
   {% for pub in year.items %}
     {%- comment -%}
-      Type badge, derived from the venue string. Order matters: a few
-      journals are named "Proceedings of ..." (PNAS, Proc. R. Soc.) and
-      would otherwise be caught by the generic "proceedings" rule and
-      badged as conference papers, so they are matched first.
+      Type badge. An explicit `badge:` on the entry in publications.yaml
+      wins; otherwise it is derived from the venue string.
+
+      The override exists because some venues can't be inferred from
+      Scholar's metadata — a workshop paper often looks like a bare arXiv
+      preprint, or carries no venue at all. Set `badge: workshop` (or any
+      of journal / preprint / conference) by hand on those entries. The
+      scraper preserves keys it doesn't produce, so the override survives
+      the weekly refresh; add a matching .pub-badge-<name> rule in
+      css/publications.css for any new value.
+
+      Derivation order matters: a few journals are named "Proceedings
+      of ..." (PNAS, Proc. R. Soc.) and would otherwise be caught by the
+      generic "proceedings" rule and badged as conference papers, so they
+      are matched first.
     {%- endcomment -%}
     {%- assign venue_lc = pub.container-title | downcase -%}
-    {%- if venue_lc contains "biorxiv" or venue_lc contains "arxiv" or venue_lc contains "medrxiv" or venue_lc contains "chemrxiv" or venue_lc contains "psyarxiv" or venue_lc contains "osf preprints" -%}
+    {%- if pub.badge and pub.badge != "" -%}
+      {%- assign pub_type = pub.badge -%}
+    {%- elsif venue_lc contains "biorxiv" or venue_lc contains "arxiv" or venue_lc contains "medrxiv" or venue_lc contains "chemrxiv" or venue_lc contains "psyarxiv" or venue_lc contains "osf preprints" -%}
       {%- assign pub_type = "preprint" -%}
     {%- elsif venue_lc contains "national academy of sciences" or venue_lc contains "proceedings of the royal society" -%}
       {%- assign pub_type = "journal" -%}
