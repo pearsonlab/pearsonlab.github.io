@@ -1798,24 +1798,6 @@
   volume: '82'
   issue: '2'
   URL: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.255
-- id: bejjani0towards
-  type: article-journal
-  author:
-  - family: Bejjani
-    given: Christina
-  - family: Egner
-    given: Tobias
-  - family: Pearson
-    given: John
-  - family: Moffitt
-    given: Terrie E
-  - family: Caspi
-    given: Avshalom
-  - family: Adcock
-    given: Alison
-  issued: []
-  title: TOWARDS A COMPUTATIONAL PSYCHIATRY OF TRANSDIAGNOSTIC DEFICITS IN COGNITIVE CONTROL
-  URL: https://scholar.google.com/scholar?cluster=478861155140086647&hl=en&oi=scholarr
 - id: mcdonald2019bayesianb
   type: paper-conference
   author:
