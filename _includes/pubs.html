@@ -55,12 +55,19 @@
       <span class="pub-badge pub-badge-{{ pub_type }}">{{ pub_type }}</span>
       {% if pub.URL and pub.URL != "" %}<a href="{{ pub.URL }}"><b>{{ pub.title }}</b></a>{% else %}<b>{{ pub.title }}</b>{% endif %}
       <br>
+      {%- comment -%}
+        Separator between authors: two-author papers read "A and B" with no
+        comma, three or more take the serial comma, "A, B, and C". The
+        trailing "and " is added by the loop below.
+      {%- endcomment -%}
+      {%- assign author_sep = ", " -%}
+      {%- if pub.author.size == 2 %}{% assign author_sep = " " %}{% endif -%}
       {% for aa in pub.author -%}
         {%- if forloop.last and forloop.first == false %}and {% endif -%}
         {%- assign author_initial = aa.given | slice: 0, 1 -%}
         {%- assign author_key = author_initial | append: "|" | append: aa.family -%}
         {%- if lab_keys contains author_key -%}<b>{{ aa.given }} {{ aa.family }}</b>{%- else -%}{{ aa.given }} {{ aa.family }}{%- endif -%}
-        {%- if forloop.last == false %}, {% endif -%}
+        {%- if forloop.last == false %}{{ author_sep }}{% endif -%}
       {%- endfor %}
        ({{ year.name }}).
       <br>
