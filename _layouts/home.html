@@ -3,13 +3,22 @@
   {% include head.html %}
 
   <body>
-  <!-- Viewport-locked background so the [λ] logo always centers in the
-       visible area, regardless of how tall/wide body grows. Inset from
-       the viewport edges so the SVG doesn't push flush against the
-       window frame. -->
-  <div style="position: fixed; top: 80px; right: 80px; bottom: 80px; left: 80px; z-index: -1; background: url('/images/plab_logo_dark.svg') no-repeat center center; background-size: contain;"></div>
+  <!-- Viewport-locked splash so the [λ] logo always centers in the visible
+       area, regardless of how tall/wide body grows. Inset from the viewport
+       edges so the SVG doesn't push flush against the window frame. The
+       moving announcement stacks directly above the logo.
+
+       MOVING ANNOUNCEMENT: delete the <p class="move-note"> line below (and
+       the matching .move-note rule in css/custom.css) once the move is
+       complete (after 2026-09-01). -->
+  <div class="splash">
+    <p class="move-note" role="status">
+      The Pearson Lab is moving to the <b>Center for Neural Science at NYU</b>
+    </p>
+    <img class="splash-logo" src="/images/plab_logo_dark.svg" alt="Pearson Lab">
+  </div>
   {% include navbar.html %}
-  <img src="/images/DUSOM_Dept_Neurobio_stack.jpg" alt="Duke School of Medicine, Department of Neurobiology" style="width: 25%; float: right; padding-top: 50px"/>
+
   <footer>
       <div style="display: block; position: fixed; bottom: 20px; left: 30px">
           <h3 style="color: #9d9d9d">{{ page.desc }}</h3>

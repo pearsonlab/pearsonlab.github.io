@@ -33,36 +33,54 @@ figcaption {
 
 /* Page header banner. .jumbotron isn't a Bootstrap 5 class (removed in
    the 4.x → 5.x cycle), but we keep the name as a custom selector.
-   The chapel image lives on the jumbotron itself so it scrolls away
-   with the header rather than staying fixed behind page content. */
+   NYU rebrand: a Greenwich Village photo replaces the old Duke chapel
+   photo.
+
+   The violet gradient is kept as a translucent scrim over the image
+   rather than being dropped: the banner prints white text (and a light
+   grey subtitle) over whatever lands behind it, and the photo is busy
+   enough that a text-shadow alone doesn't hold contrast. The scrim also
+   keeps the NYU violet identity in the header. */
 .jumbotron {
   height: 250px;
   margin-bottom: 2rem;
   color: white;
-  text-shadow: #444 0 1px 1px;
-  background: url('/images/chapel_gradient.jpg') no-repeat center center;
+  text-shadow: #222 0 1px 2px;
+  background:
+    linear-gradient(135deg, rgba(87, 6, 140, 0.28) 0%, rgba(51, 6, 98, 0.38) 100%),
+    url('/images/greenwich_village.jpg') no-repeat center center;
   background-size: cover;
 }
 
+/* NYU brand palette (from NYU brand guidelines):
+     NYU Violet   #57068C  (primary)
+     Deep Violet  #330662  (dark accent / hover)
+     Ultra Violet #8900E1  (electrified accent, use sparingly) */
 .navbar {
-    border-color: #001A57;
+    border-color: #330662;
+}
+
+/* Paint the top nav NYU Violet. White nav text sits at ~11.6:1 contrast
+   on this violet, so it's well within accessibility limits. */
+.navbar.bg-dark {
+    background-color: #57068C !important;
 }
 
 .btn-primary {
-    background-color: #001A57;
-    border-color: #001A57;
+    background-color: #57068C;
+    border-color: #57068C;
     opacity: 0.5;
 }
 
 .btn-primary:hover {
-    background-color: #001A57;
-    border-color: #001A57;
+    background-color: #57068C;
+    border-color: #57068C;
     opacity: 1.0;
 }
 
 .btn-primary:active:focus {
-    background-color: #001A57;
-    border-color: #001A57;
+    background-color: #330662;
+    border-color: #330662;
     opacity: 1.0;
     -webkit-box-shadow: 0 0 5px black;
             box-shadow: 0 0 5px black;
@@ -71,6 +89,71 @@ figcaption {
 footer {
     padding-top: 10px;
     padding-bottom: 5px;
+}
+
+/* Attribution line for the CC BY 2.0 header photo. Deliberately quiet —
+   it has to be legible to satisfy the licence, not prominent. */
+.photo-credit {
+    font-size: 13px;
+    color: #6D6D6D;
+    margin-top: -8px;
+}
+
+.photo-credit a {
+    color: #57068C;
+}
+
+/* ---------------------------------------------------------------------
+   Landing-page splash: the [λ] logo centered in the viewport, with the
+   moving announcement stacked directly above it. Fixed and inset so the
+   pair stays centered no matter how tall body grows; pointer-events are
+   disabled so the splash never intercepts clicks meant for the navbar.
+   --------------------------------------------------------------------- */
+.splash {
+    position: fixed;
+    top: 80px;
+    right: 80px;
+    bottom: 80px;
+    left: 80px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vh;
+    pointer-events: none;
+}
+
+/* object-fit keeps the aspect ratio intact when flex shrinks the logo on
+   short viewports; min-height:0 is what allows that shrink to happen. */
+.splash-logo {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    flex: 0 1 auto;
+    object-fit: contain;
+}
+
+/* Moving announcement (landing page). Bold, moderately sized single line
+   in NYU violet. Safe to delete this rule (and the matching markup in
+   _layouts/home.html) once the move is complete. */
+.move-note {
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    font-size: clamp(16px, 1.9vw, 25px);
+    font-weight: 700;
+    line-height: 1.3;
+    color: #57068C;
+    pointer-events: auto;
+    /* Keeps the notice on one line at desktop widths; when a narrow
+       viewport forces a wrap, balance the lines instead of orphaning
+       a word or two on the second row. */
+    text-wrap: balance;
+}
+
+.move-note b {
+    color: #330662;
 }
 
 /* Social icon buttons used on the people page. Each link wraps either

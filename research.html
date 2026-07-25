@@ -8,6 +8,7 @@ extra_head: '<link rel="stylesheet" href="/css/research.css">'
 
 <div class="row research-grid">
   {% for project in site.data.research %}
+  {% unless project.hidden %}
   <article class="col-md-6 research-card">
     {% if project.image %}
     <figure class="research-thumb">
@@ -24,5 +25,6 @@ extra_head: '<link rel="stylesheet" href="/css/research.css">'
       </div>
     </details>
   </article>
+  {% endunless %}
   {% endfor %}
 </div>

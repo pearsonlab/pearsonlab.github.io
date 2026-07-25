@@ -264,9 +264,10 @@
     given: Tobias
   issued:
   - year: 2024
-  title: 'Optimal decision-making under task uncertainty: a computational basis for cognitive'
-  container-title: Proceedings of the Annual Meeting of the Cognitive Science Society, 46 (0)
-  URL: https://escholarship.org/content/qt2d40418r/qt2d40418r.pdf?v=lg
+  title: 'Optimal decision-making under task uncertainty: a computational basis for cognitive stability versus flexibility'
+  container-title: Proceedings of the Annual Meeting of the Cognitive Science Society
+  URL: https://escholarship.org/uc/item/2d40418r
+  volume: '46'
 - id: oneill2024modeling
   type: article-journal
   author:
@@ -675,6 +676,7 @@
   issue: '39'
   URL: https://www.pnas.org/doi/abs/10.1073/pnas.2105115118
 - id: martinez2021reproducible
+  badge: workshop
   type: article-journal
   author:
   - family: Martinez
@@ -788,8 +790,9 @@
   issued:
   - year: 2020
   title: Online neural connectivity estimation with ensemble stimulation
-  container-title: arXiv preprint arXiv:2007.13911
+  container-title: Advances in Neural Information Processing Systems
   URL: https://arxiv.org/abs/2007.13911
+  volume: '33'
 - id: mcdonald2020dorsolateral
   type: article-journal
   author:
@@ -1070,6 +1073,7 @@
   issue: '4'
   URL: https://link.springer.com/article/10.3758/s13423-016-1204-5
 - id: iqbal2017goal
+  badge: workshop
   type: article-journal
   author:
   - family: Iqbal
@@ -1794,26 +1798,8 @@
   volume: '82'
   issue: '2'
   URL: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.255
-- id: bejjani0towards
-  type: article-journal
-  author:
-  - family: Bejjani
-    given: Christina
-  - family: Egner
-    given: Tobias
-  - family: Pearson
-    given: John
-  - family: Moffitt
-    given: Terrie E
-  - family: Caspi
-    given: Avshalom
-  - family: Adcock
-    given: Alison
-  issued: []
-  title: TOWARDS A COMPUTATIONAL PSYCHIATRY OF TRANSDIAGNOSTIC DEFICITS IN COGNITIVE CONTROL
-  URL: https://scholar.google.com/scholar?cluster=478861155140086647&hl=en&oi=scholarr
-- id: mcdonald0bayesian
-  type: article-journal
+- id: mcdonald2019bayesianb
+  type: paper-conference
   author:
   - family: McDonald
     given: Kelsey
@@ -1821,11 +1807,13 @@
     given: Scott
   - family: Pearson
     given: John
-  issued: []
+  issued:
+  - year: 2019
   title: Bayesian nonparametric models characterize social sensitivity in a competitive dynamic game
+  container-title: Conference on Cognitive Computational Neuroscience
   URL: https://2019.ccneuro.org/proceedings/0000705.pdf
-- id: mcdonald0gaussian
-  type: article-journal
+- id: mcdonald2018gaussian
+  type: paper-conference
   author:
   - family: McDonald
     given: Kelsey
@@ -1835,6 +1823,8 @@
     given: Scott
   - family: Pearson
     given: John
-  issued: []
+  issued:
+  - year: 2018
   title: Gaussian Process Models Characterize Other-Regarding Strategies Over Multiple Timescales in a Dynamic Social Game
+  container-title: Conference on Cognitive Computational Neuroscience
   URL: https://2018.ccneuro.org/proceedings/1126.pdf

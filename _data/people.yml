@@ -43,14 +43,11 @@ pi:
     of Kentucky and his PhD in physics from Princeton. He became a neuroscientist
     at Duke, where he did his postdoctoral training with Michael Platt, working
     on the neurobiology of reward and decision-making. From 2015 to 2018, he was
-    an Assistant Research Professor in the Duke Institute for Brain Sciences. In
-    2018, he moved back to the School of Medicine as an Assistant Professor in
-    the Department of Biostatistics &amp; Bioinformatics, and in 2022, he moved
-    to the Department of Neurobiology, where he was promoted to Associate
-    Professor in 2025. In addition, he maintains secondary appointments in the
-    departments of Biostatics &amp; Bioinformatics, Psychology &amp;
-    Neuroscience, and Electrical and Computer Engineering.
-    (<a href="https://www.dropbox.com/scl/fi/o05n1v0skl5el9w938oca/john_pearson_cv.pdf?rlkey=wickra8h33u8hfsr40l0jdhxf&amp;st=8buq1yz2&amp;dl=0">cv</a>)
+    an Assistant Research Professor in the Duke Institute for Brain Sciences, and
+    from 2018-2025, he was an Assistant Professor in Biostatistics & Bioinformatics
+    and Neurobiology. Since 2026, he has been an Associate Professor in the <a href="https://as.nyu.edu/departments/cns/people/CoreFaculty.html">Center for Neural
+    Science</a> at NYU, with an affiliation at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/">Center for Computational Neuroscience</a>
+    at the Flatiron Institute. (<a href="https://www.dropbox.com/scl/fi/o05n1v0skl5el9w938oca/john_pearson_cv.pdf?rlkey=wickra8h33u8hfsr40l0jdhxf&amp;st=8buq1yz2&amp;dl=0">cv</a>)
 
 postdocs:
   - name: Ganchao Wei
@@ -115,23 +112,24 @@ graduate_students:
     github: https://github.com/DavidStA95
     email: david.st-amand@duke.edu
     desc: >-
-      David is a third-year graduate student in Neurobiology. He graduated
+      David is a third-year graduate student in Neurobiology at Duke. He graduated
       from McGill University, where he received his BS in Psychology and
       his MS in Neuroscience. His research investigates how efficient
       coding models can help us understand how information is computed in
       the retina. Outside the lab, he likes to work out and play games.
 
   - name: Shiyang Pan
-    title: Electrical and Computer Engineering PhD Student
+    title: Center for Data Science PhD Student
     image: /images/shiyang.jpg
     site: https://waaaaaterfall.github.io
     github: https://github.com/WaAaaAterfall
     email: shiyang.pan@duke.edu
     linkedin: https://www.linkedin.com/in/shiyangpan
     desc: >-
-      Shiyang is a graduate student in Electrical &amp; Computer Engineering
-      at Duke. She received her Bsc in Applied Mathematics from University
-      of Liverpool and Xi'an Jiaotong-Liverpool University. Her research
+      Shiyang is a graduate student in the Center for Data Science at NYU.
+      She received her Bsc in Applied Mathematics from University
+      of Liverpool and Xi'an Jiaotong-Liverpool University and her master's
+      in electrical and computer engineering from Duke. Her research
       focuses on developing computational models and real-time methods to
       understand the activity of large-scale neural populations. When not
       doing research she enjoys music, reading, and creative writing.
@@ -143,7 +141,7 @@ graduate_students:
     email: caitlin.lewis@duke.edu
     linkedin: https://www.linkedin.com/in/caitlinllewis/
     desc: >-
-      Caitlin is a second-year graduate student in Electrical &amp; Computer
+      Caitlin is a graduate student in Electrical &amp; Computer
       Engineering at Duke. She received her B.S. in Computer Science and
       Statistics from the University of North Carolina at Chapel Hill. Her
       research focuses on developing computational models and open-source
@@ -168,6 +166,7 @@ graduate_students:
     current: false
     url: https://achintzeus1994.github.io
     years: 2021-2022
+    outcome: Deep Learning Researcher, Shell
 
   - name: Na Young Jun
     current: false
