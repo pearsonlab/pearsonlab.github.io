@@ -298,39 +298,159 @@ def load_existing_yaml(path):
     print(f"Loaded {len(data)} existing publications from {path}", flush=True)
     return data
 
+# Venue strings that name a preprint server rather than a journal.
+PREPRINT_VENUE_RE = re.compile(
+    r'\b(biorxiv|medrxiv|arxiv|preprint|ssrn|psyarxiv|osf)\b', re.I)
+
+def is_preprint_venue(venue):
+    """True if a container-title names a preprint server, not a journal."""
+    return bool(PREPRINT_VENUE_RE.search(venue or ''))
+
+def looks_truncated(new, old):
+    """
+    True if `new` is a shortened form of `old` rather than a real retitling.
+
+    Scholar intermittently returns titles cut off mid-phrase. Storing one
+    corrupts the title *and* breaks title matching on the next run, so the
+    paper would come back as a duplicate rather than an update.
+    """
+    n, o = normalize_title(new), normalize_title(old)
+    return bool(n) and bool(o) and n != o and o.startswith(n)
+
+def merge_entry_fields(old, new):
+    """
+    Field-level merge of a freshly fetched entry onto the stored one.
+
+    Scholar usually wins, but not unconditionally: a refresh must not be
+    allowed to replace good data with worse. Returns a new dict.
+    """
+    merged = dict(old)
+    for key, value in new.items():
+        # Never let a missing value clobber something we already have.
+        if value in (None, '', [], {}):
+            continue
+
+        if key == 'title' and looks_truncated(value, old.get('title', '')):
+            print(f"    ! keeping stored title; fetched copy is truncated", flush=True)
+            continue
+
+        if key == 'container-title':
+            old_venue = old.get('container-title') or ''
+            # A published paper must never be demoted back to a preprint.
+            if old_venue and not is_preprint_venue(old_venue) and is_preprint_venue(value):
+                print(f"    ! keeping '{old_venue}' over preprint venue '{value}'", flush=True)
+                continue
+            # Ignore trailing volume/issue noise, e.g. "Journal, 46 (0)".
+            if old_venue and re.fullmatch(
+                    re.escape(old_venue) + r'[,\s]+\d+\s*\(\d+\)', value.strip()):
+                print(f"    ! keeping '{old_venue}' over '{value}'", flush=True)
+                continue
+
+        merged[key] = value
+    return merged
+
+def recompute_id(pub):
+    """Rebuild an entry's id from its own current author, year, and title."""
+    authors = pub.get('author') or []
+    first_author_last = (authors[0].get('family') if authors else None) or 'unknown'
+    year = 0
+    issued = pub.get('issued') or []
+    if issued and isinstance(issued[0], dict) and issued[0].get('year'):
+        year = issued[0]['year']
+    return create_id_from_publication(first_author_last, year, pub.get('title') or 'untitled')
+
+def reconcile_ids(publications):
+    """
+    Rewrite every id from the entry's own final data.
+
+    ids embed the publication year, so an entry stored while it was a
+    preprint keeps a stale id once the paper appears in a journal. Nothing
+    in the site templates references ids, so rewriting them is safe and
+    keeps each id consistent with the row it labels.
+    """
+    seen = set()
+    changed = 0
+    for pub in publications:
+        new_id = recompute_id(pub)
+        # Disambiguate a genuine collision rather than emitting two rows
+        # that share an id.
+        if new_id in seen:
+            suffix = 'b'
+            while f"{new_id}{suffix}" in seen:
+                suffix = chr(ord(suffix) + 1)
+            new_id = f"{new_id}{suffix}"
+        seen.add(new_id)
+        if pub.get('id') != new_id:
+            print(f"  id: {pub.get('id')} -> {new_id}", flush=True)
+            changed += 1
+            pub['id'] = new_id
+    if changed:
+        print(f"Rewrote {changed} publication id(s)", flush=True)
+    return publications
+
 def merge_publications(existing, fetched):
     """
-    Merge freshly-fetched pubs into the existing list, keyed by 'id'.
-    Successful fetches overwrite the existing entry (Scholar wins).
-    Existing entries with no matching fetch are preserved verbatim,
-    so transient fetch failures don't drop pubs from the site.
-    """
-    merged = {}
-    for pub in existing:
-        pub_id = pub.get('id')
-        if pub_id:
-            merged[pub_id] = pub
+    Merge freshly-fetched pubs into the existing list.
 
-    kept = len(merged)
+    Matching is by normalized title, not by id. ids embed the publication
+    year, so a preprint that appears in a journal builds a *different* id;
+    the old id-keyed merge therefore appended it as a second entry and left
+    the stale preprint row in place, which is why such papers kept
+    rendering with a preprint badge. Falls back to id, then to a prefix
+    match, so a title Scholar has truncated or expanded still lands on the
+    right row instead of forking one.
+
+    Existing entries with no matching fetch are preserved verbatim, so a
+    transient fetch failure never drops a publication from the site.
+    """
+    merged = [dict(p) for p in existing]
+
+    title_index = {}
+    id_index = {}
+    for i, pub in enumerate(merged):
+        title = normalize_title(pub.get('title', ''))
+        if title:
+            title_index.setdefault(title, i)
+        if pub.get('id'):
+            id_index.setdefault(pub['id'], i)
+
+    def find_match(pub):
+        title = normalize_title(pub.get('title', ''))
+        if title and title in title_index:
+            return title_index[title]
+        if pub.get('id') and pub['id'] in id_index:
+            return id_index[pub['id']]
+        # Catch titles Scholar has truncated or expanded. Require a decent
+        # length so short titles don't collide with unrelated papers.
+        if len(title) >= 30:
+            for other, i in title_index.items():
+                if other.startswith(title) or title.startswith(other):
+                    return i
+        return None
+
     updated = 0
     added = 0
     for pub in fetched:
-        pub_id = pub.get('id')
-        if not pub_id:
-            continue
-        if pub_id in merged:
-            updated += 1
-        else:
+        idx = find_match(pub)
+        if idx is None:
+            merged.append(pub)
+            title = normalize_title(pub.get('title', ''))
+            if title:
+                title_index.setdefault(title, len(merged) - 1)
+            if pub.get('id'):
+                id_index.setdefault(pub['id'], len(merged) - 1)
             added += 1
-        merged[pub_id] = pub
+        else:
+            merged[idx] = merge_entry_fields(merged[idx], pub)
+            updated += 1
 
-    kept -= updated
+    kept = len(existing) - updated
     print(
         f"Merge summary: kept {kept}, updated {updated}, added {added} "
         f"(fetched {len(fetched)} successful, existing {len(existing)})",
         flush=True,
     )
-    return list(merged.values())
+    return reconcile_ids(merged)
 
 def save_to_yaml(publications, output_file):
     """
