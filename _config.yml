@@ -7,6 +7,27 @@ author: "Pearson Lab"
 
 markdown: kramdown
 
+# Internal planning docs stay in the repo but out of the built site.
+# TODO-NYU-migration.md was rendering to /TODO-NYU-migration.html and
+# being listed in sitemap.xml, publishing lab email addresses and
+# in-progress "who is moving" notes to the live site.
+#
+# Setting `exclude` replaces Jekyll's built-in list rather than adding
+# to it, so the defaults are repeated here — dropping them would start
+# publishing Gemfile, vendor/, and node_modules/.
+exclude:
+  - TODO-NYU-migration.md
+  - Gemfile
+  - Gemfile.lock
+  - gemfiles
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache
+  - .jekyll-cache
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
