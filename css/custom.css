@@ -33,15 +33,22 @@ figcaption {
 
 /* Page header banner. .jumbotron isn't a Bootstrap 5 class (removed in
    the 4.x → 5.x cycle), but we keep the name as a custom selector.
-   NYU rebrand: a violet gradient in NYU Violet (#57068C) → Deep Violet
-   (#330662) replaces the old Duke chapel photo. Swap in an approved
-   NYU/Washington Square image here if/when one is available. */
+   NYU rebrand: a Greenwich Village photo replaces the old Duke chapel
+   photo.
+
+   The violet gradient is kept as a translucent scrim over the image
+   rather than being dropped: the banner prints white text (and a light
+   grey subtitle) over whatever lands behind it, and the photo is busy
+   enough that a text-shadow alone doesn't hold contrast. The scrim also
+   keeps the NYU violet identity in the header. */
 .jumbotron {
   height: 250px;
   margin-bottom: 2rem;
   color: white;
   text-shadow: #222 0 1px 2px;
-  background: linear-gradient(135deg, #57068C 0%, #330662 100%);
+  background:
+    linear-gradient(135deg, rgba(87, 6, 140, 0.72) 0%, rgba(51, 6, 98, 0.80) 100%),
+    url('/images/greenwich_village.jpg') no-repeat center center;
   background-size: cover;
 }
 
@@ -82,6 +89,18 @@ figcaption {
 footer {
     padding-top: 10px;
     padding-bottom: 5px;
+}
+
+/* Attribution line for the CC BY 2.0 header photo. Deliberately quiet —
+   it has to be legible to satisfy the licence, not prominent. */
+.photo-credit {
+    font-size: 13px;
+    color: #6D6D6D;
+    margin-top: -8px;
+}
+
+.photo-credit a {
+    color: #57068C;
 }
 
 /* ---------------------------------------------------------------------
