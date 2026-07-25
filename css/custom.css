@@ -47,7 +47,7 @@ figcaption {
   color: white;
   text-shadow: #222 0 1px 2px;
   background:
-    linear-gradient(135deg, rgba(87, 6, 140, 0.45) 0%, rgba(51, 6, 98, 0.55) 100%),
+    linear-gradient(135deg, rgba(87, 6, 140, 0.28) 0%, rgba(51, 6, 98, 0.38) 100%),
     url('/images/greenwich_village.jpg') no-repeat center center;
   background-size: cover;
 }
