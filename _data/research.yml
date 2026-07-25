@@ -12,6 +12,15 @@
 #                                 full description revealed via the
 #                                 "Read more" disclosure; supports
 #                                 inline links and <figure>/<img> tags)
+#   hidden: true                 (optional, defaults to showing. Set to
+#                                 true to keep the entry here but leave
+#                                 it off the Research page — use this
+#                                 instead of deleting or commenting out
+#                                 a project you may want back later.
+#                                 Use the bare YAML boolean true, not
+#                                 "true" in quotes: any non-empty string
+#                                 is truthy in Liquid, so "false" would
+#                                 hide the entry too.)
 
 - title: Real-time analysis of neural data
   image: /images/colorFish.png
