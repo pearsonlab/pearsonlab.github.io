@@ -264,9 +264,10 @@
     given: Tobias
   issued:
   - year: 2024
-  title: 'Optimal decision-making under task uncertainty: a computational basis for cognitive'
-  container-title: Proceedings of the Annual Meeting of the Cognitive Science Society, 46 (0)
-  URL: https://escholarship.org/content/qt2d40418r/qt2d40418r.pdf?v=lg
+  title: 'Optimal decision-making under task uncertainty: a computational basis for cognitive stability versus flexibility'
+  container-title: Proceedings of the Annual Meeting of the Cognitive Science Society
+  URL: https://escholarship.org/uc/item/2d40418r
+  volume: '46'
 - id: oneill2024modeling
   type: article-journal
   author:
@@ -788,8 +789,9 @@
   issued:
   - year: 2020
   title: Online neural connectivity estimation with ensemble stimulation
-  container-title: arXiv preprint arXiv:2007.13911
+  container-title: Advances in Neural Information Processing Systems
   URL: https://arxiv.org/abs/2007.13911
+  volume: '33'
 - id: mcdonald2020dorsolateral
   type: article-journal
   author:
