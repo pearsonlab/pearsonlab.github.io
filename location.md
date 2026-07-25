@@ -1,7 +1,6 @@
 ---
 layout: default
 title: How to find us # header at the top of the page
-nav: Find Us # what shows up in the navbar at the top (do not define if you don't want page in the navbar)
 ---
 
 We're located in the [Bryan Research Building](https://maps.duke.edu/?focus=68). This is a view of it from across Research Drive:

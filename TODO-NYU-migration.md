@@ -19,9 +19,9 @@ choices), so it's left for you.
 
 ## 1. Site identity & metadata  *(decide when to flip — you're still at Duke until Sept 1)*
 
-- [ ] `_config.yml:1` — title: `"Pearson Lab at Duke University"` → NYU
-- [ ] `_config.yml:3` — description: "Computational neuroscience at Duke University…" → NYU
-- [ ] `index.html:4` — desc: "The online home of the Pearson Lab at Duke University" → NYU
+- [x] `_config.yml:1` — title: `"Pearson Lab at Duke University"` → NYU
+- [x] `_config.yml:3` — description: "Computational neuroscience at Duke University…" → NYU
+- [x] `index.html:4` — desc: "The online home of the Pearson Lab at Duke University" → NYU
 - [ ] **Get the official NYU / CNS lockup.** The current logo is a typographic
       placeholder. Official NYU wordmark/seal is trademarked and can't be
       hotlinked — request an approved asset from **brand@nyu.edu** or CNS /
@@ -33,25 +33,25 @@ Emails: decide per person who is moving; update the movers to `@nyu.edu`.
 
 - [ ] `:38` John — `john.pearson@duke.edu`
 - [ ] `:61` Ganchao Wei — `ganchao.wei@duke.edu`
-- [ ] `:101` Trevor Alston — `trevor.alston@duke.edu`
-- [ ] `:116` David St-Amand — `david.st-amand@duke.edu`
+- [x] `:101` Trevor Alston — `trevor.alston@duke.edu`
+- [x] `:116` David St-Amand — `david.st-amand@duke.edu`
 - [ ] `:129` Shiyang Pan — `shiyang.pan@duke.edu`
-- [ ] `:143` Caitlin Lewis — `caitlin.lewis@duke.edu`
-- [ ] `:209` Miles Martinez — `miles.martinez@duke.edu`
-- [ ] `:227` Ziyi Gong — `ziyi.gong@duke.edu`
+- [x] `:143` Caitlin Lewis — `caitlin.lewis@duke.edu`
+- [x] `:209` Miles Martinez — `miles.martinez@duke.edu`
+- [x] `:227` Ziyi Gong — `ziyi.gong@duke.edu`
 
 Bios (update present-tense affiliations; past training at Duke is historical and can stay):
 
-- [ ] `:44–46` John's bio — Duke postdoc / DIBS / current appointments. Add the
+- [x] `:44–46` John's bio — Duke postdoc / DIBS / current appointments. Add the
       NYU Center for Neural Science appointment.
-- [ ] `:77` "joint with Warren Grill" links to `bme.duke.edu` — update if the
+- [x] `:77` "joint with Warren Grill" links to `bme.duke.edu` — update if the
       joint appointment changes at NYU.
 - [ ] `:104` Trevor — "sixth-year Neurobiology graduate student at Duke"
-- [ ] `:113` David — headshot hosted on `scholars.duke.edu` (may break if the
+- [x] `:113` David — headshot hosted on `scholars.duke.edu` (may break if the
       Duke Scholars profile is removed; consider self-hosting the image).
-- [ ] `:133` Shiyang — "at Duke"
-- [ ] `:147` Caitlin — "…Engineering at Duke"
-- [ ] `:213` Miles — "entered Duke through the CNAP program"
+- [x] `:133` Shiyang — "at Duke"
+- [x] `:147` Caitlin — "…Engineering at Duke"
+- [x] `:213` Miles — "entered Duke through the CNAP program"
 
 Alumni outcomes — historical, **likely keep as-is**:
 
@@ -63,25 +63,25 @@ Alumni outcomes — historical, **likely keep as-is**:
 The entire PhD-pathways section is Duke-specific and needs rewriting for NYU
 (e.g. CNS PhD program, and whichever cross-listed programs apply):
 
-- [ ] `:14` intro paragraph ("Duke provides a wonderful environment…")
-- [ ] `:16` Neurobiology (neuro.duke.edu) — → NYU CNS
-- [ ] `:18` Cognitive Neuroscience Admitting Program (CNAP / DIBS / CCN)
-- [ ] `:20` Biostatistics & Bioinformatics (biostat.duke.edu)
-- [ ] `:22` Psychology & Neuroscience (psychandneuro.duke.edu)
-- [ ] `:24` Electrical & Computer Engineering (ece.duke.edu)
-- [ ] `:46` undergraduate research (undergraduateresearch.duke.edu)
-- [ ] `:58–60` minors / high-school policy — references Duke rules & DUNE program
+- [x] `:14` intro paragraph ("Duke provides a wonderful environment…")
+- [x] `:16` Neurobiology (neuro.duke.edu) — → NYU CNS
+- [x] `:18` Cognitive Neuroscience Admitting Program (CNAP / DIBS / CCN)
+- [x] `:20` Biostatistics & Bioinformatics (biostat.duke.edu)
+- [x] `:22` Psychology & Neuroscience (psychandneuro.duke.edu)
+- [x] `:24` Electrical & Computer Engineering (ece.duke.edu)
+- [x] `:46` undergraduate research (undergraduateresearch.duke.edu)
+- [x] `:58–60` minors / high-school policy — references Duke rules & DUNE program
 
 ## 4. Location — `location.md` + `images/location/`
 
 Entirely about the Bryan Research Building at Duke → Meyer Building,
 **4 Washington Place, New York, NY 10003** (CNS is in Meyer, room ~621).
 
-- [ ] `:7` Bryan Research Building + `maps.duke.edu` link
-- [ ] `:9,:13,:17,:21` all four location photos are Duke buildings
+- [x] `:7` Bryan Research Building + `maps.duke.edu` link
+- [x] `:9,:13,:17,:21` all four location photos are Duke buildings
       (`images/location/bryan_ext.jpg`, `bryan_ent.jpg`, `admin_ent.jpg`,
       `ctn_ent.jpg`) — replace with NYU/Meyer photos
-- [ ] Rewrite the walking directions (breezeway, Center for Theoretical
+- [x] Rewrite the walking directions (breezeway, Center for Theoretical
       Neurobiology, etc.) for the new building.
 
 ## 5. Learning resources — `learning.md`  *(low priority; generalize or update)*
@@ -119,9 +119,9 @@ eventually disappear — consider self-hosting those images.
 
 ## 8. Housekeeping / leftover assets
 
-- [ ] `images/chapel_gradient.jpg` — no longer referenced (jumbotron is now a
+- [x] `images/chapel_gradient.jpg` — no longer referenced (jumbotron is now a
       gradient). Delete once you're happy with the new header.
-- [ ] `images/DUSOM_Dept_Neurobio_stack.jpg` — old Duke Neurobiology logo, now
+- [x] `images/DUSOM_Dept_Neurobio_stack.jpg` — old Duke Neurobiology logo, now
       unused. Delete after confirming the new lockup.
-- [ ] `.image-size-overrides` / `.html5validator.yaml` / `lychee.toml` — check
+- [x] `.image-size-overrides` / `.html5validator.yaml` / `lychee.toml` — check
       these don't still whitelist the removed images or dead Duke links.

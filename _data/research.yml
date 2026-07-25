@@ -75,6 +75,7 @@
 
 - title: Autoencoding whole-brain dynamics
   image: /images/website_VAEGAM_fig.png
+  hidden: true
   caption: >-
     A) VAE-GAM Model Schematic: brain volumes with signal of interest are
     compressed to a lower dimensional representation using encoder
