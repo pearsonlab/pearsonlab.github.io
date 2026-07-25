@@ -61,7 +61,6 @@ But we're all busy people. What I usually end up recommending to students:
 - [Data Analysis Using Regression and Multilevel/Hierarchical Models](http://www.stat.columbia.edu/~gelman/arm/). This was my first introduction to applied Bayesian analysis. Surprisingly readable for students without much statistical background and teaches an approach to modeling data that I like and advocate. As a bonus, covers Markov Chain Monte Carlo sampling tools like [Stan](http://mc-stan.org/) that are necessary in practice.
 - [A First Course in Bayesian Statistical Methods](https://www.stat.washington.edu/people/pdhoff/book.php). This is the book they use for the intro Bayesian class at Duke. This is really for students who are investing in serious stats education. Finishing this one may not leave you quite ready to tackle your real data, but you will have a solid foundation to build on.
 - [All of Statistics](https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721/ref=sr_1_1?ie=UTF8&qid=1249141007&sr=8-1). A really nice single-volume introduction to statistics. A bit of a steep learning curve for the less mathematically inclined, but worth a mention.
-- For Duke students interested in the problem of actually implementing statistical models and methods in code, I highly recommend Cliburn Chan's [STA 663](https://github.com/cliburn/sta-663-2021), typically offered each spring. Teaches all the same software tools my lab uses.
 
 # Machine Learning: Classic
 
@@ -70,7 +69,7 @@ There are lots of great references. The current deep learning phase notwithstand
 - [An Introduction to Statistical Learning](https://www.statlearning.com)
 - [Elements of Statistical Learning](http://web.stanford.edu/~hastie/ElemStatLearn/) (free pdf)
 - [Pattern Recognition and Machine Learning](https://www.springer.com/us/book/9780387310732)
-- [Machine Learning: A Probabilistic Perspective](https://probml.github.io/pml-book/) (Duke uses this for its intro ML class)
+- [Machine Learning: A Probabilistic Perspective](https://probml.github.io/pml-book/)
 
 # Machine Learning: Deep Learning
 

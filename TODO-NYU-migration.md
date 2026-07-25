@@ -46,7 +46,7 @@ Bios (update present-tense affiliations; past training at Duke is historical and
       NYU Center for Neural Science appointment.
 - [x] `:77` "joint with Warren Grill" links to `bme.duke.edu` — update if the
       joint appointment changes at NYU.
-- [ ] `:104` Trevor — "sixth-year Neurobiology graduate student at Duke"
+- [x] `:104` Trevor — "sixth-year Neurobiology graduate student at Duke"
 - [x] `:113` David — headshot hosted on `scholars.duke.edu` (may break if the
       Duke Scholars profile is removed; consider self-hosting the image).
 - [x] `:133` Shiyang — "at Duke"
@@ -86,9 +86,9 @@ Entirely about the Bryan Research Building at Duke → Meyer Building,
 
 ## 5. Learning resources — `learning.md`  *(low priority; generalize or update)*
 
-- [ ] `:62` "the intro Bayesian class at Duke"
-- [ ] `:64` Cliburn Chan's STA 663 (a Duke course)
-- [ ] `:73` "Duke uses this for its intro ML class"
+- [x] `:62` "the intro Bayesian class at Duke"
+- [x] `:64` Cliburn Chan's STA 663 (a Duke course)
+- [x] `:73` "Duke uses this for its intro ML class"
 
 ## 6. Research collaborators — `_data/research.yml`  *(accurate external links; review)*
 
