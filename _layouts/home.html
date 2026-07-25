@@ -3,28 +3,21 @@
   {% include head.html %}
 
   <body>
-  <!-- Viewport-locked background so the [λ] logo always centers in the
-       visible area, regardless of how tall/wide body grows. Inset from
-       the viewport edges so the SVG doesn't push flush against the
-       window frame. -->
-  <div style="position: fixed; top: 80px; right: 80px; bottom: 80px; left: 80px; z-index: -1; background: url('/images/plab_logo_dark.svg') no-repeat center center; background-size: contain;"></div>
-  {% include navbar.html %}
-  <img src="/images/nyu_cns_lockup.svg" alt="NYU Center for Neural Science" style="width: 22%; float: right; padding: 70px 40px 0 0"/>
+  <!-- Viewport-locked splash so the [λ] logo always centers in the visible
+       area, regardless of how tall/wide body grows. Inset from the viewport
+       edges so the SVG doesn't push flush against the window frame. The
+       moving announcement stacks directly above the logo.
 
-  <!-- ===================================================================
-       MOVING ANNOUNCEMENT (stub — edit the copy below as needed).
-       Bold, large-font banner announcing the lab's move to NYU. Remove
-       this whole block once the move is complete (after 2026-09-01).
-       =================================================================== -->
-  <div class="move-banner" role="status">
-    <div class="move-banner-inner">
-      <span class="move-banner-kicker">We're moving</span>
-      <p class="move-banner-headline">
-        The Pearson Lab is joining the <b>Center for Neural Science at NYU</b>
-      </p>
-      <p class="move-banner-date">Effective September&nbsp;1,&nbsp;2026</p>
-    </div>
+       MOVING ANNOUNCEMENT: delete the <p class="move-note"> line below (and
+       the matching .move-note rule in css/custom.css) once the move is
+       complete (after 2026-09-01). -->
+  <div class="splash">
+    <p class="move-note" role="status">
+      The Pearson Lab is moving to the <b>NYU Center for Neural Science</b> on September&nbsp;1,&nbsp;2026
+    </p>
+    <img class="splash-logo" src="/images/plab_logo_dark.svg" alt="Pearson Lab">
   </div>
+  {% include navbar.html %}
 
   <footer>
       <div style="display: block; position: fixed; bottom: 20px; left: 30px">
