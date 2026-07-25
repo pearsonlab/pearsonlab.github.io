@@ -23,15 +23,39 @@
   tighter than last-name-only — keeps Amanda Li from being bolded just
   because Thomas Li is a former undergrad.
 {%- endcomment -%}
+{%- comment -%}
+  Drop parenthesised nicknames before picking the surname. people.yml
+  carries entries like "Lun (Sam) Yin" and "Chaichontat Sriworarat
+  (Richard)"; a trailing one would otherwise be taken as the surname,
+  giving the key "C|(Richard)", which matches no author and silently
+  leaves that person unbolded.
+{%- endcomment -%}
 {%- assign lab_keys = "" | split: "" -%}
 {%- for full_name in all_lab_people -%}
-  {%- assign parts = full_name | split: " " -%}
+  {%- assign tokens = full_name | split: " " -%}
+  {%- assign parts = "" | split: "" -%}
+  {%- for token in tokens -%}
+    {%- unless token contains "(" -%}
+      {%- assign parts = parts | push: token -%}
+    {%- endunless -%}
+  {%- endfor -%}
   {%- assign first = parts | first -%}
   {%- assign last = parts | last -%}
   {%- assign initial = first | slice: 0, 1 -%}
   {%- assign key = initial | append: "|" | append: last -%}
   {%- assign lab_keys = lab_keys | push: key -%}
 {%- endfor -%}
+
+{%- comment -%}
+  Display-name overrides, for people who publish under a name they don't
+  go by. Scholar supplies the published name and the scraper rewrites
+  author fields on every run, so this can't live in publications.yaml.
+  Parallel arrays, comma-separated: "PublishedGiven|Family" -> preferred
+  given name. Bolding still matches on the published name, so an entry
+  here doesn't affect lab-member detection.
+{%- endcomment -%}
+{%- assign alias_keys = "Chaichontat|Sriworarat" | split: "," -%}
+{%- assign alias_given = "Richard" | split: "," -%}
 
 <p>This list is not guaranteed to be up to date, but the lab's complete publications can be found <a href="https://scholar.google.com/citations?user=4whjDosAAAAJ&hl=en">here</a>.</p>
 
@@ -87,7 +111,12 @@
         {%- if forloop.last and forloop.first == false %}and {% endif -%}
         {%- assign author_initial = aa.given | slice: 0, 1 -%}
         {%- assign author_key = author_initial | append: "|" | append: aa.family -%}
-        {%- if lab_keys contains author_key -%}<b>{{ aa.given }} {{ aa.family }}</b>{%- else -%}{{ aa.given }} {{ aa.family }}{%- endif -%}
+        {%- assign shown_given = aa.given -%}
+        {%- assign alias_lookup = aa.given | append: "|" | append: aa.family -%}
+        {%- for ak in alias_keys -%}
+          {%- if ak == alias_lookup -%}{%- assign shown_given = alias_given[forloop.index0] -%}{%- endif -%}
+        {%- endfor -%}
+        {%- if lab_keys contains author_key -%}<b>{{ shown_given }} {{ aa.family }}</b>{%- else -%}{{ shown_given }} {{ aa.family }}{%- endif -%}
         {%- if forloop.last == false %}{{ author_sep }}{% endif -%}
       {%- endfor %}
        ({{ year.name }}).

@@ -1816,8 +1816,8 @@
   issued: []
   title: TOWARDS A COMPUTATIONAL PSYCHIATRY OF TRANSDIAGNOSTIC DEFICITS IN COGNITIVE CONTROL
   URL: https://scholar.google.com/scholar?cluster=478861155140086647&hl=en&oi=scholarr
-- id: mcdonald0bayesian
-  type: article-journal
+- id: mcdonald2019bayesianb
+  type: paper-conference
   author:
   - family: McDonald
     given: Kelsey
@@ -1825,11 +1825,13 @@
     given: Scott
   - family: Pearson
     given: John
-  issued: []
+  issued:
+  - year: 2019
   title: Bayesian nonparametric models characterize social sensitivity in a competitive dynamic game
+  container-title: Conference on Cognitive Computational Neuroscience
   URL: https://2019.ccneuro.org/proceedings/0000705.pdf
-- id: mcdonald0gaussian
-  type: article-journal
+- id: mcdonald2018gaussian
+  type: paper-conference
   author:
   - family: McDonald
     given: Kelsey
@@ -1839,6 +1841,8 @@
     given: Scott
   - family: Pearson
     given: John
-  issued: []
+  issued:
+  - year: 2018
   title: Gaussian Process Models Characterize Other-Regarding Strategies Over Multiple Timescales in a Dynamic Social Game
+  container-title: Conference on Cognitive Computational Neuroscience
   URL: https://2018.ccneuro.org/proceedings/1126.pdf
