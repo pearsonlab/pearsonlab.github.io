@@ -17,7 +17,7 @@
   container-title: Nature
   publisher: Nature Publishing Group UK
   page: 1-9
-  URL: https://www.nature.com/articles/s41586-026-10510-x
+  URL: https://www.biorxiv.org/content/10.64898/2026.01.20.699515.abstract
 - id: subramanian2026selective
   type: article-journal
   author:
@@ -55,7 +55,7 @@
   container-title: bioRxiv
   publisher: Cold Spring Harbor Laboratory
   page: 2026.02. 12.705535
-  URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC12919234/
+  URL: https://www.biorxiv.org/content/10.64898/2026.02.12.705535.abstract
 - id: wei2026flow
   type: article-journal
   author:
@@ -266,7 +266,7 @@
   - year: 2024
   title: 'Optimal decision-making under task uncertainty: a computational basis for cognitive stability versus flexibility'
   container-title: Proceedings of the Annual Meeting of the Cognitive Science Society
-  URL: https://escholarship.org/uc/item/2d40418r
+  URL: https://escholarship.org/content/qt2d40418r/qt2d40418r.pdf?v=lg
   volume: '46'
 - id: oneill2024modeling
   type: article-journal
@@ -783,15 +783,13 @@
   author:
   - family: Draelos
     given: Anne
-  - family: Naumann
-    given: Eva A
   - family: Pearson
     given: John M
   issued:
   - year: 2020
-  title: Online neural connectivity estimation with ensemble stimulation
+  title: Online Neural Connectivity Estimation with Noisy Group Testing
   container-title: Advances in Neural Information Processing Systems
-  URL: https://arxiv.org/abs/2007.13911
+  URL: https://proceedings.neurips.cc/paper/2020/hash/531d29a813ef9471aad0a5558d449a73-Abstract.html
   volume: '33'
 - id: mcdonald2020dorsolateral
   type: article-journal
@@ -898,6 +896,20 @@
   volume: '10'
   issue: '1'
   URL: https://www.nature.com/articles/s41467-019-09789-4
+- id: mcdonald2019bayesianb
+  type: paper-conference
+  author:
+  - family: McDonald
+    given: Kelsey
+  - family: Huettel
+    given: Scott
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2019
+  title: Bayesian nonparametric models characterize social sensitivity in a competitive dynamic game
+  container-title: Conference on Cognitive Computational Neuroscience
+  URL: https://2019.ccneuro.org/proceedings/0000705.pdf
 - id: mcdonald2019cognitive
   type: article-journal
   author:
@@ -970,6 +982,22 @@
   publisher: Cold Spring Harbor Laboratory
   page: '299925'
   URL: https://www.biorxiv.org/content/10.1101/299925.abstract
+- id: mcdonald2018gaussian
+  type: paper-conference
+  author:
+  - family: McDonald
+    given: Kelsey
+  - family: Broderick
+    given: William F
+  - family: Huettel
+    given: Scott
+  - family: Pearson
+    given: John
+  issued:
+  - year: 2018
+  title: Gaussian Process Models Characterize Other-Regarding Strategies Over Multiple Timescales in a Dynamic Social Game
+  container-title: Conference on Cognitive Computational Neuroscience
+  URL: https://2018.ccneuro.org/proceedings/1126.pdf
 - id: pearson2018modelling
   type: article-journal
   author:
@@ -1798,33 +1826,3 @@
   volume: '82'
   issue: '2'
   URL: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.255
-- id: mcdonald2019bayesianb
-  type: paper-conference
-  author:
-  - family: McDonald
-    given: Kelsey
-  - family: Huettel
-    given: Scott
-  - family: Pearson
-    given: John
-  issued:
-  - year: 2019
-  title: Bayesian nonparametric models characterize social sensitivity in a competitive dynamic game
-  container-title: Conference on Cognitive Computational Neuroscience
-  URL: https://2019.ccneuro.org/proceedings/0000705.pdf
-- id: mcdonald2018gaussian
-  type: paper-conference
-  author:
-  - family: McDonald
-    given: Kelsey
-  - family: Broderick
-    given: William F
-  - family: Huettel
-    given: Scott
-  - family: Pearson
-    given: John
-  issued:
-  - year: 2018
-  title: Gaussian Process Models Characterize Other-Regarding Strategies Over Multiple Timescales in a Dynamic Social Game
-  container-title: Conference on Cognitive Computational Neuroscience
-  URL: https://2018.ccneuro.org/proceedings/1126.pdf
