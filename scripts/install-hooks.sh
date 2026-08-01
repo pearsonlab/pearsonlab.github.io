@@ -65,11 +65,15 @@ cat <<'EOF'
 
 Done. The checks now run on staged files at commit time.
 
-Some hooks fix files rather than just complain (markdownlint --fix, trailing
-whitespace, jpegoptim). When one does, the commit is aborted with the fixes
-applied but unstaged — re-add and commit again:
+Some hooks fix files rather than just complain (trailing whitespace, end of
+file, jpegoptim). When one does, the commit is aborted with the fixes applied
+but unstaged — re-add and commit again:
 
     git add -u && git commit
+
+PyMarkdown only reports; fix what it flags by hand. Its most common findings
+are MD022 (a heading needs a blank line above and below) and MD012 (no
+doubled blank lines).
 
 To check everything, not just staged files:   pre-commit run --all-files
 To bypass in an emergency:                    git commit --no-verify
