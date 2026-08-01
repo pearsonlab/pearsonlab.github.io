@@ -122,8 +122,13 @@
        ({{ year.name }}).
       <br>
       <em>{{ pub.container-title }}</em>
-      {%- if pub.volume != blank %} {{ pub.volume }}{% if pub.issue and pub.issue != "" %}({{ pub.issue }}){% endif %}{% endif %}
-      {%- if pub.note != blank %}
+      {%- comment -%}
+        Test presence explicitly rather than with `!= blank`. Against a key
+        the data never sets, `!= blank` evaluated true here and emitted an
+        empty <b></b> plus a stray <br> on all 92 entries.
+      {%- endcomment -%}
+      {%- if pub.volume and pub.volume != "" %} {{ pub.volume }}{% if pub.issue and pub.issue != "" %}({{ pub.issue }}){% endif %}{% endif %}
+      {%- if pub.note and pub.note != "" %}
       <br><b>{{ pub.note }}</b>
       {% endif %}
     </li>
