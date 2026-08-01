@@ -17,7 +17,7 @@
   container-title: Nature
   publisher: Nature Publishing Group UK
   page: 1-9
-  URL: https://www.biorxiv.org/content/10.64898/2026.01.20.699515.abstract
+  URL: https://www.nature.com/articles/s41586-026-10510-x
 - id: subramanian2026selective
   type: article-journal
   author:
@@ -783,6 +783,8 @@
   author:
   - family: Draelos
     given: Anne
+  - family: Naumann
+    given: Eva A
   - family: Pearson
     given: John M
   issued:
