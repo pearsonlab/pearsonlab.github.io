@@ -21,16 +21,15 @@ repos:
         language: system
         types: [png]
 
-      - id: svgo
-        name: svgo (SVG minification)
-        entry: scripts/run-if-available.sh svgo --multipass
-        language: system
-        types: [svg]
-        # plab_logo_dark.svg has paths drawn outside its viewBox; svgo's
-        # optimization stripped attributes (clipPath / overflow handling)
-        # that kept that content visible when scaled. Skip it so the home
-        # page background renders correctly.
-        exclude: '^images/plab_logo_dark\.svg$'
+      # No SVG minification hook. svgo is a node tool and was the last thing
+      # forcing node into this pipeline. It was not earning that: the repo
+      # has two SVGs, and plab_logo_dark.svg was already excluded because
+      # svgo stripped clipPath/overflow attributes it needed and broke the
+      # home-page background. That left one already-minified file behind an
+      # `npm install -g`.
+      #
+      # If SVG optimisation is wanted again, scour is the Python equivalent
+      # — but check the rendered logos before trusting it, given the above.
 
       # Runs after the compression hooks so it sees post-compression sizes.
       - id: image-size-cap
@@ -51,7 +50,9 @@ repos:
       - id: trailing-whitespace
         exclude: '\.svg$'
       - id: end-of-file-fixer
-        # svgo strips the trailing newline; let it win on .svg files.
+        # Still excluding .svg now that svgo is gone: both SVGs were minified
+        # by it and have no trailing newline, so lifting this would rewrite
+        # two image files for no benefit.
         exclude: '\.svg$'
       - id: check-yaml
       - id: check-json

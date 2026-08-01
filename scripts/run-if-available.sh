@@ -2,7 +2,7 @@
 #
 # Run a pre-commit hook binary, but only if it is actually installed.
 #
-# The image hooks (jpegoptim, oxipng, svgo) are `language: system`, meaning
+# The image hooks (jpegoptim, oxipng) are `language: system`, meaning
 # pre-commit expects the binary to already exist. When it doesn't, the hook
 # fails with an opaque "Executable not found" rather than skipping — and the
 # natural reaction to that is `git commit --no-verify`, which switches off

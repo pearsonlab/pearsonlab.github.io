@@ -40,7 +40,7 @@ if ! command -v pre-commit >/dev/null 2>&1; then
 fi
 
 # --- image tooling ---------------------------------------------------------
-# These back the jpegoptim/oxipng/svgo hooks. They are optional: without
+# These back the jpegoptim/oxipng hooks. They are optional: without
 # them those hooks skip locally (see scripts/run-if-available.sh) and CI
 # still enforces them. Installing them just means you find image problems
 # before pushing.
@@ -55,15 +55,6 @@ if command -v brew >/dev/null 2>&1; then
     done
 else
     info "no Homebrew — skipping jpegoptim/oxipng (those hooks will skip locally)"
-fi
-
-if command -v svgo >/dev/null 2>&1; then
-    info "svgo: already installed"
-elif command -v npm >/dev/null 2>&1; then
-    info "svgo: installing with npm"
-    npm install -g svgo || info "svgo: install failed — that hook will skip locally"
-else
-    info "no npm — skipping svgo (that hook will skip locally)"
 fi
 
 # --- install the hook ------------------------------------------------------

@@ -25,12 +25,16 @@ jobs:
       - name: Install pre-commit
         run: pip install pre-commit
 
-      - name: Install image tooling (jpegoptim, oxipng, svgo)
+      # Deliberately no node here. The markdown linter is PyMarkdown (pure
+      # Python) rather than markdownlint-cli, and the svgo hook is gone, so
+      # nothing in the hook set needs npm. Keeping it that way matters: the
+      # node hook could not be installed locally at all, which is why these
+      # checks only ever ran in CI.
+      - name: Install image tooling (jpegoptim, oxipng)
         run: |
           sudo apt-get update
           sudo apt-get install -y jpegoptim
           cargo install oxipng --locked
-          npm install -g svgo
 
       - name: Run pre-commit on the PR's changed files
         if: github.event_name == 'pull_request'
