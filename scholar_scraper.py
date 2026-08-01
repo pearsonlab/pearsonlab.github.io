@@ -8,6 +8,7 @@ import yaml
 import sys
 import re
 import time
+import urllib.parse
 from datetime import date
 from scholarly import scholarly, ProxyGenerator
 
@@ -358,6 +359,19 @@ def is_preprint_venue(venue):
     """True if a container-title names a preprint server, not a journal."""
     return bool(PREPRINT_VENUE_RE.search(venue or ''))
 
+# Hosts that serve preprints. Matched against the URL's host only, so a
+# published paper whose title happens to contain "arxiv" isn't caught.
+PREPRINT_HOST_RE = re.compile(
+    r'(^|\.)(biorxiv|medrxiv|arxiv|chemrxiv|psyarxiv|ssrn|osf)\.(org|io|com|net)$', re.I)
+
+def is_preprint_url(url):
+    """True if a URL points at a preprint server rather than a publisher."""
+    try:
+        host = urllib.parse.urlsplit(url or '').hostname or ''
+    except ValueError:
+        return False
+    return bool(PREPRINT_HOST_RE.search(host))
+
 def looks_truncated(new, old):
     """
     True if `new` is a shortened form of `old` rather than a real retitling.
@@ -396,6 +410,34 @@ def merge_entry_fields(old, new):
             if old_venue and re.fullmatch(
                     re.escape(old_venue) + r'[,\s]+\d+\s*\(\d+\)', value.strip()):
                 print(f"    ! keeping '{old_venue}' over '{value}'", flush=True)
+                continue
+
+        # The venue guard above stops a published paper being relabelled as a
+        # preprint, but the link is a separate field: Scholar has flipped a
+        # Nature URL back to a bioRxiv abstract while the venue stayed right.
+        #
+        # Only guard this for papers we believe are published. An entry whose
+        # venue is still bioRxiv genuinely is a preprint, and a bioRxiv link
+        # is the canonical one for it — blocking that would freeze the link at
+        # whatever mirror happened to be seen first.
+        if key == 'URL':
+            old_url = old.get('URL') or ''
+            venue_now = merged.get('container-title') or ''
+            published = bool(venue_now) and not is_preprint_venue(venue_now)
+            if published and old_url and not is_preprint_url(old_url) and is_preprint_url(value):
+                print(f"    ! keeping publisher URL over preprint URL '{value}' "
+                      f"(venue is '{venue_now}')", flush=True)
+                continue
+
+        # Scholar sometimes returns a shortened author list for a paper it
+        # already had in full (it dropped a middle author from the NeurIPS
+        # entry). Losing a co-author is worse than missing a late addition,
+        # so only accept a list that is at least as long as the stored one.
+        if key == 'author' and isinstance(value, list):
+            old_authors = old.get('author') or []
+            if len(value) < len(old_authors):
+                print(f"    ! keeping {len(old_authors)} stored authors over "
+                      f"{len(value)} fetched", flush=True)
                 continue
 
         merged[key] = value
