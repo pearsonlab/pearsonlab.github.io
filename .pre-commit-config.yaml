@@ -4,21 +4,26 @@
 repos:
   - repo: local
     hooks:
+      # The three image hooks go through scripts/run-if-available.sh. They are
+      # `language: system`, so without the binary pre-commit fails outright
+      # instead of skipping, and the usual response to that is --no-verify,
+      # which disables every other check too. The wrapper skips locally with a
+      # note and hard-fails in CI, where the tools are installed explicitly.
       - id: jpegoptim
         name: jpegoptim (compress JPEGs to q=85, strip metadata)
-        entry: jpegoptim --max=85 --strip-all --preserve --all-progressive
+        entry: scripts/run-if-available.sh jpegoptim --max=85 --strip-all --preserve --all-progressive
         language: system
         types: [jpeg]
 
       - id: oxipng
         name: oxipng (lossless PNG optimization)
-        entry: oxipng --opt 4 --strip safe
+        entry: scripts/run-if-available.sh oxipng --opt 4 --strip safe
         language: system
         types: [png]
 
       - id: svgo
         name: svgo (SVG minification)
-        entry: svgo --multipass
+        entry: scripts/run-if-available.sh svgo --multipass
         language: system
         types: [svg]
         # plab_logo_dark.svg has paths drawn outside its viewBox; svgo's
@@ -62,8 +67,23 @@ repos:
     hooks:
       - id: yamllint
 
-  - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.48.0
+  # PyMarkdown rather than markdownlint-cli: the same MD### rules, but pure
+  # Python. markdownlint-cli is a node hook, and pre-commit builds it by
+  # npm-installing from a local git clone, which recent npm refuses
+  # ("EALLOWGIT: Fetching non-root packages from git has been disabled").
+  # That made the hook impossible to install locally, so this check only ever
+  # ran in CI — which is how about.md reached master unlinted.
+  #
+  # `scan`, not a fix mode: PyMarkdown auto-fixes a narrower set of rules than
+  # markdownlint --fix did (MD022 is not among them), so a fix mode would
+  # rewrite the file, fail, and then fail again after re-staging. The
+  # trailing-whitespace hook above already fixes the most common offender.
+  #
+  # Verified equivalent to markdownlint on this repo: with front-matter
+  # handling enabled it reports exactly the same 7 findings on the unlinted
+  # about.md and passes on all 37 markdown files once fixed.
+  - repo: https://github.com/jackdewinter/pymarkdown
+    rev: v0.9.39
     hooks:
-      - id: markdownlint
-        args: [--fix]
+      - id: pymarkdown
+        args: [--config, .pymarkdown.json, scan]
