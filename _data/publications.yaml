@@ -55,7 +55,7 @@
   container-title: bioRxiv
   publisher: Cold Spring Harbor Laboratory
   page: 2026.02. 12.705535
-  URL: https://www.biorxiv.org/content/10.64898/2026.02.12.705535.abstract
+  URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC12919234/
 - id: wei2026flow
   type: article-journal
   author:
@@ -211,7 +211,7 @@
   container-title: bioRxiv
   publisher: Cold Spring Harbor Laboratory
   page: 2025.11. 11.687832
-  URL: https://www.biorxiv.org/content/10.1101/2025.11.11.687832.abstract
+  URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC12642632/
 - id: qi2025dual
   type: article-journal
   author:
@@ -789,7 +789,7 @@
     given: John M
   issued:
   - year: 2020
-  title: Online Neural Connectivity Estimation with Noisy Group Testing
+  title: Online neural connectivity estimation with ensemble stimulation
   container-title: Advances in Neural Information Processing Systems
   URL: https://proceedings.neurips.cc/paper/2020/hash/531d29a813ef9471aad0a5558d449a73-Abstract.html
   volume: '33'
