@@ -35,7 +35,7 @@ pi:
   image: /images/john.png
   site: http://jmxpearson.com
   github: https://github.com/jmxpearson
-  email: john.pearson@duke.edu
+  email: john.pearson@nyu.edu
   linkedin: https://www.linkedin.com/in/jmxpearson
   bluesky: https://bsky.app/profile/jmxpearson.bsky.social
   desc: >-
