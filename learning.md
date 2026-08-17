@@ -67,7 +67,7 @@ But we're all busy people. What I usually end up recommending to students:
 There are lots of great references. The current deep learning phase notwithstanding, machine learning is actually a very broad field, and what is old now will eventually be new again. Some references worth checking out:
 
 - [An Introduction to Statistical Learning](https://www.statlearning.com)
-- [Elements of Statistical Learning](http://web.stanford.edu/~hastie/ElemStatLearn/) (free pdf)
+- [Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/) (free pdf)
 - [Pattern Recognition and Machine Learning](https://www.springer.com/us/book/9780387310732)
 - [Machine Learning: A Probabilistic Perspective](https://probml.github.io/pml-book/)
 
