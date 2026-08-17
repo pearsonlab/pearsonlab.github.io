@@ -24,13 +24,15 @@ user_agent = "Mozilla/5.0 (compatible; lychee-link-checker; +https://lychee.cli.
 # - 200/204/206: success
 # - 202: escholarship.org and some other deferred-fetch repos return
 #   this on a request that will succeed if you retry or wait
+# - 203: pubmed.ncbi.nlm.nih.gov returns this to automated clients — the
+#   page exists, NCBI is just serving a proxied/modified copy
 # - 401: paywalled but exists
 # - 403/405/429: bot-protection / rate-limit / method-not-allowed
 # - 415: some servers (e.g. OJS journal platforms, ccneuro.org PDFs)
 #   reject lychee's request based on the Accept header even though the
 #   resource exists and loads in a browser.
 # - 999: LinkedIn's bot-detection response
-accept = [200, 202, 204, 206, 401, 403, 405, 415, 429, 999]
+accept = [200, 202, 203, 204, 206, 401, 403, 405, 415, 429, 999]
 
 # Hosts to skip:
 # - pearsonlab.github.io: this is the site we're building. The sitemap
