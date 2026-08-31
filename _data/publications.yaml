@@ -789,7 +789,7 @@
     given: John M
   issued:
   - year: 2020
-  title: Online neural connectivity estimation with ensemble stimulation
+  title: Online Neural Connectivity Estimation with Noisy Group Testing
   container-title: Advances in Neural Information Processing Systems
   URL: https://proceedings.neurips.cc/paper_files/paper/2020/hash/531d29a813ef9471aad0a5558d449a73-Abstract.html
   volume: '33'
