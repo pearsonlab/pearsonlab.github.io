@@ -92,11 +92,13 @@ postdocs:
 graduate_students:
   - name: Trevor Alston
     title: Neurobiology PhD Student
-    current: true
+    current: false
     image: /images/Trevor.jpg
     github: https://github.com/Trevorules
     email: trevor.alston@duke.edu
     linkedin: https://www.linkedin.com/in/trevor-alston
+    url: https://trevoralston.com
+    years: 2020-2026
     desc: >-
       Trevor is a sixth-year Neurobiology graduate student at Duke
       University. He holds two Biomedical Engineering Degrees; he received
