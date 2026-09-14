@@ -29,7 +29,12 @@ jobs:
         # makes the `repeat` argument required, raising an uncaught
         # TypeError that breaks proxy setup. Without a proxy, Google
         # Scholar blocks the request and the scrape fails.
-        pip install scholarly pyyaml "httpx==0.27.2" "free-proxy<1.1.0"
+        # Pin bibtexparser < 2: scholarly 1.7.11 imports
+        # bibtexparser.bibdatabase, a module bibtexparser 2.x removed in
+        # its API rewrite, so importing scholarly raises
+        # ModuleNotFoundError before the scrape can start.
+        pip install scholarly pyyaml "httpx==0.27.2" "free-proxy<1.1.0" \
+          "bibtexparser<2"
 
     - name: Run publication updater
       run: |
