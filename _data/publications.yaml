@@ -503,6 +503,28 @@
   title: Measuring and modeling confidence in human causal judgment
   container-title: Proceedings of the Annual Meeting of the Cognitive Science Society
   URL: https://escholarship.org/uc/item/8f43m0jd
+- id: ruda2022light
+  type: article-journal
+  author:
+  - family: Ruda
+    given: Kiersten
+  - family: Rudzite
+    given: Andra M
+  - family: St-Amand
+    given: David
+  - family: Jun
+    given: Na Young
+  - family: Pearson
+    given: John
+  - family: Field
+    given: Greg D
+  issued:
+  - year: 2022
+  title: 'Light adaptation largely preserves the relative organization of parallel retinal channels: implications for efficient coding theory'
+  container-title: bioRxiv
+  publisher: Cold Spring Harbor Laboratory
+  page: 2022.09. 15.508164
+  URL: https://scholar.archive.org/work/rtqtyhgtfvfado4h36prulyx6m/access/wayback/https://www.biorxiv.org/content/biorxiv/early/2022/09/17/2022.09.15.508164.full.pdf
 - id: adams2021neurons
   type: article-journal
   author:
@@ -789,7 +811,7 @@
     given: John M
   issued:
   - year: 2020
-  title: Online Neural Connectivity Estimation with Noisy Group Testing
+  title: Online neural connectivity estimation with ensemble stimulation
   container-title: Advances in Neural Information Processing Systems
   URL: https://proceedings.neurips.cc/paper_files/paper/2020/hash/531d29a813ef9471aad0a5558d449a73-Abstract.html
   volume: '33'
