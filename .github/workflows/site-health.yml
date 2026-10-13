@@ -16,6 +16,7 @@ on:
       - 'Gemfile'
       - 'Gemfile.lock'
       - 'lychee.toml'
+      - '.github/workflows/site-health.yml'
       - '.html5validator.yaml'
   schedule:
     # Weekly Monday 9am UTC, matching update-publications cadence.
@@ -47,13 +48,15 @@ jobs:
           # Skip legacy 2015-2018 blog posts (accumulated link rot in
           # decade-old archival content isn't worth triaging) and the
           # blog index that aggregates their links. Posts from 2019+
-          # get checked normally.
+          # get checked normally. The publications page is checked in a
+          # separate, report-only step below.
           args: >-
             --config ./lychee.toml
             --no-progress
             --root-dir ${{ github.workspace }}/_site
             --exclude-path '_site/blog/201[5-8]'
             --exclude-path '_site/blog/index\.html'
+            --exclude-path '_site/publications\.html'
             _site
           output: lychee-report.md
           fail: true
@@ -67,6 +70,37 @@ jobs:
         with:
           header: lychee
           path: lychee-report.md
+
+      # Publications links are report-only. The page has hundreds of
+      # external publisher links regenerated weekly from Google Scholar,
+      # and those hosts fail transiently (5xx, redirect loops, bot
+      # walls) far more often than links actually rot. Failures here
+      # surface as a warning and a PR comment but never fail the job.
+      - name: Check publications links (report-only)
+        id: lychee-publications
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --config ./lychee.toml
+            --no-progress
+            --root-dir ${{ github.workspace }}/_site
+            _site/publications.html
+          output: lychee-publications-report.md
+          fail: false
+
+      - name: Report broken publications links
+        if: steps.lychee-publications.outputs.exit_code != '0'
+        run: >-
+          echo "::warning title=Publications links::Some publication links
+          failed to resolve (report-only, not blocking). See the job
+          summary or PR comment for the list."
+
+      - name: Comment publications link report on PR
+        if: steps.lychee-publications.outputs.exit_code != '0' && github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: lychee-publications
+          path: lychee-publications-report.md
 
       - name: Validate HTML
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
