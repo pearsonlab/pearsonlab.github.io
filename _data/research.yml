@@ -61,6 +61,7 @@
     Vocalization is a complex behavior that underlies vocal communication and vocal learning, and is important for the study of humans' underlying linguistic competency and musicality. Despite its prominence in a wide range of disciplines, vocalizations are often quantified in an ad-hoc and species-specific manner. Fortunately, recent advances in machine learning have resulted in techniques that allow high-dimensional data to be compressed in a data-dependent manner, resulting in low-dimensional encodings that minimize information loss. We use one such method, the variational Bayesian autoencoder (VAE), to perform dimensionality reduction of the vocalizations and vocal learning behavior of several model organisms: laboratory mice, zebra finches, and marmosets. Together with [Richard Mooney's lab](https://www.neuro.duke.edu/mooney-lab) we use latent representations of these species' vocal behavior to reproduce and extend existing results in a species-agnostic manner, offering a unified view of vocal variability and learning on timescales ranging from individual syllables of millisecond duration to across days ([paper](https://elifesciences.org/articles/67855), [paper](https://elifesciences.org/articles/63493)).
 
 - title: Efficient coding in the retina
+  image: /images/retina_schematic.png
   summary: >-
     Using efficient-coding theory to explain how retinal ganglion cells
     trade information against metabolic cost — and what changes when the
@@ -72,6 +73,17 @@
     Working together with [Greg Field's lab](https://www.neuro.duke.edu/research/faculty-labs/field-lab), we've shown that patterns of alignment between different collections of receptive fields can also be explained using efficient coding theory. This was based on findings from Field lab ([paper](https://www.nature.com/articles/s41586-021-03317-5)), which led to surprising further theoretical results ([paper](https://www.nature.com/articles/s41586-021-03317-5)). In short, the most information-efficient receptive field arrangements are determined both by levels of noise in the system and the statistics of natural images.
 
     Most recently, we've looked at what happens to mosaics as the number of neurons available for coding changes. There, [we found](https://www.biorxiv.org/content/10.1101/2022.08.29.505726v2) that greater numbers of available neurons leads to greater diversity in functionally defined cell types, starting with small temporally smoothing receptive fields and progressing toward larger temporally "differentiating" receptive fields.
+
+- title: Control of reach and grasp
+  image: /images/mouse_reach.png
+  summary: >-
+    Investigating the role of cell types and feedback in mouse reaching behavior, with
+    [Josh Huang](https://www.neuro.duke.edu/profile/josh-huang), [Nuo Li](https://www.neuro.duke.edu/profile/nuo-li), and [Adam Hantman](https://www.med.unc.edu/neuroscience/directory/adam-hantman-phd/).
+  body: |
+    The primary function of brains is to move bodies, but the control of skilled behavior requires coordination not only of multiple joints and muscles but of multiple, interconnected neural control systems, including the cerebral cortex, cerebellum, thalamus, and basal ganglia. We are interested in how the brain functions as a "system of systems" to orchestrate movement under natural conditions in a way that is flexible, efficient, and robust to perturbations.
+
+    With the Huang and Li labs, we are investigating the role of developmentally defined cell types in controlling reach, along with the role of [feedback perturbations](https://www.biorxiv.org/content/10.1101/2025.11.11.687832v1). With the Hantman lab, we are asking how precisely defined "holographic" perturbations can alter reach trajectories and local population dynamics. Our goal in both cases is to understand how cortical architecture and dynamics implement skilled motor control.
+
 
 - title: Autoencoding whole-brain dynamics
   image: /images/website_VAEGAM_fig.png
