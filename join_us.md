@@ -7,7 +7,13 @@ nav: Join Us # what shows up in the navbar at the top (do not define if you don'
 
 We're always interested in talking to qualified postdoc candidates. Particularly those with backgrounds in Statistics, Computer Science, Physics, or any other field where you do applied math for a living. Neuroscience experience is not required, though neuroscience interest is.
 
-**We will recruit postdocs through the Flatiron Research Fellows Program in 2026-27.** Interested candidates should be on the lookout for the program announcement.
+**We will recruit postdocs through the Flatiron Research Fellows Program in 2026-27.** Interested candidates can apply [here](https://apply.interfolio.com/193800).
+
+We are primarily looking for fellows interested in pursuing the following topics:
+
+- **Biological Architecture:** Biological neural networks differ in many key respects from their artificial cousins. They are sparser (in both connections and activity), more highly recurrent, and are more nonlinear. We are interested in the role of cell types and neuromodulation in constructing more flexible, powerful neural networks, particularly in the context of development.
+- **Efficient coding and cell types:** In addition to being one of the best-studied neural systems, the retina offers a powerful testbed for theories of neural coding. In particular, because the receptive fields of ganglion cells in the retina's output layer tile space (forming so-called "mosaics"), the system offers a convenient _functional_ definition of cell types. In collaboration with [Greg Field](https://profiles.ucla.edu/greg.field), we have shown that simply requiring that ganglion cells efficiently compress visual information results in a diversity of cell types that recapitulates key features of the primate retina. We are interested in the degree to which simple coding principles can explain not only the functional organization of the retina but other early sensory systems.
+- **Continual vocal learning:** Our group has a longstanding interest in vocal learning as both a challenging sensorimotor control problem and a model system for reinforcement learning. We have worked extensively with [Richard Mooney](https://www.neuro.duke.edu/profile/richard-daniel-mooney) and his group to understand how these processes are implemented in the zebra finch, which learns and uses a single song for its entire adult life. We are interested in expanding this work to parrots, which continually refine their vocal repertoires through a set of analogous but distinct circuits.
 
 # Graduate students
 
