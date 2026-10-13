@@ -57,6 +57,14 @@ exclude = [
     "thomasli\\.me",
     "stat\\.washington\\.edu/people/pdhoff",
     "socialsciences\\.nature\\.com",
+    # Publisher hosts that intermittently fail from GitHub Actions runners
+    # even though the links work in a browser:
+    # - ccneuro.org proceedings PDFs: alternate between 415 (see accept
+    #   above) and 500 Internal Server Error.
+    # - iopscience.iop.org: cookie-setting redirect chain that lychee
+    #   reports as a rejected 302.
+    "ccneuro\\.org",
+    "iopscience\\.iop\\.org",
     # LinkedIn's bot-detection responds inconsistently to GitHub Actions
     # runners: same URL can return 200, 301-to-stripped-URL, 404, or 999
     # depending on time, IP, and load. Treat the whole domain as
